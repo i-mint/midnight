@@ -13,5 +13,5 @@ If you install theme on local system, <i>/.themes or /.local/share/themes</i> ma
 ## Change themes
 
 "This is the theme of gtk+ 3 and gk+ 2. You can use it on Linux distributions in every desktop environment that supports it"</br>
-<b>Debian, Ubuntu (Gnome Desktop) :</b> Use Tweak Tool to change the themes, Gnome Tweak > Appeareance > Themes</br>
+<b>Debian, Ubuntu (Gnome Desktop) :</b> Use Tweak Tool to change the themes, Gnome Tweak > Appeareance > Themes > Applications</br>
 <b>Linux Mint (Cinnamon):</b> Menu > Settings > Themes > Themes > Controls</br>
