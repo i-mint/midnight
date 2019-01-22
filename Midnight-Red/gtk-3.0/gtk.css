@@ -1758,13 +1758,13 @@ scrollbar {
     border: 4px solid transparent;
     border-radius: 8px;
     background-clip: padding-box;
-    background-color: #736766; }
-    scrollbar slider:hover {
-      background-color: #5d4f4f; }
+    background-color: rgba(180, 0, 33, 0.45); }
     scrollbar slider:hover:active {
       background-color: #B40021; }
     scrollbar slider:disabled {
       background-color: transparent; }
+    scrollbar slider:hover {
+      background-color: rgba(255, 255, 255, 0.45); }
   scrollbar.fine-tune slider {
     min-width: 4px;
     min-height: 4px; }
@@ -1778,10 +1778,10 @@ scrollbar {
     background-color: transparent; }
     scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider {
       margin: 0;
-      min-width: 4px;
-      min-height: 4px;
-      background-color: #b5afad;
-      border: 1px solid rgba(0, 0, 0, 0.3); }
+      min-width: 2px;
+      min-height: 2px;
+      background-color: #d80028;
+      border: 1px solid transparent; }
     scrollbar.overlay-indicator:not(.dragging):not(.hovering).horizontal slider {
       margin: 0 2px;
       min-width: 40px; }
