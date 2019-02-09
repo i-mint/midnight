@@ -3312,6 +3312,12 @@ button.documents-favorite:active:hover {
   background-image: linear-gradient(to bottom, #1C0808, #1C0808);
   color: #a5001e; }
 
+.tweak-categories label {
+  background-color: transparent; }
+
+.tweak-categories .tweak-category:hover {
+  color: #F6F6F4; }
+
 .tr-workarea undershoot,
 .tr-workarea overshoot {
   border-color: transparent; }
