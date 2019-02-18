@@ -2295,6 +2295,12 @@ frame > border.flat,
 .frame.flat {
   border-style: none; }
 
+scrolledwindow viewport box grid {
+  background-color: #1C1108;
+  border-left: 2px solid #C87200;
+  padding: 5px;
+  padding-left: 10px;
+  border-radius: 5px; }
 scrolledwindow viewport.frame {
   border-style: none; }
 scrolledwindow overshoot.top {
