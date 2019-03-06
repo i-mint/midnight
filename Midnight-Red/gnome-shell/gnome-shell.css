@@ -447,7 +447,8 @@ StScrollBar {
   .popup-menu .popup-sub-menu {
     background: none;
     box-shadow: none;
-    border-image: url("dark-assets/menu/submenu.svg") 9 9 9 9; }
+    border-image: url("dark-assets/menu/submenu.svg") 9 9 9 9;
+    color: rgba(180, 0, 33, 0.7); }
   .popup-menu .popup-menu-content {
     padding: 1em 0em 1em 0em; }
   .popup-menu .popup-menu-item {
@@ -460,7 +461,8 @@ StScrollBar {
       font-weight: normal;
       background: none;
       box-shadow: none;
-      border-image: url("dark-assets/menu/submenu-open.svg") 9 9 9 9; }
+      border-image: url("dark-assets/menu/submenu-open.svg") 9 9 9 9;
+      color: #B40021; }
     .popup-menu .popup-menu-item:active, .popup-menu .popup-menu-item.selected {
       color: #ffffff;
       background-color: transparent;
