@@ -4100,6 +4100,18 @@ filechooser.maximized placessidebar.sidebar,
 
 .nautilus-window notebook stack .view:backdrop, .nautilus-window notebook stack iconview:backdrop {
   color: rgba(246, 246, 244, 0.56); }
+.nautilus-window .searchbar-container entry.search {
+  border-left: 2px solid #969696; }
+  .nautilus-window .searchbar-container entry.search:focus {
+    color: rgba(246, 246, 244, 0.67);
+    caret-color: #b0b0b0;
+    border-left: 2px solid transparent; }
+.nautilus-window .searchbar-container entry image {
+  color: #969696; }
+  .nautilus-window .searchbar-container entry image:focus {
+    color: #b0b0b0; }
+.nautilus-window .searchbar-container button image {
+  color: #969696; }
 
 .nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview {
   color: #969696; }
