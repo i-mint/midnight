@@ -2976,6 +2976,19 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
     background-color: rgba(45, 144, 255, 0.45);
     color: rgba(255, 255, 255, 0.45); }
 
+grid box widget button:nth-child(1) label, grid box widget button:nth-child(2) label, grid box widget button:nth-child(3) label, grid box widget button:nth-child(4) label, grid box widget button:nth-child(5) label, grid box widget button:nth-child(6) label, grid box widget button:nth-child(8) label, grid box widget button:nth-child(9) label, grid box widget button:nth-child(10) label, grid box widget button:nth-child(11) label, grid box widget button:nth-child(12) label, grid box widget button:nth-child(13) label {
+  color: rgba(45, 144, 255, 0.67); }
+grid box widget button:nth-child(1):hover label, grid box widget button:nth-child(2):hover label, grid box widget button:nth-child(3):hover label, grid box widget button:nth-child(4):hover label, grid box widget button:nth-child(5):hover label, grid box widget button:nth-child(6):hover label, grid box widget button:nth-child(8):hover label, grid box widget button:nth-child(9):hover label, grid box widget button:nth-child(10):hover label, grid box widget button:nth-child(11):hover label, grid box widget button:nth-child(12):hover label, grid box widget button:nth-child(13):hover label {
+  color: #2D90FF; }
+grid box widget button:nth-child(7) label, grid box widget button:nth-child(14) label, grid box widget button:nth-child(15) label, grid box widget button:nth-child(16) label, grid box widget button:nth-child(18) label, grid box widget button:nth-child(19) label, grid box widget button:nth-child(21) label, grid box widget button:nth-child(22) label {
+  color: rgba(255, 255, 255, 0.67); }
+grid box widget button:nth-child(7):hover label, grid box widget button:nth-child(14):hover label, grid box widget button:nth-child(15):hover label, grid box widget button:nth-child(16):hover label, grid box widget button:nth-child(18):hover label, grid box widget button:nth-child(19):hover label, grid box widget button:nth-child(21):hover label, grid box widget button:nth-child(22):hover label {
+  color: #ffffff; }
+grid box widget button image {
+  color: #2D90FF; }
+grid box widget button:hover image {
+  color: #60abff; }
+
 .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked,
 terminal-window notebook > header.top > tabs > tab:checked {
   box-shadow: inset 0 -1px #010304; }
