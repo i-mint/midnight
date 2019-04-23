@@ -2313,6 +2313,31 @@ scrolledwindow viewport box grid {
   border-radius: 5px; }
 scrolledwindow viewport.frame {
   border-style: none; }
+scrolledwindow viewport label:backdrop {
+  color: rgba(0, 200, 72, 0.56); }
+scrolledwindow viewport combobox cellview {
+  color: #00c848; }
+  scrolledwindow viewport combobox cellview:hover {
+    color: #ffffff; }
+  scrolledwindow viewport combobox cellview:backdrop {
+    color: rgba(0, 200, 72, 0.56); }
+  scrolledwindow viewport combobox cellview:hover:backdrop {
+    color: rgba(255, 255, 255, 0.56); }
+scrolledwindow viewport combobox menuitem cellview {
+  color: #00C848; }
+scrolledwindow viewport combobox menuitem:hover cellview {
+  color: #ffffff; }
+scrolledwindow viewport image:backdrop, scrolledwindow viewport arrow:backdrop {
+  color: rgba(0, 200, 72, 0.56); }
+scrolledwindow viewport .text-button {
+  background-color: #00C848;
+  color: #ffffff; }
+  scrolledwindow viewport .text-button:hover {
+    background-color: #00fb5a;
+    color: #ffffff; }
+  scrolledwindow viewport .text-button:backdrop {
+    background-color: rgba(0, 200, 72, 0.56);
+    color: rgba(255, 255, 255, 0.56); }
 scrolledwindow overshoot.top {
   background-image: -gtk-gradient(radial, center top, 0, center top, 0.6, from(rgba(0, 200, 72, 0.2)), to(rgba(0, 200, 72, 0)));
   background-size: 100% 60%;
@@ -3373,6 +3398,8 @@ button.documents-favorite:active:hover {
 
 .tweak-categories .tweak-category:hover {
   color: #F6F6F4; }
+  .tweak-categories .tweak-category:hover:backdrop label {
+    color: rgba(255, 255, 255, 0.56); }
 
 .tr-workarea undershoot,
 .tr-workarea overshoot {
