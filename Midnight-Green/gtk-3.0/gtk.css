@@ -4330,3 +4330,14 @@ filechooser placessidebar.sidebar scrollbar,
 @define-color wm_icon_unfocused_bg #666A74;
 @define-color wm_icon_hover_bg #C4C7CC;
 @define-color wm_icon_active_bg #ffffff;
+.budgie-menu .category-button:hover {
+  color: #00C848;
+  background-color: rgba(0, 200, 72, 0.08); }
+.budgie-menu row:hover label {
+  color: #00C848; }
+.budgie-menu row:hover button {
+  background-color: rgba(0, 200, 72, 0.08); }
+.budgie-menu .categories {
+  background-color: #081C0F; }
+.budgie-menu entry.search {
+  border-radius: 2px; }

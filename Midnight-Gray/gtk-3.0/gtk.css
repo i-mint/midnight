@@ -4330,3 +4330,21 @@ filechooser placessidebar.sidebar scrollbar,
 @define-color wm_icon_unfocused_bg #666A74;
 @define-color wm_icon_hover_bg #C4C7CC;
 @define-color wm_icon_active_bg #141414;
+.budgie-menu .category-button label {
+  color: rgba(150, 150, 150, 0.78); }
+.budgie-menu .category-button:hover {
+  background-color: rgba(150, 150, 150, 0.08); }
+  .budgie-menu .category-button:hover label {
+    color: white; }
+.budgie-menu .category-button:checked label {
+  color: #141414; }
+.budgie-menu row label {
+  color: rgba(150, 150, 150, 0.78); }
+.budgie-menu row:hover label {
+  color: white; }
+.budgie-menu row:hover button {
+  background-color: rgba(150, 150, 150, 0.08); }
+.budgie-menu .categories {
+  background-color: #1E1E1E; }
+.budgie-menu entry.search {
+  border-radius: 2px; }
