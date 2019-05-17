@@ -4341,3 +4341,28 @@ filechooser placessidebar.sidebar scrollbar,
   background-color: #1C1108; }
 .budgie-menu entry.search {
   border-radius: 2px; }
+
+.budgie-panel #tasklist-button {
+  background-color: rgba(9, 6, 3, 0.95);
+  color: rgba(200, 114, 0, 0.78);
+  border-left: 2px solid transparent; }
+  .budgie-panel #tasklist-button:hover {
+    background-color: rgba(37, 23, 11, 0.95);
+    color: rgba(255, 255, 255, 0.78);
+    border-left: 2px solid #C87200; }
+  .budgie-panel #tasklist-button:checked {
+    background-color: rgba(57, 35, 16, 0.95);
+    color: #ffffff;
+    border-left: 2px solid #C87200; }
+.budgie-panel button.flat, .budgie-panel button.sidebar-button {
+  background-color: rgba(9, 6, 3, 0.95);
+  color: #c87200; }
+  .budgie-panel button.flat:hover, .budgie-panel button.sidebar-button:hover {
+    background-color: rgba(200, 114, 0, 0.29);
+    color: #ffffff; }
+  .budgie-panel button.flat:checked, .budgie-panel button.sidebar-button:checked {
+    background-color: rgba(200, 114, 0, 0.19);
+    color: #ffffff; }
+  .budgie-panel button.flat:hover:active, .budgie-panel button.sidebar-button:hover:active {
+    background-color: rgba(200, 114, 0, 0.19);
+    color: #c87200; }
