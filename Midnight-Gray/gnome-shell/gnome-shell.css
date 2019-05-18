@@ -906,13 +906,13 @@ StScrollBar {
     background-color: rgba(0, 0, 0, 0.15);
     border-width: 0; }
   .calendar-day-base.calendar-day-heading {
-    color: rgba(246, 246, 244, 0.85);
+    color: #969696;
     margin-top: 1em;
     font-size: 70%; }
 
 .calendar-day {
   border-width: 0;
-  color: rgba(246, 246, 244, 0.8); }
+  color: rgba(246, 246, 244, 0.7); }
 
 .calendar-day-top {
   border-top-width: 0; }
@@ -942,7 +942,7 @@ StScrollBar {
   color: #141414; }
 
 .calendar-other-month-day {
-  color: rgba(246, 246, 244, 0.3);
+  color: rgba(246, 246, 244, 0.2);
   opacity: 1; }
 
 .calendar-week-number {
@@ -953,8 +953,8 @@ StScrollBar {
   border-radius: 2px;
   padding: 0.5em 0 0;
   margin: 6px;
-  background-color: rgba(246, 246, 244, 0.3);
-  color: #1E1E1E; }
+  background-color: rgba(246, 246, 244, 0.1);
+  color: rgba(150, 150, 150, 0.89); }
 
 .message-list {
   width: 31.5em; }
