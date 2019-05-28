@@ -3637,6 +3637,70 @@ panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel butto
 .menu .spinner {
   opacity: 1; }
 
+.sidebar-paned scrolledwindow .view label, .sidebar-paned scrolledwindow iconview label {
+  color: #C87200; }
+.sidebar-paned notebook button {
+  background-color: #1C1108;
+  color: #F6F6F4; }
+  .sidebar-paned notebook button.flat:hover, .sidebar-paned notebook button.sidebar-button:hover, .sidebar-paned notebook button.flat:hover label, .sidebar-paned notebook button.sidebar-button:hover label {
+    color: #C87200;
+    background-color: #1C1108; }
+  .sidebar-paned notebook button.flat:selected, .sidebar-paned notebook button.sidebar-button:selected, .sidebar-paned notebook button.flat:focus, .sidebar-paned notebook button.sidebar-button:focus, .sidebar-paned notebook button.flat:selected label, .sidebar-paned notebook button.sidebar-button:selected label, .sidebar-paned notebook button.flat:focus label, .sidebar-paned notebook button.sidebar-button:focus label {
+    background-color: #C87200;
+    color: #ffffff; }
+  .sidebar-paned notebook button.flat:active, .sidebar-paned notebook button.sidebar-button:active, .sidebar-paned notebook button.flat:active label, .sidebar-paned notebook button.sidebar-button:active label {
+    color: rgba(255, 255, 255, 0.78); }
+.sidebar-paned scrolledwindow .sidebar {
+  color: #F6F6F4; }
+  .sidebar-paned scrolledwindow .sidebar:hover {
+    color: #C87200; }
+  .sidebar-paned scrolledwindow .sidebar:selected:hover, .sidebar-paned scrolledwindow .sidebar:focus:hover {
+    color: rgba(255, 255, 255, 0.89);
+    background-color: rgba(200, 114, 0, 0.89); }
+
+.primary-toolbar toolitem {
+  color: #F6F6F4;
+  background-color: #1C1108; }
+  .primary-toolbar toolitem box button {
+    color: #F6F6F4;
+    background-color: #1C1108; }
+  .primary-toolbar toolitem button image {
+    color: #F6F6F4;
+    background-color: #1C1108; }
+.primary-toolbar toolitem:nth-child(1) button:active, .primary-toolbar toolitem:nth-child(1) button:active image {
+  color: rgba(200, 114, 0, 0.56);
+  background-color: #1C1108; }
+.primary-toolbar toolitem:nth-child(1) button:focus, .primary-toolbar toolitem:nth-child(1) button:focus image {
+  color: #C87200;
+  background-color: #1C1108; }
+.primary-toolbar toolitem:nth-child(1) button:hover, .primary-toolbar toolitem:nth-child(1) button:hover image {
+  color: #C87200;
+  background-color: #1C1108; }
+.primary-toolbar toolitem:nth-child(2) button {
+  color: rgba(246, 246, 244, 0.34); }
+  .primary-toolbar toolitem:nth-child(2) button image {
+    color: rgba(246, 246, 244, 0.34); }
+  .primary-toolbar toolitem:nth-child(2) button:active, .primary-toolbar toolitem:nth-child(2) button:active image {
+    color: rgba(200, 114, 0, 0.34);
+    background-color: #1C1108; }
+  .primary-toolbar toolitem:nth-child(2) button:hover, .primary-toolbar toolitem:nth-child(2) button:hover image {
+    color: #C87200;
+    background-color: #1C1108; }
+  .primary-toolbar toolitem:nth-child(2) button:checked, .primary-toolbar toolitem:nth-child(2) button:checked image {
+    color: #F6F6F4;
+    background-color: #442913; }
+.primary-toolbar toolitem:nth-child(4) grid label {
+  color: #C87200; }
+.primary-toolbar toolitem:nth-child(4) button.flat:active, .primary-toolbar toolitem:nth-child(4) button.sidebar-button:active, .primary-toolbar toolitem:nth-child(4) button.flat:active image, .primary-toolbar toolitem:nth-child(4) button.sidebar-button:active image {
+  color: rgba(200, 114, 0, 0.56);
+  background-color: #1C1108; }
+.primary-toolbar toolitem:nth-child(4) button.flat:focus, .primary-toolbar toolitem:nth-child(4) button.sidebar-button:focus, .primary-toolbar toolitem:nth-child(4) button.flat:focus image, .primary-toolbar toolitem:nth-child(4) button.sidebar-button:focus image {
+  color: #C87200;
+  background-color: #1C1108; }
+.primary-toolbar toolitem:nth-child(4) button.flat:hover, .primary-toolbar toolitem:nth-child(4) button.sidebar-button:hover, .primary-toolbar toolitem:nth-child(4) button.flat:hover image, .primary-toolbar toolitem:nth-child(4) button.sidebar-button:hover image {
+  color: #C87200;
+  background-color: #1C1108; }
+
 UnityDecoration {
   -UnityDecoration-extents: 28px 1 1 1;
   -UnityDecoration-input-extents: 10px;
