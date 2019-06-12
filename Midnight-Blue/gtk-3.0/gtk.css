@@ -2813,6 +2813,11 @@ button.circular-button {
 
 stackswitcher button.text-button {
   min-width: 80px; }
+  stackswitcher button.text-button label {
+    border-bottom: 1px solid Transparent; }
+  stackswitcher button.text-button:hover label {
+    color: rgba(255, 255, 255, 0.78);
+    border-bottom: 1px solid #2D90FF; }
 stackswitcher button.circular, stackswitcher button.nautilus-circular-button.image-button {
   min-width: 0; }
 
@@ -3700,6 +3705,16 @@ panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel butto
 .primary-toolbar toolitem:nth-child(4) button.flat:hover, .primary-toolbar toolitem:nth-child(4) button.sidebar-button:hover, .primary-toolbar toolitem:nth-child(4) button.flat:hover image, .primary-toolbar toolitem:nth-child(4) button.sidebar-button:hover image {
   color: #2D90FF;
   background-color: #08111C; }
+
+widget .clocks-button {
+  color: rgba(255, 255, 255, 0.78);
+  background-color: rgba(45, 144, 255, 0.56); }
+  widget .clocks-button:hover {
+    color: #ffffff;
+    background-color: #2D90FF; }
+  widget .clocks-button:active {
+    color: #ffffff;
+    background-color: #479dff; }
 
 UnityDecoration {
   -UnityDecoration-extents: 28px 1 1 1;
