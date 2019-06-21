@@ -1550,6 +1550,18 @@ menu,
       background-color: transparent;
       border-color: transparent; }
 
+popover entry.search {
+  border-left: 2px solid #B40021;
+  border-radius: 4px; }
+  popover entry.search image {
+    color: #B40021; }
+    popover entry.search image:focus {
+      color: #e7002a; }
+  popover entry.search:focus {
+    color: rgba(255, 255, 255, 0.67);
+    caret-color: #e7002a;
+    border-left: 2px solid transparent; }
+
 popover,
 popover.background {
   padding: 2px;
@@ -4220,7 +4232,8 @@ filechooser.maximized placessidebar.sidebar,
 .nautilus-window notebook stack .view:backdrop, .nautilus-window notebook stack iconview:backdrop {
   color: rgba(255, 255, 255, 0.45); }
 .nautilus-window .searchbar-container entry.search {
-  border-left: 2px solid #B40021; }
+  border-left: 2px solid #B40021;
+  border-radius: 4px; }
   .nautilus-window .searchbar-container entry.search:focus {
     color: rgba(255, 255, 255, 0.67);
     caret-color: #e7002a;
