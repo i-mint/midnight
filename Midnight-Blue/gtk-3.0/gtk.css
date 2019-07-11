@@ -1091,7 +1091,8 @@ headerbar .linked:not(.vertical).path-bar > button {
   .primary-toolbar .linked:not(.vertical).path-bar > button:hover,
   headerbar .linked:not(.vertical).path-bar > button:hover {
     background-color: #08111C;
-    color: #ffffff; }
+    color: #ffffff;
+    border-color: #08111C; }
   .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked,
   .primary-toolbar .linked:not(.vertical).path-bar > button:active,
   headerbar .linked:not(.vertical).path-bar > button:active,
@@ -3134,11 +3135,29 @@ popover.background label.nautilus-canvas-item.separator, headerbar .nautilus-can
   .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:not(:last-child):not(:only-child) {
     margin: 0 0 1px 0; }
   .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:hover {
-    background-color: #443a42; }
+    background-color: #08111C;
+    color: #ffffff;
+    border-color: #08111C; }
+    .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:hover label {
+      background-color: #08111C;
+      color: #ffffff;
+      border-color: #08111C; }
+    .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:hover image {
+      background-color: #08111C;
+      color: #ffffff;
+      border-color: #08111C; }
   .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:active, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:checked {
     color: #ffffff;
     border-color: transparent;
     background-color: #2D90FF; }
+    .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:active label, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:checked label {
+      color: #ffffff;
+      border-color: transparent;
+      background-color: #2D90FF; }
+    .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:active image, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:checked image {
+      color: #ffffff;
+      border-color: transparent;
+      background-color: #2D90FF; }
   .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:disabled {
     color: rgba(247, 247, 243, 0.4); }
 .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button + button {
