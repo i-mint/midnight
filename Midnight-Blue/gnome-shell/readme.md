@@ -5,7 +5,7 @@ License : GPLv3 (https://choosealicense.com/licenses/gpl-3.0/)</br>
 
 # Installation
 Needed : GTK+ 3.22</br>
-Have been test on : Debian Stretch (9.9), Ubuntu 18.04 LTS</br>
+Have been test on : Debian Buster (10), Ubuntu 18.04 LTS</br>
 Install themes : 
 - Extract Archive File On Directory<i> /usr/share/themes (as root),</i> </br>
 - Or Extract Archive File On Directory<i> Home/.themes</i></br>
