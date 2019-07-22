@@ -117,21 +117,34 @@ StScrollBar {
       background-color: #B40021; }
 
 .slider {
+  -barlevel-height: 4px;
+  -barlevel-background-color: #040101;
+  -barlevel-border-color: rgba(0, 0, 0, 0);
+  -barlevel-active-background-color: #B40021;
+  -barlevel-active-border-color: rgba(0, 0, 0, 0);
+  -barlevel-border-width: 0px;
   -slider-height: 4px;
   -slider-background-color: #040101;
-  -slider-border-color: transparent;
+  -slider-border-color: rgba(0, 0, 0, 0);
   -slider-active-background-color: #B40021;
-  -slider-active-border-color: transparent;
+  -slider-active-border-color: rgba(0, 0, 0, 0);
   -slider-border-width: 0;
   -slider-handle-radius: 0px;
   height: 18px;
   border: 0 solid transparent;
   border-right-width: 1px;
   border-left-width: 5px;
-  color: transparent; }
+  color: #ffffff; }
+  .slider:hover {
+    color: #B40021;
+    -slider-handle-radius: 2px; }
+  .slider:active {
+    color: #B40021;
+    -slider-handle-radius: 2px; }
   .popup-menu-item.selected .slider {
-    -slider-background-color: rgba(0, 0, 0, 0.2);
-    -slider-active-background-color: #ffffff; }
+    -slider-background-color: #240a0a;
+    -slider-active-background-color: #B40021;
+    -slider-handle-radius: 2px; }
 
 .check-box StBoxLayout {
   spacing: .8em; }
@@ -362,7 +375,7 @@ StScrollBar {
     padding-bottom: 8px; }
 
 .hidden {
-  color: transparent; }
+  color: rgba(0, 0, 0, 0); }
 
 .polkit-dialog-user-layout {
   padding-left: 10px;
@@ -448,7 +461,7 @@ StScrollBar {
     background: none;
     box-shadow: none;
     border-image: url("dark-assets/menu/submenu.svg") 9 9 9 9;
-    color: rgba(180, 0, 33, 0.7); }
+    color: rgba(180, 0, 33, 0.78); }
   .popup-menu .popup-menu-content {
     padding: 1em 0em 1em 0em; }
   .popup-menu .popup-menu-item {
@@ -462,7 +475,7 @@ StScrollBar {
       background: none;
       box-shadow: none;
       border-image: url("dark-assets/menu/submenu-open.svg") 9 9 9 9;
-      color: #B40021; }
+      color: #e7002a; }
     .popup-menu .popup-menu-item:active, .popup-menu .popup-menu-item.selected {
       color: #ffffff;
       background-color: transparent;
@@ -485,9 +498,9 @@ StScrollBar {
 
 .popup-menu-boxpointer {
   -arrow-border-radius: 2px;
-  -arrow-background-color: transparent;
+  -arrow-background-color: rgba(0, 0, 0, 0);
   -arrow-border-width: 1px;
-  -arrow-border-color: transparent;
+  -arrow-border-color: rgba(0, 0, 0, 0);
   -arrow-base: 0;
   -arrow-rise: 0; }
 
@@ -576,7 +589,7 @@ StScrollBar {
     background: rgba(246, 246, 244, 0.33); }
 
 .switcher-arrow {
-  border-color: transparent;
+  border-color: rgba(0, 0, 0, 0);
   color: #B40021; }
   .switcher-arrow:highlighted {
     color: white; }
@@ -651,7 +664,7 @@ StScrollBar {
     spacing: 8px; }
   #panel .panel-corner {
     -panel-corner-radius: 0px;
-    -panel-corner-background-color: transparent;
+    -panel-corner-background-color: rgba(0, 0, 0, 0);
     -panel-corner-border-width: 0px;
     -panel-corner-border-color: black; }
     #panel .panel-corner:active, #panel .panel-corner:overview, #panel .panel-corner:focus {
