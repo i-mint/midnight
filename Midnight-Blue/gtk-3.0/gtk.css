@@ -3415,6 +3415,33 @@ button.documents-favorite:active:hover {
   .tweak-categories .tweak-category:hover:backdrop label {
     color: rgba(255, 255, 255, 0.56); }
 
+.tweak-group #button-layout.tweak .text-button {
+  background-color: #08111C;
+  color: #2D90FF; }
+  .tweak-group #button-layout.tweak .text-button label {
+    color: #2D90FF; }
+  .tweak-group #button-layout.tweak .text-button:checked {
+    background-color: #2D90FF;
+    border-color: #2D90FF; }
+    .tweak-group #button-layout.tweak .text-button:checked label {
+      color: #ffffff; }
+    .tweak-group #button-layout.tweak .text-button:checked:hover {
+      background-color: #419bff;
+      color: #ffffff;
+      border-color: #2D90FF; }
+  .tweak-group #button-layout.tweak .text-button:active {
+    background-color: #193558;
+    border-color: #193558;
+    color: #ffffff; }
+    .tweak-group #button-layout.tweak .text-button:active label {
+      color: #ffffff; }
+  .tweak-group #button-layout.tweak .text-button:hover {
+    background-color: rgba(45, 144, 255, 0.15);
+    border-color: rgba(45, 144, 255, 0.15);
+    color: #ffffff; }
+    .tweak-group #button-layout.tweak .text-button:hover label {
+      color: #ffffff; }
+
 .tr-workarea undershoot,
 .tr-workarea overshoot {
   border-color: transparent; }

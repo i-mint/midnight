@@ -3415,6 +3415,33 @@ button.documents-favorite:active:hover {
   .tweak-categories .tweak-category:hover:backdrop label {
     color: rgba(255, 255, 255, 0.56); }
 
+.tweak-group #button-layout.tweak .text-button {
+  background-color: #1B1B08;
+  color: #7E7E23; }
+  .tweak-group #button-layout.tweak .text-button label {
+    color: #7E7E23; }
+  .tweak-group #button-layout.tweak .text-button:checked {
+    background-color: #7E7E23;
+    border-color: #7E7E23; }
+    .tweak-group #button-layout.tweak .text-button:checked label {
+      color: #ffffff; }
+    .tweak-group #button-layout.tweak .text-button:checked:hover {
+      background-color: #8e8e27;
+      color: #ffffff;
+      border-color: #7E7E23; }
+  .tweak-group #button-layout.tweak .text-button:active {
+    background-color: #565619;
+    border-color: #565619;
+    color: #ffffff; }
+    .tweak-group #button-layout.tweak .text-button:active label {
+      color: #ffffff; }
+  .tweak-group #button-layout.tweak .text-button:hover {
+    background-color: rgba(126, 126, 35, 0.15);
+    border-color: rgba(126, 126, 35, 0.15);
+    color: #ffffff; }
+    .tweak-group #button-layout.tweak .text-button:hover label {
+      color: #ffffff; }
+
 .tr-workarea undershoot,
 .tr-workarea overshoot {
   border-color: transparent; }
