@@ -1554,7 +1554,7 @@ menu, .menu {
     min-width: 40px;
     padding: 5px; }
     menu menuitem:hover, .menu menuitem:hover {
-      color: white;
+      color: #ffffff;
       background-color: rgba(150, 150, 150, 0.1); }
     menu menuitem:disabled, .menu menuitem:disabled {
       color: rgba(246, 246, 244, 0.45); }
@@ -2378,7 +2378,7 @@ scrolledwindow viewport label:backdrop {
 scrolledwindow viewport combobox cellview {
   color: rgba(246, 246, 244, 0.56); }
   scrolledwindow viewport combobox cellview:hover {
-    color: white; }
+    color: #ffffff; }
   scrolledwindow viewport combobox cellview:backdrop {
     color: rgba(255, 255, 255, 0.56); }
   scrolledwindow viewport combobox cellview:hover:backdrop {
@@ -2386,7 +2386,7 @@ scrolledwindow viewport combobox cellview {
 scrolledwindow viewport combobox menuitem cellview {
   color: #969696; }
 scrolledwindow viewport combobox menuitem:hover cellview {
-  color: white; }
+  color: #ffffff; }
 scrolledwindow viewport image:backdrop, scrolledwindow viewport arrow:backdrop {
   color: rgba(150, 150, 150, 0.56); }
 scrolledwindow viewport .text-button {
@@ -3490,7 +3490,7 @@ button.documents-favorite:active:hover {
 .tweak-categories .tweak-category:hover {
   color: rgba(246, 246, 244, 0.56); }
   .tweak-categories .tweak-category:hover:backdrop label {
-    color: rgba(246, 246, 244, 0.23); }
+    color: rgba(246, 246, 244, 0.34); }
 
 .tweak-categories .tweak-category {
   color: rgba(246, 246, 244, 0.56);
@@ -4301,14 +4301,14 @@ filechooser placessidebar.sidebar,
       filechooser placessidebar.sidebar row.sidebar-row.has-open-popup:backdrop, filechooser placessidebar.sidebar row.sidebar-row:hover:backdrop,
       .nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup:backdrop,
       .nautilus-window placessidebar.sidebar row.sidebar-row:hover:backdrop {
-        color: rgba(246, 246, 244, 0.23);
+        color: rgba(246, 246, 244, 0.34);
         border-left: 2px solid rgba(150, 150, 150, 0.45);
         padding-left: 0px; }
     filechooser placessidebar.sidebar row.sidebar-row:disabled, filechooser placessidebar.sidebar row.sidebar-row:disabled label, filechooser placessidebar.sidebar row.sidebar-row:disabled image,
     .nautilus-window placessidebar.sidebar row.sidebar-row:disabled,
     .nautilus-window placessidebar.sidebar row.sidebar-row:disabled label,
     .nautilus-window placessidebar.sidebar row.sidebar-row:disabled image {
-      color: rgba(246, 246, 244, 0.26); }
+      color: rgba(246, 246, 244, 0.2); }
     filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup, filechooser placessidebar.sidebar row.sidebar-row:selected, filechooser placessidebar.sidebar row.sidebar-row:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:active:hover,
     .nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup,
     .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
