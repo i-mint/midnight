@@ -1929,6 +1929,46 @@ headerbar switch:checked:disabled,
 .primary-toolbar switch:checked:disabled {
   background-image: -gtk-scaled(url("assets/switch-active-insensitive-header-dark.png"), url("assets/switch-active-insensitive-header-dark@2.png")); }
 
+.nautilus-window popover stack box > modelbutton:active {
+  background-color: transparent; }
+.nautilus-window popover stack box > modelbutton check:hover {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-hover-dark.png"), url("assets/checkbox-unchecked-hover-dark@2.png")); }
+
+.nautilus-window popover stack box > modelbutton:active {
+  background-color: transparent; }
+.nautilus-window popover stack box > modelbutton check:hover:insensitive {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-hover-insensitive-dark.png"), url("assets/checkbox-unchecked-hover-insensitive-dark@2.png")); }
+
+.nautilus-window popover stack box > modelbutton:active {
+  background-color: transparent; }
+.nautilus-window popover stack box > modelbutton check:active {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-dark.png"), url("assets/checkbox-checked-dark@2.png")); }
+
+.nautilus-window popover stack box > modelbutton:active {
+  background-color: transparent; }
+.nautilus-window popover stack box > modelbutton check:checked:hover {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-dark.png"), url("assets/checkbox-checked-dark@2.png")); }
+
+.nautilus-window popover stack box > modelbutton:active {
+  background-color: transparent; }
+.nautilus-window popover stack box > modelbutton radio:hover {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-hover-dark.png"), url("assets/radio-unchecked-hover-dark@2.png")); }
+
+.nautilus-window popover stack box > modelbutton:active {
+  background-color: transparent; }
+.nautilus-window popover stack box > modelbutton radio:hover:insensitive {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-hover-insensitive-dark.png"), url("assets/radio-unchecked-hover-insensitive-dark@2.png")); }
+
+.nautilus-window popover stack box > modelbutton:active {
+  background-color: transparent; }
+.nautilus-window popover stack box > modelbutton radio:active {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-dark.png"), url("assets/radio-checked-dark@2.png")); }
+
+.nautilus-window popover stack box > modelbutton:active {
+  background-color: transparent; }
+.nautilus-window popover stack box > modelbutton radio:checked:hover {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-dark.png"), url("assets/radio-checked-dark@2.png")); }
+
 .check,
 check,
 treeview.check {
