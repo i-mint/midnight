@@ -3800,6 +3800,24 @@ widget .clocks-button {
     color: #ffffff;
     background-color: #00e251; }
 
+.thunar .sidebar .view, .thunar .sidebar iconview {
+  background-color: rgba(8, 28, 15, 0.95);
+  color: #00c848; }
+  .thunar .sidebar .view.cell:selected, .thunar .sidebar iconview.cell:selected, .thunar .sidebar .view.cell:selected:hover, .thunar .sidebar iconview.cell:selected:hover {
+    background: #00C848;
+    color: #ffffff; }
+  .thunar .sidebar .view.cell:hover, .thunar .sidebar iconview.cell:hover, .thunar .sidebar .view.cell:active, .thunar .sidebar iconview.cell:active {
+    background-color: rgba(16, 56, 30, 0.95);
+    color: #ffffff; }
+.thunar notebook .view, .thunar notebook iconview {
+  background-color: #081C0F;
+  color: #F6F6F4; }
+  .thunar notebook .view .rubberband, .thunar notebook iconview .rubberband {
+    background-color: rgba(0, 149, 54, 0.2); }
+  .thunar notebook .view:selected, .thunar notebook iconview:selected {
+    background-color: #00C848;
+    color: #ffffff; }
+
 UnityDecoration {
   -UnityDecoration-extents: 28px 1 1 1;
   -UnityDecoration-input-extents: 10px;
