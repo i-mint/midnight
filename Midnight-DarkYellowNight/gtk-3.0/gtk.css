@@ -4874,27 +4874,38 @@ filechooser placessidebar.sidebar scrollbar,
       .budgie-panel widget button:checked image {
         color: #ffffff; }
   .budgie-panel .workspace-switcher .workspace-layout {
-    background-color: rgba(68, 68, 20, 0.95);
-    color: #ffffff; }
+    background-color: rgba(9, 9, 3, 0.95);
+    color: #F6F6F4; }
+  .budgie-panel .workspace-switcher .workspace-item {
+    background-color: rgba(9, 9, 3, 0.95);
+    color: #F6F6F4; }
+    .budgie-panel .workspace-switcher .workspace-item grid {
+      background-color: transparent;
+      color: #F6F6F4;
+      margin-left: 2px;
+      margin-right: 2px;
+      border-left: 2px solid rgba(246, 246, 244, 0.23); }
   .budgie-panel .workspace-switcher .current-workspace {
-    background-color: #7E7E23;
-    color: #ffffff; }
+    background-color: rgba(40, 40, 12, 0.95);
+    color: #F6F6F4; }
+    .budgie-panel .workspace-switcher .current-workspace grid {
+      background-color: rgba(40, 40, 12, 0.95);
+      color: #F6F6F4;
+      margin-left: 2px;
+      margin-right: 2px;
+      border-left: 2px solid #7E7E23; }
   .budgie-panel .workspace-switcher .workspace-add-button {
     background-color: transparent; }
     .budgie-panel .workspace-switcher .workspace-add-button image {
       color: #F6F6F4; }
     .budgie-panel .workspace-switcher .workspace-add-button:hover {
-      background-color: rgba(126, 126, 35, 0.23);
-      color: #ffffff; }
+      background-color: transparent; }
       .budgie-panel .workspace-switcher .workspace-add-button:hover image {
-        color: #ffffff;
-        background-color: transparent; }
+        color: #7E7E23; }
     .budgie-panel .workspace-switcher .workspace-add-button:active {
-      background-color: #7E7E23;
-      color: #ffffff; }
+      background-color: rgba(9, 9, 3, 0.95); }
       .budgie-panel .workspace-switcher .workspace-add-button:active image {
-        color: #ffffff;
-        background-color: transparent; }
+        color: #a6a62e; }
 
 .budgie-popover {
   border-style: none;
