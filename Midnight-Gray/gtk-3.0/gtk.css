@@ -4932,3 +4932,9 @@ filechooser placessidebar.sidebar scrollbar,
       box-shadow: 1px 2px rgba(0, 0, 0, 0.11); }
       .budgie-run-dialog entry.search:focus label, .budgie-run-dialog entry.search:focus image {
         color: #141414; }
+
+.background headerbar entry.pathbar {
+  margin: 0px;
+  padding: 0px;
+  padding-left: 4px;
+  padding-right: 4px; }
