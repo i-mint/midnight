@@ -1589,6 +1589,43 @@ popover.background {
   background-clip: border-box;
   background-color: #08111C;
   box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.35); }
+  popover label,
+  popover.background label {
+    color: #F6F6F4;
+    font-style: normal;
+    font-weight: normal;
+    text-shadow: none; }
+  popover .sidebar .view, popover .sidebar iconview, popover treeview .view, popover treeview iconview,
+  popover.background .sidebar .view,
+  popover.background .sidebar iconview,
+  popover.background treeview .view,
+  popover.background treeview iconview {
+    color: #F6F6F4;
+    font-style: normal;
+    font-weight: normal;
+    text-shadow: none; }
+    popover .sidebar .view:hover, popover .sidebar iconview:hover, popover treeview .view:hover, popover treeview iconview:hover,
+    popover.background .sidebar .view:hover,
+    popover.background .sidebar iconview:hover,
+    popover.background treeview .view:hover,
+    popover.background treeview iconview:hover {
+      color: #F6F6F4;
+      background-color: #142b48; }
+    popover .sidebar .view:selected, popover .sidebar iconview:selected, popover .sidebar .view:active, popover .sidebar iconview:active, popover .sidebar .view:checked, popover .sidebar iconview:checked, popover treeview .view:selected, popover treeview iconview:selected, popover treeview .view:active, popover treeview iconview:active, popover treeview .view:checked, popover treeview iconview:checked,
+    popover.background .sidebar .view:selected,
+    popover.background .sidebar iconview:selected,
+    popover.background .sidebar .view:active,
+    popover.background .sidebar iconview:active,
+    popover.background .sidebar .view:checked,
+    popover.background .sidebar iconview:checked,
+    popover.background treeview .view:selected,
+    popover.background treeview iconview:selected,
+    popover.background treeview .view:active,
+    popover.background treeview iconview:active,
+    popover.background treeview .view:checked,
+    popover.background treeview iconview:checked {
+      color: #ffffff;
+      background-color: #2D90FF; }
   .csd popover, popover, .csd
   popover.background,
   popover.background {
