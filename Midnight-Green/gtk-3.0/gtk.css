@@ -4464,7 +4464,7 @@ filechooser headerbar widget stack box.path-bar-box,
   .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar row {
     background-color: transparent;
     color: #00c848; }
-    .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
+    .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar .view.cell:selected:hover, .nemo-window .sidebar iconview.cell:selected:hover, .nemo-window .sidebar row.cell:selected, .nemo-window .sidebar row.cell:selected:hover {
       background-color: #00C848;
       color: #ffffff; }
     .nemo-window .sidebar .view.cell:hover, .nemo-window .sidebar iconview.cell:hover, .nemo-window .sidebar row.cell:hover {
