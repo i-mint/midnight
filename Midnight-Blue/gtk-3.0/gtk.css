@@ -1537,6 +1537,39 @@ popover, popover.background {
   background-clip: border-box;
   background-color: #08111C;
   box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.35); }
+  popover stack button,
+  popover.background stack button {
+    background-color: #08111C;
+    border-color: transparent;
+    color: #2D90FF; }
+    popover stack button label, popover stack button image,
+    popover.background stack button label,
+    popover.background stack button image {
+      color: #2D90FF; }
+    popover stack button:hover,
+    popover.background stack button:hover {
+      background-color: #222830;
+      border-color: transparent;
+      color: #ffffff; }
+      popover stack button:hover label, popover stack button:hover image,
+      popover.background stack button:hover label,
+      popover.background stack button:hover image {
+        color: #ffffff; }
+    popover stack button:active, popover stack button:focus, popover stack button:checked,
+    popover.background stack button:active,
+    popover.background stack button:focus,
+    popover.background stack button:checked {
+      background-color: #2D90FF;
+      border-color: transparent;
+      color: #ffffff; }
+      popover stack button:active label, popover stack button:active image, popover stack button:focus label, popover stack button:focus image, popover stack button:checked label, popover stack button:checked image,
+      popover.background stack button:active label,
+      popover.background stack button:active image,
+      popover.background stack button:focus label,
+      popover.background stack button:focus image,
+      popover.background stack button:checked label,
+      popover.background stack button:checked image {
+        color: #ffffff; }
   popover label,
   popover.background label {
     color: #F6F6F4;
@@ -1590,6 +1623,8 @@ popover, popover.background {
   popover.background > .inline-toolbar {
     border-style: none;
     background-color: transparent; }
+  popover stack label, popover stack image, popover.background stack label, popover.background stack image {
+    color: #2D90FF; }
 
 cursor-handle {
   background-color: transparent;
@@ -1883,44 +1918,76 @@ headerbar switch:checked:disabled,
 .primary-toolbar switch:checked:disabled {
   background-image: -gtk-scaled(url("assets/switch-active-insensitive-header-dark.png"), url("assets/switch-active-insensitive-header-dark@2.png")); }
 
-.nautilus-window popover stack box > modelbutton:active {
+.nautilus-window popover stack box > modelbutton:hover label, popover stack box > modelbutton:hover label {
+  color: #ffffff;
+  font-weight: normal;
+  box-shadow: none; }
+.nautilus-window popover stack box > modelbutton:active, popover stack box > modelbutton:active {
   background-color: transparent; }
-.nautilus-window popover stack box > modelbutton check:hover {
+.nautilus-window popover stack box > modelbutton check:hover, popover stack box > modelbutton check:hover {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-hover-dark.png"), url("assets/checkbox-unchecked-hover-dark@2.png")); }
 
-.nautilus-window popover stack box > modelbutton:active {
+.nautilus-window popover stack box > modelbutton:hover label, popover stack box > modelbutton:hover label {
+  color: #ffffff;
+  font-weight: normal;
+  box-shadow: none; }
+.nautilus-window popover stack box > modelbutton:active, popover stack box > modelbutton:active {
   background-color: transparent; }
-.nautilus-window popover stack box > modelbutton check:hover:insensitive {
+.nautilus-window popover stack box > modelbutton check:hover:insensitive, popover stack box > modelbutton check:hover:insensitive {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-hover-insensitive-dark.png"), url("assets/checkbox-unchecked-hover-insensitive-dark@2.png")); }
 
-.nautilus-window popover stack box > modelbutton:active {
+.nautilus-window popover stack box > modelbutton:hover label, popover stack box > modelbutton:hover label {
+  color: #ffffff;
+  font-weight: normal;
+  box-shadow: none; }
+.nautilus-window popover stack box > modelbutton:active, popover stack box > modelbutton:active {
   background-color: transparent; }
-.nautilus-window popover stack box > modelbutton check:active {
+.nautilus-window popover stack box > modelbutton check:active, popover stack box > modelbutton check:active {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-dark.png"), url("assets/checkbox-checked-dark@2.png")); }
 
-.nautilus-window popover stack box > modelbutton:active {
+.nautilus-window popover stack box > modelbutton:hover label, popover stack box > modelbutton:hover label {
+  color: #ffffff;
+  font-weight: normal;
+  box-shadow: none; }
+.nautilus-window popover stack box > modelbutton:active, popover stack box > modelbutton:active {
   background-color: transparent; }
-.nautilus-window popover stack box > modelbutton check:checked:hover {
+.nautilus-window popover stack box > modelbutton check:checked:hover, popover stack box > modelbutton check:checked:hover {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-dark.png"), url("assets/checkbox-checked-dark@2.png")); }
 
-.nautilus-window popover stack box > modelbutton:active {
+.nautilus-window popover stack box > modelbutton:hover label, popover stack box > modelbutton:hover label {
+  color: #ffffff;
+  font-weight: normal;
+  box-shadow: none; }
+.nautilus-window popover stack box > modelbutton:active, popover stack box > modelbutton:active {
   background-color: transparent; }
-.nautilus-window popover stack box > modelbutton radio:hover {
+.nautilus-window popover stack box > modelbutton radio:hover, popover stack box > modelbutton radio:hover {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-hover-dark.png"), url("assets/radio-unchecked-hover-dark@2.png")); }
 
-.nautilus-window popover stack box > modelbutton:active {
+.nautilus-window popover stack box > modelbutton:hover label, popover stack box > modelbutton:hover label {
+  color: #ffffff;
+  font-weight: normal;
+  box-shadow: none; }
+.nautilus-window popover stack box > modelbutton:active, popover stack box > modelbutton:active {
   background-color: transparent; }
-.nautilus-window popover stack box > modelbutton radio:hover:insensitive {
+.nautilus-window popover stack box > modelbutton radio:hover:insensitive, popover stack box > modelbutton radio:hover:insensitive {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-hover-insensitive-dark.png"), url("assets/radio-unchecked-hover-insensitive-dark@2.png")); }
 
-.nautilus-window popover stack box > modelbutton:active {
+.nautilus-window popover stack box > modelbutton:hover label, popover stack box > modelbutton:hover label {
+  color: #ffffff;
+  font-weight: normal;
+  box-shadow: none; }
+.nautilus-window popover stack box > modelbutton:active, popover stack box > modelbutton:active {
   background-color: transparent; }
-.nautilus-window popover stack box > modelbutton radio:active {
+.nautilus-window popover stack box > modelbutton radio:active, popover stack box > modelbutton radio:active {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-dark.png"), url("assets/radio-checked-dark@2.png")); }
 
-.nautilus-window popover stack box > modelbutton:active {
+.nautilus-window popover stack box > modelbutton:hover label, popover stack box > modelbutton:hover label {
+  color: #ffffff;
+  font-weight: normal;
+  box-shadow: none; }
+.nautilus-window popover stack box > modelbutton:active, popover stack box > modelbutton:active {
   background-color: transparent; }
-.nautilus-window popover stack box > modelbutton radio:checked:hover {
+.nautilus-window popover stack box > modelbutton radio:checked:hover, popover stack box > modelbutton radio:checked:hover {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-dark.png"), url("assets/radio-checked-dark@2.png")); }
 
 .check,
