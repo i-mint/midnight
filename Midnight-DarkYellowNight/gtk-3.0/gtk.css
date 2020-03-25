@@ -3981,6 +3981,18 @@ widget .clocks-button {
   .thunar notebook .view:selected, .thunar notebook iconview:selected {
     background-color: #7E7E23;
     color: #ffffff; }
+.thunar notebook tabs > tab button.flat image, .thunar notebook tabs > tab button.sidebar-button image {
+  background-color: transparent;
+  border: 0.5px solid transparent;
+  border-radius: 2px; }
+.thunar notebook tabs > tab button.flat:hover image, .thunar notebook tabs > tab button.sidebar-button:hover image {
+  background-color: rgba(126, 126, 35, 0.45);
+  border: 0.5px solid #030301;
+  border-radius: 2px; }
+.thunar notebook tabs > tab button.flat:active image, .thunar notebook tabs > tab button.sidebar-button:active image {
+  background-color: rgba(126, 126, 35, 0.67);
+  border: 0.5px solid #030301;
+  border-radius: 2px; }
 
 UnityDecoration {
   -UnityDecoration-extents: 28px 1 1 1;
