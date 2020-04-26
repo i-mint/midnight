@@ -69,7 +69,7 @@ stage {
 StEntry {
   padding: 7px;
   caret-size: 1px;
-  caret-color: #f6f6f4;
+  caret-color: #141414;
   selection-background-color: #969696;
   selected-color: #141414;
   transition-duration: 300ms;
@@ -92,6 +92,9 @@ StEntry {
     icon-size: 16px;
     warning-color: #F27835;
     padding: 0 4px; }
+  StEntry StLabel.hint-text {
+    margin-left: 2px;
+    color: rgba(246, 246, 244, 0.56); }
 
 StScrollView.vfade {
   -st-vfade-offset: 0px; }
@@ -130,6 +133,7 @@ StScrollBar {
   -slider-active-border-color: rgba(0, 0, 0, 0);
   -slider-border-width: 0;
   -slider-handle-radius: 0px;
+  -slider-handle-border-color: #141414;
   height: 18px;
   border: 0 solid transparent;
   border-right-width: 1px;
@@ -706,6 +710,14 @@ StScrollBar {
       color: white; }
       .unlock-screen #panel .panel-button:focus, .unlock-screen #panel .panel-button:hover, .unlock-screen #panel .panel-button:active, .login-screen #panel .panel-button:focus, .login-screen #panel .panel-button:hover, .login-screen #panel .panel-button:active, .lock-screen #panel .panel-button:focus, .lock-screen #panel .panel-button:hover, .lock-screen #panel .panel-button:active {
         color: white; }
+  #panel .panel-button.clock-display .clock {
+    color: white; }
+  #panel .panel-button.clock-display:active, #panel .panel-button.clock-display:overview, #panel .panel-button.clock-display:focus, #panel .panel-button.clock-display:checked {
+    box-shadow: none; }
+    #panel .panel-button.clock-display:active .clock, #panel .panel-button.clock-display:overview .clock, #panel .panel-button.clock-display:focus .clock, #panel .panel-button.clock-display:checked .clock {
+      color: #141414;
+      background-color: #969696;
+      box-shadow: none; }
   #panel #panelActivities.panel-button {
     -natural-hpadding: 12px; }
   #panel .panel-status-indicators-box,
@@ -784,7 +796,9 @@ StScrollBar {
   padding: 0.75em 1.0em; }
 
 .calendar {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  background-color: transparent;
+  border-color: transparent; }
 
 .calendar,
 .datemenu-today-button,
@@ -864,6 +878,70 @@ StScrollBar {
 
 .weather-box {
   spacing: 0.4em; }
+
+.world-clocks-button {
+  color: rgba(246, 246, 244, 0.56);
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 4px;
+  padding: 2px; }
+  .world-clocks-button:hover {
+    background-color: #303030; }
+  .world-clocks-button:active {
+    background-color: #969696; }
+    .world-clocks-button:active .world-clocks-header, .world-clocks-button:active .worlds-clocks-grid, .world-clocks-button:active .world-clocks-city, .world-clocks-button:active .world-clocks-time, .world-clocks-button:active .world-clocks-timezone {
+      color: #141414; }
+  .world-clocks-button .world-clocks-header {
+    color: #f6f6f4;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 0px; }
+  .world-clocks-button .world-clocks-grid {
+    color: rgba(246, 246, 244, 0.56);
+    background-color: transparent;
+    padding-top: 0px; }
+  .world-clocks-button .world-clocks-city {
+    color: rgba(246, 246, 244, 0.56);
+    background-color: transparent;
+    padding-top: 4px; }
+  .world-clocks-button .world-clocks-time {
+    color: rgba(246, 246, 244, 0.56);
+    background-color: transparent;
+    padding-top: 4px; }
+  .world-clocks-button .world-clocks-timezone {
+    color: rgba(246, 246, 244, 0.56);
+    background-color: transparent;
+    padding-top: 0px; }
+
+.weather-button {
+  color: rgba(246, 246, 244, 0.56);
+  background-color: transparent;
+  border-bottom-width: 2px;
+  border-color: transparent;
+  border-radius: 4px;
+  padding: 2px; }
+  .weather-button:hover {
+    background-color: #303030; }
+  .weather-button:active {
+    background-color: #969696; }
+    .weather-button:active .weather-header, .weather-button:active .weather-grid, .weather-button:active .weather-forecast-time {
+      color: #141414; }
+  .weather-button .weather-box {
+    background-color: transparent; }
+  .weather-button .weather-header-box {
+    background-color: transparent; }
+  .weather-button .weather-header {
+    background-color: transparent;
+    color: #f6f6f4; }
+    .weather-button .weather-header.location {
+      background-color: transparent;
+      color: #f6f6f4; }
+  .weather-button .weather-grid {
+    background-color: transparent;
+    color: rgba(246, 246, 244, 0.56); }
+  .weather-button .weather-forecast-time {
+    background-color: transparent;
+    color: rgba(246, 246, 244, 0.56); }
 
 .calendar-month-label {
   color: #f6f6f4;
@@ -1080,17 +1158,23 @@ StScrollBar {
   icon-size: 16px; }
 
 .window-close {
+  border-image: url("common-assets/misc/close.svg");
   background-image: url("common-assets/misc/close.svg");
+  background-color: transparent;
   background-size: 26px;
   height: 26px;
   width: 26px; }
   .window-close:hover {
+    border-image: url("common-assets/misc/close-hover.svg");
     background-image: url("common-assets/misc/close-hover.svg");
+    background-color: transparent;
     background-size: 26px;
     height: 26px;
     width: 26px; }
   .window-close:active {
+    border-image: url("common-assets/misc/close-active.svg");
     background-image: url("common-assets/misc/close-active.svg");
+    background-color: transparent;
     background-size: 26px;
     height: 26px;
     width: 26px; }
