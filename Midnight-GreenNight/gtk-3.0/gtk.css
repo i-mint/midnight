@@ -4446,7 +4446,8 @@ filechooser.csd.background, filechooser placessidebar list,
   background-color: transparent; }
 filechooser placessidebar.sidebar,
 .nautilus-window placessidebar.sidebar {
-  background-color: rgba(8, 28, 15, 0.95); }
+  background-color: rgba(8, 28, 15, 0.95);
+  margin-top: -4px; }
   filechooser placessidebar.sidebar row.sidebar-row,
   .nautilus-window placessidebar.sidebar row.sidebar-row {
     border-left: 2px solid transparent;
