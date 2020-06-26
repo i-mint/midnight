@@ -4506,21 +4506,21 @@ filechooser headerbar widget stack box.path-bar-box,
       .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:checked label,
       .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:checked image {
         color: #141414; }
-    filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:not(:nth-child(1)),
-    .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:not(:nth-child(1)) {
+    filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child,
+    .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child {
       color: #141414;
       background-color: #969696;
       border-color: #1E1E1E;
       font-weight: bold; }
-      filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:not(:nth-child(1)) label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:not(:nth-child(1)) image,
-      .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:not(:nth-child(1)) label,
-      .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:not(:nth-child(1)) image {
+      filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child image,
+      .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child label,
+      .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child image {
         color: #141414; }
-      filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:not(:nth-child(1)):hover,
-      .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:not(:nth-child(1)):hover {
+      filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child:hover,
+      .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child:hover {
         background-color: #9c9c9c; }
-      filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:not(:nth-child(1)):active,
-      .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:not(:nth-child(1)):active {
+      filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child:active,
+      .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child:active {
         background-color: #9e9e9e; }
   filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button,
   .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button {
@@ -5175,6 +5175,16 @@ overlay calendar-view event {
   background-color: #969696;
   color: #141414;
   border-radius: 2px; }
+.raven-frame calendar.raven-calendar.header {
+  color: #969696;
+  border: none;
+  border-radius: 0; }
+.raven-frame calendar.raven-calendar.button, .raven-frame calendar.raven-calendar.button:focus {
+  color: rgba(150, 150, 150, 0.5);
+  background-color: transparent; }
+  .raven-frame calendar.raven-calendar.button:hover, .raven-frame calendar.raven-calendar.button:focus:hover {
+    color: #969696;
+    background-color: transparent; }
 
 .background headerbar entry.pathbar {
   margin: 0px;
