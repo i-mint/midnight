@@ -4782,7 +4782,7 @@ overlay calendar-view event {
 @define-color theme_bg_color #1E1E1E;
 @define-color theme_base_color #1E1E1E;
 @define-color theme_selected_bg_color #969696;
-@define-color theme_selected_fg_color #141414;
+@define-color theme_selected_fg_color #F6F6F4;
 @define-color fg_color #F6F6F4;
 @define-color text_color #F6F6F4;
 @define-color bg_color #1E1E1E;
