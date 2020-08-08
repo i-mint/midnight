@@ -3055,7 +3055,7 @@ iconview text:selected,
 textview text:selected,
 .view text:selected:focus,
 iconview text:selected:focus,
-textview text:selected:focus, flowbox flowboxchild:selected, entry selection:focus, entry selection, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
+textview text:selected:focus, flowbox flowboxchild:selected, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
 modelbutton.flat:active,
 modelbutton.flat:active arrow,
 modelbutton.flat:selected,
@@ -3067,7 +3067,7 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
   textview text:selected,
   .view text:selected:focus,
   iconview text:selected:focus,
-  textview text:selected:focus, flowbox flowboxchild:selected, entry selection:focus, entry selection, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
+  textview text:selected:focus, flowbox flowboxchild:selected, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
   modelbutton.flat:active,
   modelbutton.flat:active arrow,
   modelbutton.flat:selected,
@@ -3078,7 +3078,7 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
     iconview text:backdrop:selected,
     textview text:backdrop:selected,
     iconview text:backdrop:selected:focus,
-    textview text:backdrop:selected:focus, flowbox flowboxchild:backdrop:selected, entry selection:backdrop, menuitem.button.flat:backdrop:active, menuitem.button.flat:active arrow:backdrop, menuitem.button.flat:backdrop:selected, menuitem.button.flat:selected arrow:backdrop,
+    textview text:backdrop:selected:focus, flowbox flowboxchild:backdrop:selected, menuitem.button.flat:backdrop:active, menuitem.button.flat:active arrow:backdrop, menuitem.button.flat:backdrop:selected, menuitem.button.flat:selected arrow:backdrop,
     modelbutton.flat:backdrop:active,
     modelbutton.flat:active arrow:backdrop,
     modelbutton.flat:backdrop:selected,
@@ -3089,7 +3089,7 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
     iconview text:disabled:selected,
     textview text:disabled:selected,
     iconview text:disabled:selected:focus,
-    textview text:disabled:selected:focus, flowbox flowboxchild:disabled:selected, label:disabled selection, entry selection:disabled, menuitem.button.flat:disabled:active, menuitem.button.flat:active arrow:disabled, menuitem.button.flat:disabled:selected, menuitem.button.flat:selected arrow:disabled,
+    textview text:disabled:selected:focus, flowbox flowboxchild:disabled:selected, label:disabled selection, menuitem.button.flat:disabled:active, menuitem.button.flat:active arrow:disabled, menuitem.button.flat:disabled:selected, menuitem.button.flat:selected arrow:disabled,
     modelbutton.flat:disabled:active,
     modelbutton.flat:active arrow:disabled,
     modelbutton.flat:disabled:selected,
@@ -3100,7 +3100,7 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
   iconview text:backdrop:selected,
   textview text:backdrop:selected,
   iconview text:backdrop:selected:focus,
-  textview text:backdrop:selected:focus, flowbox flowboxchild:backdrop:selected, entry selection:backdrop, menuitem.button.flat:backdrop:active, menuitem.button.flat:active arrow:backdrop, menuitem.button.flat:backdrop:selected, menuitem.button.flat:selected arrow:backdrop,
+  textview text:backdrop:selected:focus, flowbox flowboxchild:backdrop:selected, menuitem.button.flat:backdrop:active, menuitem.button.flat:active arrow:backdrop, menuitem.button.flat:backdrop:selected, menuitem.button.flat:selected arrow:backdrop,
   modelbutton.flat:backdrop:active,
   modelbutton.flat:active arrow:backdrop,
   modelbutton.flat:backdrop:selected,
@@ -3120,6 +3120,18 @@ grid box widget button image {
   color: #2D90FF; }
 grid box widget button:hover image {
   color: #60abff; }
+
+entry selection:focus, entry selection {
+  background-color: #ffffff; }
+  entry selection:focus, entry selection {
+    color: #2D90FF; }
+    entry selection:backdrop {
+      color: rgba(45, 144, 255, 0.45); }
+    entry selection:disabled {
+      color: #96c8ff; }
+  entry selection:backdrop {
+    background-color: rgba(255, 255, 255, 0.45);
+    color: rgba(45, 144, 255, 0.45); }
 
 .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked,
 terminal-window notebook > header.top > tabs > tab:checked {
@@ -3755,7 +3767,7 @@ panel-toplevel.background na-tray-applet {
     border-left: 2px solid #2D90FF; }
 
 .xfce4-panel wnck-pager {
-  background-color: rgba(45, 144, 255, 0.12);
+  background-color: rgba(45, 144, 255, 0.23);
   color: #ffffff; }
 
 .mate-panel-menu-bar button:not(#tasklist-button),
@@ -3993,6 +4005,41 @@ widget .clocks-button {
   background-color: rgba(45, 144, 255, 0.67);
   border: 0.5px solid #010304;
   border-radius: 2px; }
+
+#whiskermenu-window {
+  background-color: #08111C;
+  color: #F6F6F4; }
+  #whiskermenu-window stack {
+    background-color: #08111C;
+    color: #F6F6F4; }
+  #whiskermenu-window .view, #whiskermenu-window iconview {
+    background-color: #08111C;
+    color: #F6F6F4; }
+    #whiskermenu-window .view:selected, #whiskermenu-window iconview:selected {
+      background-color: #142b48; }
+  #whiskermenu-window button {
+    margin-right: 9px;
+    background-color: rgba(8, 17, 28, 0.95);
+    color: #F6F6F4; }
+    #whiskermenu-window button:hover {
+      background-color: #1e3f67;
+      color: #F6F6F4; }
+    #whiskermenu-window button:active, #whiskermenu-window button:checked {
+      background-color: #2D90FF;
+      color: #ffffff; }
+  #whiskermenu-window entry:focus, #whiskermenu-window entry.search {
+    color: #ffffff;
+    border-color: #0d1b2c;
+    background-color: #2D90FF;
+    box-shadow: inset 1px 0 #2D90FF, inset -1px 0 #2D90FF, inset 0 1px #2D90FF, inset 0 -1px #2D90FF; }
+    #whiskermenu-window entry:focus image, #whiskermenu-window entry:focus image:hover, #whiskermenu-window entry.search image, #whiskermenu-window entry.search image:hover {
+      color: inherit; }
+
+#whiskermenu-button {
+  color: #ffffff;
+  border-left: 22px solid rgba(45, 144, 255, 0.34);
+  border-right: 22px solid rgba(45, 144, 255, 0.34);
+  background-color: rgba(45, 144, 255, 0.34); }
 
 UnityDecoration {
   -UnityDecoration-extents: 28px 1 1 1;

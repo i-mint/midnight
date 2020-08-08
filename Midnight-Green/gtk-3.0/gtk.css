@@ -3035,7 +3035,7 @@ iconview text:selected,
 textview text:selected,
 .view text:selected:focus,
 iconview text:selected:focus,
-textview text:selected:focus, flowbox flowboxchild:selected, entry selection:focus, entry selection, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
+textview text:selected:focus, flowbox flowboxchild:selected, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
 modelbutton.flat:active,
 modelbutton.flat:active arrow,
 modelbutton.flat:selected,
@@ -3051,7 +3051,7 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
   textview text:selected,
   .view text:selected:focus,
   iconview text:selected:focus,
-  textview text:selected:focus, flowbox flowboxchild:selected, entry selection:focus, entry selection, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
+  textview text:selected:focus, flowbox flowboxchild:selected, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
   modelbutton.flat:active,
   modelbutton.flat:active arrow,
   modelbutton.flat:selected,
@@ -3066,7 +3066,7 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
     iconview text:backdrop:selected,
     textview text:backdrop:selected,
     iconview text:backdrop:selected:focus,
-    textview text:backdrop:selected:focus, flowbox flowboxchild:backdrop:selected, entry selection:backdrop, menuitem.button.flat:backdrop:active, menuitem.button.flat:active arrow:backdrop, menuitem.button.flat:backdrop:selected, menuitem.button.flat:selected arrow:backdrop,
+    textview text:backdrop:selected:focus, flowbox flowboxchild:backdrop:selected, menuitem.button.flat:backdrop:active, menuitem.button.flat:active arrow:backdrop, menuitem.button.flat:backdrop:selected, menuitem.button.flat:selected arrow:backdrop,
     modelbutton.flat:backdrop:active,
     modelbutton.flat:active arrow:backdrop,
     modelbutton.flat:backdrop:selected,
@@ -3079,7 +3079,7 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
     iconview text:disabled:selected,
     textview text:disabled:selected,
     iconview text:disabled:selected:focus,
-    textview text:disabled:selected:focus, flowbox flowboxchild:disabled:selected, label:disabled selection, entry selection:disabled, menuitem.button.flat:disabled:active, menuitem.button.flat:active arrow:disabled, menuitem.button.flat:disabled:selected, menuitem.button.flat:selected arrow:disabled,
+    textview text:disabled:selected:focus, flowbox flowboxchild:disabled:selected, label:disabled selection, menuitem.button.flat:disabled:active, menuitem.button.flat:active arrow:disabled, menuitem.button.flat:disabled:selected, menuitem.button.flat:selected arrow:disabled,
     modelbutton.flat:disabled:active,
     modelbutton.flat:active arrow:disabled,
     modelbutton.flat:disabled:selected,
@@ -3092,7 +3092,7 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
   iconview text:backdrop:selected,
   textview text:backdrop:selected,
   iconview text:backdrop:selected:focus,
-  textview text:backdrop:selected:focus, flowbox flowboxchild:backdrop:selected, entry selection:backdrop, menuitem.button.flat:backdrop:active, menuitem.button.flat:active arrow:backdrop, menuitem.button.flat:backdrop:selected, menuitem.button.flat:selected arrow:backdrop,
+  textview text:backdrop:selected:focus, flowbox flowboxchild:backdrop:selected, menuitem.button.flat:backdrop:active, menuitem.button.flat:active arrow:backdrop, menuitem.button.flat:backdrop:selected, menuitem.button.flat:selected arrow:backdrop,
   modelbutton.flat:backdrop:active,
   modelbutton.flat:active arrow:backdrop,
   modelbutton.flat:backdrop:selected,
@@ -3114,6 +3114,18 @@ grid box widget button image {
   color: #00C848; }
 grid box widget button:hover image {
   color: #00fb5a; }
+
+entry selection:focus, entry selection {
+  background-color: #040E04; }
+  entry selection:focus, entry selection {
+    color: #00C848; }
+    entry selection:backdrop {
+      color: rgba(0, 200, 72, 0.45); }
+    entry selection:disabled {
+      color: #026b26; }
+  entry selection:backdrop {
+    background-color: rgba(4, 14, 4, 0.45);
+    color: rgba(0, 200, 72, 0.45); }
 
 .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked,
 terminal-window notebook > header.top > tabs > tab:checked {
@@ -3966,6 +3978,41 @@ widget .clocks-button {
   background-color: rgba(0, 200, 72, 0.67);
   border: 0.5px solid #010402;
   border-radius: 2px; }
+
+#whiskermenu-window {
+  background-color: #081C0F;
+  color: #F6F6F4; }
+  #whiskermenu-window stack {
+    background-color: #081C0F;
+    color: #F6F6F4; }
+  #whiskermenu-window .view, #whiskermenu-window iconview {
+    background-color: #081C0F;
+    color: #F6F6F4; }
+    #whiskermenu-window .view:selected, #whiskermenu-window iconview:selected {
+      background-color: #144826; }
+  #whiskermenu-window button {
+    margin-right: 9px;
+    background-color: rgba(8, 28, 15, 0.95);
+    color: #00c848; }
+    #whiskermenu-window button:hover {
+      background-color: #1e6737;
+      color: #F6F6F4; }
+    #whiskermenu-window button:active, #whiskermenu-window button:checked {
+      background-color: #00C848;
+      color: #040E04; }
+  #whiskermenu-window entry:focus, #whiskermenu-window entry.search {
+    color: #040E04;
+    border-color: #091e10;
+    background-color: #00C848;
+    box-shadow: inset 1px 0 #00C848, inset -1px 0 #00C848, inset 0 1px #00C848, inset 0 -1px #00C848; }
+    #whiskermenu-window entry:focus image, #whiskermenu-window entry:focus image:hover, #whiskermenu-window entry.search image, #whiskermenu-window entry.search image:hover {
+      color: inherit; }
+
+#whiskermenu-button {
+  color: #040E04;
+  border-left: 22px solid rgba(0, 200, 72, 0.34);
+  border-right: 22px solid rgba(0, 200, 72, 0.34);
+  background-color: rgba(0, 200, 72, 0.34); }
 
 UnityDecoration {
   -UnityDecoration-extents: 28px 1 1 1;
