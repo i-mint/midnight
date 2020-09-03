@@ -273,7 +273,7 @@ button {
     background-clip: padding-box;
     transition-duration: 50ms; }
     button:active:backdrop, button:checked:backdrop {
-      color: rgba(246, 246, 244, 0.56); }
+      color: rgba(255, 255, 255, 0.56); }
     button:active:not(:disabled) label:disabled, button:checked:not(:disabled) label:disabled {
       color: inherit;
       opacity: 0.6; }
@@ -485,7 +485,7 @@ button {
     border-color: #1C0808;
     background-color: #B40021; }
     .inline-toolbar toolbutton > button:active:backdrop, .inline-toolbar toolbutton > button:checked:backdrop {
-      color: rgba(246, 246, 244, 0.56); }
+      color: rgba(255, 255, 255, 0.56); }
   .inline-toolbar toolbutton > button:disabled {
     border-color: rgba(28, 8, 8, 0.55);
     background-color: rgba(28, 8, 8, 0.55); }
@@ -2448,7 +2448,7 @@ scrolledwindow viewport combobox cellview {
   scrolledwindow viewport combobox cellview:backdrop {
     color: rgba(246, 246, 244, 0.56); }
   scrolledwindow viewport combobox cellview:hover:backdrop {
-    color: rgba(246, 246, 244, 0.56); }
+    color: rgba(255, 255, 255, 0.56); }
 scrolledwindow viewport combobox menuitem cellview {
   color: #B40021; }
 scrolledwindow viewport combobox menuitem:hover cellview {
@@ -3607,6 +3607,8 @@ button.documents-favorite:active:hover {
       background-color: #c80025;
       color: #ffffff;
       border-color: #B40021; }
+      .tweak-group #button-layout.tweak .text-button:checked:hover label {
+        color: #ffffff; }
   .tweak-group #button-layout.tweak .text-button:active {
     background-color: #581919;
     border-color: #581919;
@@ -3992,6 +3994,8 @@ widget .clocks-button {
   .thunar .sidebar .view.cell:selected, .thunar .sidebar iconview.cell:selected, .thunar .sidebar .view.cell:selected:hover, .thunar .sidebar iconview.cell:selected:hover {
     background: #B40021;
     color: #ffffff; }
+  .thunar .sidebar .view.cell:selected:backdrop, .thunar .sidebar iconview.cell:selected:backdrop {
+    color: rgba(255, 255, 255, 0.56); }
   .thunar .sidebar .view.cell:hover, .thunar .sidebar iconview.cell:hover, .thunar .sidebar .view.cell:active, .thunar .sidebar iconview.cell:active {
     background-color: rgba(56, 16, 16, 0.95);
     color: #ffffff; }
@@ -4390,7 +4394,7 @@ GtkListBox .h4 {
     border-color: #1C0808;
     background-color: #B40021; }
     #content_frame button:active:backdrop, #content_frame button:checked:backdrop {
-      color: rgba(246, 246, 244, 0.56); }
+      color: rgba(255, 255, 255, 0.56); }
   #content_frame button:disabled {
     border-color: rgba(28, 8, 8, 0.55);
     background-color: rgba(28, 8, 8, 0.55); }
@@ -4547,7 +4551,7 @@ filechooser placessidebar.sidebar,
         background-color: #B40021; }
         filechooser placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:active:backdrop,
         .nautilus-window placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:active:backdrop {
-          color: rgba(246, 246, 244, 0.56); }
+          color: rgba(255, 255, 255, 0.56); }
       filechooser placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:not(:hover):not(:active) > image,
       .nautilus-window placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:not(:hover):not(:active) > image {
         opacity: 0.5; }

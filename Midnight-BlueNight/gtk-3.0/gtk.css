@@ -3607,6 +3607,8 @@ button.documents-favorite:active:hover {
       background-color: #419bff;
       color: #ffffff;
       border-color: #2D90FF; }
+      .tweak-group #button-layout.tweak .text-button:checked:hover label {
+        color: #ffffff; }
   .tweak-group #button-layout.tweak .text-button:active {
     background-color: #193558;
     border-color: #193558;
@@ -3992,6 +3994,8 @@ widget .clocks-button {
   .thunar .sidebar .view.cell:selected, .thunar .sidebar iconview.cell:selected, .thunar .sidebar .view.cell:selected:hover, .thunar .sidebar iconview.cell:selected:hover {
     background: #2D90FF;
     color: #ffffff; }
+  .thunar .sidebar .view.cell:selected:backdrop, .thunar .sidebar iconview.cell:selected:backdrop {
+    color: rgba(255, 255, 255, 0.56); }
   .thunar .sidebar .view.cell:hover, .thunar .sidebar iconview.cell:hover, .thunar .sidebar .view.cell:active, .thunar .sidebar iconview.cell:active {
     background-color: rgba(16, 34, 56, 0.95);
     color: #ffffff; }

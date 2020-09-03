@@ -884,7 +884,6 @@ headerbar, .titlebar:not(headerbar) {
   border-style: solid;
   border-color: #0c0303;
   color: #B40021;
-  color: #a5001e;
   background-color: #1c0808;
   box-shadow: inset 0 1px #280b0b; }
   .csd headerbar,
@@ -1756,9 +1755,9 @@ notebook {
         border-left: 2px solid #a0001d;
         padding-left: 2px; }
         notebook > header > tabs > tab:checked:backdrop {
-          color: rgba(255, 255, 255, 0.45);
+          color: rgba(246, 246, 244, 0.45);
           border-left: 2px solid rgba(180, 0, 33, 0.45);
-          padding-left: 0px; }
+          padding-left: 2px; }
       notebook > header > tabs > tab button.flat, notebook > header > tabs > tab button.sidebar-button {
         min-height: 22px;
         min-width: 16px;
@@ -3585,6 +3584,8 @@ button.documents-favorite:active:hover {
       background-color: #c80025;
       color: #ffffff;
       border-color: #B40021; }
+      .tweak-group #button-layout.tweak .text-button:checked:hover label {
+        color: #ffffff; }
   .tweak-group #button-layout.tweak .text-button:active {
     background-color: #581919;
     border-color: #581919;
@@ -3964,6 +3965,8 @@ widget .clocks-button {
   .thunar .sidebar .view.cell:hover, .thunar .sidebar iconview.cell:hover, .thunar .sidebar .view.cell:active, .thunar .sidebar iconview.cell:active {
     background-color: rgba(56, 16, 16, 0.95);
     color: #ffffff; }
+  .thunar .sidebar .view.cell:selected:backdrop, .thunar .sidebar iconview.cell:selected:backdrop {
+    color: rgba(255, 255, 255, 0.56); }
   .thunar .sidebar .view:backdrop, .thunar .sidebar iconview:backdrop, .thunar .sidebar .view.cell:backdrop, .thunar .sidebar iconview.cell:backdrop {
     color: rgba(165, 0, 30, 0.67); }
 .thunar notebook .view, .thunar notebook iconview {

@@ -1956,50 +1956,42 @@ headerbar switch:checked:disabled,
   background-image: -gtk-scaled(url("assets/switch-active-insensitive-header-dark.png"), url("assets/switch-active-insensitive-header-dark@2.png")); }
 
 .nautilus-window popover stack box > modelbutton:active, popover stack box > modelbutton:active {
-  background-color: transparent;
-  color: #F6F6F4; }
+  background-color: transparent; }
 .nautilus-window popover stack box > modelbutton check:hover, popover stack box > modelbutton check:hover {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-hover-dark.png"), url("assets/checkbox-unchecked-hover-dark@2.png")); }
 
 .nautilus-window popover stack box > modelbutton:active, popover stack box > modelbutton:active {
-  background-color: transparent;
-  color: #F6F6F4; }
+  background-color: transparent; }
 .nautilus-window popover stack box > modelbutton check:hover:insensitive, popover stack box > modelbutton check:hover:insensitive {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-hover-insensitive-dark.png"), url("assets/checkbox-unchecked-hover-insensitive-dark@2.png")); }
 
 .nautilus-window popover stack box > modelbutton:active, popover stack box > modelbutton:active {
-  background-color: transparent;
-  color: #F6F6F4; }
+  background-color: transparent; }
 .nautilus-window popover stack box > modelbutton check:active, popover stack box > modelbutton check:active {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-dark.png"), url("assets/checkbox-checked-dark@2.png")); }
 
 .nautilus-window popover stack box > modelbutton:active, popover stack box > modelbutton:active {
-  background-color: transparent;
-  color: #F6F6F4; }
+  background-color: transparent; }
 .nautilus-window popover stack box > modelbutton check:checked:hover, popover stack box > modelbutton check:checked:hover {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-dark.png"), url("assets/checkbox-checked-dark@2.png")); }
 
 .nautilus-window popover stack box > modelbutton:active, popover stack box > modelbutton:active {
-  background-color: transparent;
-  color: #F6F6F4; }
+  background-color: transparent; }
 .nautilus-window popover stack box > modelbutton radio:hover, popover stack box > modelbutton radio:hover {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-hover-dark.png"), url("assets/radio-unchecked-hover-dark@2.png")); }
 
 .nautilus-window popover stack box > modelbutton:active, popover stack box > modelbutton:active {
-  background-color: transparent;
-  color: #F6F6F4; }
+  background-color: transparent; }
 .nautilus-window popover stack box > modelbutton radio:hover:insensitive, popover stack box > modelbutton radio:hover:insensitive {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-hover-insensitive-dark.png"), url("assets/radio-unchecked-hover-insensitive-dark@2.png")); }
 
 .nautilus-window popover stack box > modelbutton:active, popover stack box > modelbutton:active {
-  background-color: transparent;
-  color: #F6F6F4; }
+  background-color: transparent; }
 .nautilus-window popover stack box > modelbutton radio:active, popover stack box > modelbutton radio:active {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-dark.png"), url("assets/radio-checked-dark@2.png")); }
 
 .nautilus-window popover stack box > modelbutton:active, popover stack box > modelbutton:active {
-  background-color: transparent;
-  color: #F6F6F4; }
+  background-color: transparent; }
 .nautilus-window popover stack box > modelbutton radio:checked:hover, popover stack box > modelbutton radio:checked:hover {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-dark.png"), url("assets/radio-checked-dark@2.png")); }
 
@@ -4002,6 +3994,8 @@ widget .clocks-button {
   .thunar .sidebar .view.cell:selected, .thunar .sidebar iconview.cell:selected, .thunar .sidebar .view.cell:selected:hover, .thunar .sidebar iconview.cell:selected:hover {
     background: #969696;
     color: #141414; }
+  .thunar .sidebar .view.cell:selected:backdrop, .thunar .sidebar iconview.cell:selected:backdrop {
+    color: rgba(20, 20, 20, 0.56); }
   .thunar .sidebar .view.cell:hover, .thunar .sidebar iconview.cell:hover, .thunar .sidebar .view.cell:active, .thunar .sidebar iconview.cell:active {
     background-color: rgba(48, 48, 48, 0.95);
     color: #ffffff; }
@@ -5156,11 +5150,11 @@ overlay calendar-view event {
   .top .budgie-panel widget button:checked, .right .budgie-panel widget button:checked, .bottom .budgie-panel widget button:checked, .left .budgie-panel widget button:checked {
     background-color: transparent;
     border-color: transparent;
-    color: white; }
+    color: #ffffff; }
     .top .budgie-panel widget button:checked label, .right .budgie-panel widget button:checked label, .bottom .budgie-panel widget button:checked label, .left .budgie-panel widget button:checked label {
-      color: white; }
+      color: #ffffff; }
     .top .budgie-panel widget button:checked image, .right .budgie-panel widget button:checked image, .bottom .budgie-panel widget button:checked image, .left .budgie-panel widget button:checked image {
-      color: white; }
+      color: #ffffff; }
   .top .budgie-panel widget button#tasklist-button, .right .budgie-panel widget button#tasklist-button, .bottom .budgie-panel widget button#tasklist-button, .left .budgie-panel widget button#tasklist-button {
     background-color: transparent;
     color: rgba(246, 246, 244, 0.34); }

@@ -1453,8 +1453,8 @@ menu, .menu {
     min-width: 40px;
     padding: 5px; }
     menu menuitem:hover, .menu menuitem:hover {
-      background-color: rgba(0, 200, 72, 0.1);
-      color: #00fb5a; }
+      color: #00fb5a;
+      background-color: rgba(0, 200, 72, 0.1); }
     menu menuitem:disabled, .menu menuitem:disabled {
       color: rgba(246, 246, 244, 0.45); }
     menu menuitem arrow, .menu menuitem arrow {
@@ -2920,10 +2920,7 @@ stackswitcher button.text-button {
     border-bottom: 1px solid Transparent; }
   stackswitcher button.text-button:hover label {
     color: #00fb5a;
-    border-bottom: 1px solid #00fb5a; }
-  stackswitcher button.text-button:active label {
-    color: #040E04;
-    border-bottom: 1px solid #040E04; }
+    border-bottom: 1px solid #00C848; }
 stackswitcher button.circular, stackswitcher button.nautilus-circular-button.image-button {
   min-width: 0; }
 
@@ -3968,6 +3965,8 @@ widget .clocks-button {
   .thunar .sidebar .view.cell:hover, .thunar .sidebar iconview.cell:hover, .thunar .sidebar .view.cell:active, .thunar .sidebar iconview.cell:active {
     background-color: rgba(16, 56, 30, 0.95);
     color: #F6F6F4; }
+  .thunar .sidebar .view.cell:selected:backdrop, .thunar .sidebar iconview.cell:selected:backdrop {
+    color: rgba(4, 14, 4, 0.56); }
   .thunar .sidebar .view:backdrop, .thunar .sidebar iconview:backdrop, .thunar .sidebar .view.cell:backdrop, .thunar .sidebar iconview.cell:backdrop {
     color: rgba(0, 200, 72, 0.67); }
 .thunar notebook .view, .thunar notebook iconview {

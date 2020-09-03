@@ -148,7 +148,7 @@ entry {
   entry:focus {
     background-clip: border-box;
     color: #141414;
-    border-color: #969696;
+    border-color: #1f1f1f;
     background-color: #969696;
     box-shadow: inset 1px 0 #969696, inset -1px 0 #969696, inset 0 1px #969696, inset 0 -1px #969696; }
     entry:focus image, entry:focus image:hover {
@@ -883,7 +883,6 @@ headerbar, .titlebar:not(headerbar) {
   border-width: 0 0 1px;
   border-style: solid;
   border-color: #141414;
-  color: #969696;
   color: #969696;
   background-color: #1e1e1e;
   box-shadow: inset 0 1px #262626; }
@@ -1902,82 +1901,74 @@ headerbar switch:checked:disabled,
   background-image: -gtk-scaled(url("assets/switch-active-insensitive-header-dark.png"), url("assets/switch-active-insensitive-header-dark@2.png")); }
 
 .nautilus-window popover stack box > modelbutton:hover label, popover stack box > modelbutton:hover label {
-  color: white;
+  color: #ffffff;
   font-weight: normal;
   box-shadow: none; }
 .nautilus-window popover stack box > modelbutton:active, popover stack box > modelbutton:active {
-  background-color: transparent;
-  color: #F6F6F4; }
+  background-color: transparent; }
 .nautilus-window popover stack box > modelbutton check:hover, popover stack box > modelbutton check:hover {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-hover-dark.png"), url("assets/checkbox-unchecked-hover-dark@2.png")); }
 
 .nautilus-window popover stack box > modelbutton:hover label, popover stack box > modelbutton:hover label {
-  color: white;
+  color: #ffffff;
   font-weight: normal;
   box-shadow: none; }
 .nautilus-window popover stack box > modelbutton:active, popover stack box > modelbutton:active {
-  background-color: transparent;
-  color: #F6F6F4; }
+  background-color: transparent; }
 .nautilus-window popover stack box > modelbutton check:hover:insensitive, popover stack box > modelbutton check:hover:insensitive {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-hover-insensitive-dark.png"), url("assets/checkbox-unchecked-hover-insensitive-dark@2.png")); }
 
 .nautilus-window popover stack box > modelbutton:hover label, popover stack box > modelbutton:hover label {
-  color: white;
+  color: #ffffff;
   font-weight: normal;
   box-shadow: none; }
 .nautilus-window popover stack box > modelbutton:active, popover stack box > modelbutton:active {
-  background-color: transparent;
-  color: #F6F6F4; }
+  background-color: transparent; }
 .nautilus-window popover stack box > modelbutton check:active, popover stack box > modelbutton check:active {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-dark.png"), url("assets/checkbox-checked-dark@2.png")); }
 
 .nautilus-window popover stack box > modelbutton:hover label, popover stack box > modelbutton:hover label {
-  color: white;
+  color: #ffffff;
   font-weight: normal;
   box-shadow: none; }
 .nautilus-window popover stack box > modelbutton:active, popover stack box > modelbutton:active {
-  background-color: transparent;
-  color: #F6F6F4; }
+  background-color: transparent; }
 .nautilus-window popover stack box > modelbutton check:checked:hover, popover stack box > modelbutton check:checked:hover {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-dark.png"), url("assets/checkbox-checked-dark@2.png")); }
 
 .nautilus-window popover stack box > modelbutton:hover label, popover stack box > modelbutton:hover label {
-  color: white;
+  color: #ffffff;
   font-weight: normal;
   box-shadow: none; }
 .nautilus-window popover stack box > modelbutton:active, popover stack box > modelbutton:active {
-  background-color: transparent;
-  color: #F6F6F4; }
+  background-color: transparent; }
 .nautilus-window popover stack box > modelbutton radio:hover, popover stack box > modelbutton radio:hover {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-hover-dark.png"), url("assets/radio-unchecked-hover-dark@2.png")); }
 
 .nautilus-window popover stack box > modelbutton:hover label, popover stack box > modelbutton:hover label {
-  color: white;
+  color: #ffffff;
   font-weight: normal;
   box-shadow: none; }
 .nautilus-window popover stack box > modelbutton:active, popover stack box > modelbutton:active {
-  background-color: transparent;
-  color: #F6F6F4; }
+  background-color: transparent; }
 .nautilus-window popover stack box > modelbutton radio:hover:insensitive, popover stack box > modelbutton radio:hover:insensitive {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-hover-insensitive-dark.png"), url("assets/radio-unchecked-hover-insensitive-dark@2.png")); }
 
 .nautilus-window popover stack box > modelbutton:hover label, popover stack box > modelbutton:hover label {
-  color: white;
+  color: #ffffff;
   font-weight: normal;
   box-shadow: none; }
 .nautilus-window popover stack box > modelbutton:active, popover stack box > modelbutton:active {
-  background-color: transparent;
-  color: #F6F6F4; }
+  background-color: transparent; }
 .nautilus-window popover stack box > modelbutton radio:active, popover stack box > modelbutton radio:active {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-dark.png"), url("assets/radio-checked-dark@2.png")); }
 
 .nautilus-window popover stack box > modelbutton:hover label, popover stack box > modelbutton:hover label {
-  color: white;
+  color: #ffffff;
   font-weight: normal;
   box-shadow: none; }
 .nautilus-window popover stack box > modelbutton:active, popover stack box > modelbutton:active {
-  background-color: transparent;
-  color: #F6F6F4; }
+  background-color: transparent; }
 .nautilus-window popover stack box > modelbutton radio:checked:hover, popover stack box > modelbutton radio:checked:hover {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-dark.png"), url("assets/radio-checked-dark@2.png")); }
 
@@ -3232,7 +3223,7 @@ terminal-window notebook > header.top,
   border: 1px solid;
   border-radius: 3px;
   color: #141414;
-  border-color: #969696;
+  border-color: #1f1f1f;
   background-color: #969696;
   box-shadow: inset 1px 0 #969696, inset -1px 0 #969696, inset 0 1px #969696, inset 0 -1px #969696; }
   .nemo-window .nemo-window-pane widget.entry image, .nemo-window .nemo-window-pane widget.entry image:hover {
@@ -3974,6 +3965,8 @@ widget .clocks-button {
   .thunar .sidebar .view.cell:hover, .thunar .sidebar iconview.cell:hover, .thunar .sidebar .view.cell:active, .thunar .sidebar iconview.cell:active {
     background-color: rgba(48, 48, 48, 0.95);
     color: #ffffff; }
+  .thunar .sidebar .view.cell:selected:backdrop, .thunar .sidebar iconview.cell:selected:backdrop {
+    color: rgba(20, 20, 20, 0.56); }
   .thunar .sidebar .view:backdrop, .thunar .sidebar iconview:backdrop, .thunar .sidebar .view.cell:backdrop, .thunar .sidebar iconview.cell:backdrop {
     color: rgba(150, 150, 150, 0.67); }
 .thunar notebook .view, .thunar notebook iconview {
@@ -4022,7 +4015,7 @@ widget .clocks-button {
       color: #141414; }
   #whiskermenu-window entry:focus, #whiskermenu-window entry.search {
     color: #141414;
-    border-color: #969696;
+    border-color: #1f1f1f;
     background-color: #969696;
     box-shadow: inset 1px 0 #969696, inset -1px 0 #969696, inset 0 1px #969696, inset 0 -1px #969696; }
     #whiskermenu-window entry:focus image, #whiskermenu-window entry:focus image:hover, #whiskermenu-window entry.search image, #whiskermenu-window entry.search image:hover {
@@ -5099,11 +5092,11 @@ overlay calendar-view event {
   .top .budgie-panel widget button:checked, .right .budgie-panel widget button:checked, .bottom .budgie-panel widget button:checked, .left .budgie-panel widget button:checked {
     background-color: transparent;
     border-color: transparent;
-    color: white; }
+    color: #ffffff; }
     .top .budgie-panel widget button:checked label, .right .budgie-panel widget button:checked label, .bottom .budgie-panel widget button:checked label, .left .budgie-panel widget button:checked label {
-      color: white; }
+      color: #ffffff; }
     .top .budgie-panel widget button:checked image, .right .budgie-panel widget button:checked image, .bottom .budgie-panel widget button:checked image, .left .budgie-panel widget button:checked image {
-      color: white; }
+      color: #ffffff; }
   .top .budgie-panel widget button#tasklist-button, .right .budgie-panel widget button#tasklist-button, .bottom .budgie-panel widget button#tasklist-button, .left .budgie-panel widget button#tasklist-button {
     background-color: transparent;
     color: rgba(150, 150, 150, 0.78); }
@@ -5116,9 +5109,9 @@ overlay calendar-view event {
         color: #969696; }
     .top .budgie-panel widget button#tasklist-button:active, .top .budgie-panel widget button#tasklist-button:checked, .right .budgie-panel widget button#tasklist-button:active, .right .budgie-panel widget button#tasklist-button:checked, .bottom .budgie-panel widget button#tasklist-button:active, .bottom .budgie-panel widget button#tasklist-button:checked, .left .budgie-panel widget button#tasklist-button:active, .left .budgie-panel widget button#tasklist-button:checked {
       background-color: rgba(86, 86, 86, 0.45);
-      color: white; }
+      color: #ffffff; }
       .top .budgie-panel widget button#tasklist-button:active label, .top .budgie-panel widget button#tasklist-button:active image, .top .budgie-panel widget button#tasklist-button:checked label, .top .budgie-panel widget button#tasklist-button:checked image, .right .budgie-panel widget button#tasklist-button:active label, .right .budgie-panel widget button#tasklist-button:active image, .right .budgie-panel widget button#tasklist-button:checked label, .right .budgie-panel widget button#tasklist-button:checked image, .bottom .budgie-panel widget button#tasklist-button:active label, .bottom .budgie-panel widget button#tasklist-button:active image, .bottom .budgie-panel widget button#tasklist-button:checked label, .bottom .budgie-panel widget button#tasklist-button:checked image, .left .budgie-panel widget button#tasklist-button:active label, .left .budgie-panel widget button#tasklist-button:active image, .left .budgie-panel widget button#tasklist-button:checked label, .left .budgie-panel widget button#tasklist-button:checked image {
-        color: white; }
+        color: #ffffff; }
 
 .top .budgie-panel .workspace-switcher .workspace-layout {
   background-color: transparent;
