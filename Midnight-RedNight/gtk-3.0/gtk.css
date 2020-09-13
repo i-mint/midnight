@@ -1078,17 +1078,24 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
   outline-offset: -3px;
   background-color: rgba(28, 8, 8, 0);
   border-color: rgba(28, 8, 8, 0); }
+  .primary-toolbar button label, headerbar button label, .primary-toolbar button image, headerbar button image {
+    background-color: transparent; }
   .primary-toolbar button:backdrop, headerbar button:backdrop {
     opacity: 0.7; }
   .primary-toolbar button:hover, headerbar button:hover {
     color: #c30024;
     border-color: #1C0808;
     background-color: #1C0808; }
+    .primary-toolbar button:hover label, headerbar button:hover label, .primary-toolbar button:hover image, headerbar button:hover image {
+      background-color: transparent; }
   .primary-toolbar button:active, headerbar button:active, .primary-toolbar button:checked, headerbar button:checked {
     color: #ffffff;
     border-color: transparent;
     background-color: #B40021;
     background-clip: padding-box; }
+    .primary-toolbar button:active label, headerbar button:active label, .primary-toolbar button:active image, headerbar button:active image, .primary-toolbar button:checked label, headerbar button:checked label, .primary-toolbar button:checked image, headerbar button:checked image {
+      background-color: #B40021;
+      color: #ffffff; }
   .primary-toolbar button:disabled, headerbar button:disabled {
     background-color: rgba(28, 8, 8, 0);
     border-color: rgba(28, 8, 8, 0); }
@@ -1696,7 +1703,7 @@ notebook {
   notebook > stack:not(:only-child) {
     background-color: #1C0808; }
   notebook > header {
-    padding: 2px;
+    padding: 0px;
     background-color: #1C0808; }
     notebook > header.top {
       box-shadow: inset 0 -1px #040101; }
@@ -3143,6 +3150,13 @@ entry selection:focus, entry selection {
     background-color: rgba(255, 255, 255, 0.45);
     color: rgba(180, 0, 33, 0.45); }
 
+.nemo-window .nemo-inactive-pane .view:selected, .nemo-window .nemo-inactive-pane iconview:selected, .nemo-window .nemo-inactive-pane .iconview:selected {
+  background-color: rgba(172, 8, 38, 0.45);
+  color: rgba(255, 255, 255, 0.45); }
+  .nemo-window .nemo-inactive-pane .view:backdrop:selected, .nemo-window .nemo-inactive-pane iconview:backdrop:selected, .nemo-window .nemo-inactive-pane .iconview:backdrop:selected {
+    background-color: rgba(169, 11, 40, 0.23);
+    color: rgba(255, 255, 255, 0.23); }
+
 .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked,
 terminal-window notebook > header.top > tabs > tab:checked {
   box-shadow: inset 0 -1px #040101; }
@@ -3238,50 +3252,58 @@ terminal-window notebook > header.top,
   .nemo-window .nemo-window-pane widget.entry image, .nemo-window .nemo-window-pane widget.entry image:hover {
     color: inherit; }
 .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button {
-  color: #F6F6F4;
-  outline-offset: -3px;
-  background-color: transparent;
-  border-color: transparent; }
+  color: #c30024;
+  border-color: #1C0808;
+  background-color: #1C0808; }
   .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:not(:last-child):not(:only-child) {
     margin: 0 0 1px 0; }
-  .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button label, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button image {
-    color: #F6F6F4; }
   .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:hover {
-    color: #F6F6F4;
-    outline-offset: -3px;
-    background-color: transparent;
-    border-color: transparent; }
-    .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:hover label, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:hover image {
-      color: #F6F6F4; }
+    background-color: #1C0808;
+    color: #ffffff;
+    border-color: #1C0808; }
+    .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:hover label {
+      background-color: #1C0808;
+      color: #ffffff;
+      border-color: #1C0808; }
+    .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:hover image {
+      background-color: #1C0808;
+      color: #ffffff;
+      border-color: #1C0808; }
   .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:active, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:checked {
     color: #ffffff;
-    background-color: #B40021;
-    border-color: #1C0808;
-    font-weight: bold; }
-    .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:active label, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:active image, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:checked label, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:checked image {
-      color: #ffffff; }
+    border-color: transparent;
+    background-color: #B40021; }
+    .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:active label, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:checked label {
+      color: #ffffff;
+      border-color: transparent;
+      background-color: #B40021; }
+    .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:active image, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:checked image {
+      color: #ffffff;
+      border-color: transparent;
+      background-color: #B40021; }
   .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:disabled {
     color: rgba(180, 0, 33, 0.6); }
 .nemo-window .primary-toolbar .path-bar .text-button {
-  color: #F6F6F4;
+  color: #B40021;
   outline-offset: -3px;
-  background-color: transparent;
-  border-color: transparent; }
+  background-color: rgba(28, 8, 8, 0);
+  border-color: rgba(28, 8, 8, 0); }
   .nemo-window .primary-toolbar .path-bar .text-button label, .nemo-window .primary-toolbar .path-bar .text-button image {
-    color: #F6F6F4; }
-  .nemo-window .primary-toolbar .path-bar .text-button:hover {
-    color: #F6F6F4;
-    outline-offset: -3px;
     background-color: transparent;
-    border-color: transparent; }
+    color: #B40021; }
+  .nemo-window .primary-toolbar .path-bar .text-button:hover {
+    color: #c30024;
+    border-color: #1C0808;
+    background-color: #1C0808; }
     .nemo-window .primary-toolbar .path-bar .text-button:hover label, .nemo-window .primary-toolbar .path-bar .text-button:hover image {
-      color: #F6F6F4; }
+      background-color: #1C0808;
+      color: #c30024; }
   .nemo-window .primary-toolbar .path-bar .text-button:active, .nemo-window .primary-toolbar .path-bar .text-button:checked {
     color: #ffffff;
-    background-color: #B40021;
-    border-color: #1C0808;
-    font-weight: bold; }
+    border-color: transparent;
+    background-color: #B40021; }
     .nemo-window .primary-toolbar .path-bar .text-button:active label, .nemo-window .primary-toolbar .path-bar .text-button:active image, .nemo-window .primary-toolbar .path-bar .text-button:checked label, .nemo-window .primary-toolbar .path-bar .text-button:checked image {
+      background-color: #B40021;
       color: #ffffff; }
 
 .caja-notebook {
@@ -4711,10 +4733,15 @@ filechooser headerbar widget stack box.path-bar-box,
 .nautilus-window .searchbar-container button image {
   color: #B40021; }
 
+.nemo-window paned > separator {
+  min-width: 2px;
+  min-height: 2px;
+  background-color: rgba(180, 0, 33, 0.06);
+  background-image: linear-gradient(to right, rgba(180, 0, 33, 0.06), rgba(180, 0, 33, 0.06)); }
 .nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview {
-  color: #B40021; }
+  color: rgba(246, 246, 244, 0.34); }
 .nemo-window .nemo-inactive-pane .iconview {
-  color: #B40021; }
+  color: rgba(246, 246, 244, 0.34); }
 .nemo-window .sidebar {
   color: #F6F6F4;
   background-color: rgba(28, 8, 8, 0.95); }
