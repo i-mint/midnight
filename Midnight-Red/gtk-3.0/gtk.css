@@ -1036,9 +1036,12 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
     border-color: transparent;
     background-color: #B40021;
     background-clip: padding-box; }
-    .primary-toolbar button:active label, headerbar button:active label, .primary-toolbar button:active image, headerbar button:active image, .primary-toolbar button:checked label, headerbar button:checked label, .primary-toolbar button:checked image, headerbar button:checked image {
-      background-color: #B40021;
-      color: #ffffff; }
+  .primary-toolbar button.toggle:hover label, headerbar button.toggle:hover label, .primary-toolbar button.toggle:hover image, headerbar button.toggle:hover image, .primary-toolbar button.toggle label, headerbar button.toggle label, .primary-toolbar button.toggle image, headerbar button.toggle image {
+    background-color: transparent;
+    color: #F6F6F4; }
+  .primary-toolbar button.toggle:active label, headerbar button.toggle:active label, .primary-toolbar button.toggle:active image, headerbar button.toggle:active image, .primary-toolbar button.toggle:checked label, headerbar button.toggle:checked label, .primary-toolbar button.toggle:checked image, headerbar button.toggle:checked image {
+    background-color: transparent;
+    color: #F6F6F4; }
   .primary-toolbar button:disabled, headerbar button:disabled {
     background-color: rgba(28, 8, 8, 0);
     border-color: rgba(28, 8, 8, 0); }
@@ -1088,6 +1091,17 @@ headerbar .linked:not(.vertical).path-bar > button {
     color: #ffffff;
     border-color: transparent;
     background-color: #B40021; }
+    .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active image, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked image,
+    .primary-toolbar .linked:not(.vertical).path-bar > button:active label,
+    headerbar .linked:not(.vertical).path-bar > button:active label,
+    .primary-toolbar .linked:not(.vertical).path-bar > button:active image,
+    headerbar .linked:not(.vertical).path-bar > button:active image,
+    .primary-toolbar .linked:not(.vertical).path-bar > button:checked label,
+    headerbar .linked:not(.vertical).path-bar > button:checked label,
+    .primary-toolbar .linked:not(.vertical).path-bar > button:checked image,
+    headerbar .linked:not(.vertical).path-bar > button:checked image {
+      background-color: transparent;
+      color: inherit; }
   .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:disabled, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:disabled,
   .primary-toolbar .linked:not(.vertical).path-bar > button:disabled,
   headerbar .linked:not(.vertical).path-bar > button:disabled {
@@ -1628,7 +1642,7 @@ cursor-handle {
 notebook {
   padding: 0; }
   notebook.frame {
-    border: 1px solid #040101; }
+    border: 0px solid #040101; }
     notebook.frame > header {
       margin: -1px; }
       notebook.frame > header.top {
@@ -1650,14 +1664,6 @@ notebook {
   notebook > header {
     padding: 0px;
     background-color: #1C0808; }
-    notebook > header.top {
-      box-shadow: inset 0 -1px #040101; }
-    notebook > header.bottom {
-      box-shadow: inset 0 1px #040101; }
-    notebook > header.right {
-      box-shadow: inset 1px 0 #040101; }
-    notebook > header.left {
-      box-shadow: inset -1px 0 #040101; }
     notebook > header.top {
       padding-bottom: 0; }
       notebook > header.top > tabs > tab {
@@ -1734,14 +1740,6 @@ notebook {
         color: #F6F6F4; }
       notebook > header > tabs > arrow:disabled {
         color: rgba(246, 246, 244, 0.15); }
-    notebook > header.top > tabs > tab:hover:not(:checked) {
-      box-shadow: inset 0 -1px #040101; }
-    notebook > header.bottom > tabs > tab:hover:not(:checked) {
-      box-shadow: inset 0 1px #040101; }
-    notebook > header.left > tabs > tab:hover:not(:checked) {
-      box-shadow: inset -1px 0 #040101; }
-    notebook > header.right > tabs > tab:hover:not(:checked) {
-      box-shadow: inset 1px 0 #040101; }
     notebook > header > tabs > tab {
       background-color: transparent;
       color: #a5001e; }
@@ -4682,7 +4680,7 @@ filechooser headerbar widget stack box.path-bar-box,
 .nautilus-window .searchbar-container button image {
   color: #B40021; }
 
-.nemo-window paned > separator {
+.nemo-window paned:last-child > separator {
   min-width: 2px;
   min-height: 2px;
   background-color: rgba(180, 0, 33, 0.06);
