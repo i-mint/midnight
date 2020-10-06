@@ -1108,6 +1108,12 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
     color: rgba(255, 255, 255, 0.75);
     border-color: rgba(180, 0, 33, 0.65);
     background-color: rgba(180, 0, 33, 0.65); }
+  .primary-toolbar button:not(.close):not(.minimize):not(.maximize) label, headerbar button:not(.close):not(.minimize):not(.maximize) label, .primary-toolbar button:not(.close):not(.minimize):not(.maximize) image, headerbar button:not(.close):not(.minimize):not(.maximize) image {
+    color: #F6F6F4; }
+  .primary-toolbar button:not(.close):not(.minimize):not(.maximize):hover label, headerbar button:not(.close):not(.minimize):not(.maximize):hover label, .primary-toolbar button:not(.close):not(.minimize):not(.maximize):hover image, headerbar button:not(.close):not(.minimize):not(.maximize):hover image {
+    color: #B40021; }
+  .primary-toolbar button:not(.close):not(.minimize):not(.maximize):active label, headerbar button:not(.close):not(.minimize):not(.maximize):active label, .primary-toolbar button:not(.close):not(.minimize):not(.maximize):active image, headerbar button:not(.close):not(.minimize):not(.maximize):active image, .primary-toolbar button:not(.close):not(.minimize):not(.maximize):checked label, headerbar button:not(.close):not(.minimize):not(.maximize):checked label, .primary-toolbar button:not(.close):not(.minimize):not(.maximize):checked image, headerbar button:not(.close):not(.minimize):not(.maximize):checked image {
+    color: #ffffff; }
 .selection-mode.primary-toolbar button, headerbar.selection-mode button, .selection-mode.primary-toolbar button.flat, headerbar.selection-mode button.flat, .selection-mode.primary-toolbar button.sidebar-button, headerbar.selection-mode button.sidebar-button {
   border-color: transparent;
   background-color: transparent;

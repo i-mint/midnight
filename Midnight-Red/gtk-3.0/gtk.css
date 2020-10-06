@@ -1022,6 +1022,8 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
   background-color: rgba(28, 8, 8, 0);
   border-color: rgba(28, 8, 8, 0); }
   .primary-toolbar button label, headerbar button label, .primary-toolbar button image, headerbar button image {
+    color: inherit; }
+  .primary-toolbar button label, headerbar button label, .primary-toolbar button image, headerbar button image {
     background-color: transparent; }
   .primary-toolbar button:backdrop, headerbar button:backdrop {
     opacity: 0.7; }
@@ -1051,6 +1053,12 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
     color: rgba(255, 255, 255, 0.75);
     border-color: rgba(180, 0, 33, 0.65);
     background-color: rgba(180, 0, 33, 0.65); }
+  .primary-toolbar button:not(.close):not(.minimize):not(.maximize) label, headerbar button:not(.close):not(.minimize):not(.maximize) label, .primary-toolbar button:not(.close):not(.minimize):not(.maximize) image, headerbar button:not(.close):not(.minimize):not(.maximize) image {
+    color: #B40021; }
+  .primary-toolbar button:not(.close):not(.minimize):not(.maximize):hover label, headerbar button:not(.close):not(.minimize):not(.maximize):hover label, .primary-toolbar button:not(.close):not(.minimize):not(.maximize):hover image, headerbar button:not(.close):not(.minimize):not(.maximize):hover image {
+    color: #ffffff; }
+  .primary-toolbar button:not(.close):not(.minimize):not(.maximize):active label, headerbar button:not(.close):not(.minimize):not(.maximize):active label, .primary-toolbar button:not(.close):not(.minimize):not(.maximize):active image, headerbar button:not(.close):not(.minimize):not(.maximize):active image, .primary-toolbar button:not(.close):not(.minimize):not(.maximize):checked label, headerbar button:not(.close):not(.minimize):not(.maximize):checked label, .primary-toolbar button:not(.close):not(.minimize):not(.maximize):checked image, headerbar button:not(.close):not(.minimize):not(.maximize):checked image {
+    color: #ffffff; }
 .selection-mode.primary-toolbar button, headerbar.selection-mode button, .selection-mode.primary-toolbar button.flat, headerbar.selection-mode button.flat, .selection-mode.primary-toolbar button.sidebar-button, headerbar.selection-mode button.sidebar-button {
   border-color: transparent;
   background-color: transparent;
@@ -1077,6 +1085,12 @@ headerbar .linked:not(.vertical).path-bar > button {
   outline-offset: -3px;
   background-color: rgba(28, 8, 8, 0);
   border-color: rgba(28, 8, 8, 0); }
+  .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button image,
+  .primary-toolbar .linked:not(.vertical).path-bar > button label,
+  headerbar .linked:not(.vertical).path-bar > button label,
+  .primary-toolbar .linked:not(.vertical).path-bar > button image,
+  headerbar .linked:not(.vertical).path-bar > button image {
+    color: inherit; }
   .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover,
   .primary-toolbar .linked:not(.vertical).path-bar > button:hover,
   headerbar .linked:not(.vertical).path-bar > button:hover {
@@ -3277,6 +3291,8 @@ terminal-window notebook > header.top,
   outline-offset: -3px;
   background-color: rgba(28, 8, 8, 0);
   border-color: rgba(28, 8, 8, 0); }
+  .nemo-window .primary-toolbar .path-bar > button label, .nemo-window .primary-toolbar .path-bar > button image {
+    color: inherit; }
   .nemo-window .primary-toolbar .path-bar > button label, .nemo-window .primary-toolbar .path-bar > button image {
     background-color: transparent;
     color: #B40021; }
