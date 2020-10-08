@@ -195,10 +195,9 @@ StScrollBar {
 
 .modal-dialog {
   color: #f6f6f4;
-  background-color: rgba(8, 17, 28, 0);
+  background-color: #08111c;
   border: none;
-  border-image: url("dark-assets/misc/modal.svg") 9 9 9 67;
-  padding: 0 5px 6px 5px; }
+  padding: 0; }
   .modal-dialog .modal-dialog-content-box {
     padding: 20px 10px 10px 10px; }
   .modal-dialog-linked-button {
@@ -209,7 +208,7 @@ StScrollBar {
     border-bottom-width: 0;
     color: #2D90FF;
     background-color: rgba(8, 17, 28, 0.95);
-    border-color: rgba(0, 0, 0, 0.95); }
+    border-color: rgba(7, 15, 24, 0.95); }
     .modal-dialog-linked-button:hover {
       background-color: rgba(14, 29, 48, 0.95); }
     .modal-dialog-linked-button:focus {
@@ -241,6 +240,32 @@ StScrollBar {
 .end-session-dialog-subject {
   font-size: 11pt;
   font-weight: bold;
+  color: #f6f6f4; }
+
+.run-dialog .modal-dialog-content-box {
+  margin-top: 24px;
+  margin-bottom: 14px; }
+.run-dialog .run-dialog-entry {
+  color: rgba(246, 246, 244, 0.52);
+  background-color: #102238;
+  border: 1px solid #0d1b2c;
+  box-shadow: inset 0 2px 4px rgba(16, 34, 56, 0.05);
+  width: 20em;
+  padding: 7px 9px;
+  caret-size: 1px;
+  caret-color: #ffffff;
+  selection-background-color: #003e84;
+  selected-color: #ffffff;
+  transition-duration: 300ms;
+  border-radius: 20px; }
+  .run-dialog .run-dialog-entry:hover, .run-dialog .run-dialog-entry:focus {
+    color: #ffffff;
+    caret-color: #ffffff;
+    background-color: #2D90FF;
+    selection-background-color: #003e84;
+    selected-color: #ffffff; }
+.run-dialog .run-dialog-description {
+  text-align: center;
   color: #f6f6f4; }
 
 .end-session-dialog {
@@ -1073,6 +1098,27 @@ StScrollBar {
     icon-size: 2.18em; }
   .weather-button .weather-forecast-temp {
     font-weight: bold; }
+
+.events-button {
+  color: #2D90FF;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 2px;
+  padding: 4px;
+  box-shadow: none; }
+  .events-button .events-box {
+    spacing: 2px; }
+  .events-button .events-list {
+    spacing: 4px; }
+  .events-button .events-title {
+    color: #f6f6f4;
+    font-weight: bold;
+    margin-bottom: 4px; }
+  .events-button .event-time {
+    color: rgba(246, 246, 244, 0.5);
+    font-feature-settings: "tnum";
+    font-size: 80%;
+    margin-top: 4px; }
 
 .message-list {
   width: 31.5em; }
