@@ -4984,7 +4984,7 @@ overlay calendar-view event {
 @define-color warning_color #F27835;
 @define-color error_color #FC4138;
 @define-color success_color #73d216;
-@define-color placeholder_text_color #A8A8A8;
+@define-color placeholder_text_color #4B3B26;
 @define-color link_color #ffa62f;
 @define-color content_view_bg #1C1108;
 @define-color wm_title alpha(#c87200, 0.8);
