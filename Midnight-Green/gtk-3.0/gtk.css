@@ -1038,10 +1038,10 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
     border-color: transparent;
     background-color: #00C848;
     background-clip: padding-box; }
-  .primary-toolbar button.toggle:hover label, headerbar button.toggle:hover label, .primary-toolbar button.toggle:hover image, headerbar button.toggle:hover image, .primary-toolbar button.toggle label, headerbar button.toggle label, .primary-toolbar button.toggle image, headerbar button.toggle image {
+  .primary-toolbar button.toggle:not(.popup):hover label, headerbar button.toggle:not(.popup):hover label, .primary-toolbar button.toggle:not(.popup):hover image, headerbar button.toggle:not(.popup):hover image, .primary-toolbar button.toggle:not(.popup) label, headerbar button.toggle:not(.popup) label, .primary-toolbar button.toggle:not(.popup) image, headerbar button.toggle:not(.popup) image {
     background-color: transparent;
     color: #F6F6F4; }
-  .primary-toolbar button.toggle:active label, headerbar button.toggle:active label, .primary-toolbar button.toggle:active image, headerbar button.toggle:active image, .primary-toolbar button.toggle:checked label, headerbar button.toggle:checked label, .primary-toolbar button.toggle:checked image, headerbar button.toggle:checked image {
+  .primary-toolbar button.toggle:not(.popup):active label, headerbar button.toggle:not(.popup):active label, .primary-toolbar button.toggle:not(.popup):active image, headerbar button.toggle:not(.popup):active image, .primary-toolbar button.toggle:not(.popup):checked label, headerbar button.toggle:not(.popup):checked label, .primary-toolbar button.toggle:not(.popup):checked image, headerbar button.toggle:not(.popup):checked image {
     background-color: transparent;
     color: #040E04; }
   .primary-toolbar button:disabled, headerbar button:disabled {
@@ -1059,6 +1059,10 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
     color: #00fb5a; }
   .primary-toolbar button:not(.close):not(.minimize):not(.maximize):active image:not(label), headerbar button:not(.close):not(.minimize):not(.maximize):active image:not(label), .primary-toolbar button:not(.close):not(.minimize):not(.maximize):checked image:not(label), headerbar button:not(.close):not(.minimize):not(.maximize):checked image:not(label) {
     color: #040E04; }
+  .primary-toolbar button.popup menuitem label, headerbar button.popup menuitem label {
+    color: #00C848; }
+  .primary-toolbar button.popup menuitem:active label, headerbar button.popup menuitem:active label, .primary-toolbar button.popup menuitem:hover label, headerbar button.popup menuitem:hover label, .primary-toolbar button.popup menuitem:checked label, headerbar button.popup menuitem:checked label {
+    color: #00fb5a; }
 .selection-mode.primary-toolbar button, headerbar.selection-mode button, .selection-mode.primary-toolbar button.flat, headerbar.selection-mode button.flat, .selection-mode.primary-toolbar button.sidebar-button, headerbar.selection-mode button.sidebar-button {
   border-color: transparent;
   background-color: transparent;
