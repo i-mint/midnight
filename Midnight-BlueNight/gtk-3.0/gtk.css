@@ -1580,8 +1580,8 @@ menu, .menu {
     menu menuitem:hover, .menu menuitem:hover {
       color: #ffffff;
       background-color: rgba(45, 144, 255, 0.1); }
-    menu menuitem:disabled, .menu menuitem:disabled {
-      color: rgba(246, 246, 244, 0.45); }
+    menu menuitem:disabled label, menu menuitem:disabled, .menu menuitem:disabled label, .menu menuitem:disabled {
+      color: rgba(246, 246, 244, 0.25); }
     menu menuitem arrow, .menu menuitem arrow {
       min-height: 16px;
       min-width: 16px; }
@@ -1592,7 +1592,7 @@ menu, .menu {
         -gtk-icon-source: -gtk-icontheme("pan-end-symbolic-rtl");
         margin-right: 10px; }
     menuitem accelerator {
-      color: alpha(currentColor,0.55); }
+      color: alpha(currentColor,0.33); }
     menuitem check, menuitem radio {
       min-height: 16px;
       min-width: 16px; }
