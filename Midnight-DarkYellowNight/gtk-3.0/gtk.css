@@ -1954,7 +1954,6 @@ treeview.check {
 filechooser actionbar check {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-dark.png"), url("assets/checkbox-unchecked-dark@2.png")); }
 
-popover check:hover,
 menuitem check:hover,
 .view check:selected,
 iconview check:selected,
@@ -1972,7 +1971,6 @@ treeview.check:disabled {
 filechooser actionbar check:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-insensitive-dark.png"), url("assets/checkbox-unchecked-insensitive-dark@2.png")); }
 
-popover check:disabled:hover,
 menuitem check:disabled:hover,
 .view check:disabled:selected,
 iconview check:disabled:selected,
@@ -1990,7 +1988,6 @@ treeview.check:indeterminate {
 filechooser actionbar check:indeterminate {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-dark.png"), url("assets/checkbox-mixed-dark@2.png")); }
 
-popover check:indeterminate:hover,
 menuitem check:indeterminate:hover,
 .view check:indeterminate:selected,
 iconview check:indeterminate:selected,
@@ -2008,7 +2005,6 @@ treeview.check:indeterminate:disabled {
 filechooser actionbar check:indeterminate:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-insensitive-dark.png"), url("assets/checkbox-mixed-insensitive-dark@2.png")); }
 
-popover check:indeterminate:disabled:hover,
 menuitem check:indeterminate:disabled:hover,
 .view check:indeterminate:disabled:selected,
 iconview check:indeterminate:disabled:selected,
@@ -2026,7 +2022,6 @@ treeview.check:checked {
 filechooser actionbar check:checked {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-dark.png"), url("assets/checkbox-checked-dark@2.png")); }
 
-popover check:checked:hover,
 menuitem check:checked:hover,
 .view check:checked:selected,
 iconview check:checked:selected,
@@ -2044,7 +2039,6 @@ treeview.check:checked:disabled {
 filechooser actionbar check:checked:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-insensitive-dark.png"), url("assets/checkbox-checked-insensitive-dark@2.png")); }
 
-popover check:checked:disabled:hover,
 menuitem check:checked:disabled:hover,
 .view check:checked:disabled:selected,
 iconview check:checked:disabled:selected,
@@ -2062,7 +2056,6 @@ treeview.radio {
 filechooser actionbar radio {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-dark.png"), url("assets/radio-unchecked-dark@2.png")); }
 
-popover radio:hover,
 menuitem radio:hover,
 .view radio:selected,
 iconview radio:selected,
@@ -2080,7 +2073,6 @@ treeview.radio:disabled {
 filechooser actionbar radio:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-insensitive-dark.png"), url("assets/radio-unchecked-insensitive-dark@2.png")); }
 
-popover radio:disabled:hover,
 menuitem radio:disabled:hover,
 .view radio:disabled:selected,
 iconview radio:disabled:selected,
@@ -2098,7 +2090,6 @@ treeview.radio:indeterminate {
 filechooser actionbar radio:indeterminate {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-dark.png"), url("assets/radio-mixed-dark@2.png")); }
 
-popover radio:indeterminate:hover,
 menuitem radio:indeterminate:hover,
 .view radio:indeterminate:selected,
 iconview radio:indeterminate:selected,
@@ -2116,7 +2107,6 @@ treeview.radio:indeterminate:disabled {
 filechooser actionbar radio:indeterminate:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-insensitive-dark.png"), url("assets/radio-mixed-insensitive-dark@2.png")); }
 
-popover radio:indeterminate:disabled:hover,
 menuitem radio:indeterminate:disabled:hover,
 .view radio:indeterminate:disabled:selected,
 iconview radio:indeterminate:disabled:selected,
@@ -2134,7 +2124,6 @@ treeview.radio:checked {
 filechooser actionbar radio:checked {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-dark.png"), url("assets/radio-checked-dark@2.png")); }
 
-popover radio:checked:hover,
 menuitem radio:checked:hover,
 .view radio:checked:selected,
 iconview radio:checked:selected,
@@ -2152,7 +2141,6 @@ treeview.radio:checked:disabled {
 filechooser actionbar radio:checked:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-insensitive-dark.png"), url("assets/radio-checked-insensitive-dark@2.png")); }
 
-popover radio:checked:disabled:hover,
 menuitem radio:checked:disabled:hover,
 .view radio:checked:disabled:selected,
 iconview radio:checked:disabled:selected,
@@ -2160,6 +2148,18 @@ treeview.radio:checked:disabled:selected,
 row:selected radio:checked:disabled,
 infobar radio:checked:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-insensitive-selected.png"), url("assets/radio-checked-insensitive-selected@2.png")); }
+
+checkbutton check:hover, popover check:hover {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-selected.png"), url("assets/checkbox-unchecked-selected@2.png")); }
+
+checkbutton check:checked:hover, popover check:checked:hover {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-dark.png"), url("assets/checkbox-checked-dark@2.png")); }
+
+radiobutton radio:hover, popover radio:hover {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-selected.png"), url("assets/radio-unchecked-selected@2.png")); }
+
+radiobutton radio:checked:hover, popover radio:checked:hover {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-dark.png"), url("assets/radio-checked-dark@2.png")); }
 
 popover check:active {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-selected.png"), url("assets/checkbox-checked-selected@2.png")); }
@@ -4193,8 +4193,8 @@ widget .clocks-button {
     color: #ffffff;
     background-color: #7E7E23;
     border-color: #030301; }
-  .geary-main-layout .geary-conversation-frame .view:selected:backdrop, .geary-main-layout .geary-conversation-frame iconview:selected:backdrop {
-    color: rgba(255, 255, 255, 0.56); }
+    .geary-main-layout .geary-conversation-frame .view:selected:backdrop, .geary-main-layout .geary-conversation-frame iconview:selected:backdrop {
+      color: rgba(255, 255, 255, 0.56); }
   .geary-main-layout .geary-conversation-frame .view:backdrop, .geary-main-layout .geary-conversation-frame iconview:backdrop {
     color: rgba(246, 246, 244, 0.56); }
 .geary-main-layout .geary-info-bar-stack infobar.info grid.vertical {
