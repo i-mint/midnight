@@ -749,6 +749,9 @@ StScrollBar {
       box-shadow: none;
       border: none;
       border-color: transparent; }
+  #panel .panel-button.clock-display:active > * > *:last-child, #panel .panel-button.clock-display:checked > * > *:last-child {
+    color: #ffffff;
+    background-color: #2D90FF; }
   #panel #panelActivities.panel-button {
     -natural-hpadding: 12px; }
   #panel .panel-status-indicators-box,
