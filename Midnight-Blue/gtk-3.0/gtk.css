@@ -244,11 +244,11 @@ button {
   border: 1px solid;
   border-radius: 3px;
   padding: 2px 6px;
-  color: #F6F6F4;
+  color: #2D90FF;
   border-color: #08111C;
   background-color: #08111C; }
   button:backdrop {
-    color: rgba(246, 246, 244, 0.56); }
+    color: rgba(45, 144, 255, 0.56); }
   button separator {
     margin: 4px 1px; }
   button.flat, button.sidebar-button {
@@ -491,11 +491,11 @@ button {
     border-width: 1px; }
 
 .inline-toolbar toolbutton > button {
-  color: #F6F6F4;
+  color: #2D90FF;
   border-color: #08111C;
   background-color: #08111C; }
   .inline-toolbar toolbutton > button:backdrop {
-    color: rgba(246, 246, 244, 0.56); }
+    color: rgba(45, 144, 255, 0.56); }
   .inline-toolbar toolbutton > button:hover {
     color: #F6F6F4;
     border-color: #08111C;
@@ -825,6 +825,13 @@ combobox arrow {
   -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
   min-height: 16px;
   min-width: 16px; }
+
+combobox label, combobox {
+  color: #2D90FF; }
+combobox cellview:hover label, combobox cellview:hover {
+  color: #F6F6F4; }
+combobox cellview:backdrop {
+  color: rgba(45, 144, 255, 0.56); }
 
 toolbar, .inline-toolbar {
   -GtkWidget-window-dragging: true;
@@ -2331,7 +2338,7 @@ frame > border.flat,
 .frame.flat {
   border-style: none; }
 
-scrolledwindow viewport box grid {
+scrolledwindow viewport box grid:not(.linked) {
   background-color: #08111C;
   border-left: 2px solid #2D90FF;
   padding: 5px;
@@ -2339,31 +2346,6 @@ scrolledwindow viewport box grid {
   border-radius: 5px; }
 scrolledwindow viewport.frame {
   border-style: none; }
-scrolledwindow viewport label:backdrop {
-  color: rgba(246, 246, 244, 0.56); }
-scrolledwindow viewport combobox cellview {
-  color: #2d90ff; }
-  scrolledwindow viewport combobox cellview:hover {
-    color: #ffffff; }
-  scrolledwindow viewport combobox cellview:backdrop {
-    color: rgba(45, 144, 255, 0.56); }
-  scrolledwindow viewport combobox cellview:hover:backdrop {
-    color: rgba(255, 255, 255, 0.56); }
-scrolledwindow viewport combobox menuitem cellview {
-  color: #2D90FF; }
-scrolledwindow viewport combobox menuitem:hover cellview {
-  color: #ffffff; }
-scrolledwindow viewport image:backdrop, scrolledwindow viewport arrow:backdrop {
-  color: rgba(246, 246, 244, 0.56); }
-scrolledwindow viewport .text-button {
-  background-color: #2D90FF;
-  color: #ffffff; }
-  scrolledwindow viewport .text-button:hover {
-    background-color: #60abff;
-    color: #ffffff; }
-  scrolledwindow viewport .text-button:backdrop {
-    background-color: rgba(45, 144, 255, 0.56);
-    color: rgba(255, 255, 255, 0.56); }
 scrolledwindow overshoot.top {
   background-image: -gtk-gradient(radial, center top, 0, center top, 0.6, from(rgba(45, 144, 255, 0.2)), to(rgba(45, 144, 255, 0)));
   background-size: 100% 60%;
@@ -2845,11 +2827,11 @@ colorswatch:disabled {
 colorswatch#add-color-button {
   border-style: solid;
   border-width: 1px;
-  color: #F6F6F4;
+  color: #2D90FF;
   border-color: #08111C;
   background-color: #08111C; }
   colorswatch#add-color-button:backdrop {
-    color: rgba(246, 246, 244, 0.56); }
+    color: rgba(45, 144, 255, 0.56); }
   colorswatch#add-color-button:hover {
     color: #F6F6F4;
     border-color: #08111C;
@@ -3622,6 +3604,9 @@ button.documents-favorite:active:hover {
     color: #ffffff; }
     .tweak-group #button-layout.tweak .text-button:hover label {
       color: #ffffff; }
+
+row.tweak:not(button):backdrop {
+  color: rgba(246, 246, 244, 0.56); }
 
 .tr-workarea undershoot,
 .tr-workarea overshoot {
@@ -4531,11 +4516,11 @@ GtkListBox .h4 {
   border-width: 1px 1px 0 1px; }
 
 #content_frame button {
-  color: #F6F6F4;
+  color: #2D90FF;
   border-color: #08111C;
   background-color: #08111C; }
   #content_frame button:backdrop {
-    color: rgba(246, 246, 244, 0.56); }
+    color: rgba(45, 144, 255, 0.56); }
   #content_frame button:hover {
     color: #F6F6F4;
     border-color: #08111C;

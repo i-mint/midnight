@@ -826,6 +826,13 @@ combobox arrow {
   min-height: 16px;
   min-width: 16px; }
 
+combobox label, combobox {
+  color: #F6F6F4; }
+combobox cellview:hover label, combobox cellview:hover {
+  color: #F6F6F4; }
+combobox cellview:backdrop {
+  color: rgba(246, 246, 244, 0.56); }
+
 toolbar, .inline-toolbar {
   -GtkWidget-window-dragging: true;
   padding: 4px;
@@ -2399,7 +2406,7 @@ frame > border.flat,
 .frame.flat {
   border-style: none; }
 
-scrolledwindow viewport box grid {
+scrolledwindow viewport box grid:not(.linked) {
   background-color: #1B1B08;
   border-left: 2px solid #7E7E23;
   padding: 5px;
@@ -2407,31 +2414,6 @@ scrolledwindow viewport box grid {
   border-radius: 5px; }
 scrolledwindow viewport.frame {
   border-style: none; }
-scrolledwindow viewport label:backdrop {
-  color: rgba(246, 246, 244, 0.56); }
-scrolledwindow viewport combobox cellview {
-  color: #F6F6F4; }
-  scrolledwindow viewport combobox cellview:hover {
-    color: #ffffff; }
-  scrolledwindow viewport combobox cellview:backdrop {
-    color: rgba(246, 246, 244, 0.56); }
-  scrolledwindow viewport combobox cellview:hover:backdrop {
-    color: rgba(255, 255, 255, 0.56); }
-scrolledwindow viewport combobox menuitem cellview {
-  color: #7E7E23; }
-scrolledwindow viewport combobox menuitem:hover cellview {
-  color: #ffffff; }
-scrolledwindow viewport image:backdrop, scrolledwindow viewport arrow:backdrop {
-  color: rgba(246, 246, 244, 0.56); }
-scrolledwindow viewport .text-button {
-  background-color: #7E7E23;
-  color: #ffffff; }
-  scrolledwindow viewport .text-button:hover {
-    background-color: #a6a62e;
-    color: #ffffff; }
-  scrolledwindow viewport .text-button:backdrop {
-    background-color: rgba(126, 126, 35, 0.56);
-    color: rgba(255, 255, 255, 0.56); }
 scrolledwindow overshoot.top {
   background-image: -gtk-gradient(radial, center top, 0, center top, 0.6, from(rgba(126, 126, 35, 0.2)), to(rgba(126, 126, 35, 0)));
   background-size: 100% 60%;
@@ -3686,6 +3668,9 @@ button.documents-favorite:active:hover {
     color: #ffffff; }
     .tweak-group #button-layout.tweak .text-button:hover label {
       color: #ffffff; }
+
+row.tweak:not(button):backdrop {
+  color: rgba(246, 246, 244, 0.56); }
 
 .tr-workarea undershoot,
 .tr-workarea overshoot {
