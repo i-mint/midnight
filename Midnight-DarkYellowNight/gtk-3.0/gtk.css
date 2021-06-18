@@ -4338,6 +4338,9 @@ widget .clocks-button {
   .geary-main-layout infobar.info button:backdrop label {
     color: rgba(255, 255, 255, 0.56); }
 
+#InkscapePanel grid, #NotebookPage grid {
+  border-left-color: #1B1B08; }
+
 UnityDecoration {
   -UnityDecoration-extents: 28px 1 1 1;
   -UnityDecoration-input-extents: 10px;
