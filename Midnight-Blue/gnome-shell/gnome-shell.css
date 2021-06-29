@@ -548,8 +548,17 @@ StScrollBar {
   height: 2px;
   margin: 0;
   background-color: transparent;
-  border: none;
-  border-image: url("common-assets/menu/menu-separator.svg") 1 1 1 1; }
+  border: none; }
+
+.popup-separator-menu-item {
+  padding: 0; }
+  .popup-separator-menu-item .popup-separator-menu-item-separator {
+    height: 2px;
+    margin: 0;
+    background-color: transparent; }
+    .popup-sub-menu .popup-separator-menu-item .popup-separator-menu-item-separator {
+      margin: 0;
+      background-color: transparent; }
 
 .background-menu {
   -boxpointer-gap: 4px;
