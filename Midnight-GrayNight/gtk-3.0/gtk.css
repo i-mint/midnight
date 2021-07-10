@@ -1886,7 +1886,7 @@ scrollbar {
     scrollbar slider:disabled {
       background-color: transparent; }
     scrollbar slider:hover {
-      background-color: rgba(20, 20, 20, 0.45); }
+      background-color: rgba(255, 255, 255, 0.45); }
   scrollbar.fine-tune slider {
     min-width: 4px;
     min-height: 4px; }

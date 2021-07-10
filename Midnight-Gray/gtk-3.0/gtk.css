@@ -1818,7 +1818,7 @@ scrollbar {
     scrollbar slider:disabled {
       background-color: transparent; }
     scrollbar slider:hover {
-      background-color: rgba(150, 150, 150, 0.78); }
+      background-color: rgba(150, 150, 150, 0.7); }
   scrollbar.fine-tune slider {
     min-width: 4px;
     min-height: 4px; }
@@ -3677,6 +3677,9 @@ button.documents-favorite:active:hover {
 
 row.tweak:not(button):backdrop {
   color: rgba(246, 246, 244, 0.56); }
+
+list row.tweak-startup {
+  background-color: transparent; }
 
 .tr-workarea undershoot,
 .tr-workarea overshoot {
