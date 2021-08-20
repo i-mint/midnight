@@ -1626,21 +1626,32 @@ popover, popover.background {
     border-style: none;
     background-color: transparent; }
 
-popover.menu stack button:not(.flat):not(.toggle):not(.switcher) {
+popover button, popover.menu stack button:not(.flat):not(.toggle):not(.switcher) {
   background-color: transparent;
   border-color: transparent; }
-  popover.menu stack button:not(.flat):not(.toggle):not(.switcher) label, popover.menu stack button:not(.flat):not(.toggle):not(.switcher) image, popover.menu stack button:not(.flat):not(.toggle):not(.switcher) {
+  popover button label, popover button, popover.menu stack button:not(.flat):not(.toggle):not(.switcher) label, popover.menu stack button:not(.flat):not(.toggle):not(.switcher) {
     color: #00C848; }
-  popover.menu stack button:not(.flat):not(.toggle):not(.switcher):hover {
+  popover button label, popover button image, popover.menu stack button:not(.flat):not(.toggle):not(.switcher) label, popover.menu stack button:not(.flat):not(.toggle):not(.switcher) image {
+    color: inherit; }
+  popover button:hover, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):hover {
     background-color: #223027;
     border-color: #223027; }
-    popover.menu stack button:not(.flat):not(.toggle):not(.switcher):hover label, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):hover image, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):hover {
+    popover button:hover label, popover button:hover image, popover button:hover, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):hover label, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):hover image, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):hover {
       color: #00fb5a; }
-  popover.menu stack button:not(.flat):not(.toggle):not(.switcher):active, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):focus, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):checked {
+  popover button:active, popover button:focus, popover button:checked, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):active, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):focus, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):checked {
     background-color: #00C848;
     border-color: #00C848; }
-    popover.menu stack button:not(.flat):not(.toggle):not(.switcher):active label, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):active image, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):active, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):focus label, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):focus image, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):focus, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):checked label, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):checked image, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):checked {
+    popover button:active label, popover button:active, popover button:focus label, popover button:focus, popover button:checked label, popover button:checked, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):active label, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):active, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):focus label, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):focus, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):checked label, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):checked {
       color: #040E04; }
+    popover button:active label, popover button:active image, popover button:focus label, popover button:focus image, popover button:checked label, popover button:checked image, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):active label, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):active image, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):focus label, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):focus image, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):checked label, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):checked image {
+      color: inherit; }
+  popover button:disabled, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):disabled {
+    border-color: rgba(8, 28, 15, 0.55);
+    background-color: rgba(8, 28, 15, 0.55); }
+    popover button:disabled label, popover button:disabled, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):disabled label, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):disabled {
+      color: rgba(246, 246, 244, 0.45); }
+    popover button:disabled label, popover button:disabled image, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):disabled label, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):disabled image {
+      color: rgba(246, 246, 244, 0.15); }
 
 cursor-handle {
   background-color: transparent;
@@ -4693,10 +4704,10 @@ GtkListBox .h4 {
   font-weight: bold; }
 
 .nautilus-window paned > separator {
-  background-image: linear-gradient(to bottom, rgba(2, 8, 4, 0.95), rgba(2, 8, 4, 0.95)); }
+  background-image: linear-gradient(to bottom, rgba(6, 20, 11, 0.95), rgba(6, 20, 11, 0.95)); }
 
 filechooser paned > separator {
-  background-image: linear-gradient(to bottom, rgba(2, 8, 4, 0.95), rgba(2, 8, 4, 0.95)); }
+  background-image: linear-gradient(to bottom, rgba(6, 20, 11, 0.95), rgba(6, 20, 11, 0.95)); }
 
 filechooser.csd.background, filechooser placessidebar list,
 .nautilus-window.csd.background,
@@ -4780,7 +4791,7 @@ filechooser placessidebar.sidebar,
         color: #00fb5a; }
   filechooser placessidebar.sidebar separator,
   .nautilus-window placessidebar.sidebar separator {
-    background-color: rgba(1, 4, 2, 0.23); }
+    background-color: rgba(1, 4, 2, 0.12); }
 filechooser.maximized placessidebar.sidebar,
 .nautilus-window.maximized placessidebar.sidebar {
   background-color: #081c0f; }
@@ -4970,7 +4981,7 @@ filechooser actionbar {
   background-color: #081C0F; }
 
 .gedit-side-panel-paned > separator {
-  background-image: linear-gradient(to bottom, rgba(2, 8, 4, 0.95), rgba(2, 8, 4, 0.95)); }
+  background-image: linear-gradient(to bottom, rgba(6, 20, 11, 0.95), rgba(6, 20, 11, 0.95)); }
 
 .gedit-bottom-panel-paned > separator {
   background-image: linear-gradient(to bottom, #010402, #010402); }
