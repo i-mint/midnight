@@ -250,13 +250,14 @@ StScrollBar {
   border: 1px solid #0d1b2c;
   box-shadow: inset 0 2px 4px rgba(16, 34, 56, 0.05);
   width: 20em;
-  padding: 7px 9px;
+  padding: 5px 9px;
   caret-size: 1px;
   caret-color: #ffffff;
   selection-background-color: #003e84;
   selected-color: #ffffff;
   transition-duration: 300ms;
-  border-radius: 20px; }
+  border-radius: 20px;
+  min-height: 1.4em; }
   .run-dialog .run-dialog-entry:hover, .run-dialog .run-dialog-entry:focus {
     color: #ffffff;
     caret-color: #ffffff;

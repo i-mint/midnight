@@ -250,18 +250,19 @@ StScrollBar {
   border: 1px solid #091e10;
   box-shadow: inset 0 2px 4px rgba(11, 40, 21, 0.05);
   width: 20em;
-  padding: 7px 9px;
+  padding: 5px 9px;
   caret-size: 1px;
   caret-color: #040E04;
   selection-background-color: #00200b;
   selected-color: #040E04;
   transition-duration: 300ms;
-  border-radius: 20px; }
+  border-radius: 20px;
+  min-height: 1.4em; }
   .run-dialog .run-dialog-entry:hover, .run-dialog .run-dialog-entry:focus {
     color: #040E04;
     caret-color: #040E04;
     background-color: #00C848;
-    selection-background-color: #00200b;
+    selection-background-color: #71ffa4;
     selected-color: #040E04; }
 .run-dialog .run-dialog-description {
   text-align: center;
