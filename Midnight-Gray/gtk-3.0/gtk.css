@@ -1950,6 +1950,11 @@ headerbar switch:checked:disabled,
 .primary-toolbar switch:checked:disabled {
   background-image: -gtk-scaled(url("assets/switch-active-insensitive-header-dark.png"), url("assets/switch-active-insensitive-header-dark@2.png")); }
 
+switch.restricts {
+  background-image: -gtk-scaled(url("assets/switch-restricts.png"), url("switch-restricts@2.png")); }
+  switch.restricts:active, switch.restricts:checked {
+    background-image: -gtk-scaled(url("assets/switch-restricts-active.png"), url("assets/switch-restricts@2.png")); }
+
 .check,
 check,
 treeview.check {
