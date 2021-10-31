@@ -15,7 +15,7 @@
    viewBox="0 0 31.999999 33"
    id="svg6927"
    version="1.1"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
    sodipodi:docname="menu-hover.svg">
   <defs
      id="defs6929">
@@ -35,18 +35,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.6"
-     inkscape:cx="2.1380893"
-     inkscape:cy="9.0488963"
+     inkscape:zoom="22.4"
+     inkscape:cx="19.745712"
+     inkscape:cy="20.63374"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="true"
+     showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1366"
-     inkscape:window-height="701"
+     inkscape:window-width="1920"
+     inkscape:window-height="957"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -78,17 +78,14 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-137,-382.36221)">
-    <g
-       transform="matrix(0.0689655,0,0,1.0000001,71.275885,274.36218)"
-       id="g6908"
-       style="fill:#2d90ff;fill-opacity:1">
-      <rect
-         y="108"
-         x="1011"
-         height="33"
-         width="348"
-         id="rect5271"
-         style="opacity:1;fill:#2d90ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0" />
-    </g>
+    <rect
+       style="opacity:0.1;fill:#2d90ff;fill-opacity:1;stroke-width:1.18551683"
+       id="rect817"
+       width="24"
+       height="33"
+       x="141"
+       y="382.36218"
+       rx="2.5536978"
+       ry="2.5536978" />
   </g>
 </svg>

@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -15,7 +13,7 @@
    viewBox="0 0 31.999999 33"
    id="svg6927"
    version="1.1"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
    sodipodi:docname="menu-hover.svg">
   <defs
      id="defs6929">
@@ -35,26 +33,27 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.919596"
-     inkscape:cx="-11.54308"
-     inkscape:cy="14.758951"
+     inkscape:zoom="15.839192"
+     inkscape:cx="18.09677"
+     inkscape:cy="18.138207"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="true"
+     showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1366"
-     inkscape:window-height="701"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="25"
      inkscape:window-maximized="1"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="false"
      inkscape:bbox-nodes="true"
      inkscape:snap-bbox-midpoints="false"
-     inkscape:snap-bbox-edge-midpoints="true">
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:document-rotation="0">
     <inkscape:grid
        type="xygrid"
        id="grid4140"
@@ -78,17 +77,14 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-137,-382.36221)">
-    <g
-       transform="matrix(0.0689655,0,0,1.0000001,71.275885,274.36218)"
-       id="g6908"
-       style="fill:#c87200;fill-opacity:1">
-      <rect
-         y="108"
-         x="1011"
-         height="33"
-         width="348"
-         id="rect5271"
-         style="opacity:1;fill:#c87200;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0" />
-    </g>
+    <rect
+       style="opacity:0.1;fill:#c87200;fill-opacity:1;stroke-width:1.18551683"
+       id="rect817"
+       width="24"
+       height="33"
+       x="141"
+       y="382.36218"
+       rx="2.5536978"
+       ry="2.5536978" />
   </g>
 </svg>
