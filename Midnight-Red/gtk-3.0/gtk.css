@@ -5341,6 +5341,33 @@ event.slanted-end:backdrop label {
           color: #ffffff; }
   .budgie-popover frame > border, .budgie-popover .frame, .budgie-popover.background frame > border, .budgie-popover.background .frame {
     border: none; }
+  .budgie-popover list row, .budgie-popover.background list row {
+    background-color: #1C0808;
+    border-left: 2px solid transparent; }
+    .budgie-popover list row label, .budgie-popover list row, .budgie-popover.background list row label, .budgie-popover.background list row {
+      color: #B40021; }
+    .budgie-popover list row:hover, .budgie-popover.background list row:hover {
+      background-color: #1C0808;
+      border-left: 2px solid #B40021; }
+      .budgie-popover list row:hover label, .budgie-popover list row:hover, .budgie-popover.background list row:hover label, .budgie-popover.background list row:hover {
+        color: white; }
+  .budgie-popover .sidebar, .budgie-popover.background .sidebar {
+    background-color: #1C0808;
+    border-left: 2px solid transparent; }
+    .budgie-popover .sidebar label, .budgie-popover .sidebar, .budgie-popover.background .sidebar label, .budgie-popover.background .sidebar {
+      color: #B40021; }
+    .budgie-popover .sidebar:hover, .budgie-popover.background .sidebar:hover {
+      background-color: #1C0808;
+      border-left: 2px solid #B40021; }
+      .budgie-popover .sidebar:hover label, .budgie-popover .sidebar:hover, .budgie-popover.background .sidebar:hover label, .budgie-popover.background .sidebar:hover {
+        color: white; }
+    .budgie-popover .sidebar:active, .budgie-popover .sidebar:checked, .budgie-popover .sidebar:selected, .budgie-popover.background .sidebar:active, .budgie-popover.background .sidebar:checked, .budgie-popover.background .sidebar:selected {
+      background-color: #B40021;
+      border-left: 2px solid #B40021; }
+      .budgie-popover .sidebar:active label, .budgie-popover .sidebar:active, .budgie-popover .sidebar:checked label, .budgie-popover .sidebar:checked, .budgie-popover .sidebar:selected label, .budgie-popover .sidebar:selected, .budgie-popover.background .sidebar:active label, .budgie-popover.background .sidebar:active, .budgie-popover.background .sidebar:checked label, .budgie-popover.background .sidebar:checked, .budgie-popover.background .sidebar:selected label, .budgie-popover.background .sidebar:selected {
+        color: #ffffff; }
+  .budgie-popover .container, .budgie-popover.background .container {
+    background-color: #1C0808; }
 
 .budgie-popover .container {
   background-color: #260b0b; }

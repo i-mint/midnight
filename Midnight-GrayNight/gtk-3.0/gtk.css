@@ -2687,7 +2687,7 @@ filechooserbutton:drop(active) {
 
 .sidebar:not(separator) {
   border-style: none;
-  background-color: red;
+  background-color: rgba(30, 30, 30, 0.95);
   color: rgba(246, 246, 244, 0.56); }
   .sidebar:not(separator):backdrop label, .sidebar:not(separator):backdrop, .sidebar:not(separator) .view:backdrop label, .sidebar:not(separator) iconview:backdrop label, .sidebar:not(separator) .view:backdrop, .sidebar:not(separator) iconview:backdrop, .sidebar:not(separator) row.sidebar-row:backdrop label, .sidebar:not(separator) row.sidebar-row:backdrop, .sidebar:not(separator) .view.cell:backdrop label, .sidebar:not(separator) iconview.cell:backdrop label, .sidebar:not(separator) .view.cell:backdrop, .sidebar:not(separator) iconview.cell:backdrop {
     color: rgba(246, 246, 244, 0.34); }
@@ -5454,6 +5454,33 @@ event.slanted-end:backdrop label {
           color: #141414; }
   .budgie-popover frame > border, .budgie-popover .frame, .budgie-popover.background frame > border, .budgie-popover.background .frame {
     border: none; }
+  .budgie-popover list row, .budgie-popover.background list row {
+    background-color: #1E1E1E;
+    border-left: 2px solid transparent; }
+    .budgie-popover list row label, .budgie-popover list row, .budgie-popover.background list row label, .budgie-popover.background list row {
+      color: #F6F6F4; }
+    .budgie-popover list row:hover, .budgie-popover.background list row:hover {
+      background-color: #1E1E1E;
+      border-left: 2px solid #969696; }
+      .budgie-popover list row:hover label, .budgie-popover list row:hover, .budgie-popover.background list row:hover label, .budgie-popover.background list row:hover {
+        color: #F6F6F4; }
+  .budgie-popover .sidebar, .budgie-popover.background .sidebar {
+    background-color: #1E1E1E;
+    border-left: 2px solid transparent; }
+    .budgie-popover .sidebar label, .budgie-popover .sidebar, .budgie-popover.background .sidebar label, .budgie-popover.background .sidebar {
+      color: #F6F6F4; }
+    .budgie-popover .sidebar:hover, .budgie-popover.background .sidebar:hover {
+      background-color: #1E1E1E;
+      border-left: 2px solid #969696; }
+      .budgie-popover .sidebar:hover label, .budgie-popover .sidebar:hover, .budgie-popover.background .sidebar:hover label, .budgie-popover.background .sidebar:hover {
+        color: #F6F6F4; }
+    .budgie-popover .sidebar:active, .budgie-popover .sidebar:checked, .budgie-popover .sidebar:selected, .budgie-popover.background .sidebar:active, .budgie-popover.background .sidebar:checked, .budgie-popover.background .sidebar:selected {
+      background-color: #969696;
+      border-left: 2px solid #969696; }
+      .budgie-popover .sidebar:active label, .budgie-popover .sidebar:active, .budgie-popover .sidebar:checked label, .budgie-popover .sidebar:checked, .budgie-popover .sidebar:selected label, .budgie-popover .sidebar:selected, .budgie-popover.background .sidebar:active label, .budgie-popover.background .sidebar:active, .budgie-popover.background .sidebar:checked label, .budgie-popover.background .sidebar:checked, .budgie-popover.background .sidebar:selected label, .budgie-popover.background .sidebar:selected {
+        color: #141414; }
+  .budgie-popover .container, .budgie-popover.background .container {
+    background-color: #1E1E1E; }
 
 .budgie-popover .container {
   background-color: #212121; }
