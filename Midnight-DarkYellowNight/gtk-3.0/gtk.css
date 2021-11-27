@@ -17,6 +17,8 @@
 .background {
   color: #F6F6F4;
   background-color: rgba(27, 27, 8, 0.999); }
+  .background.popup {
+    background-color: transparent; }
 
 *:disabled {
   -gtk-icon-effect: dim; }
