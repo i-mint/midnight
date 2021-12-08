@@ -102,6 +102,12 @@ label:disabled {
 .dim-label, label.separator, headerbar .subtitle, .titlebar:not(headerbar) .subtitle, popover label.separator, popover.background label.separator {
   opacity: 0.55; }
 
+label.dim-label, label.separator, headerbar label.subtitle, .titlebar:not(headerbar) label.subtitle, popover label.separator, popover.background label.separator {
+  color: #F6F6F4; }
+
+image.dim-label, headerbar image.subtitle, .titlebar:not(headerbar) image.subtitle {
+  color: #F6F6F4; }
+
 assistant .sidebar {
   background-color: #081C0F;
   border-top: 1px solid #010402; }
@@ -158,6 +164,8 @@ entry {
     entry image.right {
       padding-right: 0;
       padding-left: 5px; }
+  entry.title {
+    color: #F6F6F4; }
   entry.flat, entry.flat:focus {
     min-height: 0;
     padding: 2px;
