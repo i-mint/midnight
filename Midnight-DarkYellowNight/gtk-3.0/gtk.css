@@ -52,7 +52,7 @@ textview text {
   .view text:selected:focus,
   iconview text:selected:focus,
   textview text:selected:focus {
-    border-radius: 2px; }
+    border-radius: 4px; }
   .view:backdrop, iconview:backdrop,
   .view text:backdrop,
   iconview text:backdrop,
@@ -75,7 +75,7 @@ rubberband, flowbox rubberband, treeview.view rubberband, .content-view rubberba
 
 flowbox flowboxchild {
   padding: 3px;
-  border-radius: 2px; }
+  border-radius: 4px; }
   flowbox flowboxchild:selected {
     outline-offset: -2px; }
 flowbox button.remove-button {
@@ -147,7 +147,7 @@ entry {
   border: 1px solid;
   padding: 2px 8px;
   caret-color: currentColor;
-  border-radius: 3px;
+  border-radius: 4px;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   color: rgba(246, 246, 244, 0.12);
   border-color: #1d1d09;
@@ -269,7 +269,7 @@ button {
   min-width: 20px;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   border: 1px solid;
-  border-radius: 3px;
+  border-radius: 4px;
   padding: 2px 6px;
   color: #F6F6F4;
   border-color: #1B1B08;
@@ -514,7 +514,7 @@ button {
   button.font separator, button.file separator {
     background-color: transparent; }
   .inline-toolbar button, .inline-toolbar button:backdrop {
-    border-radius: 2px;
+    border-radius: 4px;
     border-width: 1px; }
 
 .inline-toolbar toolbutton > button {
@@ -553,7 +553,7 @@ toolbar.inline-toolbar toolbutton:last-child > button.flat, .inline-toolbar tool
   border-bottom-right-radius: 3px;
   border-right-style: solid; }
 toolbar.inline-toolbar toolbutton:only-child > button.flat, .inline-toolbar toolbutton:only-child > button.flat {
-  border-radius: 3px;
+  border-radius: 4px;
   border-style: solid; }
 
 .linked:not(.vertical):not(.path-bar) > entry + entry {
@@ -713,8 +713,8 @@ headerbar .linked:not(.vertical).path-bar > button:first-child:active,
 headerbar .linked:not(.vertical).path-bar > button:first-child:checked,
 headerbar .linked:not(.vertical).path-bar > button:first-child:disabled, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:first-child, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:first-child,
 .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:first-child {
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px; }
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px; }
 .linked:not(.vertical) > entry:last-child, .inline-toolbar button:last-child, .linked:not(.vertical) > button:last-child, spinbutton:not(.vertical) button:last-child, spinbutton:not(.vertical) entry:last-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child:hover, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child:active, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child:checked, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child:disabled,
 .primary-toolbar .linked:not(.vertical).path-bar > button:last-child,
 headerbar .linked:not(.vertical).path-bar > button:last-child,
@@ -723,8 +723,8 @@ headerbar .linked:not(.vertical).path-bar > button:last-child:active,
 headerbar .linked:not(.vertical).path-bar > button:last-child:checked,
 headerbar .linked:not(.vertical).path-bar > button:last-child:disabled, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:last-child, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:last-child,
 .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:last-child {
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-right-style: solid; }
 .linked:not(.vertical) > entry:only-child, .inline-toolbar button:only-child, .linked:not(.vertical) > button:only-child, spinbutton:not(.vertical) button:only-child, spinbutton:not(.vertical) entry:only-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child:hover, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child:active, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child:checked, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child:disabled,
 .primary-toolbar .linked:not(.vertical).path-bar > button:only-child,
@@ -734,7 +734,7 @@ headerbar .linked:not(.vertical).path-bar > button:only-child:active,
 headerbar .linked:not(.vertical).path-bar > button:only-child:checked,
 headerbar .linked:not(.vertical).path-bar > button:only-child:disabled, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:only-child, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:only-child,
 .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:only-child {
-  border-radius: 3px;
+  border-radius: 4px;
   border-style: solid; }
 
 .linked.vertical > entry, .linked.vertical > entry:focus, .linked.vertical > button, .linked.vertical > button:hover, .linked.vertical > button:active, .linked.vertical > button:checked, spinbutton.vertical button, spinbutton.vertical entry, .linked.vertical > combobox > box > button.combo {
@@ -742,14 +742,14 @@ headerbar .linked:not(.vertical).path-bar > button:only-child:disabled, .nemo-wi
   border-bottom-style: none; }
 
 .linked.vertical > entry:first-child, .linked.vertical > button:first-child, spinbutton.vertical button:first-child, spinbutton.vertical entry:first-child {
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px; }
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px; }
 .linked.vertical > entry:last-child, .linked.vertical > button:last-child, spinbutton.vertical button:last-child, spinbutton.vertical entry:last-child {
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-bottom-style: solid; }
 .linked.vertical > entry:only-child, .linked.vertical > button:only-child, spinbutton.vertical button:only-child, spinbutton.vertical entry:only-child {
-  border-radius: 3px;
+  border-radius: 4px;
   border-style: solid; }
 
 menuitem.button.flat,
@@ -766,7 +766,7 @@ modelbutton.flat {
   padding-left: 8px;
   padding-right: 8px;
   outline-offset: -3px;
-  border-radius: 2px; }
+  border-radius: 4px; }
   menuitem.button.flat:hover,
   modelbutton.flat:hover {
     background-color: #313120; }
@@ -798,7 +798,7 @@ spinbutton:disabled {
 spinbutton:not(.vertical) entry {
   min-width: 28px; }
 spinbutton:not(.vertical):dir(ltr) entry, spinbutton:not(.vertical):dir(rtl) button.up {
-  border-radius: 3px 0 0 3px; }
+  border-radius: 4px 0 0 4px; }
 spinbutton:not(.vertical) > button + button {
   border-left-style: none; }
 spinbutton:not(.vertical) > button:hover:not(:active),
@@ -829,7 +829,7 @@ spinbutton.vertical button, spinbutton.vertical entry {
   padding-right: 4px;
   min-width: 0; }
 spinbutton.vertical button.up {
-  border-radius: 3px 3px 0 0; }
+  border-radius: 4px 4px 0 0; }
 spinbutton.vertical > entry:focus + button {
   border-top-color: #1d1d09; }
 spinbutton.vertical > entry:drop(active) + button {
@@ -851,21 +851,21 @@ combobox:drop(active) button.combo {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px; }
 .linked:not(.vertical) > combobox:last-child > box > button.combo {
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-right-style: solid; }
 .linked:not(.vertical) > combobox:only-child > box > button.combo {
-  border-radius: 3px;
+  border-radius: 4px;
   border-style: solid; }
 .linked.vertical > combobox:first-child > box > button.combo {
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px; }
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px; }
 .linked.vertical > combobox:last-child > box > button.combo {
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-bottom-style: solid; }
 .linked.vertical > combobox:only-child > box > button.combo {
-  border-radius: 3px;
+  border-radius: 4px;
   border-style: solid; }
 
 combobox label, combobox {
@@ -890,7 +890,7 @@ toolbar, .inline-toolbar {
   toolbar.osd, .osd.inline-toolbar {
     padding: 7px;
     border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 3px;
+    border-radius: 4px;
     background-color: rgba(27, 27, 8, 0.85); }
     toolbar.osd.left, .osd.left.inline-toolbar, toolbar.osd.right, .osd.right.inline-toolbar, toolbar.osd.top, .osd.top.inline-toolbar, toolbar.osd.bottom, .osd.bottom.inline-toolbar {
       border-radius: 0; }
@@ -932,7 +932,7 @@ toolbar, .inline-toolbar {
   border-color: #030301;
   border-width: 0 1px 1px;
   padding: 3px;
-  border-radius: 0  0 3px 3px; }
+  border-radius: 0 0 4px 4px; }
 
 searchbar {
   background-color: #1B1B08;
@@ -1213,7 +1213,7 @@ separator.sidebar, hdyleaflet > separator {
 .primary-toolbar .linked:not(.vertical):not(.path-bar):not(.stack-switcher) button:not(:last-child):not(:only-child), headerbar .linked:not(.vertical):not(.path-bar):not(.stack-switcher) button:not(:last-child):not(:only-child) {
   margin-right: 1px; }
 .primary-toolbar .linked:not(.vertical):not(.path-bar) > button, headerbar .linked:not(.vertical):not(.path-bar) > button, .primary-toolbar .linked:not(.vertical):not(.path-bar) > button:hover, headerbar .linked:not(.vertical):not(.path-bar) > button:hover, .primary-toolbar .linked:not(.vertical):not(.path-bar) > button:active, headerbar .linked:not(.vertical):not(.path-bar) > button:active, .primary-toolbar .linked:not(.vertical):not(.path-bar) > button:checked, headerbar .linked:not(.vertical):not(.path-bar) > button:checked, .primary-toolbar .linked:not(.vertical):not(.path-bar) > button:disabled, headerbar .linked:not(.vertical):not(.path-bar) > button:disabled {
-  border-radius: 3px;
+  border-radius: 4px;
   border-style: solid; }
 .primary-toolbar .linked:not(.vertical):not(.path-bar) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover:not(:only-child), headerbar .linked:not(.vertical):not(.path-bar) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover:not(:only-child),
 .primary-toolbar .linked:not(.vertical):not(.path-bar) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover + button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action),
@@ -1230,7 +1230,7 @@ headerbar .linked:not(.vertical).path-bar > button {
   outline-offset: -3px;
   background-color: rgba(27, 27, 8, 0);
   border-color: rgba(27, 27, 8, 0);
-  border-radius: 2px; }
+  border-radius: 4px; }
   .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button image,
   .primary-toolbar .linked:not(.vertical).path-bar > button label,
   headerbar .linked:not(.vertical).path-bar > button label,
@@ -1244,7 +1244,7 @@ headerbar .linked:not(.vertical).path-bar > button {
     color: #fdfdfc;
     border-color: #1B1B08;
     background-color: rgba(126, 126, 35, 0.1);
-    border-radius: 2px; }
+    border-radius: 4px; }
     .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover image,
     .primary-toolbar .linked:not(.vertical).path-bar > button:hover label,
     headerbar .linked:not(.vertical).path-bar > button:hover label,
@@ -1260,7 +1260,7 @@ headerbar .linked:not(.vertical).path-bar > button {
     color: #ffffff;
     border-color: transparent;
     background-color: #7E7E23;
-    border-radius: 2px; }
+    border-radius: 4px; }
     .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active image, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked image,
     .primary-toolbar .linked:not(.vertical).path-bar > button:active label,
     headerbar .linked:not(.vertical).path-bar > button:active label,
@@ -1551,7 +1551,7 @@ treeview.view {
       -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
   treeview.view.progressbar, treeview.view.progressbar:focus {
     color: #ffffff;
-    border-radius: 3px;
+    border-radius: 4px;
     background-color: #7E7E23; }
     treeview.view.progressbar:selected, treeview.view.progressbar:selected:focus, treeview.view.progressbar:focus:selected, treeview.view.progressbar:focus:selected:focus {
       color: #7E7E23;
@@ -1560,12 +1560,12 @@ treeview.view {
   treeview.view.trough {
     color: #F6F6F4;
     background-color: #1B1B08;
-    border-radius: 3px;
+    border-radius: 4px;
     border-width: 0; }
     treeview.view.trough:selected, treeview.view.trough:selected:focus {
       color: #ffffff;
       background-color: rgba(0, 0, 0, 0.2);
-      border-radius: 3px;
+      border-radius: 4px;
       border-width: 0; }
   treeview.view header button {
     min-height: 0;
@@ -1639,7 +1639,7 @@ menu, .menu {
     background-color: #1f1f09;
     color: #F6F6F4;
     padding: 4px 0px;
-    border-radius: 2px;
+    border-radius: 4px;
     border: none; }
   menu separator, .csd menu separator, .menu separator, .csd .menu separator {
     margin: 2px 0;
@@ -1701,7 +1701,7 @@ menu, .menu {
 
 popover, popover.background {
   padding: 2px;
-  border-radius: 3px;
+  border-radius: 4px;
   background-clip: border-box;
   background-color: #1f1f09;
   box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.35); }
@@ -2433,13 +2433,13 @@ progressbar {
   progressbar progress {
     background-color: #7E7E23;
     border: none;
-    border-radius: 3px;
+    border-radius: 4px;
     box-shadow: none; }
     row:selected progressbar progress, infobar progressbar progress {
       background-color: #ffffff; }
   progressbar trough {
     border: none;
-    border-radius: 3px;
+    border-radius: 4px;
     background-color: #070702; }
     row:selected progressbar trough, infobar progressbar trough {
       background-color: rgba(0, 0, 0, 0.2); }
@@ -2453,7 +2453,7 @@ levelbar.vertical block {
 levelbar trough {
   border: none;
   padding: 3px;
-  border-radius: 3px;
+  border-radius: 4px;
   background-color: #070702; }
 levelbar.horizontal.discrete block {
   margin: 0 1px; }
@@ -2462,7 +2462,7 @@ levelbar.vertical.discrete block {
 levelbar block:not(.empty) {
   border: 1px solid #7E7E23;
   background-color: #7E7E23;
-  border-radius: 2px; }
+  border-radius: 4px; }
 levelbar block.low {
   border-color: #F27835;
   background-color: #F27835; }
@@ -2603,7 +2603,7 @@ row.activatable:selected.has-open-popup, row.activatable:selected:hover {
   color: #F6F6F4;
   background-color: rgba(27, 27, 8, 0.95);
   background-clip: border-box;
-  border-radius: 0 0 2px 2px;
+  border-radius: 0 0 4px 4px;
   border-width: 0 1px 1px 1px;
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.95); }
@@ -2643,7 +2643,7 @@ expander arrow {
 calendar {
   color: #F6F6F4;
   border: 1px solid #030301;
-  border-radius: 3px;
+  border-radius: 4px;
   padding: 2px; }
   calendar:selected {
     border-radius: 1.5px; }
@@ -2678,13 +2678,13 @@ messagedialog.csd .dialog-action-area button {
   border-radius: 0;
   border-right-style: none; }
 messagedialog.csd .dialog-action-area button:last-child {
-  border-radius: 0 0 3px 0;
+  border-radius: 0 0 4px 0;
   border-right-style: none; }
 messagedialog.csd .dialog-action-area button:first-child {
-  border-radius: 0 0 0 3px;
+  border-radius: 0 0 0 4px;
   border-left-style: none; }
 messagedialog.csd .dialog-action-area button:only-child {
-  border-radius: 0 0 3px 3px;
+  border-radius: 0 0 4px 4px;
   border-left-style: none;
   border-right-style: none; }
 
@@ -2939,7 +2939,7 @@ row:selected button:disabled, infobar.info button:disabled, infobar.question but
     border-color: rgba(255, 255, 255, 0.4); }
 
 tooltip {
-  border-radius: 2px;
+  border-radius: 4px;
   box-shadow: none; }
   tooltip.background {
     background-color: rgba(66, 66, 20, 0.95);
@@ -3019,7 +3019,7 @@ button.color {
     border-radius: 0; }
 
 colorchooser .popover.osd {
-  border-radius: 3px; }
+  border-radius: 4px; }
 
 .content-view {
   background-color: #1B1B08; }
@@ -3056,7 +3056,7 @@ button.circular-button {
   color: #F6F6F4;
   background-color: #1B1B08;
   border: 1px solid #030301;
-  border-radius: 2.5px;
+  border-radius: 4px;
   box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.15); }
 
 stackswitcher button.text-button {
@@ -3074,7 +3074,7 @@ stackswitcher button.circular {
   box-shadow: inset 0 0 0 1px #F08437; }
 
 decoration {
-  border-radius: 3px 3px 0 0;
+  border-radius: 4px 4px 0 0;
   border-width: 0px;
   box-shadow: 0 0 0 1px black, 0 8px 8px 0 rgba(0, 0, 0, 0.35);
   margin: 10px; }
@@ -3087,18 +3087,18 @@ decoration {
     box-shadow: none;
     border-radius: 0; }
   .ssd decoration {
-    border-radius: 3px 3px 0 0;
+    border-radius: 4px 4px 0 0;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.65); }
     .ssd decoration.maximized {
       border-radius: 0; }
   .csd.popup decoration {
-    border-radius: 2px;
+    border-radius: 4px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.45), 0 0 0 1px black; }
   tooltip.csd decoration {
-    border-radius: 2px;
+    border-radius: 4px;
     box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.25); }
   messagedialog.csd decoration {
-    border-radius: 3px; }
+    border-radius: 4px; }
   .solid-csd decoration {
     border-radius: 0;
     margin: 1px;
@@ -3240,17 +3240,17 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
     background-color: rgba(126, 126, 35, 0.45);
     color: rgba(255, 255, 255, 0.56); }
 
-grid box widget button:not(popover button):not(popover label):nth-child(1) label, grid box widget button:not(popover button):not(popover label):nth-child(2) label, grid box widget button:not(popover button):not(popover label):nth-child(3) label, grid box widget button:not(popover button):not(popover label):nth-child(4) label, grid box widget button:not(popover button):not(popover label):nth-child(5) label, grid box widget button:not(popover button):not(popover label):nth-child(6) label, grid box widget button:not(popover button):not(popover label):nth-child(8) label, grid box widget button:not(popover button):not(popover label):nth-child(9) label, grid box widget button:not(popover button):not(popover label):nth-child(10) label, grid box widget button:not(popover button):not(popover label):nth-child(11) label, grid box widget button:not(popover button):not(popover label):nth-child(12) label, grid box widget button:not(popover button):not(popover label):nth-child(13) label {
+.math-buttons .text-button:nth-child(1) label, .math-buttons .text-button:nth-child(2) label, .math-buttons .text-button:nth-child(3) label, .math-buttons .text-button:nth-child(4) label, .math-buttons .text-button:nth-child(5) label, .math-buttons .text-button:nth-child(6) label, .math-buttons .text-button:nth-child(8) label, .math-buttons .text-button:nth-child(9) label, .math-buttons .text-button:nth-child(10) label, .math-buttons .text-button:nth-child(11) label, .math-buttons .text-button:nth-child(12) label, .math-buttons .text-button:nth-child(13) label {
   color: rgba(126, 126, 35, 0.67); }
-grid box widget button:not(popover button):not(popover label):nth-child(1):hover label, grid box widget button:not(popover button):not(popover label):nth-child(2):hover label, grid box widget button:not(popover button):not(popover label):nth-child(3):hover label, grid box widget button:not(popover button):not(popover label):nth-child(4):hover label, grid box widget button:not(popover button):not(popover label):nth-child(5):hover label, grid box widget button:not(popover button):not(popover label):nth-child(6):hover label, grid box widget button:not(popover button):not(popover label):nth-child(8):hover label, grid box widget button:not(popover button):not(popover label):nth-child(9):hover label, grid box widget button:not(popover button):not(popover label):nth-child(10):hover label, grid box widget button:not(popover button):not(popover label):nth-child(11):hover label, grid box widget button:not(popover button):not(popover label):nth-child(12):hover label, grid box widget button:not(popover button):not(popover label):nth-child(13):hover label {
+.math-buttons .text-button:nth-child(1):hover label, .math-buttons .text-button:nth-child(2):hover label, .math-buttons .text-button:nth-child(3):hover label, .math-buttons .text-button:nth-child(4):hover label, .math-buttons .text-button:nth-child(5):hover label, .math-buttons .text-button:nth-child(6):hover label, .math-buttons .text-button:nth-child(8):hover label, .math-buttons .text-button:nth-child(9):hover label, .math-buttons .text-button:nth-child(10):hover label, .math-buttons .text-button:nth-child(11):hover label, .math-buttons .text-button:nth-child(12):hover label, .math-buttons .text-button:nth-child(13):hover label {
   color: #7E7E23; }
-grid box widget button:not(popover button):not(popover label):nth-child(7) label, grid box widget button:not(popover button):not(popover label):nth-child(14) label, grid box widget button:not(popover button):not(popover label):nth-child(15) label, grid box widget button:not(popover button):not(popover label):nth-child(16) label, grid box widget button:not(popover button):not(popover label):nth-child(18) label, grid box widget button:not(popover button):not(popover label):nth-child(19) label, grid box widget button:not(popover button):not(popover label):nth-child(21) label, grid box widget button:not(popover button):not(popover label):nth-child(22) label {
+.math-buttons .text-button:nth-child(7) label, .math-buttons .text-button:nth-child(14) label, .math-buttons .text-button:nth-child(15) label, .math-buttons .text-button:nth-child(16) label, .math-buttons .text-button:nth-child(18) label, .math-buttons .text-button:nth-child(19) label, .math-buttons .text-button:nth-child(21) label, .math-buttons .text-button:nth-child(22) label {
   color: rgba(255, 255, 255, 0.67); }
-grid box widget button:not(popover button):not(popover label):nth-child(7):hover label, grid box widget button:not(popover button):not(popover label):nth-child(14):hover label, grid box widget button:not(popover button):not(popover label):nth-child(15):hover label, grid box widget button:not(popover button):not(popover label):nth-child(16):hover label, grid box widget button:not(popover button):not(popover label):nth-child(18):hover label, grid box widget button:not(popover button):not(popover label):nth-child(19):hover label, grid box widget button:not(popover button):not(popover label):nth-child(21):hover label, grid box widget button:not(popover button):not(popover label):nth-child(22):hover label {
+.math-buttons .text-button:nth-child(7):hover label, .math-buttons .text-button:nth-child(14):hover label, .math-buttons .text-button:nth-child(15):hover label, .math-buttons .text-button:nth-child(16):hover label, .math-buttons .text-button:nth-child(18):hover label, .math-buttons .text-button:nth-child(19):hover label, .math-buttons .text-button:nth-child(21):hover label, .math-buttons .text-button:nth-child(22):hover label {
   color: #ffffff; }
-grid box widget button:not(popover button):not(popover label) image {
+.math-buttons .text-button image {
   color: #7E7E23; }
-grid box widget button:not(popover button):not(popover label):hover image {
+.math-buttons .text-button:hover image {
   color: #a6a62e; }
 
 entry selection:focus, entry selection {
@@ -4979,9 +4979,9 @@ filechooser headerbar widget stack box.path-bar-box,
     .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:checked {
       color: #ffffff;
       background-color: #7E7E23;
-      border-color: #1B1B08;
+      border-color: transparent;
       font-weight: bold;
-      border-top: 2px solid #7E7E23;
+      border-top: 2px solid transparent;
       margin: 0px; }
       filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:active label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:active image, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:checked label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:checked image,
       .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:active label,
@@ -4993,9 +4993,9 @@ filechooser headerbar widget stack box.path-bar-box,
     .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child {
       color: #ffffff;
       background-color: #7E7E23;
-      border-color: #1B1B08;
+      border-color: transparent;
       font-weight: bold;
-      border-top: 2px solid #7E7E23;
+      border-top: 2px solid transparent;
       margin: 0px; }
       filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child image,
       .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child label,
@@ -5011,7 +5011,7 @@ filechooser headerbar widget stack box.path-bar-box,
       .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child:backdrop {
         color: rgba(255, 255, 255, 0.56);
         background-color: rgba(126, 126, 35, 0.45);
-        border-top: 2px solid rgba(126, 126, 35, 0.45); }
+        border-top: 2px solid transparent; }
   filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button,
   .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button {
     color: #F6F6F4;
@@ -5041,9 +5041,9 @@ filechooser headerbar widget stack box.path-bar-box,
     .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:checked {
       color: #ffffff;
       background-color: #7E7E23;
-      border-color: #1B1B08;
+      border-color: transparent;
       font-weight: bold;
-      border-top: 2px solid #7E7E23;
+      border-top: 2px solid transparent;
       margin: 0px; }
       filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:active label, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:active image, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:checked label, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:checked image,
       .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:active label,
