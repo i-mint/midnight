@@ -4980,7 +4980,6 @@ filechooser headerbar widget stack box.path-bar-box,
       color: #ffffff;
       background-color: #C87200;
       border-color: transparent;
-      font-weight: bold;
       border-top: 2px solid transparent;
       margin: 0px; }
       filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:active label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:active image, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:checked label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:checked image,
@@ -4994,9 +4993,9 @@ filechooser headerbar widget stack box.path-bar-box,
       color: #ffffff;
       background-color: #C87200;
       border-color: transparent;
-      font-weight: bold;
       border-top: 2px solid transparent;
-      margin: 0px; }
+      margin: 0px;
+      padding: 0 4px; }
       filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child image,
       .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child label,
       .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child image {
@@ -5042,7 +5041,6 @@ filechooser headerbar widget stack box.path-bar-box,
       color: #ffffff;
       background-color: #C87200;
       border-color: transparent;
-      font-weight: bold;
       border-top: 2px solid transparent;
       margin: 0px; }
       filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:active label, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:active image, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:checked label, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:checked image,

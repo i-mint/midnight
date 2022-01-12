@@ -4875,7 +4875,6 @@ filechooser headerbar widget stack box.path-bar-box,
       outline-offset: -3px;
       background-color: #C87200;
       border-color: #1C1108;
-      font-weight: bold;
       margin: 0px; }
       filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:active label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:active image, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:checked label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:checked image,
       .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:active label,
@@ -4889,7 +4888,8 @@ filechooser headerbar widget stack box.path-bar-box,
       outline-offset: -3px;
       background-color: #C87200;
       border-color: #1C1108;
-      font-weight: bold; }
+      margin: 0px;
+      padding: 0 4px; }
       filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child image,
       .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child label,
       .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child image {
@@ -4930,8 +4930,7 @@ filechooser headerbar widget stack box.path-bar-box,
       color: #ffffff;
       outline-offset: -3px;
       background-color: #C87200;
-      border-color: #1C1108;
-      font-weight: bold; }
+      border-color: #1C1108; }
       filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:active label, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:active image, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:checked label, filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button:checked image,
       .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:active label,
       .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button:active image,
