@@ -3188,18 +3188,44 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
     background-color: rgba(150, 150, 150, 0.45);
     color: rgba(20, 20, 20, 0.56); }
 
-.math-buttons .text-button:nth-child(1) label, .math-buttons .text-button:nth-child(2) label, .math-buttons .text-button:nth-child(3) label, .math-buttons .text-button:nth-child(4) label, .math-buttons .text-button:nth-child(5) label, .math-buttons .text-button:nth-child(6) label, .math-buttons .text-button:nth-child(8) label, .math-buttons .text-button:nth-child(9) label, .math-buttons .text-button:nth-child(10) label, .math-buttons .text-button:nth-child(11) label, .math-buttons .text-button:nth-child(12) label, .math-buttons .text-button:nth-child(13) label {
-  color: rgba(150, 150, 150, 0.67); }
-.math-buttons .text-button:nth-child(1):hover label, .math-buttons .text-button:nth-child(2):hover label, .math-buttons .text-button:nth-child(3):hover label, .math-buttons .text-button:nth-child(4):hover label, .math-buttons .text-button:nth-child(5):hover label, .math-buttons .text-button:nth-child(6):hover label, .math-buttons .text-button:nth-child(8):hover label, .math-buttons .text-button:nth-child(9):hover label, .math-buttons .text-button:nth-child(10):hover label, .math-buttons .text-button:nth-child(11):hover label, .math-buttons .text-button:nth-child(12):hover label, .math-buttons .text-button:nth-child(13):hover label {
+.math-buttons button image, .math-buttons button label {
+  color: rgba(150, 150, 150, 0.7); }
+.math-buttons button:hover label, .math-buttons button:hover image {
+  color: #bababa; }
+.math-buttons button.text-button label {
+  color: rgba(150, 150, 150, 0.7); }
+.math-buttons button.text-button:hover label {
+  color: #bababa; }
+.math-buttons button.text-button:nth-child(12) label {
+  color: rgba(150, 150, 150, 0.7); }
+.math-buttons button.text-button:nth-child(12):hover label {
+  color: #bababa; }
+.math-buttons button.number-button label, .math-buttons button.numeric-point-button label {
+  color: #bababa; }
+.math-buttons button.number-button:hover label, .math-buttons button.numeric-point-button:hover label {
   color: #969696; }
-.math-buttons .text-button:nth-child(7) label, .math-buttons .text-button:nth-child(14) label, .math-buttons .text-button:nth-child(15) label, .math-buttons .text-button:nth-child(16) label, .math-buttons .text-button:nth-child(18) label, .math-buttons .text-button:nth-child(19) label, .math-buttons .text-button:nth-child(21) label, .math-buttons .text-button:nth-child(22) label {
-  color: #545454; }
-.math-buttons .text-button:nth-child(7):hover label, .math-buttons .text-button:nth-child(14):hover label, .math-buttons .text-button:nth-child(15):hover label, .math-buttons .text-button:nth-child(16):hover label, .math-buttons .text-button:nth-child(18):hover label, .math-buttons .text-button:nth-child(19):hover label, .math-buttons .text-button:nth-child(21):hover label, .math-buttons .text-button:nth-child(22):hover label {
-  color: #7a7a7a; }
-.math-buttons .text-button image {
-  color: #969696; }
-.math-buttons .text-button:hover image {
-  color: #b0b0b0; }
+.math-buttons button.suggested-action.text-button {
+  background-color: #969696;
+  border-color: #0f0f0f; }
+  .math-buttons button.suggested-action.text-button label, .math-buttons button.suggested-action.text-button {
+    color: #141414; }
+  .math-buttons button.suggested-action.text-button:hover {
+    border-color: #0f0f0f; }
+    .math-buttons button.suggested-action.text-button:hover label, .math-buttons button.suggested-action.text-button:hover {
+      color: #141414; }
+  .math-buttons button.suggested-action.text-button:active {
+    background-color: #bababa;
+    border-color: #0f0f0f; }
+    .math-buttons button.suggested-action.text-button:active label, .math-buttons button.suggested-action.text-button:active {
+      color: #141414; }
+.math-buttons button:nth-child(20) label, .math-buttons button:nth-child(20) image, .math-buttons button:nth-child(23) label, .math-buttons button:nth-child(23) image {
+  color: #F6F6F4; }
+.math-buttons button:nth-child(20):hover label, .math-buttons button:nth-child(20) image, .math-buttons button:nth-child(23):hover label, .math-buttons button:nth-child(23) image {
+  color: #F6F6F4; }
+.math-buttons button.text-button:active, .math-buttons button.number-button:active, .math-buttons button.numeric-point-button:active {
+  background-color: #969696; }
+  .math-buttons button.text-button:active label, .math-buttons button.text-button:active image, .math-buttons button.text-button:active, .math-buttons button.number-button:active label, .math-buttons button.number-button:active image, .math-buttons button.number-button:active, .math-buttons button.numeric-point-button:active label, .math-buttons button.numeric-point-button:active image, .math-buttons button.numeric-point-button:active {
+    color: #141414; }
 
 entry selection:focus, entry selection {
   background-color: #141414; }
