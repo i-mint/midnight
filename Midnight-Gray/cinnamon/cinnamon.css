@@ -994,9 +994,6 @@ StScrollBar {
     border-left-width: 2px;
     border-color: #969696;
     border-radius: 0px; }
-    .menu-category-button-selected:first-child {
-      padding-top: 9px;
-      padding-bottom: 9px; }
   .menu-category-button-hover {
     background-color: red;
     border-radius: 0px; }
@@ -1007,16 +1004,10 @@ StScrollBar {
     border-left-width: 2px;
     border-color: transparent;
     font-style: italic; }
-    .menu-category-button-greyed:first-child {
-      padding-top: 9px;
-      padding-bottom: 9px; }
   .menu-category-button-label:ltr {
     padding-left: 5px; }
   .menu-category-button-label:rtl {
     padding-right: 5px; }
-  .menu-category-button:first-child {
-    padding-top: 9px;
-    padding-bottom: 9px; }
 .menu-selected-app-box {
   padding-right: 30px;
   padding-left: 28px;
