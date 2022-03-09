@@ -4572,12 +4572,32 @@ button.nautilus-circular-button.image-button label {
   border-right-width: 1px;
 }
 
-paned.gedit-side-panel-paned treeview {
+paned.gedit-side-panel-paned treeview.view {
   background-color: rgba(28, 8, 8, 0.95);
   color: #F6F6F4;
   border-color: #040101;
 }
-paned.gedit-side-panel-paned treeview:backdrop {
+paned.gedit-side-panel-paned treeview.view:hover {
+  background-color: transparent;
+  border-left: 2px solid #B40021;
+  padding-left: 0px;
+  color: #ffffff;
+}
+paned.gedit-side-panel-paned treeview.view:hover:backdrop {
+  color: rgba(255, 255, 255, 0.45);
+  border-left: 2px solid rgba(180, 0, 33, 0.45);
+  padding-left: 0px;
+}
+paned.gedit-side-panel-paned treeview.view:selected, paned.gedit-side-panel-paned treeview.view:selected:focus, paned.gedit-side-panel-paned treeview.view:selected:hover, paned.gedit-side-panel-paned treeview.view:checked, paned.gedit-side-panel-paned treeview.view:checked:focus, paned.gedit-side-panel-paned treeview.view:checked:hover {
+  background-color: #B40021;
+  color: #ffffff;
+  box-shadow: none;
+  -gtk-icon-effect: none;
+}
+paned.gedit-side-panel-paned treeview.view:selected:backdrop, paned.gedit-side-panel-paned treeview.view:selected:focus:backdrop, paned.gedit-side-panel-paned treeview.view:selected:hover:backdrop, paned.gedit-side-panel-paned treeview.view:checked:backdrop, paned.gedit-side-panel-paned treeview.view:checked:focus:backdrop, paned.gedit-side-panel-paned treeview.view:checked:hover:backdrop {
+  color: rgba(255, 255, 255, 0.5);
+}
+paned.gedit-side-panel-paned treeview.view:backdrop {
   color: rgba(246, 246, 244, 0.45);
   border-color: #040101;
 }
