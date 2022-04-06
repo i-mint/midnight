@@ -2205,8 +2205,9 @@ style "xfdesktop-icon-view" {
   XfdesktopIconView::cell-padding = 6
   XfdesktopIconView::cell-text-width-proportion = 1.9
 
-  fg[NORMAL] = @selected_fg_color
-  fg[ACTIVE] = @selected_fg_color
+  fg[NORMAL] = @_selected_fg_color
+  fg[ACTIVE] = @_selected_fg_color
+  fg[SELECTED] = @_selected_fg_color
 }
 
 style "xfwm-tabwin" {
