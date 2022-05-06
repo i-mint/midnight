@@ -5620,6 +5620,46 @@ widget .clocks-button:active {
   border-left-color: #1C1108;
 }
 
+.path-buttons-box:not(.vertical) {
+  background-color: transparent;
+}
+.path-buttons-box:not(.vertical) label.dim-label, .path-buttons-box:not(.vertical) label.separator, .path-buttons-box:not(.vertical) headerbar label.subtitle, headerbar .path-buttons-box:not(.vertical) label.subtitle,
+.path-buttons-box:not(.vertical) .titlebar:not(headerbar) label.subtitle,
+.titlebar:not(headerbar) .path-buttons-box:not(.vertical) label.subtitle {
+  color: #C87200;
+}
+.path-buttons-box:not(.vertical) button {
+  padding: 0 7px;
+  margin: 6px 0;
+  background-color: transparent;
+  border-color: transparent;
+}
+.path-buttons-box:not(.vertical) button label.dim-label, .path-buttons-box:not(.vertical) button label.separator, .path-buttons-box:not(.vertical) button headerbar label.subtitle, headerbar .path-buttons-box:not(.vertical) button label.subtitle,
+.path-buttons-box:not(.vertical) button .titlebar:not(headerbar) label.subtitle,
+.titlebar:not(headerbar) .path-buttons-box:not(.vertical) button label.subtitle,
+.path-buttons-box:not(.vertical) button image.dim-label,
+.path-buttons-box:not(.vertical) button headerbar image.subtitle,
+headerbar .path-buttons-box:not(.vertical) button image.subtitle,
+.path-buttons-box:not(.vertical) button .titlebar:not(headerbar) image.subtitle,
+.titlebar:not(headerbar) .path-buttons-box:not(.vertical) button image.subtitle, .path-buttons-box:not(.vertical) button {
+  color: #C87200;
+}
+.path-buttons-box:not(.vertical) button:hover label.dim-label, .path-buttons-box:not(.vertical) button:hover label.separator, .path-buttons-box:not(.vertical) button:hover headerbar label.subtitle, headerbar .path-buttons-box:not(.vertical) button:hover label.subtitle,
+.path-buttons-box:not(.vertical) button:hover .titlebar:not(headerbar) label.subtitle,
+.titlebar:not(headerbar) .path-buttons-box:not(.vertical) button:hover label.subtitle,
+.path-buttons-box:not(.vertical) button:hover image.dim-label,
+.path-buttons-box:not(.vertical) button:hover headerbar image.subtitle,
+headerbar .path-buttons-box:not(.vertical) button:hover image.subtitle,
+.path-buttons-box:not(.vertical) button:hover .titlebar:not(headerbar) image.subtitle,
+.titlebar:not(headerbar) .path-buttons-box:not(.vertical) button:hover image.subtitle, .path-buttons-box:not(.vertical) button:hover {
+  color: #F6F6F4;
+}
+.path-buttons-box:not(.vertical) button.current-dir {
+  margin-left: 7px;
+  background-color: #C87200;
+  color: #ffffff;
+}
+
 UnityDecoration {
   -UnityDecoration-extents: 28px 1 1 1;
   -UnityDecoration-input-extents: 10px;
