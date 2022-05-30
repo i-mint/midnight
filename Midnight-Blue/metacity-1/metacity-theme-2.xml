@@ -9,12 +9,13 @@
 </info>
 
 <!-- meaningfull constants -->
+<!-- update in 2.0.1.2 metacity -->
 
-<constant name="C_title_focused" value="#F6F6F4" />
-<constant name="C_title_unfocused" value="#AFB2B3" />
+<constant name="C_title_focused" value="#2D90FF" />
+<constant name="C_title_unfocused" value="rgba(45, 144, 255, 0.67)" />
 
 <constant name="C_wm_bg_focused" value="#08111C" />
-<constant name="C_wm_bg_unfocused" value="#0C1A2A" />
+<constant name="C_wm_bg_unfocused" value="#0a1522" />
 
 <constant name="C_wm_highlight" value="#08111C" />
 

@@ -9,6 +9,7 @@
 </info>
 
 <!-- meaningfull constants -->
+<!-- update 2.0.1.2 metacity -->
 
 <constant name="C_title_focused" value="#00C848" />
 <constant name="C_title_unfocused" value="rgba(0, 200, 72, 0.67)" />

@@ -9,6 +9,7 @@
 </info>
 
 <!-- meaningfull constants -->
+<!-- update in 2.0.1.2-metacity -->
 
 <constant name="C_title_focused" value="#B40021" />
 <constant name="C_title_unfocused" value="rgba(180, 0, 33, 0.67)" />
@@ -16,7 +17,7 @@
 <constant name="C_wm_bg_focused" value="#1c0808" />
 <constant name="C_wm_bg_unfocused" value="#220a0a" />
 
-<constant name="C_wm_highlight" value="#1c1108" />
+<constant name="C_wm_highlight" value="#1c0808" />
 
 <!-- window button colors -->
 
