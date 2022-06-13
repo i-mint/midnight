@@ -5518,6 +5518,41 @@ widget .clocks-button:active {
   border-radius: 2px;
 }
 
+.linked.path-bar > button.toggle,
+.thunar toolbar button.toggle,
+.thunar .inline-toolbar button.toggle {
+  color: #2D90FF;
+  outline-offset: -3px;
+  background-color: transparent;
+  border-color: transparent;
+}
+.linked.path-bar > button.toggle:hover,
+.thunar toolbar button.toggle:hover,
+.thunar .inline-toolbar button.toggle:hover {
+  color: #F6F6F4;
+  outline-offset: -3px;
+  background-color: transparent;
+  border-color: transparent;
+}
+.linked.path-bar > button.toggle:active, .linked.path-bar > button.toggle:checked,
+.thunar toolbar button.toggle:active,
+.thunar .inline-toolbar button.toggle:active,
+.thunar toolbar button.toggle:checked,
+.thunar .inline-toolbar button.toggle:checked {
+  color: #ffffff;
+  outline-offset: -3px;
+  background-color: #2D90FF;
+  border-color: #08111C;
+}
+
+.thunar toolbar toolbutton button, .thunar .inline-toolbar toolbutton button {
+  background: transparent;
+  border-color: transparent;
+}
+.thunar toolbar toolbutton button:hover, .thunar toolbar toolbutton button:active, .thunar toolbar toolbutton button:checked, .thunar toolbar toolbutton button, .thunar .inline-toolbar toolbutton button {
+  margin: 0 2px;
+}
+
 #whiskermenu-window {
   background-color: #08111C;
   color: #F6F6F4;
