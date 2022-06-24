@@ -7234,24 +7234,38 @@ event.slanted-end:backdrop label {
   color: inherit;
 }
 
-.budgie-run-dialog entry.search, .budgie-run-dialog entry.search:focus {
+.budgie-run-dialog {
   background-color: #1E1E1E;
+  border: none;
+  border-radius: 3px 3px 0 0;
+}
+.budgie-run-dialog entry.search,
+.budgie-run-dialog entry.search:focus {
+  background-color: transparent;
   padding: 9px 4px;
   box-shadow: none;
-  border-radius: 4px;
-  border-color: transparent;
+  border: none;
   border-bottom: 2px solid #969696;
 }
-.budgie-run-dialog entry.search label, .budgie-run-dialog entry.search image, .budgie-run-dialog entry.search, .budgie-run-dialog entry.search:focus label, .budgie-run-dialog entry.search:focus image, .budgie-run-dialog entry.search:focus {
+.budgie-run-dialog entry.search label,
+.budgie-run-dialog entry.search image, .budgie-run-dialog entry.search,
+.budgie-run-dialog entry.search:focus label,
+.budgie-run-dialog entry.search:focus image,
+.budgie-run-dialog entry.search:focus {
   color: #F6F6F4;
 }
-.budgie-run-dialog entry.search image, .budgie-run-dialog entry.search:focus image {
+.budgie-run-dialog entry.search image,
+.budgie-run-dialog entry.search:focus image {
   padding: 0 9px;
+}
+.budgie-run-dialog list {
+  background-color: #1E1E1E;
 }
 .budgie-run-dialog list row:selected {
   background-color: #969696;
 }
-.budgie-run-dialog list row:selected label, .budgie-run-dialog list row:selected image {
+.budgie-run-dialog list row:selected label,
+.budgie-run-dialog list row:selected image, .budgie-run-dialog list row:selected {
   color: #141414;
 }
 
