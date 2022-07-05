@@ -945,8 +945,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: #839496;
   background-color: rgba(0, 43, 54, 0);
   border: none;
-  background-color: #002b36;
   padding: 0 5px 6px 5px;
+  text-align: center;
 }
 .modal-dialog > StBoxLayout:first-child {
   padding: 20px 10px 10px 10px;
@@ -964,19 +964,26 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding-bottom: 0;
   height: 30px;
 }
+.modal-dialog .confirm-dialog-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+  padding-bottom: 15px;
+}
 
 .run-dialog {
   padding: 0px 15px 10px 15px;
-  border-image: url("common-assets/misc/bg.svg") 9 9 9 9;
+  background-color: #002b36;
+  border-radius: 4px;
 }
 .run-dialog > * {
   padding: 0;
 }
 .run-dialog-label {
-  font-size: 0;
+  font-size: 1.4em;
   font-weight: bold;
   color: #268bd2;
-  padding-bottom: 0;
+  padding-bottom: 15px;
 }
 .run-dialog-error-label {
   color: #dc322f;
@@ -991,12 +998,13 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .run-dialog-entry {
   width: 21em;
-  padding: 7px;
-  border-radius: 3px;
+  padding: 4px 7px;
+  height: 1.4em;
+  font-size: 1.2em;
+  border-radius: 999px;
   caret-color: #fdf6e3;
-  selected-color: #268bd2;
-  selection-background-color: #fdf6e3;
-  min-height: 1.4em;
+  selected-color: #fdf6e3;
+  selection-background-color: #02091c;
   color: #268bd2;
   background-color: rgba(0, 132, 166, 0.4);
   border: 1px solid rgba(0, 0, 0, 0.4);
@@ -1013,6 +1021,14 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   box-shadow: none;
   background: none;
   background-gradient-direction: none;
+}
+.run-dialog-description {
+  color: #839496;
+  padding-top: 15px;
+  text-align: center;
+}
+.run-dialog-description.error {
+  color: #dc322f;
 }
 
 /* CinnamonMountOperation Dialogs */
@@ -1805,7 +1821,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   background-color: #005064;
   border-top-width: 2px;
   border-color: #268bd2;
-  color: #839496;
+  color: #fdf6e3;
 }
 .grouped-window-list-item-box.bottom {
   padding-left: 4px;
@@ -1841,7 +1857,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   background-color: #005064;
   border-left-width: 2px;
   border-color: #268bd2;
-  color: #839496;
+  color: #fdf6e3;
 }
 .grouped-window-list-item-box.right {
   padding-left: 2px;
