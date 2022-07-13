@@ -4947,97 +4947,54 @@ panel-toplevel.background na-tray-applet {
   -NaTrayApplet-icon-size: 16px;
 }
 
-.panel.xfce4-panel {
+.xfce4-panel.panel {
   background-color: #002b36;
   color: #268bd2;
   font-weight: normal;
   text-shadow: none;
   -gtk-icon-shadow: none;
 }
-.panel.xfce4-panel #clock-button {
-  background-color: rgba(38, 139, 210, 0.34);
-  color: #fdf6e3;
-  border-radius: 4px;
-  border-left: 7px solid rgba(38, 139, 210, 0.34);
-  border-right: 7px solid rgba(38, 139, 210, 0.34);
+.xfce4-panel.panel .tasklist button {
+  margin: 1px 2px;
 }
-.panel.xfce4-panel #clock-button:hover {
+
+.xfce4-panel wnck-pager {
+  background-color: rgba(38, 139, 210, 0.3);
+  color: #268bd2;
+  border-right: 2px solid #002b36;
+}
+.xfce4-panel wnck-pager:hover, .xfce4-panel wnck-pager:selected {
   background-color: #268bd2;
   color: #fdf6e3;
-}
-.panel.xfce4-panel #clock-button:active {
-  background-color: #51a5df;
-  color: #fdf6e3;
-}
-.panel.xfce4-panel #clock-button:checked {
-  background-color: #268bd2;
-  color: #fdf6e3;
-}
-.panel.xfce4-panel #clock-button:hover, .panel.xfce4-panel #clock-button:active, .panel.xfce4-panel #clock-button:checked {
-  border-left: 7px solid #268bd2;
-  border-right: 7px solid #268bd2;
-}
-.panel.xfce4-panel .tasklist button {
-  color: rgba(38, 139, 210, 0.8);
-  background-color: #002b36;
-  border-radius: 4px;
-  border: none;
-  border-left: 2px solid transparent;
-}
-.panel.xfce4-panel .tasklist button:hover {
-  background-color: rgba(0, 43, 54, 0);
-  color: #fdf6e3;
-  border-left: 2px solid #268bd2;
-}
-.panel.xfce4-panel .tasklist button:active {
-  background-color: rgba(38, 139, 210, 0.23);
-  color: #fdf6e3;
-  border-left: 2px solid #268bd2;
-}
-.panel.xfce4-panel .tasklist button:checked {
-  background-color: rgba(38, 139, 210, 0.12);
-  color: #fdf6e3;
-  border-left: 2px solid #268bd2;
-  font-weight: normal;
-}
-.panel.xfce4-panel wnck-pager {
-  background-color: rgba(38, 139, 210, 0.23);
-  color: #fdf6e3;
-  border-right: 2px solid rgba(38, 139, 210, 0.5);
 }
 
 .mate-panel-menu-bar button:not(#tasklist-button),
-panel-toplevel.background button:not(#tasklist-button), .panel.xfce4-panel button.flat {
+panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel button.flat,
+.xfce4-panel.panel #clock-button,
+.xfce4-panel.panel .tasklist button {
   color: #268bd2;
   border-radius: 4px;
   border: none;
-  background-color: #002b36;
-  border-left: 7px solid #002b36;
-  border-right: 7px solid #002b36;
+  background-color: rgba(0, 43, 54, 0);
 }
 .mate-panel-menu-bar button:hover:not(#tasklist-button),
-panel-toplevel.background button:hover:not(#tasklist-button), .panel.xfce4-panel button.flat:hover {
+panel-toplevel.background button:hover:not(#tasklist-button), .xfce4-panel.panel button.flat:hover,
+.xfce4-panel.panel #clock-button:hover,
+.xfce4-panel.panel .tasklist button:hover {
   border: none;
-  color: #fdf6e3;
   background-color: rgba(38, 139, 210, 0.23);
-  border-left: 7px solid rgba(38, 139, 210, 0.23);
-  border-right: 7px solid rgba(38, 139, 210, 0.23);
+  color: #fdf6e3;
 }
 .mate-panel-menu-bar button:active:not(#tasklist-button),
-panel-toplevel.background button:active:not(#tasklist-button), .panel.xfce4-panel button.flat:active {
-  border: none;
-  color: #fdf6e3;
-  background-color: #3f9cdc;
-  border-left: 7px solid #3f9cdc;
-  border-right: 7px solid #3f9cdc;
-}
-.mate-panel-menu-bar button:checked:not(#tasklist-button),
-panel-toplevel.background button:checked:not(#tasklist-button), .panel.xfce4-panel button.flat:checked {
+panel-toplevel.background button:active:not(#tasklist-button), .xfce4-panel.panel button.flat:active,
+.xfce4-panel.panel #clock-button:active,
+.xfce4-panel.panel .tasklist button:active, .mate-panel-menu-bar button:checked:not(#tasklist-button),
+panel-toplevel.background button:checked:not(#tasklist-button), .xfce4-panel.panel button.flat:checked,
+.xfce4-panel.panel #clock-button:checked,
+.xfce4-panel.panel .tasklist button:checked {
   border: none;
   color: #fdf6e3;
   background-color: #268bd2;
-  border-left: 7px solid #268bd2;
-  border-right: 7px solid #268bd2;
 }
 
 .nautilus-window .floating-bar {

@@ -5033,7 +5033,7 @@ panel-toplevel.background menubar {
 panel-toplevel.background menubar,
 panel-toplevel.background #PanelApplet label,
 panel-toplevel.background #PanelApplet image {
-  color: rgba(246, 246, 244, 0.56);
+  color: #F6F6F4;
 }
 .mate-panel-menu-bar button label, .mate-panel-menu-bar button image,
 .mate-panel-menu-bar #tasklist-button label,
@@ -5046,12 +5046,12 @@ panel-toplevel.background #tasklist-button image {
 }
 .mate-panel-menu-bar .wnck-pager,
 panel-toplevel.background .wnck-pager {
-  color: rgba(69, 69, 68, 0.78);
-  background-color: rgba(5, 5, 5, 0.95);
+  color: #7b7b7a;
+  background-color: #050505;
 }
 .mate-panel-menu-bar .wnck-pager:hover,
 panel-toplevel.background .wnck-pager:hover {
-  background-color: rgba(43, 43, 43, 0.95);
+  background-color: #2b2b2b;
 }
 .mate-panel-menu-bar .wnck-pager:selected,
 panel-toplevel.background .wnck-pager:selected {
@@ -5065,103 +5065,53 @@ panel-toplevel.background na-tray-applet {
 }
 
 .xfce4-panel.panel {
-  background-color: rgba(30, 30, 30, 0.95);
-  color: rgba(246, 246, 244, 0.56);
+  background-color: #1E1E1E;
+  color: #F6F6F4;
   font-weight: normal;
   text-shadow: none;
   -gtk-icon-shadow: none;
 }
-.xfce4-panel #clock-button {
-  background-color: rgba(150, 150, 150, 0.34);
-  color: rgba(246, 246, 244, 0.56);
-  border-left: 7px solid rgba(150, 150, 150, 0.34);
-  border-right: 7px solid rgba(150, 150, 150, 0.34);
-  border-radius: 40%;
-}
-.xfce4-panel #clock-button:hover {
-  background-color: #969696;
-  color: #141414;
-  border-left: 7px solid #969696;
-  border-right: 7px solid #969696;
-}
-.xfce4-panel #clock-button:active {
-  background-color: #b2b2b2;
-  color: #141414;
-  border-left: 7px solid #b2b2b2;
-  border-right: 7px solid #b2b2b2;
-}
-.xfce4-panel #clock-button:checked {
-  background-color: #969696;
-  color: #141414;
-  border-left: 7px solid #969696;
-  border-right: 7px solid #969696;
-}
-
-.xfce4-panel .tasklist button {
-  color: rgba(246, 246, 244, 0.36);
-  background-color: rgba(30, 30, 30, 0.95);
-  border-radius: 0;
-  border: none;
-  border-left: 2px solid transparent;
-}
-.xfce4-panel .tasklist button image {
-  border-left: 2px solid transparent;
-}
-.xfce4-panel .tasklist button:hover {
-  background-color: rgba(30, 30, 30, 0);
-  color: rgba(246, 246, 244, 0.56);
-  border-left: 2px solid #969696;
-}
-.xfce4-panel .tasklist button:active {
-  background-color: rgba(150, 150, 150, 0.23);
-  color: rgba(246, 246, 244, 0.56);
-  border-left: 2px solid #969696;
-}
-.xfce4-panel .tasklist button:checked {
-  background-color: rgba(150, 150, 150, 0.12);
-  color: rgba(246, 246, 244, 0.56);
-  border: none;
-  font-weight: normal;
-  border-left: 2px solid #969696;
+.xfce4-panel.panel .tasklist button {
+  margin: 1px 2px;
 }
 
 .xfce4-panel wnck-pager {
-  background-color: rgba(150, 150, 150, 0.23);
+  background-color: rgba(150, 150, 150, 0.3);
+  color: #F6F6F4;
+  border-right: 2px solid #1E1E1E;
+}
+.xfce4-panel wnck-pager:hover, .xfce4-panel wnck-pager:selected {
+  background-color: #969696;
   color: #141414;
 }
 
 .mate-panel-menu-bar button:not(#tasklist-button),
-panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel button.flat {
-  color: rgba(246, 246, 244, 0.56);
-  border-radius: 0;
+panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel button.flat,
+.xfce4-panel.panel #clock-button,
+.xfce4-panel.panel .tasklist button {
+  color: #F6F6F4;
+  border-radius: 4px;
   border: none;
   background-color: rgba(30, 30, 30, 0);
-  border-left: 4px solid rgba(30, 30, 30, 0);
-  border-right: 4px solid rgba(30, 30, 30, 0);
 }
 .mate-panel-menu-bar button:hover:not(#tasklist-button),
-panel-toplevel.background button:hover:not(#tasklist-button), .xfce4-panel.panel button.flat:hover {
+panel-toplevel.background button:hover:not(#tasklist-button), .xfce4-panel.panel button.flat:hover,
+.xfce4-panel.panel #clock-button:hover,
+.xfce4-panel.panel .tasklist button:hover {
   border: none;
-  color: rgba(246, 246, 244, 0.56);
   background-color: rgba(150, 150, 150, 0.23);
-  border-left: 4px solid rgba(150, 150, 150, 0.23);
-  border-right: 4px solid rgba(150, 150, 150, 0.23);
+  color: #F6F6F4;
 }
 .mate-panel-menu-bar button:active:not(#tasklist-button),
-panel-toplevel.background button:active:not(#tasklist-button), .xfce4-panel.panel button.flat:active {
-  border: none;
-  color: #141414;
-  background-color: #a8a8a8;
-  border-left: 4px solid #a8a8a8;
-  border-right: 4px solid #a8a8a8;
-}
-.mate-panel-menu-bar button:checked:not(#tasklist-button),
-panel-toplevel.background button:checked:not(#tasklist-button), .xfce4-panel.panel button.flat:checked {
+panel-toplevel.background button:active:not(#tasklist-button), .xfce4-panel.panel button.flat:active,
+.xfce4-panel.panel #clock-button:active,
+.xfce4-panel.panel .tasklist button:active, .mate-panel-menu-bar button:checked:not(#tasklist-button),
+panel-toplevel.background button:checked:not(#tasklist-button), .xfce4-panel.panel button.flat:checked,
+.xfce4-panel.panel #clock-button:checked,
+.xfce4-panel.panel .tasklist button:checked {
   border: none;
   color: #141414;
   background-color: #969696;
-  border-left: 4px solid #969696;
-  border-right: 4px solid #969696;
 }
 
 .nautilus-window .floating-bar {
@@ -5639,51 +5589,6 @@ widget .clocks-button:active {
   margin: 0 2px;
 }
 
-#whiskermenu-window {
-  background-color: #1E1E1E;
-  color: #F6F6F4;
-}
-#whiskermenu-window stack {
-  background-color: #1E1E1E;
-  color: #F6F6F4;
-}
-#whiskermenu-window .view, #whiskermenu-window iconview {
-  background-color: #1E1E1E;
-  color: #F6F6F4;
-}
-#whiskermenu-window .view:selected, #whiskermenu-window iconview:selected {
-  background-color: #3a3a3a;
-}
-#whiskermenu-window button {
-  margin-right: 9px;
-  background-color: rgba(30, 30, 30, 0.95);
-  color: rgba(246, 246, 244, 0.56);
-}
-#whiskermenu-window button:hover {
-  background-color: #4e4e4e;
-  color: #F6F6F4;
-}
-#whiskermenu-window button:active, #whiskermenu-window button:checked {
-  background-color: #969696;
-  color: #141414;
-}
-#whiskermenu-window entry:focus, #whiskermenu-window entry.search {
-  color: #141414;
-  border-color: #1f1f1f;
-  background-color: #969696;
-  box-shadow: inset 1px 0 #969696, inset -1px 0 #969696, inset 0 1px #969696, inset 0 -1px #969696;
-}
-#whiskermenu-window entry:focus image, #whiskermenu-window entry:focus image:hover, #whiskermenu-window entry.search image, #whiskermenu-window entry.search image:hover {
-  color: inherit;
-}
-
-#whiskermenu-button {
-  color: #141414;
-  border-left: 22px solid rgba(150, 150, 150, 0.34);
-  border-right: 22px solid rgba(150, 150, 150, 0.34);
-  background-color: rgba(150, 150, 150, 0.34);
-}
-
 .geary-main-layout .geary_email .geary-message-summary, .geary-main-layout .geary_email .geary-message, .geary-main-layout .geary_email grid {
   color: #F6F6F4;
   background-color: #1E1E1E;
@@ -5822,12 +5727,12 @@ UnityDecoration .left:backdrop, UnityDecoration .right:backdrop, UnityDecoration
 UnityPanelWidget,
 .unity-panel {
   background-image: linear-gradient(to bottom, #2f343f, #2f343f);
-  color: rgba(255, 255, 255, 0.56);
+  color: white;
   box-shadow: none;
 }
 UnityPanelWidget:backdrop,
 .unity-panel:backdrop {
-  color: rgba(248, 248, 247, 0.56);
+  color: #f8f8f7;
 }
 
 .unity-panel.menubar.menuitem:hover,
@@ -6125,21 +6030,21 @@ GtkListBox .h4 {
 }
 
 #panel_window {
-  background-color: rgba(30, 30, 30, 0.95);
-  color: rgba(246, 246, 244, 0.56);
+  background-color: #1E1E1E;
+  color: #F6F6F4;
   font-weight: bold;
-  box-shadow: inset 0 -1px rgba(12, 12, 12, 0.95);
+  box-shadow: inset 0 -1px #0c0c0c;
 }
 #panel_window menubar {
   padding-left: 5px;
 }
 #panel_window menubar, #panel_window menubar > menuitem {
   background-color: transparent;
-  color: rgba(246, 246, 244, 0.56);
+  color: #F6F6F4;
   font-weight: bold;
 }
 #panel_window menubar menuitem:disabled {
-  color: rgba(246, 246, 244, 0.06);
+  color: rgba(246, 246, 244, 0.5);
 }
 #panel_window menubar menuitem:disabled label {
   color: inherit;
@@ -7129,13 +7034,13 @@ event.slanted-end:backdrop label {
 }
 
 .budgie-panel {
-  background-color: rgba(30, 30, 30, 0.95);
+  background-color: #1E1E1E;
   background-image: none;
   box-shadow: none;
   border: none;
 }
 .budgie-panel label, .budgie-panel image {
-  color: rgba(246, 246, 244, 0.56);
+  color: #F6F6F4;
 }
 .budgie-panel button {
   background-color: transparent;
@@ -7144,17 +7049,17 @@ event.slanted-end:backdrop label {
   border: none;
 }
 .budgie-panel button label, .budgie-panel button image {
-  color: rgba(246, 246, 244, 0.56);
+  color: #F6F6F4;
 }
 .budgie-panel button:hover {
-  background-color: rgba(53, 53, 53, 0.95);
+  background-color: #353535;
 }
 .budgie-panel button:active, .budgie-panel button:checked, .budgie-panel button:selected {
-  background-color: rgba(61, 61, 61, 0.95);
+  background-color: #3d3d3d;
   border: none;
 }
 .budgie-panel button:active label, .budgie-panel button:active image, .budgie-panel button:checked label, .budgie-panel button:checked image, .budgie-panel button:selected label, .budgie-panel button:selected image {
-  color: rgba(246, 246, 244, 0.56);
+  color: #F6F6F4;
 }
 .budgie-panel button#tasklist-button, .budgie-panel button.flat {
   background-color: transparent;
@@ -7163,7 +7068,7 @@ event.slanted-end:backdrop label {
   border: none;
 }
 .budgie-panel button#tasklist-button label, .budgie-panel button#tasklist-button image, .budgie-panel button.flat label, .budgie-panel button.flat image {
-  color: rgba(246, 246, 244, 0.56);
+  color: #F6F6F4;
 }
 .budgie-panel button#tasklist-button:hover, .budgie-panel button.flat:hover {
   background: rgba(150, 150, 150, 0.3);
@@ -7176,25 +7081,25 @@ event.slanted-end:backdrop label {
   color: #141414;
 }
 .budgie-panel button.flat.running {
-  background: image(rgba(30, 30, 30, 0.95));
+  background: image(#1E1E1E);
 }
 .budgie-panel button.launcher {
   border-radius: 0;
 }
 .top .budgie-panel button.launcher {
-  border-top: 2px solid rgba(30, 30, 30, 0.95);
+  border-top: 2px solid #1E1E1E;
 }
 .bottom .budgie-panel button.launcher {
-  border-bottom: 2px solid rgba(30, 30, 30, 0.95);
+  border-bottom: 2px solid #1E1E1E;
 }
 .left .budgie-panel button.launcher {
-  border-left: 2px solid rgba(30, 30, 30, 0.95);
+  border-left: 2px solid #1E1E1E;
 }
 .right .budgie-panel button.launcher {
-  border-right: 2px solid rgba(30, 30, 30, 0.95);
+  border-right: 2px solid #1E1E1E;
 }
 .budgie-panel button.launcher:hover, .budgie-panel button.launcher:checked, .budgie-panel button.launcher:selected {
-  background: rgba(30, 30, 30, 0.95);
+  background: #1E1E1E;
 }
 .top .budgie-panel button.launcher:hover, .top .budgie-panel button.launcher:checked, .top .budgie-panel button.launcher:selected {
   border-top: 2px solid #969696;
@@ -7209,17 +7114,17 @@ event.slanted-end:backdrop label {
   border-right: 2px solid #969696;
 }
 .budgie-panel.transparent {
-  background-color: rgba(30, 30, 30, 0.25);
+  background-color: rgba(30, 30, 30, 0.3);
 }
 .budgie-panel separator {
-  background-color: rgba(246, 246, 244, 0);
+  background-color: rgba(246, 246, 244, 0.4);
 }
 .budgie-panel .workspace-switcher .workspace-layout .workspace-item {
-  background-color: rgba(40, 40, 40, 0.95);
+  background-color: #282828;
   border-radius: 0;
 }
 .budgie-panel .workspace-switcher .workspace-layout .workspace-item label, .budgie-panel .workspace-switcher .workspace-layout .workspace-item image {
-  color: rgba(246, 246, 244, 0.56);
+  color: #F6F6F4;
 }
 .top .budgie-panel .workspace-switcher .workspace-layout .workspace-item, .bottom .budgie-panel .workspace-switcher .workspace-layout .workspace-item {
   border-right: 2px solid rgba(246, 246, 244, 0.2);
@@ -7228,7 +7133,7 @@ event.slanted-end:backdrop label {
   border-bottom: 2px solid rgba(246, 246, 244, 0.2);
 }
 .budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace {
-  background: image(rgba(61, 61, 61, 0.95));
+  background: image(#3d3d3d);
 }
 .top .budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace, .bottom .budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace {
   border-right: 2px solid #969696;
@@ -7245,11 +7150,11 @@ event.slanted-end:backdrop label {
   opacity: 1;
 }
 .budgie-panel .workspace-switcher button.image-button.workspace-add-button {
-  background-color: rgba(30, 30, 30, 0.95);
+  background-color: #1E1E1E;
   border-radius: 4px;
 }
 .budgie-panel .workspace-switcher button.image-button.workspace-add-button label, .budgie-panel .workspace-switcher button.image-button.workspace-add-button image {
-  color: rgba(246, 246, 244, 0.56);
+  color: #F6F6F4;
 }
 .budgie-panel .workspace-switcher button.image-button.workspace-add-button:active {
   background-color: #969696;
