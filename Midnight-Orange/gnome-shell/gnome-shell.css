@@ -77,7 +77,7 @@ StEntry {
   padding: 7px;
   caret-size: 1px;
   caret-color: #ffffff;
-  selection-background-color: #201200;
+  selection-background-color: black;
   selected-color: #ffffff;
   transition-duration: 300ms;
   border-radius: 3px;
@@ -199,8 +199,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .toggle-switch {
-  width: 50px;
-  height: 20px;
+  width: 54px;
+  height: 24px;
   background-size: contain;
   background-image: url("dark-assets/switch/switch-off.svg");
 }
@@ -309,7 +309,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding: 5px 9px;
   caret-size: 1px;
   caret-color: #ffffff;
-  selection-background-color: #201200;
+  selection-background-color: black;
   selected-color: #ffffff;
   transition-duration: 300ms;
   border-radius: 20px;
@@ -319,7 +319,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: #ffffff;
   caret-color: #ffffff;
   background-color: #C87200;
-  selection-background-color: #201200;
+  selection-background-color: black;
   selected-color: #ffffff;
 }
 .run-dialog .run-dialog-description {
@@ -630,6 +630,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .popup-menu .popup-menu-content {
   padding: 1em 0em 1em 0em;
+  border-image: url("dark-assets/menu/menu.svg") 9 9 9 9;
 }
 .popup-menu .popup-menu-item {
   spacing: 12px;
@@ -1069,11 +1070,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .datemenu-calendar-column:ltr {
   margin-right: 8px;
-  border-left-width: 0.5px;
+  border-left-width: 0;
 }
 .datemenu-calendar-column:rtl {
   margin-left: 8px;
-  border-right-width: 0.5px;
+  border-right-width: 0;
 }
 .datemenu-calendar-column .datemenu-displays-box {
   spacing: 6px;
@@ -1242,10 +1243,10 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   background-color: transparent;
 }
 .calendar .calendar-today {
-  color: #ffffff;
+  color: #ffffff !important;
   background-color: #C87200;
   border-color: #040301;
-  font-weight: bold;
+  font-weight: bold !important;
 }
 .calendar .calendar-today label, .calendar .calendar-today image {
   color: inherit;
@@ -1267,7 +1268,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: inherit;
 }
 .calendar .calendar-today:selected {
-  color: #ffffff;
+  color: #ffffff !important;
   background-color: #C87200;
   border-color: #040301;
 }
@@ -1462,7 +1463,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: rgba(246, 246, 244, 0.45);
 }
 .message-list-clear-button.button {
-  margin: 1.5em 1.5em 0;
   padding: 4px 12px;
 }
 .message-list-section-close > StIcon {
@@ -1481,6 +1481,17 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: transparent;
   background-color: transparent;
   background-image: url("dark-assets/misc/message-close-active.svg");
+}
+.message-list:ltr {
+  border-right-width: 1px;
+  border-color: #040301;
+}
+.message-list:rtl {
+  border-left-width: 1px;
+  border-color: #040301;
+}
+.message-list-controls {
+  margin: 16px 16px 0 16px;
 }
 
 .message {
@@ -1740,7 +1751,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: #ffffff;
   caret-color: #ffffff;
   background-color: #C87200;
-  selection-background-color: #201200;
+  selection-background-color: black;
   selected-color: #ffffff;
   padding: 7px 9px;
 }

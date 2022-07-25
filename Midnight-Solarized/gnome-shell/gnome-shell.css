@@ -630,6 +630,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .popup-menu .popup-menu-content {
   padding: 1em 0em 1em 0em;
+  border-image: url("dark-assets/menu/menu.svg") 9 9 9 9;
 }
 .popup-menu .popup-menu-item {
   spacing: 12px;
@@ -1069,11 +1070,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .datemenu-calendar-column:ltr {
   margin-right: 8px;
-  border-left-width: 0.5px;
+  border-left-width: 0;
 }
 .datemenu-calendar-column:rtl {
   margin-left: 8px;
-  border-right-width: 0.5px;
+  border-right-width: 0;
 }
 .datemenu-calendar-column .datemenu-displays-box {
   spacing: 6px;
@@ -1462,7 +1463,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: rgba(131, 148, 150, 0.45);
 }
 .message-list-clear-button.button {
-  margin: 1.5em 1.5em 0;
   padding: 4px 12px;
 }
 .message-list-section-close > StIcon {
@@ -1481,6 +1481,17 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: transparent;
   background-color: transparent;
   background-image: url("dark-assets/misc/message-close-active.svg");
+}
+.message-list:ltr {
+  border-right-width: 1px;
+  border-color: #001317;
+}
+.message-list:rtl {
+  border-left-width: 1px;
+  border-color: #001317;
+}
+.message-list-controls {
+  margin: 16px 16px 0 16px;
 }
 
 .message {
