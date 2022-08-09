@@ -1407,22 +1407,23 @@ separator.sidebar:backdrop, hdyleaflet > separator:backdrop {
   background-color: rgba(8, 17, 28, 0);
   border-color: rgba(8, 17, 28, 0);
 }
-.primary-toolbar button label, headerbar button label, .primary-toolbar button image, headerbar button image {
+.primary-toolbar button label, headerbar button label,
+.primary-toolbar button image,
+headerbar button image {
   color: inherit;
-}
-.primary-toolbar button label, headerbar button label, .primary-toolbar button image, headerbar button image {
-  background-color: transparent;
 }
 .primary-toolbar button:backdrop, headerbar button:backdrop {
   opacity: 0.7;
 }
 .primary-toolbar button:hover, headerbar button:hover {
-  color: #3c98ff;
+  color: #ffffff;
   border-color: #08111C;
   background-color: #08111C;
 }
-.primary-toolbar button:hover label, headerbar button:hover label, .primary-toolbar button:hover image, headerbar button:hover image {
-  background-color: transparent;
+.primary-toolbar button:hover label, headerbar button:hover label,
+.primary-toolbar button:hover image,
+headerbar button:hover image {
+  color: inherit;
 }
 .primary-toolbar button:active, headerbar button:active, .primary-toolbar button:checked, headerbar button:checked {
   color: #ffffff;
@@ -1430,40 +1431,12 @@ separator.sidebar:backdrop, hdyleaflet > separator:backdrop {
   background-color: #2D90FF;
   background-clip: padding-box;
 }
-.primary-toolbar button.toggle:not(.popup) label, headerbar button.toggle:not(.popup) label, .primary-toolbar button.toggle:not(.popup) image, headerbar button.toggle:not(.popup) image {
-  background-color: transparent;
-  color: #F6F6F4;
-}
-.primary-toolbar button.toggle:not(.popup):active label, headerbar button.toggle:not(.popup):active label, .primary-toolbar button.toggle:not(.popup):active image, headerbar button.toggle:not(.popup):active image, .primary-toolbar button.toggle:not(.popup):checked label, headerbar button.toggle:not(.popup):checked label, .primary-toolbar button.toggle:not(.popup):checked image, headerbar button.toggle:not(.popup):checked image {
-  background-color: transparent;
-  color: #F6F6F4;
-}
-.primary-toolbar button:disabled, headerbar button:disabled {
-  background-color: rgba(8, 17, 28, 0);
-  border-color: rgba(8, 17, 28, 0);
-}
-.primary-toolbar button:disabled label, headerbar button:disabled label, .primary-toolbar button:disabled, headerbar button:disabled {
-  color: rgba(45, 144, 255, 0.55);
-}
-.primary-toolbar button:disabled:active, headerbar button:disabled:active, .primary-toolbar button:disabled:checked, headerbar button:disabled:checked {
-  color: rgba(255, 255, 255, 0.75);
-  border-color: rgba(45, 144, 255, 0.65);
-  background-color: rgba(45, 144, 255, 0.65);
-}
-.primary-toolbar button:not(.close):not(.minimize):not(.maximize) image:not(label), headerbar button:not(.close):not(.minimize):not(.maximize) image:not(label) {
-  color: #2D90FF;
-}
-.primary-toolbar button:not(.close):not(.minimize):not(.maximize):hover image:not(label), headerbar button:not(.close):not(.minimize):not(.maximize):hover image:not(label) {
-  color: #ffffff;
-}
-.primary-toolbar button:not(.close):not(.minimize):not(.maximize):active image:not(label), headerbar button:not(.close):not(.minimize):not(.maximize):active image:not(label), .primary-toolbar button:not(.close):not(.minimize):not(.maximize):checked image:not(label), headerbar button:not(.close):not(.minimize):not(.maximize):checked image:not(label) {
-  color: #ffffff;
-}
-.primary-toolbar button.popup menuitem label, headerbar button.popup menuitem label {
-  color: #2D90FF;
-}
-.primary-toolbar button.popup menuitem:active label, headerbar button.popup menuitem:active label, .primary-toolbar button.popup menuitem:hover label, headerbar button.popup menuitem:hover label, .primary-toolbar button.popup menuitem:checked label, headerbar button.popup menuitem:checked label {
-  color: #ffffff;
+.primary-toolbar button:active label, headerbar button:active label,
+.primary-toolbar button:active image,
+headerbar button:active image, .primary-toolbar button:checked label, headerbar button:checked label,
+.primary-toolbar button:checked image,
+headerbar button:checked image {
+  color: inherit;
 }
 .selection-mode.primary-toolbar button, headerbar.selection-mode button {
   border-color: transparent;
@@ -1509,17 +1482,10 @@ headerbar .linked:not(.vertical).path-bar > button {
   background-color: rgba(8, 17, 28, 0);
   border-color: rgba(8, 17, 28, 0);
 }
-.primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button image,
-.primary-toolbar .linked:not(.vertical).path-bar > button label,
-headerbar .linked:not(.vertical).path-bar > button label,
-.primary-toolbar .linked:not(.vertical).path-bar > button image,
-headerbar .linked:not(.vertical).path-bar > button image {
-  color: inherit;
-}
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover,
 .primary-toolbar .linked:not(.vertical).path-bar > button:hover,
 headerbar .linked:not(.vertical).path-bar > button:hover {
-  color: #3c98ff;
+  color: #ffffff;
   border-color: #08111C;
   background-color: #08111C;
 }
@@ -1701,7 +1667,7 @@ headerbar .linked:not(.vertical):not(.path-bar) > button:checked + entry {
   caret-color: #ffffff;
 }
 .primary-toolbar spinbutton:not(.vertical) button, headerbar spinbutton:not(.vertical) button {
-  color: #3c98ff;
+  color: #ffffff;
   border-color: #08111C;
   background-color: #08111C;
 }
@@ -3924,7 +3890,7 @@ headerbar button.titlebutton,
 }
 headerbar button.titlebutton:hover,
 .titlebar button.titlebutton:hover {
-  color: #3c98ff;
+  color: #ffffff;
   border-color: #08111C;
   background-color: #08111C;
 }
@@ -4258,7 +4224,7 @@ button.nautilus-circular-button.image-button label {
 
 @keyframes needs_attention_keyframes {
   0% {
-    color: #3c98ff;
+    color: #ffffff;
     border-color: #08111C;
     background-color: #08111C;
   }
@@ -4319,7 +4285,7 @@ button.nautilus-circular-button.image-button label {
   color: inherit;
 }
 .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button {
-  color: #3c98ff;
+  color: #ffffff;
   border-color: #08111C;
   background-color: #08111C;
 }
@@ -4366,14 +4332,11 @@ button.nautilus-circular-button.image-button label {
   border-color: rgba(8, 17, 28, 0);
 }
 .nemo-window .primary-toolbar .path-bar > button label, .nemo-window .primary-toolbar .path-bar > button image {
-  color: inherit;
-}
-.nemo-window .primary-toolbar .path-bar > button label, .nemo-window .primary-toolbar .path-bar > button image {
   background-color: transparent;
   color: #2D90FF;
 }
 .nemo-window .primary-toolbar .path-bar > button:hover {
-  color: #3c98ff;
+  color: #ffffff;
   border-color: #08111C;
   background-color: #08111C;
 }
@@ -5104,7 +5067,7 @@ popover button:hover {
   border-color: #102238;
 }
 popover button:hover label, popover button:hover {
-  color: #F6F6F4;
+  color: #ffffff;
 }
 popover button:active, popover button:focus, popover button:checked {
   background-color: #2D90FF;
@@ -5125,7 +5088,7 @@ popover button.flat:hover {
   border-color: #102238;
 }
 popover button.flat:hover label, popover button.flat:hover {
-  color: #F6F6F4;
+  color: #ffffff;
 }
 popover button.flat:active, popover button.flat:focus, popover button.flat:checked {
   background-color: #2D90FF;
@@ -5174,7 +5137,7 @@ popover .sidebar row:hover {
   border-color: #102238;
 }
 popover .sidebar row:hover label, popover .sidebar row:hover {
-  color: #F6F6F4;
+  color: #ffffff;
 }
 popover .sidebar row:active, popover .sidebar row:checked, popover .sidebar row:selected {
   background-color: #2D90FF;
@@ -5195,7 +5158,7 @@ popover modelbutton:hover, popover radiobutton:hover, popover checkbutton:hover,
   border-color: #102238;
 }
 popover modelbutton:hover label, popover modelbutton:hover, popover radiobutton:hover label, popover radiobutton:hover, popover checkbutton:hover label, popover checkbutton:hover, popover button.check:hover label, popover button.check:hover {
-  color: #F6F6F4;
+  color: #ffffff;
 }
 popover modelbutton:active, popover radiobutton:active, popover checkbutton:active, popover button.check:active {
   background-color: #2D90FF;
@@ -5558,46 +5521,6 @@ widget .clocks-button:active {
 
 #InkscapePanel grid, #NotebookPage grid {
   border-left-color: #08111C;
-}
-
-.path-buttons-box:not(.vertical) {
-  background-color: transparent;
-}
-.path-buttons-box:not(.vertical) label.dim-label, .path-buttons-box:not(.vertical) label.separator, .path-buttons-box:not(.vertical) headerbar label.subtitle, headerbar .path-buttons-box:not(.vertical) label.subtitle,
-.path-buttons-box:not(.vertical) .titlebar:not(headerbar) label.subtitle,
-.titlebar:not(headerbar) .path-buttons-box:not(.vertical) label.subtitle {
-  color: #2D90FF;
-}
-.path-buttons-box:not(.vertical) button {
-  padding: 0 7px;
-  margin: 6px 0;
-  background-color: transparent;
-  border-color: transparent;
-}
-.path-buttons-box:not(.vertical) button label.dim-label, .path-buttons-box:not(.vertical) button label.separator, .path-buttons-box:not(.vertical) button headerbar label.subtitle, headerbar .path-buttons-box:not(.vertical) button label.subtitle,
-.path-buttons-box:not(.vertical) button .titlebar:not(headerbar) label.subtitle,
-.titlebar:not(headerbar) .path-buttons-box:not(.vertical) button label.subtitle,
-.path-buttons-box:not(.vertical) button image.dim-label,
-.path-buttons-box:not(.vertical) button headerbar image.subtitle,
-headerbar .path-buttons-box:not(.vertical) button image.subtitle,
-.path-buttons-box:not(.vertical) button .titlebar:not(headerbar) image.subtitle,
-.titlebar:not(headerbar) .path-buttons-box:not(.vertical) button image.subtitle, .path-buttons-box:not(.vertical) button {
-  color: #2D90FF;
-}
-.path-buttons-box:not(.vertical) button:hover label.dim-label, .path-buttons-box:not(.vertical) button:hover label.separator, .path-buttons-box:not(.vertical) button:hover headerbar label.subtitle, headerbar .path-buttons-box:not(.vertical) button:hover label.subtitle,
-.path-buttons-box:not(.vertical) button:hover .titlebar:not(headerbar) label.subtitle,
-.titlebar:not(headerbar) .path-buttons-box:not(.vertical) button:hover label.subtitle,
-.path-buttons-box:not(.vertical) button:hover image.dim-label,
-.path-buttons-box:not(.vertical) button:hover headerbar image.subtitle,
-headerbar .path-buttons-box:not(.vertical) button:hover image.subtitle,
-.path-buttons-box:not(.vertical) button:hover .titlebar:not(headerbar) image.subtitle,
-.titlebar:not(headerbar) .path-buttons-box:not(.vertical) button:hover image.subtitle, .path-buttons-box:not(.vertical) button:hover {
-  color: #F6F6F4;
-}
-.path-buttons-box:not(.vertical) button.current-dir {
-  margin-left: 7px;
-  background-color: #2D90FF;
-  color: #ffffff;
 }
 
 UnityDecoration {
@@ -6365,6 +6288,50 @@ popover.background .nautilus-window headerbar widget stack box.path-bar-box labe
 }
 .nautilus-window .searchbar-container button image {
   color: #2D90FF;
+}
+
+.nautilus-window .path-buttons-box:not(.vertical) {
+  background-color: transparent;
+}
+.nautilus-window .path-buttons-box:not(.vertical) label.dim-label, .nautilus-window .path-buttons-box:not(.vertical) label.separator, .nautilus-window .path-buttons-box:not(.vertical) headerbar label.subtitle, headerbar .nautilus-window .path-buttons-box:not(.vertical) label.subtitle,
+.nautilus-window .path-buttons-box:not(.vertical) .titlebar:not(headerbar) label.subtitle,
+.titlebar:not(headerbar) .nautilus-window .path-buttons-box:not(.vertical) label.subtitle {
+  color: #2D90FF;
+}
+.nautilus-window .path-buttons-box:not(.vertical) button {
+  padding: 0 7px;
+  margin: 6px 0;
+  background-color: transparent;
+  border-color: transparent;
+}
+.nautilus-window .path-buttons-box:not(.vertical) button label.dim-label, .nautilus-window .path-buttons-box:not(.vertical) button label.separator, .nautilus-window .path-buttons-box:not(.vertical) button headerbar label.subtitle, headerbar .nautilus-window .path-buttons-box:not(.vertical) button label.subtitle,
+.nautilus-window .path-buttons-box:not(.vertical) button .titlebar:not(headerbar) label.subtitle,
+.titlebar:not(headerbar) .nautilus-window .path-buttons-box:not(.vertical) button label.subtitle,
+.nautilus-window .path-buttons-box:not(.vertical) button image.dim-label,
+.nautilus-window .path-buttons-box:not(.vertical) button headerbar image.subtitle,
+headerbar .nautilus-window .path-buttons-box:not(.vertical) button image.subtitle,
+.nautilus-window .path-buttons-box:not(.vertical) button .titlebar:not(headerbar) image.subtitle,
+.titlebar:not(headerbar) .nautilus-window .path-buttons-box:not(.vertical) button image.subtitle, .nautilus-window .path-buttons-box:not(.vertical) button {
+  color: #2D90FF;
+}
+.nautilus-window .path-buttons-box:not(.vertical) button:hover label.dim-label, .nautilus-window .path-buttons-box:not(.vertical) button:hover label.separator, .nautilus-window .path-buttons-box:not(.vertical) button:hover headerbar label.subtitle, headerbar .nautilus-window .path-buttons-box:not(.vertical) button:hover label.subtitle,
+.nautilus-window .path-buttons-box:not(.vertical) button:hover .titlebar:not(headerbar) label.subtitle,
+.titlebar:not(headerbar) .nautilus-window .path-buttons-box:not(.vertical) button:hover label.subtitle,
+.nautilus-window .path-buttons-box:not(.vertical) button:hover image.dim-label,
+.nautilus-window .path-buttons-box:not(.vertical) button:hover headerbar image.subtitle,
+headerbar .nautilus-window .path-buttons-box:not(.vertical) button:hover image.subtitle,
+.nautilus-window .path-buttons-box:not(.vertical) button:hover .titlebar:not(headerbar) image.subtitle,
+.titlebar:not(headerbar) .nautilus-window .path-buttons-box:not(.vertical) button:hover image.subtitle, .nautilus-window .path-buttons-box:not(.vertical) button:hover {
+  color: #F6F6F4;
+}
+.nautilus-window .path-buttons-box:not(.vertical) button:active, .nautilus-window .path-buttons-box:not(.vertical) button.current-dir {
+  margin-left: 7px;
+  color: #ffffff;
+  border-color: #08111C;
+  background-color: #2D90FF;
+}
+.nautilus-window .path-buttons-box:not(.vertical) button:active:backdrop, .nautilus-window .path-buttons-box:not(.vertical) button.current-dir:backdrop {
+  color: rgba(255, 255, 255, 0.56);
 }
 
 .nemo-window paned:last-child > separator {
