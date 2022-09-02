@@ -6132,8 +6132,9 @@ filechooser placessidebar.sidebar scrollbar trough,
   background-color: transparent;
 }
 .raven calendar.raven-calendar:selected {
-  background-color: transparent;
-  color: cyan;
+  background-color: #268bd2;
+  color: #fdf6e3;
+  border-bottom: 9px solid transparent;
 }
 .raven button {
   color: #268bd2;
