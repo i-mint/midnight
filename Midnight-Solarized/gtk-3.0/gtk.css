@@ -4178,13 +4178,21 @@ terminal-window notebook > header.top button,
 .nautilus-canvas-item.dim-label, label.nautilus-canvas-item.separator, headerbar .nautilus-canvas-item.subtitle,
 .titlebar:not(headerbar) .nautilus-canvas-item.subtitle,
 .nautilus-list-dim-label {
-  color: #426066;
+  color: #5c7579;
 }
 .nautilus-canvas-item.dim-label:selected, label.nautilus-canvas-item.separator:selected, headerbar .nautilus-canvas-item.subtitle:selected,
-.titlebar:not(headerbar) .nautilus-canvas-item.subtitle:selected, .nautilus-canvas-item.dim-label:selected:focus,
+.titlebar:not(headerbar) .nautilus-canvas-item.subtitle:selected, .nautilus-canvas-item.dim-label:selected:focus, .nautilus-canvas-item.dim-label:selected:backdrop, .nautilus-canvas-item.dim-label:selected:focus:backdrop,
 .nautilus-list-dim-label:selected,
-.nautilus-list-dim-label:selected:focus {
-  color: #d2e1e0;
+.nautilus-list-dim-label:selected:focus,
+.nautilus-list-dim-label:selected:backdrop,
+.nautilus-list-dim-label:selected:focus:backdrop {
+  color: #274b53;
+  background-color: #839496;
+}
+.nautilus-canvas-item.dim-label:backdrop, label.nautilus-canvas-item.separator:backdrop, headerbar .nautilus-canvas-item.subtitle:backdrop,
+.titlebar:not(headerbar) .nautilus-canvas-item.subtitle:backdrop,
+.nautilus-list-dim-label:backdrop {
+  color: rgba(131, 148, 150, 0.56);
 }
 
 .nautilus-window searchbar {
