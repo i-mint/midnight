@@ -619,18 +619,23 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .popup-menu {
   min-width: 15em;
-  color: #f6f6f4;
-  border-image: url("dark-assets/menu/menu.svg") 9 9 9 9;
+  color: #969696;
+  box-shadow: none;
+  border-radius: 4px;
 }
 .popup-menu .popup-sub-menu {
-  background: none;
+  background-color: #1E1E1E !important;
+  color: #f6f6f4 !important;
+  border: none;
   box-shadow: none;
-  border-image: url("dark-assets/menu/submenu.svg") 9 9 9 9;
-  color: rgba(150, 150, 150, 0.78);
+  border-radius: 0 !important;
 }
 .popup-menu .popup-menu-content {
   padding: 1em 0em 1em 0em;
-  border-image: url("dark-assets/menu/menu.svg") 9 9 9 9;
+  background-color: #242424;
+  box-shadow: none;
+  border: 1px solid #0f0f0f;
+  border-radius: 4px;
 }
 .popup-menu .popup-menu-item {
   spacing: 12px;
@@ -641,17 +646,17 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .popup-menu .popup-menu-item:rtl {
   padding: 0.4em 0em 0.4em 3em;
 }
-.popup-menu .popup-menu-item:checked {
-  font-weight: normal;
-  background: none;
+.popup-menu .popup-menu-item:checked, .popup-menu .popup-menu-item:checked:hover, .popup-menu .popup-menu-item:checked:active {
+  font-weight: normal !important;
   box-shadow: none;
-  border-image: url("dark-assets/menu/submenu-open.svg") 9 9 9 9;
-  color: #b0b0b0;
+  background-color: #969696 !important;
+  color: #141414 !important;
+  border-radius: 0 !important;
 }
 .popup-menu .popup-menu-item:active, .popup-menu .popup-menu-item.selected {
-  color: #ffffff;
-  background-color: transparent;
-  border-image: url("common-assets/menu/menu-hover.svg") 9 9 1 1;
+  color: #ffffff !important;
+  background-color: #3b3b3b !important;
+  border-radius: 0 !important;
 }
 .popup-menu .popup-menu-item:insensitive {
   color: rgba(246, 246, 244, 0.5);
