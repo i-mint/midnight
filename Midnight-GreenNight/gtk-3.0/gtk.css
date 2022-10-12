@@ -6439,10 +6439,10 @@ popover .nautilus-window headerbar widget stack box.path-bar-box label.separator
 .nautilus-window .path-buttons-box:not(.vertical) {
   background-color: transparent;
 }
-.nautilus-window .path-buttons-box:not(.vertical) label.dim-label, .nautilus-window .path-buttons-box:not(.vertical) label.separator, .nautilus-window .path-buttons-box:not(.vertical) headerbar label.subtitle, headerbar .nautilus-window .path-buttons-box:not(.vertical) label.subtitle,
-.nautilus-window .path-buttons-box:not(.vertical) .titlebar:not(headerbar) label.subtitle,
-.titlebar:not(headerbar) .nautilus-window .path-buttons-box:not(.vertical) label.subtitle {
-  color: #F6F6F4;
+.nautilus-window .path-buttons-box:not(.vertical) > .horizontal > label.dim-label, .nautilus-window .path-buttons-box:not(.vertical) > .horizontal > label.separator, .nautilus-window headerbar .path-buttons-box:not(.vertical) > .horizontal > label.subtitle, headerbar .nautilus-window .path-buttons-box:not(.vertical) > .horizontal > label.subtitle,
+.nautilus-window .titlebar:not(headerbar) .path-buttons-box:not(.vertical) > .horizontal > label.subtitle,
+.titlebar:not(headerbar) .nautilus-window .path-buttons-box:not(.vertical) > .horizontal > label.subtitle {
+  color: transparent;
 }
 .nautilus-window .path-buttons-box:not(.vertical) button {
   padding: 0 7px;
@@ -6482,6 +6482,10 @@ headerbar .nautilus-window .path-buttons-box:not(.vertical) button:hover image.s
 }
 .nautilus-window .path-buttons-box:not(.vertical) button:active:backdrop, .nautilus-window .path-buttons-box:not(.vertical) button.current-dir:backdrop {
   color: rgba(4, 14, 4, 0.56);
+}
+.nautilus-window .path-buttons-box:not(.vertical) button.current-dir:active {
+  color: rgba(4, 14, 4, 0.5);
+  background-color: rgba(0, 200, 72, 0.5);
 }
 
 .nemo-window paned:last-child > separator {
