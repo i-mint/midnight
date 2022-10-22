@@ -1506,16 +1506,29 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .message {
   padding: 4px;
-  color: #f6f6f4;
-  border-image: url("dark-assets/misc/message.svg") 9 9 9 9;
+  color: rgba(246, 246, 244, 0.8);
+  border: none;
+  border-radius: 4px;
+  box-shadow: none;
+  background-color: #0b1726;
+  border-left-width: 2px;
+  border-style: solid;
+  border-color: #2D90FF;
+}
+.message label {
+  color: inherit;
 }
 .message:hover, .message:focus {
   color: #f6f6f4;
-  border-image: url("dark-assets/misc/message-hover.svg") 9 9 9 9;
+  background-color: #0a1522;
+  border-color: #479dff;
 }
 .message:active {
   color: #ffffff;
-  border-image: url("dark-assets/misc/message-active.svg") 9 9 9 9;
+  background-color: #2D90FF;
+}
+.message:active .message-close-button {
+  color: #2D90FF;
 }
 .message-icon-bin {
   padding: 8px 0px 8px 8px;
@@ -1553,11 +1566,25 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding: 8px;
   font-size: 1em;
 }
-.message .message-body, .message:hover .message-body {
+.message .message-body {
+  color: rgba(246, 246, 244, 0.8);
+}
+.message:hover .message-body {
   color: #f6f6f4;
 }
 .message:active .message-body {
   color: #ffffff;
+}
+
+.message-close-button {
+  color: #cc575d !important;
+  background-color: transparent;
+}
+.message-close-button:hover {
+  color: #d7787d !important;
+}
+.message-close-button:active {
+  color: #be3841 !important;
 }
 
 .message-media-control {
@@ -2120,9 +2147,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   margin: 5px;
   padding: 10px;
   color: #f6f6f4;
-  background-color: transparent;
-  border: 1px solid transparent;
-  border-image: url("dark-assets/menu/menu.svg") 9 9 9 9;
+  border-left-width: 2px;
+  border-style: solid;
+  border-color: #2D90FF;
 }
 .notification-banner .notification-icon,
 .notification-banner:hover .notification-icon,
