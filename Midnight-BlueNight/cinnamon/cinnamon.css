@@ -294,7 +294,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .popup-menu,
 .popup-combo-menu {
   color: #F6F6F4;
-  background-color: #08111C;
+  background-color: #0b1726;
   border-radius: 4px;
   margin-bottom: 0px;
   border: 1px solid #010304;
@@ -309,7 +309,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .popup-combo-menu .popup-sub-menu {
   background-gradient-direction: none;
   box-shadow: none;
-  border-image: url("dark-assets/menu/submenu.svg") 9 9 9 9;
+  color: rgba(246, 246, 244, 0.6);
+  background-color: #08111C;
 }
 .menu .popup-sub-menu .popup-menu-item:ltr,
 .popup-menu .popup-sub-menu .popup-menu-item:ltr,
@@ -344,12 +345,13 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding: 0.4em 1.75em;
   spacing: 1em;
 }
-.menu .popup-menu-item:active,
+.menu .popup-menu-item:active, .menu .popup-menu-item:selected,
 .popup-menu .popup-menu-item:active,
-.popup-combo-menu .popup-menu-item:active {
-  color: white;
-  background-color: transparent;
-  border-image: url("common-assets/menu/menu-hover.svg") 9 9 1 1;
+.popup-menu .popup-menu-item:selected,
+.popup-combo-menu .popup-menu-item:active,
+.popup-combo-menu .popup-menu-item:selected {
+  color: #ffffff;
+  background-color: #272e38;
 }
 .menu .popup-menu-item:insensitive,
 .popup-menu .popup-menu-item:insensitive,
@@ -1167,7 +1169,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   margin: auto;
   padding: 7px;
   transition-duration: 300;
-  background-color: #08111C;
+  background-color: transparent;
   border: 1px solid #010304;
 }
 .menu-favorites-button {
@@ -1189,17 +1191,17 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .menu-categories-box {
   padding: 0px 0px 0px 4px;
-  background-color: #08111C;
+  background-color: transparent;
   margin: 0px;
   margin-top: 4px;
   margin-left: 7px;
 }
 .menu-applications-outer-box {
   padding: 0px 10px 0 0px;
-  background-color: #08111C;
+  background-color: transparent;
 }
 .menu-applications-inner-box {
-  background-color: #08111C;
+  background-color: transparent;
   padding: 0px 0px 0 0px;
   margin: 0px;
   margin-top: 4px;
