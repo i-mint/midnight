@@ -1,9 +1,0 @@
-[X-GNOME-Metatheme]
-Name=Midnight-Blue
-Type=X-GNOME-Metatheme
-Comment= Midnight Gtk Themes 
-Encoding=UTF-8
-GtkTheme=Midnight-Blue
-IconTheme=Papirus-Dark
-CursorTheme=Adwaita
-CursorSize=24

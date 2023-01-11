@@ -11,13 +11,33 @@
    sodipodi:docname="switch-on.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
-     id="defs2309" />
+     id="defs2309">
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#selected_bg_color-9"
+       id="linearGradient1503"
+       gradientUnits="userSpaceOnUse"
+       x1="59.503605"
+       y1="-227.34019"
+       x2="111.00361"
+       y2="-227.34019" />
+    <linearGradient
+       id="selected_bg_color-9"
+       inkscape:swatch="solid"
+       gradientTransform="translate(-8.000005,-285.63782)">
+      <stop
+         style="stop-color:#b0b0b0;stop-opacity:1;"
+         offset="0"
+         id="stop1481" />
+    </linearGradient>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -27,15 +47,15 @@
      inkscape:pageshadow="2"
      inkscape:zoom="7.9195959"
      inkscape:cx="20.32932"
-     inkscape:cy="16.036172"
+     inkscape:cy="15.973037"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
      units="px"
      inkscape:window-width="1920"
-     inkscape:window-height="1025"
+     inkscape:window-height="1022"
      inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:window-y="30"
      inkscape:window-maximized="1"
      inkscape:pagecheckerboard="0">
     <inkscape:grid
@@ -77,13 +97,13 @@
          transform="translate(-13.398337,-118.94362)">
         <rect
            ry="13.206343"
-           rx="79.230774"
+           rx="25.667255"
            y="-238.09019"
            x="59.503605"
            height="21.499998"
            width="51.5"
            id="rect41437-6-6-3"
-           style="display:inline;fill:#969696;fill-opacity:1;fill-rule:nonzero;stroke:#0f0f05;stroke-width:0;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+           style="display:inline;fill:url(#linearGradient1503);fill-opacity:1;fill-rule:nonzero;stroke:#0f0f05;stroke-width:0;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
         <path
            id="rect1847-5-5-3-7-9"
            style="display:inline;fill:#141414;fill-opacity:1;fill-rule:nonzero;stroke:#0f0f05;stroke-width:0;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -106,7 +126,7 @@
              x="91.423531"
              y="-224.42809">ON</tspan></text>
         <rect
-           style="fill:#969696;fill-opacity:1;fill-rule:nonzero;stroke:#cad5ec;stroke-width:0;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           style="fill:url(#selected_bg_color-9);fill-opacity:1;fill-rule:nonzero;stroke:#cad5ec;stroke-width:0;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="rect1903-5-2-2-96"
            width="7.9999986"
            height="7.999999"

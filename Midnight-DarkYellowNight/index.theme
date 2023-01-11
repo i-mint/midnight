@@ -1,9 +1,0 @@
-[X-GNOME-Metatheme]
-Name=Midnight-DarkYellowNight
-Type=X-GNOME-Metatheme
-Comment= Midnight Gtk Themes 
-Encoding=UTF-8
-GtkTheme=Midnight-DarkYellowNight
-IconTheme=Mint-Y-Dark-Sand
-CursorTheme=Adwaita
-CursorSize=24

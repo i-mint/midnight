@@ -2,25 +2,24 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    inkscape:export-ydpi="90.000000"
    inkscape:export-xdpi="90.000000"
    width="28"
    height="4"
    id="svg11300"
    sodipodi:version="0.32"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="running3.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="running1.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
-   style="display:inline;enable-background:new">
+   style="display:inline;enable-background:new"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <sodipodi:namedview
      stroke="#ef2929"
      fill="#f57900"
@@ -28,20 +27,20 @@
      pagecolor="#ffffff"
      bordercolor="#808080"
      borderopacity="1"
-     inkscape:pageopacity="1"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="13.979167"
-     inkscape:cx="2.9088738"
-     inkscape:cy="5.4575288"
+     inkscape:zoom="39.539056"
+     inkscape:cx="12.493976"
+     inkscape:cy="1.5807155"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="true"
-     inkscape:window-width="1315"
-     inkscape:window-height="686"
-     inkscape:window-x="51"
-     inkscape:window-y="27"
+     inkscape:window-width="1920"
+     inkscape:window-height="1022"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
      width="400px"
      height="300px"
      inkscape:snap-nodes="true"
@@ -65,7 +64,8 @@
      guidehicolor="#001aff"
      guidehiopacity="0.49803922"
      inkscape:snap-smooth-nodes="false"
-     inkscape:snap-page="true">
+     inkscape:snap-page="true"
+     inkscape:pagecheckerboard="0">
     <inkscape:grid
        type="xygrid"
        id="grid3123"
@@ -78,11 +78,11 @@
      id="defs3">
     <linearGradient
        id="selected_bg_color"
-       osb:paint="solid">
+       inkscape:swatch="solid">
       <stop
          style="stop-color:#5294e2;stop-opacity:1;"
          offset="0"
-         id="stop4139" />
+         id="stop4137" />
     </linearGradient>
   </defs>
   <metadata
@@ -101,7 +101,6 @@
         <dc:source />
         <cc:license
            rdf:resource="" />
-        <dc:title />
         <dc:subject>
           <rdf:Bag />
         </dc:subject>
@@ -142,25 +141,11 @@
      id="layer1"
      transform="translate(0,-296)">
     <rect
-       style="opacity:1;fill:#969696;fill-opacity:1;stroke:none"
+       style="opacity:1;fill:#b0b0b0;fill-opacity:1;stroke:none"
        id="rect4270-9"
-       width="4"
+       width="8"
        height="2"
-       x="6"
-       y="298" />
-    <rect
-       y="298"
-       x="12"
-       height="2"
-       width="4"
-       id="rect4239"
-       style="opacity:1;fill:#969696;fill-opacity:1;stroke:none" />
-    <rect
-       style="opacity:1;fill:#969696;fill-opacity:1;stroke:none"
-       id="rect4140"
-       width="4"
-       height="2"
-       x="18"
+       x="10"
        y="298" />
   </g>
 </svg>

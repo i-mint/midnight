@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="16"
-     inkscape:cx="9.6542713"
-     inkscape:cy="39.425805"
+     inkscape:zoom="32"
+     inkscape:cx="3.0252147"
+     inkscape:cy="43.292294"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -69,14 +69,14 @@
          id="rect4749-1"
          transform="translate(0,1004.3622)"
          d="m 0,0 0,1 45,0 c 1.108,0 2,0.892 2,2 l 0,42 c 0,1.108 -0.892,2 -2,2 l -45,0 0,1 46,0 c 1.108,0 2,-0.892 2,-2 L 48,2 C 48,0.892 47.108,0 46,0 L 0,0 Z"
-         style="display:inline;opacity:0.81000001;fill:#081c0f;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         style="display:inline;opacity:0.81000001;fill:#08111c;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          inkscape:connector-curvature="0" />
       <path
          sodipodi:nodetypes="csscccc"
          inkscape:connector-curvature="0"
          id="rect4749-48"
          d="m 45,1005.3622 c 1.108,0 2,0.892 2,2 l 0,42 c 0,1.108 -0.892,2 -2,2 l -45,0 0,-46 z"
-         style="display:inline;opacity:0.95;fill:#081c0f;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+         style="display:inline;opacity:0.95;fill:#08111c;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     </g>
   </g>
 </svg>
