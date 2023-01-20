@@ -1051,6 +1051,11 @@ spinbutton.vertical > entry:focus + button {
 spinbutton.vertical > entry:drop(active) + button {
   border-top-color: #F08437;
 }
+spinbutton:focus,
+spinbutton > entry:focus {
+  color: #ffffff;
+  caret-color: currentColor;
+}
 
 combobox button.combo {
   min-width: 0;
