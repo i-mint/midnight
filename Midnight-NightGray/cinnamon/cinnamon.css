@@ -764,6 +764,14 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border-width: 0;
   color: rgba(174, 174, 153, 0.8);
 }
+.calendar-day:hover {
+  color: #ffffff;
+  background-color: #272e38;
+}
+.calendar-day:active, .calendar-day:selected {
+  color: #141414;
+  background-color: #a3a3a3;
+}
 
 .calendar-day-top {
   border-top-width: 0;
