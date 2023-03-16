@@ -5068,6 +5068,15 @@ panel-toplevel.background button:checked:not(#tasklist-button), .xfce4-panel.pan
   border: 0.5px solid #001317;
   border-radius: 2px;
 }
+.thunar toolbar > toolitem box.horizontal > entry label, .thunar .inline-toolbar > toolitem box.horizontal > entry label, .thunar toolbar > toolitem box.horizontal > entry image, .thunar .inline-toolbar > toolitem box.horizontal > entry image, .thunar toolbar > toolitem box.horizontal > entry, .thunar .inline-toolbar > toolitem box.horizontal > entry {
+  color: #268bd2;
+}
+.thunar toolbar > toolitem box.horizontal > entry:focus label, .thunar .inline-toolbar > toolitem box.horizontal > entry:focus label, .thunar toolbar > toolitem box.horizontal > entry:focus image, .thunar .inline-toolbar > toolitem box.horizontal > entry:focus image, .thunar toolbar > toolitem box.horizontal > entry:focus, .thunar .inline-toolbar > toolitem box.horizontal > entry:focus {
+  color: #fdf6e3;
+}
+.thunar toolbar > toolitem box.horizontal > entry:backdrop label, .thunar .inline-toolbar > toolitem box.horizontal > entry:backdrop label, .thunar toolbar > toolitem box.horizontal > entry:backdrop image, .thunar .inline-toolbar > toolitem box.horizontal > entry:backdrop image, .thunar toolbar > toolitem box.horizontal > entry:backdrop, .thunar .inline-toolbar > toolitem box.horizontal > entry:backdrop {
+  color: rgba(38, 139, 210, 0.67);
+}
 
 .linked.path-bar > button.toggle,
 .thunar toolbar button.toggle,
