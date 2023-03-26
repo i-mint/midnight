@@ -95,8 +95,8 @@ stage {
 #menu-search-entry, .menu #notification StEntry, .popup-menu #notification StEntry {
   padding: 7px;
   caret-size: 1px;
-  selection-background-color: #2D90FF;
-  selected-color: #ffffff;
+  selection-background-color: rgba(45, 144, 255, 0.4);
+  selected-color: #aeae99;
   transition-duration: 300ms;
   border-radius: 3px;
   color: #aeae99;
@@ -570,8 +570,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: #ffffff;
   font-style: italic;
   transition-duration: 300;
-  selection-background-color: #ffffff;
-  selected-color: #2D90FF;
+  selection-background-color: black;
+  selected-color: #ffffff;
 }
 
 .expo-workspace-thumbnail-frame {
