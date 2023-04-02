@@ -927,7 +927,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 #panel .panel-button.clock-display .clock {
   transition-duration: 150ms;
-  border: 3px solid transparent;
+  border: 1px solid transparent;
   border-radius: 6px;
   padding-right: 6px;
   padding-left: 6px;
@@ -989,11 +989,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 #panel .screencast-indicator {
   color: #FC4138;
 }
+/*This is related to the notification dot*/
 #panel .clock-display > * > *:last-child {
-  color: #2D90FF;
-  border: 1px solid rgba(45, 144, 255, 0.5);
-  padding: 2px;
-  border-radius: 6px;
 }
 #panel .popup-menu-arrow {
   width: 0;
@@ -1510,11 +1507,10 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .message {
   padding: 4px;
   color: rgba(186, 186, 171, 0.8);
-  border: none;
   border-radius: 4px;
+  border-width: 1px;
   box-shadow: none;
   background-color: #0b1726;
-  border-left-width: 2px;
   border-style: solid;
   border-color: #2D90FF;
 }
@@ -1621,7 +1617,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .media-message-cover-icon {
   icon-size: 32px;
-}
+  height: 40px;
+  width: 40px;
+}  
 .media-message-cover-icon.fallback {
   color: rgba(186, 186, 171, 0.45);
   background-color: #08111C;
@@ -1863,6 +1861,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border-color: rgba(0, 0, 0, 0.4);
   padding: 4px 0;
   border-radius: 0 3px 3px 0;
+  height: 100px;
 }
 #dash:rtl {
   border-radius: 3px 0 0 3px;
@@ -1876,7 +1875,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 #dash .placeholder {
   background-image: url("common-assets/dash/dash-placeholder.svg");
   background-size: contain;
-  height: 24px;
+  height: 216px;
 }
 #dash .empty-dash-drop-target {
   width: 24px;
@@ -2021,7 +2020,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .grid-search-result:focus .overview-icon,
 .grid-search-result:selected .overview-icon {
   background-color: rgba(45, 144, 255, 0.4);
-  transition-duration: 0ms;
+  transition-duration: 150ms;
   border-image: none;
   background-image: none;
 }
