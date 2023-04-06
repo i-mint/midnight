@@ -3,7 +3,7 @@ checkbox needs to be upscaled as the icon is now 24px instead of 16
 
 */
 
-@define-color accent_color #9141ac;
+@define-color accent_color #2D90FF;
 @define-color accent_bg_color #2D90FF;
 @define-color accent_fg_color #ffffff;
 @define-color destructive_color #613583;
@@ -21,10 +21,10 @@ checkbox needs to be upscaled as the icon is now 24px instead of 16
 @define-color window_bg_color #08111cfc;
 @define-color window_fg_color #2d90fffc;
 @define-color view_bg_color #08111cfc;
-@define-color view_fg_color #9141ac;
+@define-color view_fg_color #ffffff;
 @define-color headerbar_bg_color #08111cfc;
 @define-color headerbar_fg_color #2d90fffc;
-@define-color headerbar_border_color #813d9c;
+@define-color headerbar_border_color rgba(0,0,0,0.0);
 @define-color headerbar_backdrop_color #08111cfc;
 @define-color headerbar_shade_color rgba(0, 0, 0, 0);
 @define-color card_bg_color rgba(3, 7, 12, 0.4);
