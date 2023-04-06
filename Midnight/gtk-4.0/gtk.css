@@ -1,3 +1,8 @@
+/* TO FIX
+checkbox needs to be upscaled as the icon is now 24px instead of 16
+
+*/
+
 @define-color accent_color #9141ac;
 @define-color accent_bg_color #2D90FF;
 @define-color accent_fg_color #ffffff;
@@ -76,3 +81,487 @@
 @define-color dark_3 #3d3846;
 @define-color dark_4 #241f31;
 @define-color dark_5 #000000;
+/*----------Window Control----------
+This section is for the close/minimise/maximise buttons, which are no windowcontrols instead of header buttons
+
+This gets the 3 buttons close to each other */
+windowcontrols button {
+  padding: 0;
+}
+
+/*Makes the window control icons into a single image, instead of 4 + removes the default adwaita ones */
+windowcontrols button.close, windowcontrols button.close:hover, windowcontrols button.close:active, windowcontrols button.close:checked, windowcontrols button.maximize, windowcontrols button.maximize:hover, windowcontrols button.maximize:active, windowcontrols button.maximize:checked, windowcontrols button.minimize, windowcontrols button.minimize:hover, windowcontrols button.minimize:active, windowcontrols button.minimize:checked {
+  color: transparent;
+  background-color: transparent;
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+/* Adds the custom icons stored in assets */
+
+windowcontrols button.close { 
+  background-image: -gtk-scaled(
+    url("assets/titlebutton-close-dark.png"),
+    url("assets/titlebutton-close-dark@2.png")
+  );
+}
+
+windowcontrols button.close:backdrop {
+  background-image: -gtk-scaled(
+    url("assets/titlebutton-close-backdrop-dark.png"),
+    url("assets/titlebutton-close-backdrop-dark@2.png")
+  ); 
+}
+
+windowcontrols button.close:hover {
+  background-image: -gtk-scaled(
+    url("assets/titlebutton-close-hover-dark.png"), 
+    url("assets/titlebutton-close-hover-dark@2.png")
+  ); 
+}
+
+windowcontrols button.close:active {
+  background-image: -gtk-scaled(
+    url("assets/titlebutton-close-active-dark.png"), 
+    url("assets/titlebutton-close-active-dark@2.png")
+  ); 
+}
+
+windowcontrols button.maximize {
+  background-image: -gtk-scaled(
+    url("assets/titlebutton-maximize-dark.png"), 
+    url("assets/titlebutton-maximize-dark@2.png")
+  );
+}
+
+windowcontrols button.maximize:backdrop {
+  background-image: -gtk-scaled(
+    url("assets/titlebutton-maximize-backdrop-dark.png"),
+    url("assets/titlebutton-maximize-backdrop-dark@2.png")
+  );
+}
+
+windowcontrols button.maximize:hover {
+  background-image: -gtk-scaled(
+    url("assets/titlebutton-maximize-hover-dark.png"), 
+    url("assets/titlebutton-maximize-hover-dark@2.png")
+  ); 
+}
+
+windowcontrols button.maximize:active {
+  background-image: -gtk-scaled(
+    url("assets/titlebutton-maximize-active-dark.png"), 
+    url("assets/titlebutton-maximize-active-dark@2.png")
+  ); 
+}
+
+windowcontrols button.minimize {
+  background-image: -gtk-scaled(
+    url("assets/titlebutton-minimize-dark.png"), 
+    url("assets/titlebutton-minimize-dark@2.png")
+  ); 
+}
+
+windowcontrols button.minimize:backdrop {
+  background-image: -gtk-scaled(
+    url("assets/titlebutton-minimize-backdrop-dark.png"), 
+    url("assets/titlebutton-minimize-backdrop-dark@2.png")
+  ); 
+}
+
+windowcontrols button.minimize:hover {
+  background-image: -gtk-scaled(
+    url("assets/titlebutton-minimize-hover-dark.png"), 
+    url("assets/titlebutton-minimize-hover-dark@2.png")
+  ); 
+}
+
+windowcontrols button.minimize:active {
+  background-image: -gtk-scaled(
+    url("assets/titlebutton-minimize-active-dark.png"), 
+    url("assets/titlebutton-minimize-active-dark@2.png")
+  ); 
+}
+/*----------------------------Switch------------------------------
+
+Makes the default switch and slider transparent + places the switch icon correctly*/
+switch, slider {
+  background-color: transparent;
+  color: transparent;
+  margin: 4px;
+  background-repeat: no-repeat; 
+}
+
+/* Adds custom icons stored in assets */
+
+switch {
+  background-image: -gtk-scaled(
+    url("assets/switch-dark.png"), 
+    url("assets/switch-dark@2.png")
+  ); 
+}
+
+modelbutton:hover switch, row:selected switch, infobar switch {
+  background-image: -gtk-scaled(
+    url("assets/switch-selected.png"), 
+    url("assets/switch-selected@2.png")
+  ); 
+}
+
+headerbar switch {
+  background-image: -gtk-scaled(
+    url("assets/switch-header-dark.png"), 
+    url("assets/switch-header-dark@2.png")
+  ); 
+}
+
+switch:checked {
+  background-image: -gtk-scaled(
+    url("assets/switch-active-dark.png"), 
+    url("assets/switch-active-dark@2.png")
+  ); 
+}
+
+modelbutton:hover switch:checked, row:selected switch:checked, infobar switch:checked {
+  background-image: -gtk-scaled(
+    url("assets/switch-active-selected.png"), 
+    url("assets/switch-active-selected@2.png")
+  ); 
+}
+
+headerbar switch:checked {
+  background-image: -gtk-scaled(
+    url("assets/switch-active-header-dark.png"), 
+    url("assets/switch-active-header-dark@2.png")
+  ); 
+}
+
+switch:disabled {
+  background-image: -gtk-scaled(
+    url("assets/switch-insensitive-dark.png"), 
+    url("assets/switch-insensitive-dark@2.png")
+  ); 
+}
+
+modelbutton:hover switch:disabled, row:selected switch:disabled, infobar switch:disabled {
+  background-image: -gtk-scaled(
+    url("assets/switch-insensitive-selected.png"), 
+    url("assets/switch-insensitive-selected@2.png")
+  ); 
+}
+
+headerbar switch:disabled {
+  background-image: -gtk-scaled(
+    url("assets/switch-insensitive-header-dark.png"), 
+    url("assets/switch-insensitive-header-dark@2.png")
+  ); 
+}
+
+switch:checked:disabled {
+  background-image: -gtk-scaled(
+    url("assets/switch-active-insensitive-dark.png"), 
+    url("assets/switch-active-insensitive-dark@2.png")
+  ); 
+}
+
+modelbutton:hover switch:checked:disabled, row:selected switch:checked:disabled, infobar switch:checked:disabled {
+  background-image: -gtk-scaled(
+    url("assets/switch-active-insensitive-selected.png"), 
+    url("assets/switch-active-insensitive-selected@2.png")
+  ); 
+}
+
+headerbar switch:checked:disabled {
+  background-image: -gtk-scaled(
+    url("assets/switch-active-insensitive-header-dark.png"), 
+    url("assets/switch-active-insensitive-header-dark@2.png")
+  ); 
+}
+
+/*-----------------------------------Checkbox-----------------------------------*/
+
+check {
+  color: transparent;
+  background-color: transparent;
+}
+
+/* Adding all the checkbox assets */
+
+.view.content-view.check:not(list), iconview.content-view.check:not(list), .content-view .tile check:not(list) { 
+  -gtk-icon-shadow: none; 
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/checkbox-selectionmode-dark.png"), 
+    url("assets/checkbox-selectionmode-dark@2.png"));
+}
+
+.view.content-view.check:checked:not(list), iconview.content-view.check:checked:not(list), .content-view .tile check:checked:not(list) {
+  -gtk-icon-shadow: none; 
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/checkbox-checked-selectionmode-dark.png"), 
+    url("assets/checkbox-checked-selectionmode-dark@2.png")); 
+}
+
+.check, check, treeview.view check {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/checkbox-unchecked-dark.png"), 
+    url("assets/checkbox-unchecked-dark@2.png")
+  ); 
+}
+
+.osd check {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/checkbox-unchecked-dark.png"), 
+    url("assets/checkbox-unchecked-dark@2.png")
+  ); 
+}
+
+modelbutton check:selected, .view check:selected, iconview check:selected, treeview.check:selected, row:selected check, infobar check {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/checkbox-unchecked-selected.png"), 
+    url("assets/checkbox-unchecked-selected@2.png")
+  ); 
+}
+
+.check:disabled, check:disabled, treeview.view check:disabled {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/checkbox-unchecked-insensitive-dark.png"), 
+    url("assets/checkbox-unchecked-insensitive-dark@2.png")
+  ); 
+}
+ 
+.osd check:disabled {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/checkbox-unchecked-insensitive-dark.png"), 
+    url("assets/checkbox-unchecked-insensitive-dark@2.png")
+  ); 
+}
+
+modelbutton check:disabled:selected, .view check:disabled:selected, iconview check:disabled:selected, treeview.check:disabled:selected, row:selected check:disabled, infobar check:disabled {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/checkbox-unchecked-insensitive-selected.png"), 
+    url("assets/checkbox-unchecked-insensitive-selected@2.png")
+  ); 
+}
+
+.check:indeterminate, check:indeterminate, treeview.view check:indeterminate {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/checkbox-mixed-dark.png"), 
+    url("assets/checkbox-mixed-dark@2.png")
+  ); 
+}
+
+.osd check:indeterminate {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/checkbox-mixed-dark.png"), 
+    url("assets/checkbox-mixed-dark@2.png")
+  ); 
+}
+
+modelbutton check:indeterminate:selected, .view check:indeterminate:selected, iconview check:indeterminate:selected, treeview.check:indeterminate:selected, row:selected check:indeterminate, infobar check:indeterminate {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/checkbox-mixed-selected.png"), 
+    url("assets/checkbox-mixed-selected@2.png")
+  ); 
+}
+
+.check:indeterminate:disabled, check:indeterminate:disabled, treeview.view check:indeterminate:disabled {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/checkbox-mixed-insensitive-dark.png"), 
+    url("assets/checkbox-mixed-insensitive-dark@2.png")
+  ); 
+}
+
+.osd check:indeterminate:disabled {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/checkbox-mixed-insensitive-dark.png"), 
+    url("assets/checkbox-mixed-insensitive-dark@2.png")
+  ); 
+}
+
+modelbutton check:indeterminate:disabled:selected, .view check:indeterminate:disabled:selected, iconview check:indeterminate:disabled:selected, treeview.check:indeterminate:disabled:selected, row:selected check:indeterminate:disabled, infobar check:indeterminate:disabled {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/checkbox-mixed-insensitive-selected.png"), 
+    url("assets/checkbox-mixed-insensitive-selected@2.png")
+  ); 
+}
+
+.check:checked, check:checked, treeview.view check:checked {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/checkbox-checked-dark.png"), 
+    url("assets/checkbox-checked-dark@2.png")
+  ); 
+}
+
+.osd check:checked {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/checkbox-checked-dark.png"), 
+    url("assets/checkbox-checked-dark@2.png")
+  );
+}
+
+modelbutton check:checked:selected, .view check:checked:selected, iconview check:checked:selected, treeview.check:checked:selected, row:selected check:checked, infobar check:checked {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/checkbox-checked-selected.png"), 
+    url("assets/checkbox-checked-selected@2.png")
+  ); 
+}
+
+.check:checked:disabled, check:checked:disabled, treeview.view check:checked:disabled { 
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/checkbox-checked-insensitive-dark.png"), 
+    url("assets/checkbox-checked-insensitive-dark@2.png")
+  ); 
+}
+
+.osd check:checked:disabled {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/checkbox-checked-insensitive-dark.png"), 
+    url("assets/checkbox-checked-insensitive-dark@2.png")
+  ); 
+}
+
+modelbutton check:checked:disabled:selected, .view check:checked:disabled:selected, iconview check:checked:disabled:selected, treeview.check:checked:disabled:selected, row:selected check:checked:disabled, infobar check:checked:disabled {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/checkbox-checked-insensitive-selected.png"), 
+    url("assets/checkbox-checked-insensitive-selected@2.png")
+  ); 
+}
+
+/*-------------------------------Radio--------------------------------*/
+radio {
+  color: transparent;
+  background-color:transparent;
+  min-width: 16px;
+  min-height: 16px;
+}
+
+.radio, radio, treeview.view radio {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/radio-unchecked-dark.png"), 
+    url("assets/radio-unchecked-dark@2.png")
+  ); 
+}
+
+.osd radio {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/radio-unchecked-dark.png"), 
+    url("assets/radio-unchecked-dark@2.png")
+  ); 
+}
+
+modelbutton radio:selected, .view radio:selected, iconview radio:selected, treeview.radio:selected, row:selected radio, infobar radio {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/radio-unchecked-selected.png"), 
+    url("assets/radio-unchecked-selected@2.png")
+  ); 
+}
+
+.radio:disabled, radio:disabled, treeview.view radio:disabled {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/radio-unchecked-insensitive-dark.png"), 
+    url("assets/radio-unchecked-insensitive-dark@2.png")
+  ); 
+}
+
+.osd radio:disabled {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/radio-unchecked-insensitive-dark.png"), 
+    url("assets/radio-unchecked-insensitive-dark@2.png")
+  );
+}
+
+modelbutton radio:disabled:selected, .view radio:disabled:selected, iconview radio:disabled:selected, treeview.radio:disabled:selected, row:selected radio:disabled, infobar radio:disabled {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/radio-unchecked-insensitive-selected.png"), 
+    url("assets/radio-unchecked-insensitive-selected@2.png")
+  ); 
+}
+
+.radio:indeterminate, radio:indeterminate, treeview.view radio:indeterminate {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/radio-mixed-dark.png"), 
+    url("assets/radio-mixed-dark@2.png")
+  ); 
+}
+
+.osd radio:indeterminate {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/radio-mixed-dark.png"), 
+    url("assets/radio-mixed-dark@2.png")
+  ); 
+}
+
+modelbutton radio:indeterminate:selected, .view radio:indeterminate:selected, iconview radio:indeterminate:selected, treeview.radio:indeterminate:selected, row:selected radio:indeterminate, infobar radio:indeterminate {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/radio-mixed-selected.png"), 
+    url("assets/radio-mixed-selected@2.png")
+  ); 
+}
+
+.radio:indeterminate:disabled, radio:indeterminate:disabled, treeview.view radio:indeterminate:disabled {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/radio-mixed-insensitive-dark.png"), 
+    url("assets/radio-mixed-insensitive-dark@2.png")
+  ); 
+}
+
+.osd radio:indeterminate:disabled {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/radio-mixed-insensitive-dark.png"), 
+    url("assets/radio-mixed-insensitive-dark@2.png")
+  ); 
+}
+
+modelbutton radio:indeterminate:disabled:selected, .view radio:indeterminate:disabled:selected, iconview radio:indeterminate:disabled:selected, treeview.radio:indeterminate:disabled:selected, row:selected radio:indeterminate:disabled, infobar radio:indeterminate:disabled {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/radio-mixed-insensitive-selected.png"), 
+    url("assets/radio-mixed-insensitive-selected@2.png")
+  ); 
+}
+
+.radio:checked, radio:checked, treeview.view radio:checked {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/radio-checked-dark.png"), 
+    url("assets/radio-checked-dark@2.png")
+  ); 
+}
+
+.osd radio:checked {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/radio-checked-dark.png"), 
+    url("assets/radio-checked-dark@2.png")
+  ); 
+}
+
+modelbutton radio:checked:selected, .view radio:checked:selected, iconview radio:checked:selected, treeview.radio:checked:selected, row:selected radio:checked, infobar radio:checked {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/radio-checked-selected.png"), 
+    url("assets/radio-checked-selected@2.png")
+  ); 
+}
+
+.radio:checked:disabled, radio:checked:disabled, treeview.view radio:checked:disabled {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/radio-checked-insensitive-dark.png"), 
+    url("assets/radio-checked-insensitive-dark@2.png")
+  ); 
+}
+
+.osd radio:checked:disabled {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/radio-checked-insensitive-dark.png"), 
+    url("assets/radio-checked-insensitive-dark@2.png")
+  ); 
+}
+
+modelbutton radio:checked:disabled:selected, .view radio:checked:disabled:selected, iconview radio:checked:disabled:selected, treeview.radio:checked:disabled:selected, row:selected radio:checked:disabled, infobar radio:checked:disabled {
+  -gtk-icon-source: -gtk-scaled(
+    url("assets/radio-checked-insensitive-selected.png"), 
+    url("assets/radio-checked-insensitive-selected@2.png")
+  ); 
+}
+
+
+
+
+
+
