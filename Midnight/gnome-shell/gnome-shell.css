@@ -2592,10 +2592,10 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .login-dialog-user-list-item:focus .login-dialog-timed-login-indicator {
   background-color: #ffffff;
 }
-
+/*changed*/
 .login-dialog-username,
 .user-widget-label {
-  color: #2d90ff;
+  color: #ffffff;
   font-size: 120%;
   font-weight: bold;
   text-align: left;
