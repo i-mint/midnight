@@ -6,7 +6,7 @@ checkbox needs to be upscaled as the icon is now 24px instead of 16
 @define-color accent_color #2D90FF;
 @define-color accent_bg_color #2D90FF;
 @define-color accent_fg_color #ffffff;
-@define-color destructive_color #613583;
+@define-color destructive_color #2D90FF;
 @define-color destructive_bg_color #F04A50;
 @define-color destructive_fg_color #ffffff;
 @define-color success_color #8ff0a4;
