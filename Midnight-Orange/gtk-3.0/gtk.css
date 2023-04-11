@@ -967,6 +967,18 @@ menuitem.button.flat:hover,
 modelbutton.flat:hover {
   background-color: #192129;
 }
+menuitem.button.flat:hover label, menuitem.button.flat:hover,
+modelbutton.flat:hover label,
+modelbutton.flat:hover {
+  color: #aeae99;
+}
+menuitem.button.flat:active label, menuitem.button.flat:active arrow label, menuitem.button.flat:selected label, menuitem.button.flat:selected arrow label,
+modelbutton.flat:active label,
+modelbutton.flat:active arrow label,
+modelbutton.flat:selected label,
+modelbutton.flat:selected arrow label {
+  color: inherit;
+}
 menuitem.button.flat:checked,
 modelbutton.flat:checked {
   color: #aeae99;
@@ -2147,7 +2159,7 @@ popover button:hover, popover.menu stack button:not(.flat):not(.toggle):not(.swi
   border-color: #222830;
 }
 popover button:hover label, popover button:hover image, popover button:hover, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):hover label, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):hover image, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):hover {
-  color: #ffffff;
+  color: #aeae99;
 }
 popover button:active, popover button:focus, popover button:checked, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):active, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):focus, popover.menu stack button:not(.flat):not(.toggle):not(.switcher):checked {
   background-color: #C87200;
@@ -3897,7 +3909,7 @@ decoration:backdrop {
   border-radius: 4px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.45), 0 0 0 1px black;
 }
-.csd decoration {
+.csd.unified decoration {
   border-radius: 4px;
 }
 tooltip.csd decoration {
@@ -5922,7 +5934,7 @@ filechooser placessidebar.sidebar row.sidebar-row.has-open-popup, filechooser pl
   background-color: transparent;
   border-left: 2px solid #C87200;
   padding-left: 0px;
-  color: #ffffff;
+  color: #aeae99;
 }
 filechooser placessidebar.sidebar row.sidebar-row:disabled, filechooser placessidebar.sidebar row.sidebar-row:disabled label, filechooser placessidebar.sidebar row.sidebar-row:disabled image,
 .nautilus-window placessidebar.sidebar row.sidebar-row:disabled,
@@ -6026,7 +6038,7 @@ filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button,
 filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button image,
 .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button label,
 .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button image {
-  color: #C87200;
+  color: inherit;
 }
 filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:hover,
 .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:hover {
@@ -6055,7 +6067,7 @@ filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:ac
 .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:active image,
 .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:checked label,
 .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:checked image {
-  color: #ffffff;
+  color: inherit;
 }
 filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child,
 .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child {
@@ -6069,7 +6081,7 @@ filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.im
 filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child image,
 .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child label,
 .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child image {
-  color: #ffffff;
+  color: inherit;
 }
 filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child:hover,
 .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child:hover {
@@ -6246,7 +6258,7 @@ headerbar .nautilus-window .path-buttons-box:not(.vertical) button:hover image.s
 }
 .nemo-window .sidebar .view.cell:hover, .nemo-window .sidebar iconview.cell:hover, .nemo-window .sidebar row.cell:hover {
   background-color: rgba(200, 114, 0, 0.1);
-  color: #ffffff;
+  color: #aeae99;
 }
 .nemo-window .sidebar .view.expander, .nemo-window .sidebar iconview.expander, .nemo-window .sidebar row.expander {
   color: rgba(109, 68, 13, 0.975);
@@ -6270,7 +6282,7 @@ headerbar .nautilus-window .path-buttons-box:not(.vertical) button:hover image.s
 .caja-side-pane text:hover,
 .caja-side-pane treeview:hover {
   background-color: rgba(200, 114, 0, 0.1);
-  color: #ffffff;
+  color: #aeae99;
 }
 .caja-side-pane > box button:not(:active):not(:checked) {
   color: #c87200;
