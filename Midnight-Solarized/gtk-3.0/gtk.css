@@ -3849,7 +3849,7 @@ decoration:backdrop {
   border-radius: 4px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.45), 0 0 0 1px #001b22;
 }
-.csd decoration {
+.csd.unified decoration {
   border-radius: 4px;
 }
 tooltip.csd decoration {
@@ -5325,7 +5325,7 @@ filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button,
 filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button image,
 .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button label,
 .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button image {
-  color: #268bd2;
+  color: inherit;
 }
 filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:hover,
 .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:hover {
@@ -5338,7 +5338,7 @@ filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:ho
 filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:hover label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:hover image,
 .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:hover label,
 .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:hover image {
-  color: #839496;
+  color: inherit;
 }
 filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:active, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:checked,
 .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:active,
@@ -5354,7 +5354,7 @@ filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button:ac
 .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:active image,
 .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:checked label,
 .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button:checked image {
-  color: #fdf6e3;
+  color: inherit;
 }
 filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child,
 .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child {
@@ -5368,7 +5368,7 @@ filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.im
 filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child image,
 .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child label,
 .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child image {
-  color: #fdf6e3;
+  color: inherit;
 }
 filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child:hover,
 .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child:hover {
