@@ -97,6 +97,7 @@ StEntry:focus {
 }
 StEntry:focus .hint-text {
   color: #fdf6e3;
+  margin-left: 14px;
 }
 StEntry:insensitive {
   color: rgba(131, 148, 150, 0.45);
