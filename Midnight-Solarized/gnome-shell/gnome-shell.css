@@ -1815,15 +1815,25 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 #searchResultsContent {
   padding-left: 20px;
   padding-right: 20px;
-  spacing: 16px;
+  max-width: 1024px;
+  spacing: 8px;
 }
 
 .search-section {
-  spacing: 16px;
+  spacing: 8px;
+}
+.search-section .search-section-separator {
+  height: 0;
+  background-color: transparent;
 }
 
 .search-section-content {
-  spacing: 32px;
+  color: #839496;
+  background-color: #002b36;
+  border-radius: 4px;
+  border: 1px solid #001317;
+  padding: 18px;
+  spacing: 8px;
 }
 
 .list-search-results {
@@ -2135,7 +2145,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding: 1px;
 }
 
-.search-display > StBoxLayout,
 .all-apps,
 .frequent-apps > StBoxLayout {
   padding: 0px 88px 10px 88px;
