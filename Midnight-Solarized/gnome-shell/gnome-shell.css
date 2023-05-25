@@ -1813,9 +1813,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 #searchResultsContent {
-  padding-left: 20px;
-  padding-right: 20px;
-  max-width: 1024px;
+  max-width: 1000px;
   spacing: 8px;
 }
 
@@ -2145,8 +2143,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding: 1px;
 }
 
-.all-apps,
-.frequent-apps > StBoxLayout {
+.all-apps {
   padding: 0px 88px 10px 88px;
 }
 
