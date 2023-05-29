@@ -1,7 +1,7 @@
 /* TO FIX
-checkbox needs to be upscaled as the icon is now 24px instead of 16
+checkbox needs to be upscaled as the icon is now 24px instead of 16*/
 
-*/
+
 
 @define-color accent_color #2D90FF;
 @define-color accent_bg_color #2D90FF;
@@ -561,7 +561,144 @@ modelbutton radio:checked:disabled:selected, .view radio:checked:disabled:select
 }
 
 
+/*------------Scrollbar--------------*/
+scrollbar {
+  transition: all 75ms cubic-bezier(0, 0, 0.2, 1);
+  background-color: #08111C;
+}
 
+scrollbar > range > trough {
+  outline: none;
+  background: none;
+  border: none;
+}
 
+scrollbar > range > trough > slider {
+  transition: background-color 75ms cubic-bezier(0, 0, 0.2, 1);
+  min-width: 8px;
+  min-height: 8px;
+  border: 4px solid transparent;
+  border-radius: 9999px;
+  background-clip: padding-box;
+  background-color: rgba(45, 144, 255, 0.5);
+  box-shadow: none;
+  outline: none;
+}
 
+scrollbar > range > trough > slider:hover {
+  background-color: rgba(45, 144, 255, 0.7);
+}
+
+scrollbar > range > trough > slider:active {
+  background-color: #2D90FF;
+}
+
+scrollbar > range > trough > slider:disabled {
+  background-color: rgba(45, 144, 255, 0.3);
+}
+
+scrollbar > range.fine-tune > trough > slider {
+  min-width: 4px;
+  min-height: 4px;
+}
+
+scrollbar > range.fine-tune.horizontal > trough > slider {
+  margin: 2px 0;
+}
+
+scrollbar > range.fine-tune.vertical > trough > slider {
+  margin: 0 2px;
+}
+
+scrollbar.overlay-indicator:not(.fine-tune) > range > trough > slider {
+  transition-property: background-color, min-height, min-width;
+}
+
+scrollbar.overlay-indicator:not(.dragging):not(.hovering) {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+scrollbar.overlay-indicator:not(.dragging):not(.hovering)
+  > range
+  > trough
+  > slider {
+  min-width: 4px;
+  min-height: 4px;
+  margin: 3px;
+  border: 1px solid rgba(44, 44, 44, 0.3);
+}
+
+scrollbar.overlay-indicator:not(.dragging):not(.hovering) button {
+  min-width: 4px;
+  min-height: 4px;
+  margin: 3px;
+  border: 1px solid rgba(44, 44, 44, 0.3);
+  border-radius: 9999px;
+  background-color: rgba(45, 144, 255, 0.5);
+  background-clip: padding-box;
+  -gtk-icon-source: none;
+}
+
+scrollbar.overlay-indicator:not(.dragging):not(.hovering) button:disabled {
+  background-color: rgba(45, 144, 255, 0.3);
+}
+
+scrollbar.overlay-indicator.horizontal:not(.dragging):not(.hovering)
+  > range
+  > trough
+  > slider {
+  min-width: 24px;
+}
+
+scrollbar.overlay-indicator.horizontal:not(.dragging):not(.hovering) button {
+  min-width: 8px;
+}
+
+scrollbar.overlay-indicator.vertical:not(.dragging):not(.hovering)
+  > range
+  > trough
+  > slider {
+  min-height: 24px;
+}
+
+scrollbar.overlay-indicator.vertical:not(.dragging):not(.hovering) button {
+  min-height: 8px;
+}
+
+scrollbar.overlay-indicator.dragging,
+scrollbar.overlay-indicator.hovering {
+  background-color: transparent;
+}
+
+scrollbar.horizontal > range > trough > slider {
+  min-width: 24px;
+}
+
+scrollbar.vertical > range > trough > slider {
+  min-height: 24px;
+}
+
+scrollbar button {
+  min-width: 16px;
+  min-height: 16px;
+  padding: 0;
+  border-radius: 0;
+}
+
+scrollbar.vertical button.down {
+  -gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
+}
+
+scrollbar.vertical button.up {
+  -gtk-icon-source: -gtk-icontheme('pan-up-symbolic');
+}
+
+scrollbar.horizontal button.down {
+  -gtk-icon-source: -gtk-icontheme('pan-end-symbolic');
+}
+
+scrollbar.horizontal button.up {
+  -gtk-icon-source: -gtk-icontheme('pan-start-symbolic');
+}
 
