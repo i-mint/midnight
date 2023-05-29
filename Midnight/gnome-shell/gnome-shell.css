@@ -16,6 +16,7 @@
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  */
+
 stage {
   font-size: 1em;
   color: #babaab;
@@ -97,7 +98,6 @@ StEntry:focus {
 }
 StEntry:focus .hint-text {
   color: #ffffff;
-  margin-left: 14px;
 }
 StEntry:insensitive {
   color: rgba(186, 186, 171, 0.45);
@@ -914,9 +914,14 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .quick-slider .background-app-item .close-button,
 .background-app-item .quick-slider .close-button {
   background-color: transparent;
-  color: rgba(45, 144, 255, 1) !important;
+  color: #2D90FF !important;
 }
-
+.quick-slider .icon-button:hover,
+.quick-slider .background-app-item .close-button:hover,
+.background-app-item .quick-slider .close-button:hover {
+  background-color: transparent;
+  color: #FFFFFF !important;
+}
 .quick-slider .icon-button:hover,
 .quick-slider .background-app-item .close-button:hover,
 .background-app-item .quick-slider .close-button:hover {
@@ -940,7 +945,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .quick-toggle-menu .popup-separator-menu-item-separator {
   padding: 0 !important;
   margin: 0 !important;
-  background-color: rgba(0, 0, 0, 0.) !important;
 }
 
 .quick-toggle-menu .popup-menu-item {
@@ -948,18 +952,14 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding: 6px;
   spacing: 6px;
   border-radius: 6px !important;
-  color: rgba(45, 144, 255, 1) !important;
-}
-
-.quick-toggle-menu .popup-menu-item StLabel {
-  color: #2D90FF;
+  color: #2D90FF !important;
 }
 
 .quick-toggle-menu .popup-menu-item:focus,
 .quick-toggle-menu .popup-menu-item.hover,
 .quick-toggle-menu .popup-menu-item.selected {
   color: #FFFFFF !important;
-  background-color: rgba(0, 0, 0, 0) !important;
+  background-color: rgba(192, 202, 245, 0.04) !important;
 }
 
 .quick-toggle-menu .popup-menu-item:active,
@@ -994,32 +994,16 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .quick-settings-system-item > StBoxLayout {
   spacing: 12px;
 }
-.icon-button {
+.quick-settings-system-item .icon-button {
   background-color: #08111C;
-}
-  
-.quick-settings-system-item .icon-button > StIcon,
-.quick-settings-system-item .background-app-item .close-button > StIcon,
-.background-app-item .quick-settings-system-item .close-button > StIcon {
-  -st-icon-style: symbolic;
-  icon-size: 16px !important;
   color: #2D90FF;
-  background-color: #08111C;
 }
-
-.quick-settings-system-item .power-item {
-  min-height: 0 !important;
-  min-width: 0 !important;
-  background-color: #08111C;
+.quick-settings-system-item .icon-button:hover, 
+.quick-settings-system-item .icon-button:active {
+  background-color: rgba(192, 202, 245, 0.04);
   color: #FFFFFF;
 }
 
-.quick-settings-system-item .power-item:insensitive {
-  color: #FFFFFF;
-  background-color: #08111C;
-  box-shadow: none !important;
-  background-color: transparent;
-}
 .background-menu {
   -boxpointer-gap: 4px;
   -arrow-rise: 0px;
@@ -2109,25 +2093,17 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 #searchResultsContent {
-  max-width: 1000px;
-  spacing: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  spacing: 16px;
 }
 
 .search-section {
-  spacing: 8px;
-}
-.search-section .search-section-separator {
-  height: 0;
-  background-color: transparent;
+  spacing: 16px;
 }
 
 .search-section-content {
-  color: #babaab;
-  background-color: #08111C;
-  border-radius: 4px;
-  border: 1px solid #010304;
-  padding: 18px;  
-  spacing: 8px;  
+  spacing: 32px;
 }
 
 .list-search-results {
@@ -2446,7 +2422,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding: 1px;
 }
 
-.all-apps {
+.search-display > StBoxLayout,
+.all-apps,
+.frequent-apps > StBoxLayout {
   padding: 0px 88px 10px 88px;
 }
 
