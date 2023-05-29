@@ -11,7 +11,7 @@ git clone https://github.com/An-Eagle/midnight.git
 ```
 for local use : </br>
 ```
-mkdir .local/share/themes
+mkdir ~/.local/share/themes
 cp -r midnight/Midnight ~/.local/share/themes/Midnight
 cp -r midnight/gtk-4.0 ~/.config/gtk-4.0
 ```
