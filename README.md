@@ -1,8 +1,6 @@
-# Nightly Midnight GTK Theme
-Gtk2, Gtk3, Gnome Shell theme based on [Arc-Theme](https://github.com/horst3180/arc-theme) </br>
-I've made very small tweaks to integrate is better to my personal desktop, and have chosen to cut it down to the default blue theme </br>
-I'll make a GTK 4 version of midnight if I ever have the time, and I'll try and merge it </br></br>
+# Midnight GTK Theme
+Gtk2, Gtk3, Gtk4 and Gnome Shell theme based on [Midnight-Theme](https://github.com/i-mint/midnight) </br>
 License : [GPLv3](https://choosealicense.com/licenses/gpl-3.0/)</br></br>
 SCREENSHOTS:</br>
-![midnightscreenshot](https://i.ibb.co/hM24Mvc/midnight-blue-screenshot.png "midnight screenshot")</br></br>
-![midnightscreenshot](https://i.ibb.co/1TFc0Dt/midnight-bluenight.png "midnight screenshot")</br>
+![midnightscreenshot](https://github.com/An-Eagle/midnight/assets/72992035/1f94cf0c-3aff-479f-9a53-38124d0b31b5)</br></br>
+![midnightscreenshot](https://github.com/An-Eagle/midnight/assets/72992035/85436c16-8df2-4338-8e69-55d948f28356)</br>
