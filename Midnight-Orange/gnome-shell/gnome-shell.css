@@ -2556,7 +2556,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .login-dialog-not-listed-label {
   font-size: 90%;
   font-weight: bold;
-  color: #2f1b00;
+  color: #babaab;
   padding-top: 1em;
 }
 
@@ -2572,6 +2572,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .login-dialog-user-list:expanded .login-dialog-user-list-item:focus {
   background-color: #C87200;
   color: #ffffff;
+}
+.login-dialog-user-list:expanded .login-dialog-user-list-item:focus StLabel, .login-dialog-user-list:expanded .login-dialog-user-list-item:focus StIcon {
+  color: inherit;
 }
 .login-dialog-user-list:expanded .login-dialog-user-list-item:logged-in {
   border-right: 2px solid #C87200;
@@ -2603,7 +2606,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .login-dialog-username,
 .user-widget-label {
-  color: #c87200;
+  color: #babaab;
   font-size: 120%;
   font-weight: bold;
   text-align: left;
