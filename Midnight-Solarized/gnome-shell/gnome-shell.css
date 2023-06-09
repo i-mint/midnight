@@ -2165,9 +2165,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   margin: 5px;
   padding: 10px;
   color: #839496;
-  background-color: transparent;
-  border: 1px solid transparent;
-  border-image: url("dark-assets/menu/menu.svg") 9 9 9 9;
+  border-left-width: 2px;
+  border-style: solid;
+  border-color: #268bd2;
 }
 .notification-banner .notification-icon,
 .notification-banner:hover .notification-icon,
