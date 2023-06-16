@@ -1232,6 +1232,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .calendar .calendar-day-base:focus, .calendar .calendar-day-base:selected:focus, .calendar .calendar-day-base:active:focus {
   box-shadow: inset 0 0 0 2px rgba(180, 0, 33, 0.6);
+  color: #babaab !important;
+  font-weight: bold !important;
 }
 .calendar .calendar-day-base.calendar-day-heading {
   color: #B40021;
