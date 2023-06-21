@@ -1,15 +1,29 @@
 
 
-
 /***************
  * Base States *
  ***************/
+.background {
+  background-color: #08111C;
+  color: #2D90FF;
+}
 
+.background.csd {
+  border-radius: 0 0 12px 12px;
+}
+
+.titlebar {
+  transition: background-color 75ms cubic-bezier(0, 0, 0.2, 1),
+    color 75ms cubic-bezier(0, 0, 0.2, 1);
+  background-color: #08111C;
+  color: #2D90FF;
+  border-radius: 12px 12px 0 0;
+}
 
 /**********************
  * Window Decorations *
  **********************/
-
+ 
 decoration {
   transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
   border-radius: 32px;
@@ -30,25 +44,14 @@ decoration {
   border-radius: 14px;
 }
 
-window.background.csd.unified,
-window.background.csd.unified > decoration,
-window.background.csd.unified > decoration-overlay {
-  border-radius: 12px;
-  border: none;
-  box-shadow: 0 2px 2.4px -1px rgba(0, 0, 0, 0.2),
-    0 4px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 6px 0 rgba(0, 0, 0, 0.12),
-    0 0 0 2px #08111C, 0 0 16px transparent;
-}
-
 /***********
  * Buttons *
  ***********/
 
-
 button {
-  min-height:32px;
-  min-width:32px;
-  padding: 0;
+  min-height: 24px;
+  min-width: 16px;
+  padding: 6px 10px;
   border-radius: 6px;
   font-weight: 500;
 }
@@ -73,7 +76,7 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1000% 1000%;
-  color: #2D90FF;
+  color: #c0caf5;
 }
 
 actionbar
@@ -112,6 +115,16 @@ button:active {
   background-size: 0% 0%;
 }
 
+actionbar
+  > revealer
+  > box
+  .linked
+  > button:disabled:not(.suggested-action):not(.destructive-action),
+button:disabled {
+  box-shadow: none;
+  background-color: rgba(192, 202, 245, 0.04);
+  color: rgba(192, 202, 245, 0.5);
+}
 
 actionbar
   > revealer
@@ -120,7 +133,7 @@ actionbar
   > button:checked:not(.suggested-action):not(.destructive-action),
 button:checked {
   box-shadow: none;
-  background-color: #2D90FF;
+  background-color: #a9b1d6;
   color: rgba(0, 0, 0, 0.87);
 }
 
@@ -140,7 +153,7 @@ actionbar
   > button:checked:disabled:not(.suggested-action):not(.destructive-action),
 button:checked:disabled {
   box-shadow: inset 0 0 0 9999px alpha(currentColor, 0.1);
-  background-color: #ffffff;
+  background-color: rgba(192, 202, 245, 0.04);
   color: rgba(192, 202, 245, 0.5);
 }
 
@@ -221,6 +234,7 @@ frame > border,
   box-shadow: none;
 }
 
+/*Hides thin little lines that seperate elements*/
 scrolledwindow viewport.frame {
   border: none;
 }
@@ -230,56 +244,4 @@ stack scrolledwindow.frame viewport.frame list {
 }
 
 
-separator {
-  min-width: 1px;
-  min-height: 1px;
-  background-color: rgba(192, 202, 245, 0.12);
-}
-
-
-/***********
- * Dialogs *
- ***********/
-
-dialog.background.csd
-  > box.vertical.dialog-vbox
-  > stack
-  > scrolledwindow
-  > viewport.frame
-  > list
-  row.activatable:not(:hover):not(:selected):not(:active) {
-  background-color: transparent;
-}
-
-dialog.background.csd > box.vertical.dialog-vbox > stack toolbar.toolbar {
-  border-radius: 0 0 12px 12px;
-}
-
-dialog.background.csd > box.vertical.dialog-vbox > notebook > stack {
-  border-radius: 0 0 12px 12px;
-}
-
-dialog.background.csd stack scrolledwindow.frame {
-  border-radius: 6px;
-}
-
-dialog.background.csd stack scrolledwindow.frame textview.view {
-  border-radius: 6px;
-}
-
-dialog.background.csd stack scrolledwindow.frame textview.view > text {
-  background: none;
-}
-
-dialog.background.csd stack scrolledwindow viewport.frame.view {
-  border-radius: 6px;
-}
-
-window.background.csd.unified headerbar {
-  box-shadow: none;
-}
-
-window.background.csd.unified headerbar.selection-mode {
-  box-shadow: none;
-}
 
