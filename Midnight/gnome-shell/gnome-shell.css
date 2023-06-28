@@ -147,38 +147,40 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .slider {
-  -barlevel-height: 4px;
+  -barlevel-height: 8px;
   -barlevel-background-color: #08111C;
-  -barlevel-border-color: rgba(0, 0, 0, 0);
+  -barlevel-border-color: #2D90FF;
   -barlevel-active-background-color: #2D90FF;
   -barlevel-active-border-color: rgba(0, 0, 0, 0);
-  -barlevel-border-width: 0px;
-  -slider-height: 4px;
+  -barlevel-border-width: 8px;
+  -slider-height: 6px;
   -slider-background-color: #08111C;
-  -slider-border-color: rgba(0, 0, 0, 0);
+  -slider-border-color: #2D90FF;
   -slider-active-background-color: #2D90FF;
   -slider-active-border-color: rgba(0, 0, 0, 0);
-  -slider-border-width: 0;
-  -slider-handle-radius: 0px;
-  -slider-handle-border-color: #ffffff;
+  -slider-border-width: 6px;
+  -slider-handle-radius: 8px;
+  -slider-handle-color: #2D90FF;
+  -slider-handle-border-color: #2D90FF;
+  -slider-handle-border-width: 2px;
   height: 18px;
   border: 0 solid transparent;
   border-right-width: 1px;
   border-left-width: 5px;
-  color: #ffffff;
+  color: #08111C;
 }
 .slider:hover {
   color: #2D90FF;
   -slider-handle-radius: 2px;
 }
 .slider:active {
-  color: #2D90FF;
+  color: #ffffff;
   -slider-handle-radius: 2px;
 }
 .popup-menu-item.selected .slider {
   -slider-background-color: #08111C;
   -slider-active-background-color: #2D90FF;
-  -slider-handle-radius: 2px;
+  -slider-handle-radius: 8px;
 }
 
 .check-box StBoxLayout {
@@ -721,8 +723,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .quick-settings {
   padding: 12px !important;
-  border-radius: 12px !important;
-  margin-top: 8px !important;
+  border-radius: 24px !important;
+  margin: 4px 4px 0 0!important;
 }
 
 .quick-settings .icon-button,
@@ -748,7 +750,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .quick-toggle,
 .quick-menu-toggle {
-  border-radius: 8px;
+  border-radius: 24px;
   min-width: 12em;
   max-width: 12em;
   min-height: 40px !important;
@@ -822,28 +824,14 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .quick-menu-toggle .quick-toggle:ltr {
-  border-radius: 6px 0 0 6px;
+  border-radius: 24px 0 0 24px;
 }
 
 .quick-menu-toggle .quick-toggle:ltr > StBoxLayout {
   padding-right: 9px;
 }
 
-.quick-menu-toggle .quick-toggle:rtl {
-  border-radius: 0 6px 6px 0;
-}
-
-.quick-menu-toggle .quick-toggle:rtr > StBoxLayout {
-  padding-left: 9px;
-}
-
-.quick-menu-toggle .quick-toggle:ltr:last-child {
-  border-radius: 6px;
-}
-
-.quick-menu-toggle .quick-toggle:rtl:last-child {
-  border-radius: 6px;
-}
+ 
 
 .quick-menu-toggle .quick-toggle-arrow {
   background-color: rgba(45, 144, 255, 0) !important;
@@ -856,35 +844,40 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .quick-menu-toggle .quick-toggle-arrow:active {
-  background-color:  #08111C!important;
-  color: #08111C;
+  background-color:  #2D90FF!important;
+  color: #0b1726;
 }
 
 .quick-menu-toggle .quick-toggle-arrow:checked {
   padding: 6px 10.5px;
   icon-size: 16px !important;
   border: none;
-  background-color: #2D90FF !important;
-  color: rgba(0, 0, 0, 1);
+/*This should be #2D90FF, but Gnome being stupid made me change the hex( it now looks like 2D90FF in gnome-shell, go figure)*/
+  background-color: rgba(24, 133, 255, 1)!important;
+  color: #ffffff;
 }
 
 .quick-menu-toggle .quick-toggle-arrow:checked:hover {
-  background-color:  rgba(45, 144, 255, 1)!important;
+/*This should be #2D90FF, but Gnome being stupid made me change the hex( it now looks like 2D90FF in gnome-shell, go figure)*/
+  background-color:  rgba(24, 133, 255, 1)!important;
   color: #FFFFFF;
+  padding-right: 6px;
 }
 
 .quick-menu-toggle .quick-toggle-arrow:checked:active {
-  background-color: rgba(45, 144, 255, 1) !important;
-  color: rgba(45, 144, 255, 1);
+  background-color: rgba(24, 133, 255, 1) !important;
+  color: rgba(24, 133, 255, 1);
+  border-radius: 0 24px 24px 0;
 }
 
 .quick-menu-toggle .quick-toggle-arrow:ltr {
-  border-radius: 0 6px 6px 0;
+  border-radius: 0 24px 24px 0;
   border-left-width: 0;
+  padding-right: 12px;
 }
 
 .quick-menu-toggle .quick-toggle-arrow:rtl {
-  border-radius: 6px 0 0 6px;
+  border-radius: 24px 0 0 24px;
   border-right-width: 0;
 }
 
@@ -899,7 +892,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .quick-slider .slider-bin:focus {
-  color: rgba(45, 144, 255, 1);
+  color: #2D90FF;
   background-color: rgba(45, 144, 255, 1);
   box-shadow: none !important;
   outline: none !important;
@@ -935,8 +928,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .quick-toggle-menu {
-  border-radius: 12px !important;
-  padding: 12px !important;
+  border-radius: 24px !important;
+  padding: 24px !important;
   margin: 10px 30px 0 !important;
   background-color: #08111C !important;
   color: rgba(45, 144, 255, 1) !important;
@@ -964,7 +957,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .quick-toggle-menu .popup-menu-item:active,
 .quick-toggle-menu .popup-menu-item.selected:active {
-  color: #0db9d7 !important;
+  color: #FFFFFF !important;
   background-color: rgba(0, 0, 0, 0.26) !important;
 }
 
@@ -988,14 +981,14 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .quick-toggle-menu .header .icon.active {
   background-color: #08111C !important;
-  color: rgba(45, 144, 255, 1) !important;
+  color: #2D90FF !important;
 }
 
 .quick-settings-system-item > StBoxLayout {
   spacing: 12px;
 }
 .quick-settings-system-item .icon-button {
-  background-color: #08111C;
+  background-color: #0b1726;
   color: #2D90FF;
 }
 .quick-settings-system-item .icon-button:hover, 
