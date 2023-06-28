@@ -24,6 +24,3 @@ sudo cp -r midnight/Midnight /usr/share/themes/Midnight
 cp -r midnight/gtk-4.0 ~/.config/gtk-4.0
 ```
 To enable, use [Gnome Tweaks](https://gitlab.gnome.org/GNOME/gnome-tweaks), in addition to the [User Themes Extensions](https://extensions.gnome.org/extension/19/user-themes/)
-![midnightscreenshot1](https://github.com/An-Eagle/Midnight/assets/72992035/6afe352d-a027-44dc-ad4a-058384db5bab)
-![midnightscreenshot2](https://github.com/An-Eagle/Midnight/assets/72992035/42c7a486-27aa-4fe8-b6e0-fa61df415d7a)
-![midnightscreenshot3](https://github.com/An-Eagle/Midnight/assets/72992035/70d007bc-a294-4cd0-b17d-325fd9da7d0d)
