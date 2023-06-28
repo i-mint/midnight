@@ -2220,19 +2220,22 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .show-apps .overview-icon {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
   border-radius: 2px;
   border: 0px solid;
+  color: #2D90FF;
 }
 .show-apps:hover .overview-icon {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #2D90FF;
+  background-color: #2D90FF;
+  border-radius: 10px;
+  color: #FFFFFF;
 }
 .show-apps:active .overview-icon, .show-apps:active .show-apps-icon, .show-apps:checked .overview-icon, .show-apps:checked .show-apps-icon {
   color: #ffffff;
   background-color: #2D90FF;
   box-shadow: none;
   transition-duration: 0ms;
+  border-radius: 10px;  
 }
 
 .icon-grid {
