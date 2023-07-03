@@ -1832,12 +1832,12 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding-top: 2px;
   padding-bottom: 2px;
   border-top-width: 2px;
+  border-radius: 0 0 4px 4px;
 }
 .grouped-window-list-item-box.top:hover {
   color: #fdf6e3;
-  background-color: transparent;
   border-top-width: 2px;
-  border-color: #268bd2;
+  border-color: transparent;
 }
 .grouped-window-list-item-box.top:focus {
   color: #fdf6e3;
@@ -1851,12 +1851,12 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding-top: 2px;
   padding-bottom: 2px;
   border-bottom-width: 2px;
+  border-radius: 4px 4px 0 0;
 }
 .grouped-window-list-item-box.bottom:hover {
   color: #fdf6e3;
-  background-color: transparent;
   border-bottom-width: 2px;
-  border-color: #268bd2;
+  border-color: transparent;
 }
 .grouped-window-list-item-box.bottom:focus {
   color: #fdf6e3;
@@ -1870,12 +1870,12 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding-top: 4px;
   padding-bottom: 4px;
   border-left-width: 2px;
+  border-radius: 0 4px 4px 0;
 }
 .grouped-window-list-item-box.left:hover {
   color: #fdf6e3;
-  background-color: transparent;
   border-left-width: 2px;
-  border-color: #268bd2;
+  border-color: transparent;
 }
 .grouped-window-list-item-box.left:focus {
   color: #fdf6e3;
@@ -1889,18 +1889,21 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding-top: 4px;
   padding-bottom: 4px;
   border-right-width: 2px;
+  border-radius: 4px 0 0 4px;
 }
 .grouped-window-list-item-box.right:hover {
   color: #fdf6e3;
-  background-color: transparent;
   border-right-width: 2px;
-  border-color: #268bd2;
+  border-color: transparent;
 }
 .grouped-window-list-item-box.right:focus {
   color: #fdf6e3;
   background-color: #005064;
   border-right-width: 2px;
   border-color: #268bd2;
+}
+.grouped-window-list-item-box:hover {
+  background-color: #005064;
 }
 .grouped-window-list-thumbnail-menu {
   background-color: #268bd2;
