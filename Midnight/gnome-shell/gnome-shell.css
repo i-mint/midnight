@@ -938,10 +938,20 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border-radius: 6px;
   text-shadow: none;
 }
-#panel .panel-button:hover .clock {
+#panel .panel-button:hover.clock-display {
   box-shadow: none;
+  background-color: transparent;
   text-shadow: none;
   color: inherit;
+}
+#panel .panel-button:hover.clock-display .clock {
+  color: #4ca0ff;
+  background-color: rgba(0, 0, 0, 0.17);
+  box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.17);
+  border: 3px solid transparent;
+  border-color: transparent;
+  border-radius: 6px;
+  text-shadow: none;
 }
 #panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked {
   color: #ffffff;
