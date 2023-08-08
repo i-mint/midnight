@@ -639,13 +639,13 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border-radius: 4px;
 }
 .popup-menu .popup-menu-item {
-  spacing: 12px;
+  spacing: 6px;
 }
 .popup-menu .popup-menu-item:ltr {
-  padding: 0.4em 3em 0.4em 0em;
+  padding: 0.4em 2em 0.4em 1em;
 }
 .popup-menu .popup-menu-item:rtl {
-  padding: 0.4em 0em 0.4em 3em;
+  padding: 0.4em 1em 0.4em 2em;
 }
 .popup-menu .popup-menu-item:checked, .popup-menu .popup-menu-item:checked:hover, .popup-menu .popup-menu-item:checked:active {
   font-weight: normal !important;
@@ -675,9 +675,14 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .popup-menu-ornament {
+  width: 1.4em;
+  text-align: center !important;
+}
+.popup-menu-ornament:ltr {
   text-align: right;
-  margin-left: 10px;
-  width: 16px;
+}
+.popup-menu-ornament:rtl {
+  text-align: left;
 }
 
 .popup-menu-boxpointer {
@@ -712,6 +717,21 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .popup-sub-menu .popup-separator-menu-item .popup-separator-menu-item-separator {
   margin: 0;
   background-color: transparent;
+}
+
+.aggregate-menu {
+  min-width: 22em;
+}
+.aggregate-menu .popup-menu-icon {
+  padding: 0;
+  margin: 0 4px;
+  -st-icon-style: symbolic;
+}
+.aggregate-menu .popup-sub-menu .popup-menu-item > :first-child:ltr {
+  margin-left: 1em;
+}
+.aggregate-menu .popup-sub-menu .popup-menu-item > :first-child:rtl {
+  margin-right: 1em;
 }
 
 .background-menu {
@@ -1046,13 +1066,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 #appMenu .label-shadow {
   color: transparent;
-}
-
-.aggregate-menu {
-  min-width: 23.5em;
-}
-.aggregate-menu .popup-menu-icon {
-  padding: 0 4px;
 }
 
 .system-menu-action {
@@ -1659,7 +1672,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .popup-menu-icon {
-  icon-size: 16px;
+  icon-size: 1em;
 }
 
 .window-close {
