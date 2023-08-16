@@ -6096,6 +6096,20 @@ filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.im
   color: rgba(255, 255, 255, 0.56);
   background-color: rgba(180, 0, 33, 0.45);
 }
+filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button.text-button:only-child,
+.nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button.text-button:only-child {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button.text-button:only-child label,
+.nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button.text-button:only-child label {
+  padding-left: 1px;
+  padding-right: 0px;
+}
+filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button.text-button:only-child image,
+.nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button.text-button:only-child image {
+  padding: 1px;
+}
 filechooser headerbar widget stack box.path-bar-box .path-bar button.text-button,
 .nautilus-window headerbar widget stack box.path-bar-box .path-bar button.text-button {
   color: #B40021;
