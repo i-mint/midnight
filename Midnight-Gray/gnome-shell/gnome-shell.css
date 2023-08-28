@@ -642,10 +642,10 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   spacing: 6px;
 }
 .popup-menu .popup-menu-item:ltr {
-  padding: 0.4em 2em 0.4em 1em;
+  padding: 0.3em 2em 0.3em 1em;
 }
 .popup-menu .popup-menu-item:rtl {
-  padding: 0.4em 1em 0.4em 2em;
+  padding: 0.3em 1em 0.3em 2em;
 }
 .popup-menu .popup-menu-item:checked, .popup-menu .popup-menu-item:checked:hover, .popup-menu .popup-menu-item:checked:active {
   font-weight: normal !important;
@@ -704,7 +704,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .popup-separator-menu-item {
-  padding: 0 !important;
+  padding: 0;
   margin: 0;
   background-color: transparent;
   border: none;
