@@ -4317,6 +4317,49 @@ button.nautilus-circular-button.image-button label {
   background-color: #a3a3a3;
 }
 
+headerbar.windowhandle box.path-buttons-box {
+  border-radius: 4px 0 0 4px;
+  margin: 6px 0;
+  padding: 0;
+  border-right: 0px solid transparent;
+}
+headerbar.windowhandle box.path-buttons-box box > button {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+headerbar.windowhandle box.path-buttons-box box > button:hover, headerbar.windowhandle box.path-buttons-box box > button.current-dir {
+  color: #ffffff;
+}
+headerbar.windowhandle box.path-buttons-box box > button:active, headerbar.windowhandle box.path-buttons-box box > button.current-dir:active {
+  opacity: 0.5;
+}
+headerbar.windowhandle box.nautilus-path-bar.linked > button.popup.toggle:not(.disclosure-button) {
+  margin: 6px 0;
+  border-radius: 0 4px 4px 0;
+}
+headerbar.windowhandle box.nautilus-path-bar.linked > button.popup.toggle:not(.disclosure-button) image, headerbar.windowhandle box.nautilus-path-bar.linked > button.popup.toggle:not(.disclosure-button) {
+  color: #aeae99;
+}
+headerbar.windowhandle box.nautilus-path-bar.linked > button.popup.toggle:not(.disclosure-button):hover {
+  background-color: transparent;
+}
+headerbar.windowhandle box.nautilus-path-bar.linked > button.popup.toggle:not(.disclosure-button):active {
+  opacity: 0.5;
+}
+headerbar.windowhandle box.nautilus-path-bar.linked > button.popup.toggle:not(.disclosure-button):active, headerbar.windowhandle box.nautilus-path-bar.linked > button.popup.toggle:not(.disclosure-button):checked {
+  background-color: transparent;
+}
+headerbar.windowhandle box.nautilus-path-bar.linked > button.popup.toggle:not(.disclosure-button):active image, headerbar.windowhandle box.nautilus-path-bar.linked > button.popup.toggle:not(.disclosure-button):active, headerbar.windowhandle box.nautilus-path-bar.linked > button.popup.toggle:not(.disclosure-button):checked image, headerbar.windowhandle box.nautilus-path-bar.linked > button.popup.toggle:not(.disclosure-button):checked {
+  color: #ffffff;
+}
+headerbar.windowhandle box.linked > button.popup.toggle:not(.disclosure-button) {
+  border-radius: 0 4px 4px 0;
+}
+
 .nemo-desktop.nemo-canvas-item {
   color: white;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
@@ -6277,61 +6320,6 @@ popover .nautilus-window headerbar widget stack box.path-bar-box label.separator
 }
 .nautilus-window .searchbar-container button image {
   color: #a3a3a3;
-}
-
-.nautilus-window .path-buttons-box:not(.vertical) {
-  background-color: transparent;
-}
-.nautilus-window .path-buttons-box:not(.vertical) > .horizontal > label.dim-label, .nautilus-window .path-buttons-box:not(.vertical) > .horizontal > label.separator, .nautilus-window headerbar .path-buttons-box:not(.vertical) > .horizontal > label.subtitle, headerbar .nautilus-window .path-buttons-box:not(.vertical) > .horizontal > label.subtitle,
-.nautilus-window .titlebar:not(headerbar) .path-buttons-box:not(.vertical) > .horizontal > label.subtitle,
-.titlebar:not(headerbar) .nautilus-window .path-buttons-box:not(.vertical) > .horizontal > label.subtitle {
-  color: transparent;
-}
-.nautilus-window .path-buttons-box:not(.vertical) button {
-  padding: 0 7px;
-  margin: 6px 0;
-  border-top: 2px solid;
-  background-color: transparent;
-  border-color: transparent;
-}
-.nautilus-window .path-buttons-box:not(.vertical) button label.dim-label, .nautilus-window .path-buttons-box:not(.vertical) button label.separator, .nautilus-window .path-buttons-box:not(.vertical) button headerbar label.subtitle, headerbar .nautilus-window .path-buttons-box:not(.vertical) button label.subtitle,
-.nautilus-window .path-buttons-box:not(.vertical) button .titlebar:not(headerbar) label.subtitle,
-.titlebar:not(headerbar) .nautilus-window .path-buttons-box:not(.vertical) button label.subtitle,
-.nautilus-window .path-buttons-box:not(.vertical) button image.dim-label,
-.nautilus-window .path-buttons-box:not(.vertical) button headerbar image.subtitle,
-headerbar .nautilus-window .path-buttons-box:not(.vertical) button image.subtitle,
-.nautilus-window .path-buttons-box:not(.vertical) button .titlebar:not(headerbar) image.subtitle,
-.titlebar:not(headerbar) .nautilus-window .path-buttons-box:not(.vertical) button image.subtitle, .nautilus-window .path-buttons-box:not(.vertical) button {
-  color: #aeae99;
-}
-.nautilus-window .path-buttons-box:not(.vertical) button:hover {
-  border-top: 2px solid rgba(163, 163, 163, 0.23);
-}
-.nautilus-window .path-buttons-box:not(.vertical) button:hover label.dim-label, .nautilus-window .path-buttons-box:not(.vertical) button:hover label.separator, .nautilus-window .path-buttons-box:not(.vertical) button:hover headerbar label.subtitle, headerbar .nautilus-window .path-buttons-box:not(.vertical) button:hover label.subtitle,
-.nautilus-window .path-buttons-box:not(.vertical) button:hover .titlebar:not(headerbar) label.subtitle,
-.titlebar:not(headerbar) .nautilus-window .path-buttons-box:not(.vertical) button:hover label.subtitle,
-.nautilus-window .path-buttons-box:not(.vertical) button:hover image.dim-label,
-.nautilus-window .path-buttons-box:not(.vertical) button:hover headerbar image.subtitle,
-headerbar .nautilus-window .path-buttons-box:not(.vertical) button:hover image.subtitle,
-.nautilus-window .path-buttons-box:not(.vertical) button:hover .titlebar:not(headerbar) image.subtitle,
-.titlebar:not(headerbar) .nautilus-window .path-buttons-box:not(.vertical) button:hover image.subtitle, .nautilus-window .path-buttons-box:not(.vertical) button:hover {
-  color: #aeae99;
-}
-.nautilus-window .path-buttons-box:not(.vertical) button:active, .nautilus-window .path-buttons-box:not(.vertical) button.current-dir {
-  margin-left: 7px;
-  color: #141414;
-  border-color: #08111C;
-  background-color: #a3a3a3;
-}
-.nautilus-window .path-buttons-box:not(.vertical) button:active:backdrop, .nautilus-window .path-buttons-box:not(.vertical) button.current-dir:backdrop {
-  color: rgba(20, 20, 20, 0.56);
-}
-.nautilus-window .path-buttons-box:not(.vertical) button.current-dir:active {
-  color: rgba(20, 20, 20, 0.5);
-  background-color: rgba(163, 163, 163, 0.5);
-}
-.nautilus-window headerbar stack box.horizontal.linked > button.popup.toggle:hover, .nautilus-window headerbar stack box.horizontal.linked > button.popup.toggle:active, .nautilus-window headerbar stack box.horizontal.linked > button.popup.toggle:checked, .nautilus-window headerbar stack box.horizontal.linked > button.popup.toggle {
-  border-radius: 0 4px 4px 0;
 }
 
 .nemo-window paned:last-child > separator {
