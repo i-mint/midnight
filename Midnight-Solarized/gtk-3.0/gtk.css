@@ -677,6 +677,15 @@ button.font separator, button.file separator {
   border-radius: 4px;
   border-width: 1px;
 }
+headerbar.windowhandle viewswitcher > box > button.radio {
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+}
+
 .inline-toolbar toolbutton > button {
   color: #268bd2;
   border-color: #002b36;
@@ -1435,7 +1444,7 @@ headerbar button image {
   opacity: 0.7;
 }
 .primary-toolbar button:hover, headerbar button:hover {
-  color: #2e93d9;
+  color: #839496;
   border-color: #002b36;
   background-color: #002b36;
 }
@@ -1500,6 +1509,7 @@ headerbar .linked:not(.vertical).path-bar > button {
   outline-offset: -3px;
   background-color: rgba(0, 43, 54, 0);
   border-color: rgba(0, 43, 54, 0);
+  border-radius: 4px;
 }
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button image,
 .primary-toolbar .linked:not(.vertical).path-bar > button label,
@@ -1508,12 +1518,29 @@ headerbar .linked:not(.vertical).path-bar > button label,
 headerbar .linked:not(.vertical).path-bar > button image {
   color: inherit;
 }
+.primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button image,
+.primary-toolbar .linked:not(.vertical).path-bar > button label,
+headerbar .linked:not(.vertical).path-bar > button label,
+.primary-toolbar .linked:not(.vertical).path-bar > button image,
+headerbar .linked:not(.vertical).path-bar > button image {
+  color: inherit;
+  background-color: transparent;
+}
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover,
 .primary-toolbar .linked:not(.vertical).path-bar > button:hover,
 headerbar .linked:not(.vertical).path-bar > button:hover {
-  color: #2e93d9;
+  color: #839496;
   border-color: #002b36;
   background-color: #002b36;
+  border-radius: 4px;
+}
+.primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover image,
+.primary-toolbar .linked:not(.vertical).path-bar > button:hover label,
+headerbar .linked:not(.vertical).path-bar > button:hover label,
+.primary-toolbar .linked:not(.vertical).path-bar > button:hover image,
+headerbar .linked:not(.vertical).path-bar > button:hover image {
+  color: inherit;
+  background-color: transparent;
 }
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked,
 .primary-toolbar .linked:not(.vertical).path-bar > button:active,
@@ -1523,6 +1550,7 @@ headerbar .linked:not(.vertical).path-bar > button:checked {
   color: #fdf6e3;
   border-color: transparent;
   background-color: #268bd2;
+  border-radius: 4px;
 }
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active image, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked image,
 .primary-toolbar .linked:not(.vertical).path-bar > button:active label,
@@ -1533,8 +1561,8 @@ headerbar .linked:not(.vertical).path-bar > button:active image,
 headerbar .linked:not(.vertical).path-bar > button:checked label,
 .primary-toolbar .linked:not(.vertical).path-bar > button:checked image,
 headerbar .linked:not(.vertical).path-bar > button:checked image {
-  background-color: transparent;
   color: inherit;
+  background-color: transparent;
 }
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active:backdrop, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active:backdrop, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked:backdrop, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked:backdrop,
 .primary-toolbar .linked:not(.vertical).path-bar > button:active:backdrop,
@@ -1693,7 +1721,7 @@ headerbar .linked:not(.vertical):not(.path-bar) > button:checked + entry {
   caret-color: #fdf6e3;
 }
 .primary-toolbar spinbutton:not(.vertical) button, headerbar spinbutton:not(.vertical) button {
-  color: #2e93d9;
+  color: #839496;
   border-color: #002b36;
   background-color: #002b36;
 }
@@ -3884,7 +3912,7 @@ headerbar button.titlebutton,
 }
 headerbar button.titlebutton:hover,
 .titlebar button.titlebutton:hover {
-  color: #2e93d9;
+  color: #839496;
   border-color: #002b36;
   background-color: #002b36;
 }
@@ -4244,7 +4272,7 @@ button.nautilus-circular-button.image-button label {
 
 @keyframes needs_attention_keyframes {
   0% {
-    color: #2e93d9;
+    color: #839496;
     border-color: #002b36;
     background-color: #002b36;
   }
@@ -4345,7 +4373,7 @@ headerbar.windowhandle box.linked > button.popup.toggle:not(.disclosure-button) 
   color: inherit;
 }
 .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button {
-  color: #2e93d9;
+  color: #839496;
   border-color: #002b36;
   background-color: #002b36;
 }

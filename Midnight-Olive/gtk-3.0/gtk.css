@@ -677,6 +677,15 @@ button.font separator, button.file separator {
   border-radius: 4px;
   border-width: 1px;
 }
+headerbar.windowhandle viewswitcher > box > button.radio {
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+}
+
 .inline-toolbar toolbutton > button {
   color: #7E7E23;
   border-color: #08111C;
