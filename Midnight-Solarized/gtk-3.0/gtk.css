@@ -5238,21 +5238,18 @@ panel-toplevel.background button:checked:not(#tasklist-button), .xfce4-panel.pan
   border-left-color: #002b36;
 }
 
-event.slanted-end label {
-  color: rgba(0, 0, 0, 0.7);
+event.slanted-end, event.color-light, event {
+  box-shadow: inset 0 100px 0 0 #268bd2;
 }
-event.slanted-end:backdrop label {
-  color: rgba(0, 0, 0, 0.5);
+event.slanted-end label, event.slanted-end, event.color-light label, event.color-light, event label, event {
+  color: #fdf6e3;
+}
+event.slanted-end label:backdrop, event.slanted-end:backdrop, event.color-light label:backdrop, event.color-light:backdrop, event label:backdrop, event:backdrop {
+  color: rgba(253, 246, 227, 0.5);
 }
 
-overlay calendar-view event {
-  background-image: linear-gradient(to bottom right, #4d6373, #4d6373);
-  border: 0px solid #4b616f;
-}
-overlay calendar-view event label {
-  color: #fdf6e3;
-  padding: 4px 6px;
-  font-weight: normal;
+calendar-view event label {
+  padding: 7px 4px;
 }
 
 .nautilus-window paned > separator {

@@ -5430,21 +5430,18 @@ popover radiobutton:hover label, popover radiobutton:hover image, popover radiob
   border-left-color: #08111C;
 }
 
-overlay calendar-view event {
-  background-image: linear-gradient(to bottom right, #5d1f2a, #5d1f2a);
-  border: 0px solid #591e29;
+event.slanted-end, event.color-light, event {
+  box-shadow: inset 0 100px 0 0 #B40021;
 }
-overlay calendar-view event label {
+event.slanted-end label, event.slanted-end, event.color-light label, event.color-light, event label, event {
   color: #ffffff;
-  padding: 4px 6px;
-  font-weight: normal;
+}
+event.slanted-end label:backdrop, event.slanted-end:backdrop, event.color-light label:backdrop, event.color-light:backdrop, event label:backdrop, event:backdrop {
+  color: rgba(255, 255, 255, 0.5);
 }
 
-event.slanted-end label {
-  color: rgba(0, 0, 0, 0.7);
-}
-event.slanted-end:backdrop label {
-  color: rgba(0, 0, 0, 0.5);
+calendar-view event label {
+  padding: 7px 4px;
 }
 
 UnityDecoration {
