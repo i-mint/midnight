@@ -5393,6 +5393,11 @@ widget .clocks-button:active {
   border-top: 2px solid #a3a3a3;
   border-bottom: 2px solid #a3a3a3;
 }
+.linked.path-bar > button.toggle:backdrop,
+.thunar toolbar button.toggle:backdrop,
+.thunar .inline-toolbar button.toggle:backdrop {
+  opacity: 0.5;
+}
 
 .thunar toolbar toolbutton button:hover, .thunar toolbar toolbutton button:active, .thunar toolbar toolbutton button:checked, .thunar toolbar toolbutton button, .thunar .inline-toolbar toolbutton button {
   margin: 0 2px;

@@ -5363,6 +5363,11 @@ popover radiobutton:hover label, popover radiobutton:hover image, popover radiob
   background-color: #7E7E23;
   border-color: #08111C;
 }
+.linked.path-bar > button.toggle:backdrop,
+.thunar toolbar button.toggle:backdrop,
+.thunar .inline-toolbar button.toggle:backdrop {
+  opacity: 0.5;
+}
 
 .thunar toolbar toolbutton button, .thunar .inline-toolbar toolbutton button {
   background: transparent;

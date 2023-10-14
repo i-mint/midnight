@@ -5172,6 +5172,11 @@ panel-toplevel.background button:checked:not(#tasklist-button), .xfce4-panel.pan
   background-color: #268bd2;
   border-color: #002b36;
 }
+.linked.path-bar > button.toggle:backdrop,
+.thunar toolbar button.toggle:backdrop,
+.thunar .inline-toolbar button.toggle:backdrop {
+  opacity: 0.5;
+}
 
 .thunar toolbar toolbutton button, .thunar .inline-toolbar toolbutton button {
   background: transparent;
