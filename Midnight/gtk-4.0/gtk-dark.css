@@ -1,0 +1,66 @@
+/*This is for non gtk app headers*/
+headerbar {
+  padding: 2px 0;
+  margin: 0;
+  border: none;
+  transition: all 75ms cubic-bezier(0, 0, 0.2, 1);
+  background-color: #08111C;
+  box-shadow: none;
+  border-radius: 12px 12px 0 0;
+}
+
+headerbar .title {
+  padding: 0 12px;
+  color: #2D90FF;
+}
+
+headerbar .subtitle {
+  padding: 0 12px;
+  font-size: smaller;
+  color: #2D90FF;
+}
+
+headerbar .subtitle,
+headerbar .dim-label,
+headerbar row label.subtitle,
+row headerbar label.subtitle {
+  transition: color 75ms cubic-bezier(0, 0, 0.2, 1);
+  color: rgba(45, 144, 255, 0.7);
+}
+
+headerbar .subtitle:backdrop,
+headerbar .dim-label:backdrop,
+headerbar row label.subtitle:backdrop,
+row headerbar label.subtitle:backdrop {
+  color: rgba(45, 144, 255, 0.5);
+}
+
+headerbar.default-decoration {
+  border-radius: 12px 12px 0 0;
+}
+headerbar.default-decoration windowcontrols {
+  margin-right: 5px;
+}
+headerbar.default-decoration windowcontrols button,
+headerbar.default-decoration windowcontrols menubutton {
+  min-height: 24px;
+  min-width: 24px;
+  margin: 0px;
+  margin-right: 5px;
+  padding: 0;
+}
+
+/**********************
+ * Window Decorations *
+ took this from The Tokyo Night Theme, it fixed weird window scaling problems
+ **********************/
+
+
+window.csd {
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2), 0 10px 18px rgba(0, 0, 0, 0.14),
+    0 8px 24px rgba(0, 0, 0, 0.12), 0 1px 2px transparent, 0 3px 4px transparent,
+    0 1px 6px transparent;
+}
+
