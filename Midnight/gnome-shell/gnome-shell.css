@@ -1927,7 +1927,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   icon-size: 16px;
 }
 
-.window-close, .screenshot-ui-close-button {
+.window-close {
   border-image: url("common-assets/misc/close.svg");
   background-image: url("common-assets/misc/close.svg");
   background-color: transparent;
@@ -1935,7 +1935,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   height: 26px;
   width: 26px;
 }
-.window-close:hover, .screenshot-ui-close-button:hover {
+.window-close:hover {
   border-image: url("common-assets/misc/close-hover.svg");
   background-image: url("common-assets/misc/close-hover.svg");
   background-color: transparent;
@@ -1943,7 +1943,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   height: 26px;
   width: 26px;
 }
-.window-close:active, .screenshot-ui-close-button:active {
+.window-close:active {
   border-image: url("common-assets/misc/close-active.svg");
   background-image: url("common-assets/misc/close-active.svg");
   background-color: transparent;
@@ -1952,7 +1952,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   width: 26px;
 }
 
-.window-close, .screenshot-ui-close-button{
+.window-close {
   -shell-close-overlap: 11px;
 }
 
@@ -3212,11 +3212,39 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border: 2px solid #2D90FF;
   background-color: #08111C;
 }
+.screenshot-ui-close-button {
+  border-image: url("common-assets/misc/close.svg");
+  background-image: url("common-assets/misc/close.svg");
+  background-color: transparent;
+  background-size: 26px;
+  height: 26px;
+  width: 26px;
+}
+.screenshot-ui-close-button:hover {
+  border-image: url("common-assets/misc/close-hover.svg");
+  background-image: url("common-assets/misc/close-hover.svg");
+  background-color: transparent;
+  background-size: 26px;
+  height: 26px;
+  width: 26px;
+}
+.screenshot-ui-close-button:active {
+  border-image: url("common-assets/misc/close-active.svg");
+  background-image: url("common-assets/misc/close-active.svg");
+  background-color: transparent;
+  background-size: 26px;
+  height: 26px;
+  width: 26px;
+}
+
+.screenshot-ui-close-button{
+  -shell-close-overlap: 11px;
+}
 
 .screenshot-ui-close-button {
   padding: 6px !important;
   margin-top: 12px;
-  box-shadow: 0 2px 4px 0 #2D90FF;
+
 }
 
 .screenshot-ui-close-button.left {
