@@ -5858,7 +5858,7 @@ filechooser placessidebar.sidebar scrollbar trough,
   border-right: 1px solid rgba(131, 148, 150, 0.1);
 }
 .budgie-popover:not(.csd).user-menu row, .budgie-popover:not(.csd).user-menu list, .budgie-popover:not(.csd).places-menu row, .budgie-popover:not(.csd).places-menu list {
-  background-color: transparent;
+  background-color: #002b36;
   border-radius: 4px;
   margin: 0;
   padding: 0;
@@ -5879,7 +5879,7 @@ filechooser placessidebar.sidebar scrollbar trough,
   margin: 1px 0;
 }
 .budgie-popover:not(.csd).budgie-menu row, .budgie-popover:not(.csd).budgie-menu list {
-  background: transparent;
+  background: #002b36;
 }
 .budgie-popover:not(.csd).budgie-menu row button, .budgie-popover:not(.csd).budgie-menu list button {
   padding: 3px 6px;
@@ -6042,24 +6042,98 @@ filechooser placessidebar.sidebar scrollbar trough,
 .budgie-panel button:active label, .budgie-panel button:active image, .budgie-panel button:checked label, .budgie-panel button:checked image, .budgie-panel button:selected label, .budgie-panel button:selected image {
   color: #268bd2;
 }
-.budgie-panel button#tasklist-button, .budgie-panel button.flat {
+.budgie-panel button.flat {
   background-color: transparent;
   border-radius: 4px;
   box-shadow: none;
   border: none;
 }
-.budgie-panel button#tasklist-button label, .budgie-panel button#tasklist-button image, .budgie-panel button.flat label, .budgie-panel button.flat image {
+.budgie-panel button.flat label, .budgie-panel button.flat image {
   color: #268bd2;
 }
-.budgie-panel button#tasklist-button:hover, .budgie-panel button.flat:hover {
+.budgie-panel button.flat:hover {
   background: rgba(38, 139, 210, 0.3);
 }
-.budgie-panel button#tasklist-button:active, .budgie-panel button#tasklist-button:checked, .budgie-panel button#tasklist-button:selected, .budgie-panel button.flat:active, .budgie-panel button.flat:checked, .budgie-panel button.flat:selected {
+.budgie-panel button.flat:active, .budgie-panel button.flat:checked, .budgie-panel button.flat:selected {
   background: #268bd2;
   border: none;
 }
-.budgie-panel button#tasklist-button:active label, .budgie-panel button#tasklist-button:active image, .budgie-panel button#tasklist-button:checked label, .budgie-panel button#tasklist-button:checked image, .budgie-panel button#tasklist-button:selected label, .budgie-panel button#tasklist-button:selected image, .budgie-panel button.flat:active label, .budgie-panel button.flat:active image, .budgie-panel button.flat:checked label, .budgie-panel button.flat:checked image, .budgie-panel button.flat:selected label, .budgie-panel button.flat:selected image {
+.budgie-panel button.flat:active label, .budgie-panel button.flat:active image, .budgie-panel button.flat:checked label, .budgie-panel button.flat:checked image, .budgie-panel button.flat:selected label, .budgie-panel button.flat:selected image {
   color: #fdf6e3;
+}
+.budgie-panel button#tasklist-button {
+  background-color: transparent;
+}
+.budgie-panel button#tasklist-button label, .budgie-panel button#tasklist-button {
+  color: #268bd2;
+}
+.bottom .budgie-panel button#tasklist-button {
+  border-bottom: 2px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+.bottom .budgie-panel button#tasklist-button:hover {
+  border-bottom: 2px solid transparent;
+}
+.bottom .budgie-panel button#tasklist-button:hover label, .bottom .budgie-panel button#tasklist-button:hover {
+  color: #FFFFFF;
+}
+.bottom .budgie-panel button#tasklist-button:active, .bottom .budgie-panel button#tasklist-button:checked {
+  background-color: rgba(38, 139, 210, 0.1);
+  border-bottom: 2px solid #268bd2;
+}
+.bottom .budgie-panel button#tasklist-button:active label, .bottom .budgie-panel button#tasklist-button:active, .bottom .budgie-panel button#tasklist-button:checked label, .bottom .budgie-panel button#tasklist-button:checked {
+  color: #FFFFFF;
+}
+.top .budgie-panel button#tasklist-button {
+  border-top: 2px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+.top .budgie-panel button#tasklist-button:hover {
+  border-top: 2px solid transparent;
+}
+.top .budgie-panel button#tasklist-button:hover label, .top .budgie-panel button#tasklist-button:hover {
+  color: #FFFFFF;
+}
+.top .budgie-panel button#tasklist-button:active, .top .budgie-panel button#tasklist-button:checked {
+  background-color: rgba(38, 139, 210, 0.1);
+  border-top: 2px solid #268bd2;
+}
+.top .budgie-panel button#tasklist-button:active label, .top .budgie-panel button#tasklist-button:active, .top .budgie-panel button#tasklist-button:checked label, .top .budgie-panel button#tasklist-button:checked {
+  color: #FFFFFF;
+}
+.left .budgie-panel button#tasklist-button {
+  border-left: 2px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+.left .budgie-panel button#tasklist-button:hover {
+  border-left: 2px solid transparent;
+}
+.left .budgie-panel button#tasklist-button:hover label, .left .budgie-panel button#tasklist-button:hover {
+  color: #FFFFFF;
+}
+.left .budgie-panel button#tasklist-button:active, .left .budgie-panel button#tasklist-button:checked {
+  background-color: rgba(38, 139, 210, 0.1);
+  border-left: 2px solid #268bd2;
+}
+.left .budgie-panel button#tasklist-button:active label, .left .budgie-panel button#tasklist-button:active, .left .budgie-panel button#tasklist-button:checked label, .left .budgie-panel button#tasklist-button:checked {
+  color: #FFFFFF;
+}
+.right .budgie-panel button#tasklist-button {
+  border-right: 2px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+.right .budgie-panel button#tasklist-button:hover {
+  border-right: 2px solid transparent;
+}
+.right .budgie-panel button#tasklist-button:hover label, .right .budgie-panel button#tasklist-button:hover {
+  color: #FFFFFF;
+}
+.right .budgie-panel button#tasklist-button:active, .right .budgie-panel button#tasklist-button:checked {
+  background-color: rgba(38, 139, 210, 0.1);
+  border-right: 2px solid #268bd2;
+}
+.right .budgie-panel button#tasklist-button:active label, .right .budgie-panel button#tasklist-button:active, .right .budgie-panel button#tasklist-button:checked label, .right .budgie-panel button#tasklist-button:checked {
+  color: #FFFFFF;
 }
 .budgie-panel button.flat.running {
   background: image(#002b36);
