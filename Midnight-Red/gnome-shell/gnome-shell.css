@@ -1486,6 +1486,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .message-list-sections {
   spacing: 1.5em;
+  margin-left: 1.5em;
 }
 .message-list-section, .message-list-section-list {
   spacing: 0.7em;
