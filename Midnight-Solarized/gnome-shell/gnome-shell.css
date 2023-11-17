@@ -2072,9 +2072,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .app-well-app.app-folder .overview-icon,
 .grid-search-result .overview-icon {
   color: white;
-  border-radius: 2px;
+  border-radius: 6px;
   padding: 6px;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   transition-duration: 0ms;
   text-align: center;
 }
