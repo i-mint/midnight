@@ -1791,11 +1791,12 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   box-shadow: inset 0px 0px 0px 1px rgba(126, 126, 35, 0);
 }
 
-.window-caption, .window-caption:hover {
+.window-caption,
+.window-caption:hover {
   spacing: 25px;
   color: #7e7e23;
   background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 2px;
+  border-radius: 4px;
   padding: 4px 12px;
   -shell-caption-spacing: 12px;
 }
