@@ -6582,7 +6582,7 @@ filechooser placessidebar.sidebar scrollbar trough,
   border: none;
 }
 
-.budgie-popover:not(.csd).user-menu row button, .budgie-popover:not(.csd).user-menu list button, .budgie-popover:not(.csd).places-menu row button, .budgie-popover:not(.csd).places-menu list button, .budgie-popover:not(.csd) button, .budgie-menu .category-button {
+.budgie-popover:not(.csd).user-menu row button, .budgie-popover:not(.csd).user-menu list button, .budgie-popover:not(.csd).places-menu row button, .budgie-popover:not(.csd).places-menu list button, .budgie-popover:not(.csd) .category-button, .budgie-menu .category-button {
   background-color: transparent;
   border-color: transparent;
   border-left: 2px solid transparent;
@@ -6590,36 +6590,36 @@ filechooser placessidebar.sidebar scrollbar trough,
   border-radius: 4px;
   transition: 200ms ease-out;
 }
-.budgie-popover:not(.csd).user-menu row button label, .budgie-popover:not(.csd).user-menu list button label, .budgie-popover:not(.csd).places-menu row button label, .budgie-popover:not(.csd).places-menu list button label, .budgie-popover:not(.csd) button label, .budgie-menu .category-button label, .budgie-popover:not(.csd).user-menu row button image, .budgie-popover:not(.csd).user-menu list button image, .budgie-popover:not(.csd).places-menu row button image, .budgie-popover:not(.csd).places-menu list button image, .budgie-popover:not(.csd) button image, .budgie-menu .category-button image, .budgie-popover:not(.csd).user-menu row button, .budgie-popover:not(.csd).user-menu list button, .budgie-popover:not(.csd).places-menu row button, .budgie-popover:not(.csd).places-menu list button, .budgie-popover:not(.csd) button, .budgie-menu .category-button {
+.budgie-popover:not(.csd).user-menu row button label, .budgie-popover:not(.csd).user-menu list button label, .budgie-popover:not(.csd).places-menu row button label, .budgie-popover:not(.csd).places-menu list button label, .budgie-popover:not(.csd) .category-button label, .budgie-menu .category-button label, .budgie-popover:not(.csd).user-menu row button image, .budgie-popover:not(.csd).user-menu list button image, .budgie-popover:not(.csd).places-menu row button image, .budgie-popover:not(.csd).places-menu list button image, .budgie-popover:not(.csd) .category-button image, .budgie-menu .category-button image, .budgie-popover:not(.csd).user-menu row button, .budgie-popover:not(.csd).user-menu list button, .budgie-popover:not(.csd).places-menu row button, .budgie-popover:not(.csd).places-menu list button, .budgie-popover:not(.csd) .category-button, .budgie-menu .category-button {
   color: #aeae99;
 }
-.budgie-popover:not(.csd).user-menu row button:hover, .budgie-popover:not(.csd).user-menu list button:hover, .budgie-popover:not(.csd).places-menu row button:hover, .budgie-popover:not(.csd).places-menu list button:hover, .budgie-popover:not(.csd) button:hover, .budgie-menu .category-button:hover {
+.budgie-popover:not(.csd).user-menu row button:hover, .budgie-popover:not(.csd).user-menu list button:hover, .budgie-popover:not(.csd).places-menu row button:hover, .budgie-popover:not(.csd).places-menu list button:hover, .budgie-popover:not(.csd) .category-button:hover, .budgie-menu .category-button:hover {
   background-color: transparent;
   border-left: 2px solid #B40021;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-.budgie-popover:not(.csd) button:hover label, .budgie-menu .category-button:hover label, .budgie-popover:not(.csd).user-menu row button:hover, .budgie-popover:not(.csd).user-menu list button:hover, .budgie-popover:not(.csd).places-menu row button:hover, .budgie-popover:not(.csd).places-menu list button:hover, .budgie-popover:not(.csd) button:hover, .budgie-menu .category-button:hover {
+.budgie-popover:not(.csd).user-menu row button:hover label, .budgie-popover:not(.csd).user-menu list button:hover label, .budgie-popover:not(.csd).places-menu row button:hover label, .budgie-popover:not(.csd).places-menu list button:hover label, .budgie-popover:not(.csd) .category-button:hover label, .budgie-menu .category-button:hover label, .budgie-popover:not(.csd).user-menu row button:hover, .budgie-popover:not(.csd).user-menu list button:hover, .budgie-popover:not(.csd).places-menu row button:hover, .budgie-popover:not(.csd).places-menu list button:hover, .budgie-popover:not(.csd) .category-button:hover, .budgie-menu .category-button:hover {
   color: #aeae99;
 }
-.budgie-popover:not(.csd) button:hover image, .budgie-menu .category-button:hover image {
+.budgie-popover:not(.csd).user-menu row button:hover image, .budgie-popover:not(.csd).user-menu list button:hover image, .budgie-popover:not(.csd).places-menu row button:hover image, .budgie-popover:not(.csd).places-menu list button:hover image, .budgie-popover:not(.csd) .category-button:hover image, .budgie-menu .category-button:hover image {
   color: #B40021;
 }
-.budgie-popover:not(.csd).user-menu row button:active, .budgie-popover:not(.csd).user-menu list button:active, .budgie-popover:not(.csd).places-menu row button:active, .budgie-popover:not(.csd).places-menu list button:active, .budgie-popover:not(.csd) button:active, .budgie-menu .category-button:active, .budgie-popover:not(.csd).user-menu row button:selected, .budgie-popover:not(.csd).user-menu list button:selected, .budgie-popover:not(.csd).places-menu row button:selected, .budgie-popover:not(.csd).places-menu list button:selected, .budgie-popover:not(.csd) button:selected, .budgie-menu .category-button:selected, .budgie-popover:not(.csd).user-menu row button:checked, .budgie-popover:not(.csd).user-menu list button:checked, .budgie-popover:not(.csd).places-menu row button:checked, .budgie-popover:not(.csd).places-menu list button:checked, .budgie-popover:not(.csd) button:checked, .budgie-menu .category-button:checked {
+.budgie-popover:not(.csd).user-menu row button:active, .budgie-popover:not(.csd).user-menu list button:active, .budgie-popover:not(.csd).places-menu row button:active, .budgie-popover:not(.csd).places-menu list button:active, .budgie-popover:not(.csd) .category-button:active, .budgie-menu .category-button:active, .budgie-popover:not(.csd).user-menu row button:selected, .budgie-popover:not(.csd).user-menu list button:selected, .budgie-popover:not(.csd).places-menu row button:selected, .budgie-popover:not(.csd).places-menu list button:selected, .budgie-popover:not(.csd) .category-button:selected, .budgie-menu .category-button:selected, .budgie-popover:not(.csd).user-menu row button:checked, .budgie-popover:not(.csd).user-menu list button:checked, .budgie-popover:not(.csd).places-menu row button:checked, .budgie-popover:not(.csd).places-menu list button:checked, .budgie-popover:not(.csd) .category-button:checked, .budgie-menu .category-button:checked {
   background-color: #B40021;
   font-weight: normal;
 }
-.budgie-popover:not(.csd) button:active label, .budgie-menu .category-button:active label, .budgie-popover:not(.csd) button:active image, .budgie-menu .category-button:active image, .budgie-popover:not(.csd).user-menu row button:active, .budgie-popover:not(.csd).user-menu list button:active, .budgie-popover:not(.csd).places-menu row button:active, .budgie-popover:not(.csd).places-menu list button:active, .budgie-popover:not(.csd) button:active, .budgie-menu .category-button:active, .budgie-popover:not(.csd) button:selected label, .budgie-menu .category-button:selected label, .budgie-popover:not(.csd) button:selected image, .budgie-menu .category-button:selected image, .budgie-popover:not(.csd).user-menu row button:selected, .budgie-popover:not(.csd).user-menu list button:selected, .budgie-popover:not(.csd).places-menu row button:selected, .budgie-popover:not(.csd).places-menu list button:selected, .budgie-popover:not(.csd) button:selected, .budgie-menu .category-button:selected, .budgie-popover:not(.csd) button:checked label, .budgie-menu .category-button:checked label, .budgie-popover:not(.csd) button:checked image, .budgie-menu .category-button:checked image, .budgie-popover:not(.csd).user-menu row button:checked, .budgie-popover:not(.csd).user-menu list button:checked, .budgie-popover:not(.csd).places-menu row button:checked, .budgie-popover:not(.csd).places-menu list button:checked, .budgie-popover:not(.csd) button:checked, .budgie-menu .category-button:checked {
+.budgie-popover:not(.csd).user-menu row button:active label, .budgie-popover:not(.csd).user-menu list button:active label, .budgie-popover:not(.csd).places-menu row button:active label, .budgie-popover:not(.csd).places-menu list button:active label, .budgie-popover:not(.csd) .category-button:active label, .budgie-menu .category-button:active label, .budgie-popover:not(.csd).user-menu row button:active image, .budgie-popover:not(.csd).user-menu list button:active image, .budgie-popover:not(.csd).places-menu row button:active image, .budgie-popover:not(.csd).places-menu list button:active image, .budgie-popover:not(.csd) .category-button:active image, .budgie-menu .category-button:active image, .budgie-popover:not(.csd).user-menu row button:active, .budgie-popover:not(.csd).user-menu list button:active, .budgie-popover:not(.csd).places-menu row button:active, .budgie-popover:not(.csd).places-menu list button:active, .budgie-popover:not(.csd) .category-button:active, .budgie-menu .category-button:active, .budgie-popover:not(.csd).user-menu row button:selected label, .budgie-popover:not(.csd).user-menu list button:selected label, .budgie-popover:not(.csd).places-menu row button:selected label, .budgie-popover:not(.csd).places-menu list button:selected label, .budgie-popover:not(.csd) .category-button:selected label, .budgie-menu .category-button:selected label, .budgie-popover:not(.csd).user-menu row button:selected image, .budgie-popover:not(.csd).user-menu list button:selected image, .budgie-popover:not(.csd).places-menu row button:selected image, .budgie-popover:not(.csd).places-menu list button:selected image, .budgie-popover:not(.csd) .category-button:selected image, .budgie-menu .category-button:selected image, .budgie-popover:not(.csd).user-menu row button:selected, .budgie-popover:not(.csd).user-menu list button:selected, .budgie-popover:not(.csd).places-menu row button:selected, .budgie-popover:not(.csd).places-menu list button:selected, .budgie-popover:not(.csd) .category-button:selected, .budgie-menu .category-button:selected, .budgie-popover:not(.csd).user-menu row button:checked label, .budgie-popover:not(.csd).user-menu list button:checked label, .budgie-popover:not(.csd).places-menu row button:checked label, .budgie-popover:not(.csd).places-menu list button:checked label, .budgie-popover:not(.csd) .category-button:checked label, .budgie-menu .category-button:checked label, .budgie-popover:not(.csd).user-menu row button:checked image, .budgie-popover:not(.csd).user-menu list button:checked image, .budgie-popover:not(.csd).places-menu row button:checked image, .budgie-popover:not(.csd).places-menu list button:checked image, .budgie-popover:not(.csd) .category-button:checked image, .budgie-menu .category-button:checked image, .budgie-popover:not(.csd).user-menu row button:checked, .budgie-popover:not(.csd).user-menu list button:checked, .budgie-popover:not(.csd).places-menu row button:checked, .budgie-popover:not(.csd).places-menu list button:checked, .budgie-popover:not(.csd) .category-button:checked, .budgie-menu .category-button:checked {
   color: #ffffff;
 }
-.budgie-popover:not(.csd) button:disabled label, .budgie-menu .category-button:disabled label, .budgie-popover:not(.csd).user-menu row button:disabled, .budgie-popover:not(.csd).user-menu list button:disabled, .budgie-popover:not(.csd).places-menu row button:disabled, .budgie-popover:not(.csd).places-menu list button:disabled, .budgie-popover:not(.csd) button:disabled, .budgie-menu .category-button:disabled {
+.budgie-popover:not(.csd).user-menu row button:disabled label, .budgie-popover:not(.csd).user-menu list button:disabled label, .budgie-popover:not(.csd).places-menu row button:disabled label, .budgie-popover:not(.csd).places-menu list button:disabled label, .budgie-popover:not(.csd) .category-button:disabled label, .budgie-menu .category-button:disabled label, .budgie-popover:not(.csd).user-menu row button:disabled, .budgie-popover:not(.csd).user-menu list button:disabled, .budgie-popover:not(.csd).places-menu row button:disabled, .budgie-popover:not(.csd).places-menu list button:disabled, .budgie-popover:not(.csd) .category-button:disabled, .budgie-menu .category-button:disabled {
   color: rgba(174, 174, 153, 0.5);
 }
-.budgie-popover:not(.csd) button:checked:disabled label, .budgie-menu .category-button:checked:disabled label, .budgie-popover:not(.csd) button:checked:disabled, .budgie-menu .category-button:checked:disabled {
+.budgie-popover:not(.csd).user-menu row button:checked:disabled label, .budgie-popover:not(.csd).user-menu list button:checked:disabled label, .budgie-popover:not(.csd).places-menu row button:checked:disabled label, .budgie-popover:not(.csd).places-menu list button:checked:disabled label, .budgie-popover:not(.csd) .category-button:checked:disabled label, .budgie-menu .category-button:checked:disabled label, .budgie-popover:not(.csd).user-menu row button:checked:disabled, .budgie-popover:not(.csd).user-menu list button:checked:disabled, .budgie-popover:not(.csd).places-menu row button:checked:disabled, .budgie-popover:not(.csd).places-menu list button:checked:disabled, .budgie-popover:not(.csd) .category-button:checked:disabled, .budgie-menu .category-button:checked:disabled {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.budgie-menu row button {
+.budgie-popover:not(.csd).budgie-menu row button, .budgie-popover:not(.csd).budgie-menu list button, .budgie-menu row button {
   background-color: transparent;
   border-color: transparent;
   border-right: 2px solid transparent;
@@ -6627,21 +6627,27 @@ filechooser placessidebar.sidebar scrollbar trough,
   border-radius: 4px;
   transition: 200ms ease-out;
 }
-.budgie-menu row button:hover {
+.budgie-popover:not(.csd).budgie-menu row button:hover, .budgie-popover:not(.csd).budgie-menu list button:hover, .budgie-menu row button:hover {
   background-color: transparent;
   border-right: 2px solid #B40021;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.budgie-menu row button:hover label, .budgie-menu row button:hover {
+.budgie-popover:not(.csd).budgie-menu row button:hover label, .budgie-popover:not(.csd).budgie-menu list button:hover label, .budgie-menu row button:hover label, .budgie-popover:not(.csd).budgie-menu row button:hover, .budgie-popover:not(.csd).budgie-menu list button:hover, .budgie-menu row button:hover {
   color: #aeae99;
 }
-.budgie-menu row button:active, .budgie-menu row button:selected, .budgie-menu row button:checked {
+.budgie-popover:not(.csd).budgie-menu row button:active, .budgie-popover:not(.csd).budgie-menu list button:active, .budgie-menu row button:active, .budgie-popover:not(.csd).budgie-menu row button:selected, .budgie-popover:not(.csd).budgie-menu list button:selected, .budgie-menu row button:selected, .budgie-popover:not(.csd).budgie-menu row button:checked, .budgie-popover:not(.csd).budgie-menu list button:checked, .budgie-menu row button:checked {
   background-color: #B40021;
   font-weight: normal;
 }
-.budgie-menu row button:active label, .budgie-menu row button:active, .budgie-menu row button:selected label, .budgie-menu row button:selected, .budgie-menu row button:checked label, .budgie-menu row button:checked {
+.budgie-popover:not(.csd).budgie-menu row button:active label, .budgie-popover:not(.csd).budgie-menu list button:active label, .budgie-menu row button:active label, .budgie-popover:not(.csd).budgie-menu row button:active, .budgie-popover:not(.csd).budgie-menu list button:active, .budgie-menu row button:active, .budgie-popover:not(.csd).budgie-menu row button:selected label, .budgie-popover:not(.csd).budgie-menu list button:selected label, .budgie-menu row button:selected label, .budgie-popover:not(.csd).budgie-menu row button:selected, .budgie-popover:not(.csd).budgie-menu list button:selected, .budgie-menu row button:selected, .budgie-popover:not(.csd).budgie-menu row button:checked label, .budgie-popover:not(.csd).budgie-menu list button:checked label, .budgie-menu row button:checked label, .budgie-popover:not(.csd).budgie-menu row button:checked, .budgie-popover:not(.csd).budgie-menu list button:checked, .budgie-menu row button:checked {
   color: #ffffff;
+}
+.budgie-popover:not(.csd).budgie-menu row button:disabled label, .budgie-popover:not(.csd).budgie-menu list button:disabled label, .budgie-menu row button:disabled label, .budgie-popover:not(.csd).budgie-menu row button:disabled, .budgie-popover:not(.csd).budgie-menu list button:disabled, .budgie-menu row button:disabled {
+  color: rgba(180, 0, 33, 0.5);
+}
+.budgie-popover:not(.csd).budgie-menu list button:checked:disabled label, .budgie-menu row button:checked:disabled label, .budgie-popover:not(.csd).budgie-menu list button:checked:disabled, .budgie-menu row button:checked:disabled {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .budgie-menu scrolledwindow,
