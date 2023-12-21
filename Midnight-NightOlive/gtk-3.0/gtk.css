@@ -6880,6 +6880,7 @@ filechooser placessidebar.sidebar scrollbar trough,
   box-shadow: none;
   border-radius: 4px;
   border: none;
+  margin: 0 1px;
 }
 .budgie-panel button label, .budgie-panel button image {
   color: #aeae99;
@@ -7105,7 +7106,7 @@ filechooser placessidebar.sidebar scrollbar trough,
 .raven,
 .raven-notifications-view > .raven-background > .frame > list {
   background-color: #08111C;
-  border-radius: 4px;
+  border-radius: 0;
 }
 .raven-background label, .raven-background image, .raven-background,
 .raven-header label,
