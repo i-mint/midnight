@@ -5444,9 +5444,11 @@ filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.im
 .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child:hover {
   background-color: #2b91d9;
 }
-filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child:active,
+filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child:active label, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child:active image, filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child:active,
+.nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child:active label,
+.nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child:active image,
 .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child:active {
-  background-color: #2f93d9;
+  color: rgba(253, 246, 227, 0.5);
 }
 filechooser headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child:backdrop,
 .nautilus-window headerbar widget stack box.path-bar-box .nautilus-path-bar button.image-button:last-child:backdrop {
