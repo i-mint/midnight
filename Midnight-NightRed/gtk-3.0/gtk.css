@@ -7191,9 +7191,10 @@ filechooser placessidebar.sidebar scrollbar trough,
 }
 
 .budgie-run-dialog {
-  background-color: #08111C;
+  background-color: #0b1726;
   border: none;
   border-radius: 3px 3px 0 0;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.35);
 }
 .budgie-run-dialog entry.search,
 .budgie-run-dialog entry.search:focus {
