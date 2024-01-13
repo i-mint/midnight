@@ -4051,7 +4051,7 @@ headerbar button.titlebutton.minimize:active,
   background-image: -gtk-scaled(url("assets/titlebutton-minimize-active-dark.png"), url("assets/titlebutton-minimize-active-dark@2.png"));
 }
 
-.geary-main-layout treeview.view.sidebar:selected, .thunar notebook .view:selected, .thunar notebook iconview:selected, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, .view:selected, .view:selected:focus,
+.geary-main-layout treeview.view.sidebar:selected, .thunar notebook .view:selected, .thunar notebook iconview:selected, .view:selected, .view:selected:focus,
 .view text:selected,
 textview text:selected,
 .view text:selected:focus,
@@ -4064,7 +4064,7 @@ modelbutton.flat:selected,
 modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:focus, row:selected, calendar:selected, .sidebar:not(separator) .view:selected, .sidebar:not(separator) iconview:selected, .sidebar:not(separator) row.sidebar-row:selected, .sidebar:not(separator) .view.cell:selected {
   background-color: #2D90FF;
 }
-row:selected label, label:selected, .geary-main-layout treeview.view.sidebar:selected, .thunar notebook .view:selected, .thunar notebook iconview:selected, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, .view:selected, .view:selected:focus,
+row:selected label, label:selected, .geary-main-layout treeview.view.sidebar:selected, .thunar notebook .view:selected, .thunar notebook iconview:selected, .view:selected, .view:selected:focus,
 .view text:selected,
 textview text:selected,
 .view text:selected:focus,
@@ -4077,7 +4077,7 @@ modelbutton.flat:selected,
 modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:focus, row:selected, calendar:selected, .sidebar:not(separator) .view:selected, .sidebar:not(separator) iconview:selected, .sidebar:not(separator) row.sidebar-row:selected, .sidebar:not(separator) .view.cell:selected {
   color: #ffffff;
 }
-row:selected label:backdrop, label:backdrop:selected, .geary-main-layout treeview.view.sidebar:backdrop:selected, .thunar notebook .view:backdrop:selected, .thunar notebook iconview:backdrop:selected, .nemo-window .nemo-window-pane widget.entry:backdrop:selected, .view:backdrop:selected,
+row:selected label:backdrop, label:backdrop:selected, .geary-main-layout treeview.view.sidebar:backdrop:selected, .thunar notebook .view:backdrop:selected, .thunar notebook iconview:backdrop:selected, .view:backdrop:selected,
 .view text:backdrop:selected,
 textview text:backdrop:selected,
 textview text:backdrop:selected:focus, iconview:backdrop:selected, iconview:backdrop:selected:focus,
@@ -4089,7 +4089,7 @@ modelbutton.flat:backdrop:selected,
 modelbutton.flat:selected arrow:backdrop, row:backdrop:selected, calendar:backdrop:selected, .sidebar:not(separator) .view:backdrop:selected, .sidebar:not(separator) iconview:backdrop:selected, .sidebar:not(separator) row.sidebar-row:backdrop:selected {
   color: rgba(255, 255, 255, 0.56);
 }
-row:selected label:disabled, label:disabled:selected, .geary-main-layout treeview.view.sidebar:disabled:selected, .thunar notebook .view:disabled:selected, .thunar notebook iconview:disabled:selected, .nemo-window .nemo-window-pane widget.entry:disabled:selected, .view:disabled:selected,
+row:selected label:disabled, label:disabled:selected, .geary-main-layout treeview.view.sidebar:disabled:selected, .thunar notebook .view:disabled:selected, .thunar notebook iconview:disabled:selected, .view:disabled:selected,
 .view text:disabled:selected,
 textview text:disabled:selected,
 textview text:disabled:selected:focus, iconview:disabled:selected, iconview:disabled:selected:focus,
@@ -4102,7 +4102,7 @@ modelbutton.flat:selected arrow:disabled, row:disabled:selected, calendar:disabl
   color: #96c8ff;
 }
 
-.geary-main-layout treeview.view.sidebar:backdrop:selected, .thunar notebook .view:backdrop:selected, .thunar notebook iconview:backdrop:selected, .nemo-window .nemo-window-pane widget.entry:backdrop:selected, .view:backdrop:selected,
+.geary-main-layout treeview.view.sidebar:backdrop:selected, .thunar notebook .view:backdrop:selected, .thunar notebook iconview:backdrop:selected, .view:backdrop:selected,
 .view text:backdrop:selected,
 textview text:backdrop:selected,
 textview text:backdrop:selected:focus, iconview:backdrop:selected, iconview:backdrop:selected:focus,
@@ -4173,20 +4173,20 @@ modelbutton.flat:selected arrow:backdrop, row:backdrop:selected, calendar:backdr
   color: #ffffff;
 }
 
-entry selection:focus, entry selection {
+.nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, entry selection:focus, entry selection {
   background-color: #ffffff;
 }
-entry selection:focus, entry selection {
+.nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, entry selection:focus, entry selection {
   color: #2D90FF;
 }
-entry selection:backdrop {
+.nemo-window .nemo-window-pane widget.entry:backdrop:selected, entry selection:backdrop {
   color: rgba(45, 144, 255, 0.45);
 }
-entry selection:disabled {
+.nemo-window .nemo-window-pane widget.entry:disabled:selected, entry selection:disabled {
   color: #96c8ff;
 }
 
-entry selection:backdrop {
+.nemo-window .nemo-window-pane widget.entry:backdrop:selected, entry selection:backdrop {
   background-color: rgba(255, 255, 255, 0.45);
   color: rgba(45, 144, 255, 0.45);
 }
@@ -4394,9 +4394,13 @@ headerbar.windowhandle box.linked > button.popup.toggle:not(.disclosure-button) 
   border-color: #010304;
   background-color: #2D90FF;
   box-shadow: inset 1px 0 #2D90FF, inset -1px 0 #2D90FF, inset 0 1px #2D90FF, inset 0 -1px #2D90FF;
+  caret-color: currentColor;
 }
 .nemo-window .nemo-window-pane widget.entry image, .nemo-window .nemo-window-pane widget.entry image:hover {
   color: inherit;
+}
+.nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected {
+  caret-color: currentColor;
 }
 .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button {
   color: #ffffff;

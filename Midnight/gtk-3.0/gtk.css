@@ -4033,7 +4033,7 @@ filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup, filec
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
-.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, .geary-main-layout treeview.view.sidebar:selected, .thunar notebook .view:selected, .thunar notebook iconview:selected, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, .view:selected, .view:selected:focus,
+.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, .geary-main-layout treeview.view.sidebar:selected, .thunar notebook .view:selected, .thunar notebook iconview:selected, .view:selected, .view:selected:focus,
 .view text:selected,
 textview text:selected,
 .view text:selected:focus,
@@ -4050,7 +4050,7 @@ row:selected label, label:selected, filechooser placessidebar.sidebar row.sideba
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
-.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, .geary-main-layout treeview.view.sidebar:selected, .thunar notebook .view:selected, .thunar notebook iconview:selected, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, .view:selected, .view:selected:focus,
+.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, .geary-main-layout treeview.view.sidebar:selected, .thunar notebook .view:selected, .thunar notebook iconview:selected, .view:selected, .view:selected:focus,
 .view text:selected,
 textview text:selected,
 .view text:selected:focus,
@@ -4065,7 +4065,7 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
 }
 row:selected label:backdrop, label:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:selected,
-.nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, .geary-main-layout treeview.view.sidebar:backdrop:selected, .thunar notebook .view:backdrop:selected, .thunar notebook iconview:backdrop:selected, .nemo-window .nemo-window-pane widget.entry:backdrop:selected, .view:backdrop:selected,
+.nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, .geary-main-layout treeview.view.sidebar:backdrop:selected, .thunar notebook .view:backdrop:selected, .thunar notebook iconview:backdrop:selected, .view:backdrop:selected,
 .view text:backdrop:selected,
 textview text:backdrop:selected,
 textview text:backdrop:selected:focus, iconview:backdrop:selected, iconview:backdrop:selected:focus,
@@ -4079,7 +4079,7 @@ modelbutton.flat:selected arrow:backdrop, row:backdrop:selected, calendar:backdr
 }
 row:selected label:disabled, label:disabled:selected, filechooser placessidebar.sidebar row.sidebar-row:disabled:selected, filechooser placessidebar.sidebar row.sidebar-row:disabled:active:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:selected,
-.nautilus-window placessidebar.sidebar row.sidebar-row:disabled:active:hover, .geary-main-layout treeview.view.sidebar:disabled:selected, .thunar notebook .view:disabled:selected, .thunar notebook iconview:disabled:selected, .nemo-window .nemo-window-pane widget.entry:disabled:selected, .view:disabled:selected,
+.nautilus-window placessidebar.sidebar row.sidebar-row:disabled:active:hover, .geary-main-layout treeview.view.sidebar:disabled:selected, .thunar notebook .view:disabled:selected, .thunar notebook iconview:disabled:selected, .view:disabled:selected,
 .view text:disabled:selected,
 textview text:disabled:selected,
 textview text:disabled:selected:focus, iconview:disabled:selected, iconview:disabled:selected:focus,
@@ -4094,7 +4094,7 @@ modelbutton.flat:selected arrow:disabled, row:disabled:selected, calendar:disabl
 
 filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:selected,
-.nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, .geary-main-layout treeview.view.sidebar:backdrop:selected, .thunar notebook .view:backdrop:selected, .thunar notebook iconview:backdrop:selected, .nemo-window .nemo-window-pane widget.entry:backdrop:selected, .view:backdrop:selected,
+.nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, .geary-main-layout treeview.view.sidebar:backdrop:selected, .thunar notebook .view:backdrop:selected, .thunar notebook iconview:backdrop:selected, .view:backdrop:selected,
 .view text:backdrop:selected,
 textview text:backdrop:selected,
 textview text:backdrop:selected:focus, iconview:backdrop:selected, iconview:backdrop:selected:focus,
@@ -4165,20 +4165,20 @@ modelbutton.flat:selected arrow:backdrop, row:backdrop:selected, calendar:backdr
   color: #ffffff;
 }
 
-entry selection:focus, entry selection {
+.nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, entry selection:focus, entry selection {
   background-color: #ffffff;
 }
-entry selection:focus, entry selection {
+.nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, entry selection:focus, entry selection {
   color: #2D90FF;
 }
-entry selection:backdrop {
+.nemo-window .nemo-window-pane widget.entry:backdrop:selected, entry selection:backdrop {
   color: rgba(45, 144, 255, 0.45);
 }
-entry selection:disabled {
+.nemo-window .nemo-window-pane widget.entry:disabled:selected, entry selection:disabled {
   color: #96c8ff;
 }
 
-entry selection:backdrop {
+.nemo-window .nemo-window-pane widget.entry:backdrop:selected, entry selection:backdrop {
   background-color: rgba(255, 255, 255, 0.45);
   color: rgba(45, 144, 255, 0.45);
 }
@@ -4383,9 +4383,13 @@ headerbar.windowhandle box.linked > button.popup.toggle:not(.disclosure-button) 
   border-color: #010304;
   background-color: #2D90FF;
   box-shadow: inset 1px 0 #2D90FF, inset -1px 0 #2D90FF, inset 0 1px #2D90FF, inset 0 -1px #2D90FF;
+  caret-color: currentColor;
 }
 .nemo-window .nemo-window-pane widget.entry image, .nemo-window .nemo-window-pane widget.entry image:hover {
   color: inherit;
+}
+.nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected {
+  caret-color: currentColor;
 }
 .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button {
   color: #ffffff;
