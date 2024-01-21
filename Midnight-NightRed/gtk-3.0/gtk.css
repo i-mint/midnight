@@ -6338,6 +6338,9 @@ popover .nautilus-window headerbar widget stack box.path-bar-box label.separator
 .nautilus-window .searchbar-container button image {
   color: #B40021;
 }
+.nautilus-window headerbar stack box.horizontal.linked > button.popup.toggle:hover, .nautilus-window headerbar stack box.horizontal.linked > button.popup.toggle:active, .nautilus-window headerbar stack box.horizontal.linked > button.popup.toggle:checked, .nautilus-window headerbar stack box.horizontal.linked > button.popup.toggle {
+  border-radius: 0 4px 4px 0;
+}
 
 .nemo-window paned:last-child > separator {
   min-width: 2px;
