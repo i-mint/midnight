@@ -25,7 +25,7 @@ stage {
   min-height: 20px;
   padding: 5px 32px;
   transition-duration: 0;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .hotplug-notification-item, .notification-banner .notification-button,
