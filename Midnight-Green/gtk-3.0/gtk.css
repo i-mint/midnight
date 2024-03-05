@@ -4616,6 +4616,9 @@ paned.gedit-side-panel-paned treeview.view:backdrop {
   color: rgba(0, 200, 72, 0.45);
   border-color: #010304;
 }
+paned.gedit-side-panel-paned treeview.separator, paned.gedit-side-panel-paned treeview.separator:hover, paned.gedit-side-panel-paned treeview.separator:backdrop {
+  color: rgba(1, 3, 4, 0.12);
+}
 
 .pluma-window statusbar frame > border {
   border: none;
@@ -5350,35 +5353,22 @@ popover radiobutton:hover label, popover radiobutton:hover image, popover radiob
 .thunar toolbar > toolitem box.horizontal > entry:backdrop label, .thunar .inline-toolbar > toolitem box.horizontal > entry:backdrop label, .thunar toolbar > toolitem box.horizontal > entry:backdrop image, .thunar .inline-toolbar > toolitem box.horizontal > entry:backdrop image, .thunar toolbar > toolitem box.horizontal > entry:backdrop, .thunar .inline-toolbar > toolitem box.horizontal > entry:backdrop {
   color: rgba(0, 200, 72, 0.67);
 }
-.thunar paned > grid.horizontal > notebook tabs > tab.reorderable-page > box.horizontal > button.flat {
-  background-color: transparent;
+.thunar notebook tabs > tab.reorderable-page button.flat > image {
   border-radius: 50%;
+  padding: 2px;
+  border: 2px solid transparent;
 }
-.thunar paned > grid.horizontal > notebook tabs > tab.reorderable-page > box.horizontal > button.flat image {
-  padding: 4px;
-}
-.thunar paned > grid.horizontal > notebook tabs > tab.reorderable-page > box.horizontal > button.flat:hover {
+.thunar notebook tabs > tab.reorderable-page button.flat:hover > image {
   background-color: #cc575d;
   border-radius: 50%;
+  padding: 2px;
+  border: 2px solid transparent;
 }
-.thunar paned > grid.horizontal > notebook tabs > tab.reorderable-page > box.horizontal > button.flat:active {
-  background-color: #a83339;
-  border-radius: 50%;
-}
-.thunar paned > notebook tabs > tab.reorderable-page > box.horizontal > button.flat {
-  background-color: transparent;
-  border-radius: 50%;
-}
-.thunar paned > notebook tabs > tab.reorderable-page > box.horizontal > button.flat image {
-  padding: 4px;
-}
-.thunar paned > notebook tabs > tab.reorderable-page > box.horizontal > button.flat:hover {
-  background-color: #cc575d;
-  border-radius: 50%;
-}
-.thunar paned > notebook tabs > tab.reorderable-page > box.horizontal > button.flat:active {
+.thunar notebook tabs > tab.reorderable-page button.flat:active > image {
   background-color: #892a2f;
   border-radius: 50%;
+  padding: 2px;
+  border: 2px solid transparent;
 }
 
 .linked.path-bar > button.toggle,
