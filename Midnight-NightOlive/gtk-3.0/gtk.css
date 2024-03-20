@@ -5401,6 +5401,19 @@ widget .clocks-button:active {
 .thunar toolbar > toolitem box.horizontal > entry:backdrop label, .thunar .inline-toolbar > toolitem box.horizontal > entry:backdrop label, .thunar toolbar > toolitem box.horizontal > entry:backdrop image, .thunar .inline-toolbar > toolitem box.horizontal > entry:backdrop image, .thunar toolbar > toolitem box.horizontal > entry:backdrop, .thunar .inline-toolbar > toolitem box.horizontal > entry:backdrop {
   color: rgba(174, 174, 153, 0.67);
 }
+.thunar toolbar > toolbutton > button.flat:hover, .thunar .inline-toolbar > toolbutton > button.flat:hover {
+  color: #ffffff;
+  border-color: #08111C;
+  background-color: rgba(126, 126, 35, 0.1);
+}
+.thunar toolbar > toolbutton > button.flat:active, .thunar .inline-toolbar > toolbutton > button.flat:active {
+  color: #ffffff;
+  border-color: transparent;
+  background-color: #7E7E23;
+}
+.thunar toolbar > toolbutton > button.flat:hover, .thunar toolbar > toolbutton > button.flat:active, .thunar toolbar > toolbutton > button.flat, .thunar .inline-toolbar > toolbutton > button.flat {
+  margin: 0 2px;
+}
 .thunar notebook tabs > tab.reorderable-page button.flat > image {
   border-radius: 50%;
   padding: 2px;
@@ -5455,10 +5468,6 @@ widget .clocks-button:active {
 .thunar toolbar button.toggle:backdrop,
 .thunar .inline-toolbar button.toggle:backdrop {
   opacity: 0.5;
-}
-
-.thunar toolbar toolbutton button:hover, .thunar toolbar toolbutton button:active, .thunar toolbar toolbutton button:checked, .thunar toolbar toolbutton button, .thunar .inline-toolbar toolbutton button {
-  margin: 0 2px;
 }
 
 .geary-main-layout .geary_email .geary-message-summary, .geary-main-layout .geary_email .geary-message, .geary-main-layout .geary_email grid {

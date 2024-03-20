@@ -5194,6 +5194,19 @@ panel-toplevel.background button:checked:not(#tasklist-button), .xfce4-panel.pan
 .thunar toolbar > toolitem box.horizontal > entry:backdrop label, .thunar .inline-toolbar > toolitem box.horizontal > entry:backdrop label, .thunar toolbar > toolitem box.horizontal > entry:backdrop image, .thunar .inline-toolbar > toolitem box.horizontal > entry:backdrop image, .thunar toolbar > toolitem box.horizontal > entry:backdrop, .thunar .inline-toolbar > toolitem box.horizontal > entry:backdrop {
   color: rgba(38, 139, 210, 0.67);
 }
+.thunar toolbar > toolbutton > button.flat:hover, .thunar .inline-toolbar > toolbutton > button.flat:hover {
+  color: #839496;
+  border-color: #002b36;
+  background-color: #002b36;
+}
+.thunar toolbar > toolbutton > button.flat:active, .thunar .inline-toolbar > toolbutton > button.flat:active {
+  color: #fdf6e3;
+  border-color: transparent;
+  background-color: #268bd2;
+}
+.thunar toolbar > toolbutton > button.flat:hover, .thunar toolbar > toolbutton > button.flat:active, .thunar toolbar > toolbutton > button.flat, .thunar .inline-toolbar > toolbutton > button.flat {
+  margin: 0 2px;
+}
 .thunar notebook tabs > tab.reorderable-page button.flat > image {
   border-radius: 50%;
   padding: 2px;
