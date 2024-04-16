@@ -1035,12 +1035,10 @@ spinbutton:not(.vertical):dir(rtl) button.up {
 spinbutton:not(.vertical) > button + button {
   border-left-style: none;
 }
-.night-light-indicator spinbutton:not(.vertical) > button.up,
 spinbutton:not(.vertical) > button.up,
 spinbutton:not(.vertical) button.down {
   border-color: rgba(50, 149, 218, 0.1);
 }
-.night-light-indicator spinbutton:not(.vertical) > button:hover:not(:active),
 spinbutton:not(.vertical) > button:hover:not(:active),
 spinbutton:not(.vertical) > button:hover + button {
   box-shadow: inset 1px 0 #002b36;
@@ -1049,8 +1047,6 @@ spinbutton:not(.vertical) > button:disabled + button:not(:disabled):not(:active)
 spinbutton:not(.vertical) > button:not(:disabled):not(:active):not(:checked):not(:hover) + button:disabled {
   box-shadow: inset 1px 0 rgba(0, 43, 54, 0.5);
 }
-.night-light-indicator spinbutton:not(.vertical) > button:first-child:hover:not(:active),
-.night-light-indicator spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
 spinbutton:not(.vertical) > button:first-child:hover:not(:active),
 spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
 spinbutton:not(.vertical) > entry + button:not(:active):hover {
@@ -1062,13 +1058,10 @@ spinbutton:not(.vertical) > entry:focus + button {
 spinbutton:not(.vertical) > entry:drop(active) + button {
   border-left-color: #cb4b16;
 }
-.osd .night-light-indicator spinbutton:not(.vertical) > button:hover:not(:active),
 .osd spinbutton:not(.vertical) > button:hover:not(:active),
 .osd spinbutton:not(.vertical) > button:hover + button {
   box-shadow: inset 1px 0 rgba(0, 0, 0, 0.35);
 }
-.osd .night-light-indicator spinbutton:not(.vertical) > button:first-child:hover:not(:active),
-.osd .night-light-indicator spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
 .osd spinbutton:not(.vertical) > button:first-child:hover:not(:active),
 .osd spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
 .osd spinbutton:not(.vertical) > entry + button:not(:active):hover {
@@ -1090,12 +1083,10 @@ spinbutton.vertical > entry:focus + button {
 spinbutton.vertical > entry:drop(active) + button {
   border-top-color: #cb4b16;
 }
-.night-light-indicator spinbutton > entry:focus,
 spinbutton:focus,
 spinbutton > entry:focus {
   caret-color: currentColor;
 }
-.night-light-indicator spinbutton > entry:focus,
 spinbutton:focus label,
 spinbutton:focus,
 spinbutton > entry:focus label,
@@ -1105,7 +1096,6 @@ spinbutton > entry:focus {
 spinbutton:focus {
   border-radius: 4px;
 }
-.night-light-indicator spinbutton > entry:focus,
 spinbutton > entry:focus {
   border-radius: 4px 0 0 4px;
 }
@@ -5231,6 +5221,7 @@ panel-toplevel.background button:checked:not(#tasklist-button), .xfce4-panel.pan
   outline-offset: -3px;
   background-color: transparent;
   border-color: transparent;
+  border-radius: 4px;
 }
 .linked.path-bar > button.toggle:hover,
 .thunar toolbar button.toggle:hover,
@@ -5239,6 +5230,7 @@ panel-toplevel.background button:checked:not(#tasklist-button), .xfce4-panel.pan
   outline-offset: -3px;
   background-color: transparent;
   border-color: transparent;
+  border-radius: 4px;
 }
 .linked.path-bar > button.toggle:active, .linked.path-bar > button.toggle:checked,
 .thunar toolbar button.toggle:active,
@@ -5249,6 +5241,7 @@ panel-toplevel.background button:checked:not(#tasklist-button), .xfce4-panel.pan
   outline-offset: -3px;
   background-color: #268bd2;
   border-color: #002b36;
+  border-radius: 4px;
 }
 .linked.path-bar > button.toggle:backdrop,
 .thunar toolbar button.toggle:backdrop,

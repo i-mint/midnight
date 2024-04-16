@@ -1046,7 +1046,6 @@ spinbutton:not(.vertical):dir(rtl) button.up {
 spinbutton:not(.vertical) > button + button {
   border-left-style: none;
 }
-.night-light-indicator spinbutton:not(.vertical) > button:hover:not(:active),
 spinbutton:not(.vertical) > button:hover:not(:active),
 spinbutton:not(.vertical) > button:hover + button {
   box-shadow: inset 1px 0 #08111C;
@@ -1055,8 +1054,6 @@ spinbutton:not(.vertical) > button:disabled + button:not(:disabled):not(:active)
 spinbutton:not(.vertical) > button:not(:disabled):not(:active):not(:checked):not(:hover) + button:disabled {
   box-shadow: inset 1px 0 rgba(8, 17, 28, 0.5);
 }
-.night-light-indicator spinbutton:not(.vertical) > button:first-child:hover:not(:active),
-.night-light-indicator spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
 spinbutton:not(.vertical) > button:first-child:hover:not(:active),
 spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
 spinbutton:not(.vertical) > entry + button:not(:active):hover {
@@ -1068,13 +1065,10 @@ spinbutton:not(.vertical) > entry:focus + button {
 spinbutton:not(.vertical) > entry:drop(active) + button {
   border-left-color: #F08437;
 }
-.osd .night-light-indicator spinbutton:not(.vertical) > button:hover:not(:active),
 .osd spinbutton:not(.vertical) > button:hover:not(:active),
 .osd spinbutton:not(.vertical) > button:hover + button {
   box-shadow: inset 1px 0 rgba(0, 0, 0, 0.4);
 }
-.osd .night-light-indicator spinbutton:not(.vertical) > button:first-child:hover:not(:active),
-.osd .night-light-indicator spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
 .osd spinbutton:not(.vertical) > button:first-child:hover:not(:active),
 .osd spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
 .osd spinbutton:not(.vertical) > entry + button:not(:active):hover {
@@ -1099,7 +1093,6 @@ spinbutton.vertical > entry:focus + button {
 spinbutton.vertical > entry:drop(active) + button {
   border-top-color: #F08437;
 }
-.night-light-indicator spinbutton > entry:focus,
 spinbutton:focus,
 spinbutton > entry:focus {
   color: #ffffff;
@@ -5414,6 +5407,7 @@ popover radiobutton:hover label, popover radiobutton:hover image, popover radiob
   outline-offset: -3px;
   background-color: transparent;
   border-color: transparent;
+  border-radius: 4px;
 }
 .linked.path-bar > button.toggle:hover,
 .thunar toolbar button.toggle:hover,
@@ -5422,6 +5416,7 @@ popover radiobutton:hover label, popover radiobutton:hover image, popover radiob
   outline-offset: -3px;
   background-color: transparent;
   border-color: transparent;
+  border-radius: 4px;
 }
 .linked.path-bar > button.toggle:active, .linked.path-bar > button.toggle:checked,
 .thunar toolbar button.toggle:active,
@@ -5432,6 +5427,7 @@ popover radiobutton:hover label, popover radiobutton:hover image, popover radiob
   outline-offset: -3px;
   background-color: #7E7E23;
   border-color: #08111C;
+  border-radius: 4px;
 }
 .linked.path-bar > button.toggle:backdrop,
 .thunar toolbar button.toggle:backdrop,
@@ -5814,7 +5810,7 @@ GraniteWidgetsPopOver {
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-GraniteWidgetsPopOver .sidebar.view, GraniteWidgetsPopOver iconview.sidebar,
+GraniteWidgetsPopOver .sidebar.view,
 GraniteWidgetsPopOver * {
   background-color: transparent;
 }
