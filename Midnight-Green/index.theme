@@ -1,9 +1,10 @@
 [X-GNOME-Metatheme]
 Name=Midnight-Green
 Type=X-GNOME-Metatheme
-Comment= Midnight Gtk Themes 
+Comment= Midnight Green Gtk Themes 
 Encoding=UTF-8
 GtkTheme=Midnight-Green
-IconTheme=Papirus-Dark-Green
+MetacityTheme=Midnight-Green
+IconTheme=Papirus-Dark
 CursorTheme=Adwaita
 CursorSize=24

@@ -4,6 +4,7 @@ Type=X-GNOME-Metatheme
 Comment= Midnight Gtk Themes 
 Encoding=UTF-8
 GtkTheme=Midnight
+MetacityTheme=Midnight
 IconTheme=Papirus-Dark
 CursorTheme=Adwaita
 CursorSize=24

@@ -1,9 +1,10 @@
 [X-GNOME-Metatheme]
 Name=Midnight-NightOlive
 Type=X-GNOME-Metatheme
-Comment= Midnight Gtk Themes 
+Comment= Midnight 'NightOlive' Gtk Themes 
 Encoding=UTF-8
 GtkTheme=Midnight-NightOlive
-IconTheme=Papirus-Dark-Teal
+MetacityTheme=Midnight-NightOlive
+IconTheme=Papirus-Dark
 CursorTheme=Adwaita
 CursorSize=24
