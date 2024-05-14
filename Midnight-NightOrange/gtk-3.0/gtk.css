@@ -677,6 +677,47 @@ button.font separator, button.file separator {
   border-radius: 4px;
   border-width: 1px;
 }
+button.circular,
+button.circular.radio.text-button,
+button.circular.toggle {
+  min-height: 16px;
+  min-width: 16px;
+  padding: 2px;
+  border-radius: 100%;
+  -gtk-outline-radius: 100%;
+}
+button.circular:hover label, button.circular:hover image, button.circular:checked:hover label, button.circular:checked:hover image,
+button.circular.radio.text-button:hover label,
+button.circular.radio.text-button:hover image,
+button.circular.radio.text-button:checked:hover label,
+button.circular.radio.text-button:checked:hover image,
+button.circular.toggle:hover label,
+button.circular.toggle:hover image,
+button.circular.toggle:checked:hover label,
+button.circular.toggle:checked:hover image {
+  border: none;
+}
+button.circular:active label, button.circular:active image, button.circular:checked:hover label, button.circular:checked:hover image,
+button.circular.radio.text-button:active label,
+button.circular.radio.text-button:active image,
+button.circular.radio.text-button:checked:hover label,
+button.circular.radio.text-button:checked:hover image,
+button.circular.toggle:active label,
+button.circular.toggle:active image,
+button.circular.toggle:checked:hover label,
+button.circular.toggle:checked:hover image {
+  color: #ffffff;
+}
+
+button.circular,
+button.circular.toggle {
+  padding: 2px;
+}
+
+button.circular.radio.text-button {
+  padding: 4px 5px;
+}
+
 headerbar.windowhandle viewswitcher > box > button.radio {
   margin: 0;
   padding: 0;
