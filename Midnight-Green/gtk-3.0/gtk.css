@@ -4958,18 +4958,76 @@ MsdOsdWindow.background.osd .trough {
   border-radius: 5px;
 }
 
+.mate-panel-menu-bar button:not(#tasklist-button),
+panel-toplevel.background button:not(#tasklist-button) {
+  border-radius: 4px;
+  border: 3px solid transparent;
+  background-color: rgba(8, 17, 28, 0);
+}
+.mate-panel-menu-bar button:not(#tasklist-button) label,
+panel-toplevel.background button:not(#tasklist-button) label, .mate-panel-menu-bar button:not(#tasklist-button) image,
+panel-toplevel.background button:not(#tasklist-button) image, .mate-panel-menu-bar button:not(#tasklist-button),
+panel-toplevel.background button:not(#tasklist-button) {
+  color: #00C848;
+}
+.mate-panel-menu-bar button:hover:not(#tasklist-button),
+panel-toplevel.background button:hover:not(#tasklist-button) {
+  border: 3px solid transparent;
+  background-color: rgba(0, 200, 72, 0.23);
+  border-radius: 6px;
+}
+.mate-panel-menu-bar button:hover:not(#tasklist-button) label,
+panel-toplevel.background button:hover:not(#tasklist-button) label, .mate-panel-menu-bar button:hover:not(#tasklist-button) image,
+panel-toplevel.background button:hover:not(#tasklist-button) image, .mate-panel-menu-bar button:hover:not(#tasklist-button),
+panel-toplevel.background button:hover:not(#tasklist-button) {
+  color: #aeae99;
+}
+.mate-panel-menu-bar button:active:not(#tasklist-button),
+panel-toplevel.background button:active:not(#tasklist-button), .mate-panel-menu-bar button:checked:not(#tasklist-button),
+panel-toplevel.background button:checked:not(#tasklist-button) {
+  border: 3px solid #08111C;
+  background-color: #00C848;
+  border-radius: 6px;
+}
+.mate-panel-menu-bar button:active:not(#tasklist-button) label,
+panel-toplevel.background button:active:not(#tasklist-button) label, .mate-panel-menu-bar button:active:not(#tasklist-button) image,
+panel-toplevel.background button:active:not(#tasklist-button) image, .mate-panel-menu-bar button:active:not(#tasklist-button),
+panel-toplevel.background button:active:not(#tasklist-button), .mate-panel-menu-bar button:checked:not(#tasklist-button) label,
+panel-toplevel.background button:checked:not(#tasklist-button) label, .mate-panel-menu-bar button:checked:not(#tasklist-button) image,
+panel-toplevel.background button:checked:not(#tasklist-button) image, .mate-panel-menu-bar button:checked:not(#tasklist-button),
+panel-toplevel.background button:checked:not(#tasklist-button) {
+  color: #040E04;
+}
+
 .mate-panel-menu-bar, .mate-panel-menu-bar menubar,
 panel-toplevel.background,
 panel-toplevel.background menubar {
   background-color: #08111c;
 }
 .mate-panel-menu-bar menubar,
+panel-toplevel.background menubar {
+  color: #00C848;
+}
+.mate-panel-menu-bar #PanelApplet label, .mate-panel-menu-bar #PanelApplet image, .mate-panel-menu-bar #PanelApplet,
 .mate-panel-menu-bar #PanelApplet label,
 .mate-panel-menu-bar #PanelApplet image,
-panel-toplevel.background menubar,
+.mate-panel-menu-bar #PanelApplet,
 panel-toplevel.background #PanelApplet label,
-panel-toplevel.background #PanelApplet image {
+panel-toplevel.background #PanelApplet image,
+panel-toplevel.background #PanelApplet,
+panel-toplevel.background #PanelApplet label,
+panel-toplevel.background #PanelApplet image,
+panel-toplevel.background #PanelApplet {
   color: #00C848;
+}
+.mate-panel-menu-bar #PanelApplet button.brisk-button.flat.toggle:checked label, .mate-panel-menu-bar #PanelApplet button.brisk-button.flat.toggle:checked image,
+.mate-panel-menu-bar #PanelApplet button.brisk-button.flat.toggle:checked label,
+.mate-panel-menu-bar #PanelApplet button.brisk-button.flat.toggle:checked image,
+panel-toplevel.background #PanelApplet button.brisk-button.flat.toggle:checked label,
+panel-toplevel.background #PanelApplet button.brisk-button.flat.toggle:checked image,
+panel-toplevel.background #PanelApplet button.brisk-button.flat.toggle:checked label,
+panel-toplevel.background #PanelApplet button.brisk-button.flat.toggle:checked image {
+  color: #040E04;
 }
 .mate-panel-menu-bar button label, .mate-panel-menu-bar button image,
 .mate-panel-menu-bar #tasklist-button label,
@@ -5064,26 +5122,22 @@ panel-toplevel.background na-tray-applet {
   color: #040E04;
 }
 
-.mate-panel-menu-bar button:not(#tasklist-button),
-panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel button.flat,
+.xfce4-panel.panel button.flat,
 .xfce4-panel.panel #whiskermenu-button #xfce4-notification-plugin #xfce4-power-manager-plugin #pulseaudio-button #clock-button #indicator-button #sn-button #showdesktop-button {
   color: #00C848;
   border-radius: 4px;
   border: 3px solid transparent;
   background-color: rgba(8, 17, 28, 0);
 }
-.mate-panel-menu-bar button:hover:not(#tasklist-button),
-panel-toplevel.background button:hover:not(#tasklist-button), .xfce4-panel.panel button.flat:hover,
+.xfce4-panel.panel button.flat:hover,
 .xfce4-panel.panel #whiskermenu-button #xfce4-notification-plugin #xfce4-power-manager-plugin #pulseaudio-button #clock-button #indicator-button #sn-button #showdesktop-button:hover {
   border: 3px solid transparent;
   background-color: rgba(0, 200, 72, 0.23);
   color: #ffffff;
   border-radius: 6px;
 }
-.mate-panel-menu-bar button:active:not(#tasklist-button),
-panel-toplevel.background button:active:not(#tasklist-button), .xfce4-panel.panel button.flat:active,
-.xfce4-panel.panel #whiskermenu-button #xfce4-notification-plugin #xfce4-power-manager-plugin #pulseaudio-button #clock-button #indicator-button #sn-button #showdesktop-button:active, .mate-panel-menu-bar button:checked:not(#tasklist-button),
-panel-toplevel.background button:checked:not(#tasklist-button), .xfce4-panel.panel button.flat:checked,
+.xfce4-panel.panel button.flat:active,
+.xfce4-panel.panel #whiskermenu-button #xfce4-notification-plugin #xfce4-power-manager-plugin #pulseaudio-button #clock-button #indicator-button #sn-button #showdesktop-button:active, .xfce4-panel.panel button.flat:checked,
 .xfce4-panel.panel #whiskermenu-button #xfce4-notification-plugin #xfce4-power-manager-plugin #pulseaudio-button #clock-button #indicator-button #sn-button #showdesktop-button:checked {
   border: 3px solid #08111C;
   color: #040E04;
