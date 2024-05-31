@@ -4091,7 +4091,7 @@ filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup, filec
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
-.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, .geary-main-layout treeview.view.sidebar:selected, .thunar notebook .view:selected, .thunar notebook iconview:selected, .view:selected, .view:selected:focus,
+.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, .geary-main-layout treeview.view.sidebar:selected, .thunar notebook .view:selected, .thunar notebook iconview:selected, .caja-side-pane .frame treeview.view:active, .caja-side-pane .frame treeview.view:selected, .caja-side-pane .frame treeview.view:selected:hover, .view:selected, .view:selected:focus,
 .view text:selected,
 textview text:selected,
 .view text:selected:focus,
@@ -4108,7 +4108,7 @@ row:selected label, label:selected, filechooser placessidebar.sidebar row.sideba
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
-.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, .geary-main-layout treeview.view.sidebar:selected, .thunar notebook .view:selected, .thunar notebook iconview:selected, .view:selected, .view:selected:focus,
+.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, .geary-main-layout treeview.view.sidebar:selected, .thunar notebook .view:selected, .thunar notebook iconview:selected, .caja-side-pane .frame treeview.view:active, .caja-side-pane .frame treeview.view:selected, .caja-side-pane .frame treeview.view:selected:hover, .view:selected, .view:selected:focus,
 .view text:selected,
 textview text:selected,
 .view text:selected:focus,
@@ -4123,7 +4123,7 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
 }
 row:selected label:backdrop, label:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:selected,
-.nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, .geary-main-layout treeview.view.sidebar:backdrop:selected, .thunar notebook .view:backdrop:selected, .thunar notebook iconview:backdrop:selected, .view:backdrop:selected,
+.nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, .geary-main-layout treeview.view.sidebar:backdrop:selected, .thunar notebook .view:backdrop:selected, .thunar notebook iconview:backdrop:selected, .caja-side-pane .frame treeview.view:backdrop:active, .caja-side-pane .frame treeview.view:backdrop:selected, .view:backdrop:selected,
 .view text:backdrop:selected,
 textview text:backdrop:selected,
 textview text:backdrop:selected:focus, iconview:backdrop:selected, iconview:backdrop:selected:focus,
@@ -4137,7 +4137,7 @@ modelbutton.flat:selected arrow:backdrop, row:backdrop:selected, calendar:backdr
 }
 row:selected label:disabled, label:disabled:selected, filechooser placessidebar.sidebar row.sidebar-row:disabled:selected, filechooser placessidebar.sidebar row.sidebar-row:disabled:active:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:selected,
-.nautilus-window placessidebar.sidebar row.sidebar-row:disabled:active:hover, .geary-main-layout treeview.view.sidebar:disabled:selected, .thunar notebook .view:disabled:selected, .thunar notebook iconview:disabled:selected, .view:disabled:selected,
+.nautilus-window placessidebar.sidebar row.sidebar-row:disabled:active:hover, .geary-main-layout treeview.view.sidebar:disabled:selected, .thunar notebook .view:disabled:selected, .thunar notebook iconview:disabled:selected, .caja-side-pane .frame treeview.view:disabled:active, .caja-side-pane .frame treeview.view:disabled:selected, .view:disabled:selected,
 .view text:disabled:selected,
 textview text:disabled:selected,
 textview text:disabled:selected:focus, iconview:disabled:selected, iconview:disabled:selected:focus,
@@ -4152,7 +4152,7 @@ modelbutton.flat:selected arrow:disabled, row:disabled:selected, calendar:disabl
 
 filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:selected,
-.nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, .geary-main-layout treeview.view.sidebar:backdrop:selected, .thunar notebook .view:backdrop:selected, .thunar notebook iconview:backdrop:selected, .view:backdrop:selected,
+.nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover, .geary-main-layout treeview.view.sidebar:backdrop:selected, .thunar notebook .view:backdrop:selected, .thunar notebook iconview:backdrop:selected, .caja-side-pane .frame treeview.view:backdrop:active, .caja-side-pane .frame treeview.view:backdrop:selected, .view:backdrop:selected,
 .view text:backdrop:selected,
 textview text:backdrop:selected,
 textview text:backdrop:selected:focus, iconview:backdrop:selected, iconview:backdrop:selected:focus,
@@ -4519,8 +4519,28 @@ headerbar.windowhandle box.linked > button.popup.toggle:not(.disclosure-button) 
   border-top: 1px solid #010304;
 }
 
-.caja-side-pane .frame {
+.caja-side-pane .frame treeview.view {
   border-width: 1px 0 0;
+  background-color: rgba(8, 17, 28, 0.95);
+}
+.caja-side-pane .frame treeview.view label, .caja-side-pane .frame treeview.view {
+  color: #00c848;
+}
+.caja-side-pane .frame treeview.view:hover {
+  background-color: transparent;
+  border-left: 2px solid #00C848;
+}
+.caja-side-pane .frame treeview.view:hover label, .caja-side-pane .frame treeview.view:hover {
+  color: #aeae99;
+}
+.caja-side-pane .frame treeview.view:active label, .caja-side-pane .frame treeview.view:selected label, .caja-side-pane .frame treeview.view:selected:hover label {
+  color: inherit;
+}
+.caja-side-pane .frame treeview.view:backdrop label, .caja-side-pane .frame treeview.view:backdrop {
+  color: rgba(0, 200, 72, 0.45);
+}
+.caja-side-pane .frame treeview.view:backdrop:hover label, .caja-side-pane .frame treeview.view:backdrop:hover {
+  color: rgba(174, 174, 153, 0.56);
 }
 
 .caja-notebook .frame {
@@ -4958,44 +4978,44 @@ MsdOsdWindow.background.osd .trough {
   border-radius: 5px;
 }
 
-.mate-panel-menu-bar button:not(#tasklist-button),
-panel-toplevel.background button:not(#tasklist-button) {
+.mate-panel-menu-bar #PanelApplet button:not(#tasklist-button),
+panel-toplevel.background #PanelApplet button:not(#tasklist-button) {
   border-radius: 4px;
   border: 3px solid transparent;
   background-color: rgba(8, 17, 28, 0);
 }
-.mate-panel-menu-bar button:not(#tasklist-button) label,
-panel-toplevel.background button:not(#tasklist-button) label, .mate-panel-menu-bar button:not(#tasklist-button) image,
-panel-toplevel.background button:not(#tasklist-button) image, .mate-panel-menu-bar button:not(#tasklist-button),
-panel-toplevel.background button:not(#tasklist-button) {
+.mate-panel-menu-bar #PanelApplet button:not(#tasklist-button) label,
+panel-toplevel.background #PanelApplet button:not(#tasklist-button) label, .mate-panel-menu-bar #PanelApplet button:not(#tasklist-button) image,
+panel-toplevel.background #PanelApplet button:not(#tasklist-button) image, .mate-panel-menu-bar #PanelApplet button:not(#tasklist-button),
+panel-toplevel.background #PanelApplet button:not(#tasklist-button) {
   color: #00C848;
 }
-.mate-panel-menu-bar button:hover:not(#tasklist-button),
-panel-toplevel.background button:hover:not(#tasklist-button) {
+.mate-panel-menu-bar #PanelApplet button:hover:not(#tasklist-button),
+panel-toplevel.background #PanelApplet button:hover:not(#tasklist-button) {
   border: 3px solid transparent;
   background-color: rgba(0, 200, 72, 0.23);
   border-radius: 6px;
 }
-.mate-panel-menu-bar button:hover:not(#tasklist-button) label,
-panel-toplevel.background button:hover:not(#tasklist-button) label, .mate-panel-menu-bar button:hover:not(#tasklist-button) image,
-panel-toplevel.background button:hover:not(#tasklist-button) image, .mate-panel-menu-bar button:hover:not(#tasklist-button),
-panel-toplevel.background button:hover:not(#tasklist-button) {
+.mate-panel-menu-bar #PanelApplet button:hover:not(#tasklist-button) label,
+panel-toplevel.background #PanelApplet button:hover:not(#tasklist-button) label, .mate-panel-menu-bar #PanelApplet button:hover:not(#tasklist-button) image,
+panel-toplevel.background #PanelApplet button:hover:not(#tasklist-button) image, .mate-panel-menu-bar #PanelApplet button:hover:not(#tasklist-button),
+panel-toplevel.background #PanelApplet button:hover:not(#tasklist-button) {
   color: #aeae99;
 }
-.mate-panel-menu-bar button:active:not(#tasklist-button),
-panel-toplevel.background button:active:not(#tasklist-button), .mate-panel-menu-bar button:checked:not(#tasklist-button),
-panel-toplevel.background button:checked:not(#tasklist-button) {
+.mate-panel-menu-bar #PanelApplet button:active:not(#tasklist-button),
+panel-toplevel.background #PanelApplet button:active:not(#tasklist-button), .mate-panel-menu-bar #PanelApplet button:checked:not(#tasklist-button),
+panel-toplevel.background #PanelApplet button:checked:not(#tasklist-button) {
   border: 3px solid #08111C;
   background-color: #00C848;
   border-radius: 6px;
 }
-.mate-panel-menu-bar button:active:not(#tasklist-button) label,
-panel-toplevel.background button:active:not(#tasklist-button) label, .mate-panel-menu-bar button:active:not(#tasklist-button) image,
-panel-toplevel.background button:active:not(#tasklist-button) image, .mate-panel-menu-bar button:active:not(#tasklist-button),
-panel-toplevel.background button:active:not(#tasklist-button), .mate-panel-menu-bar button:checked:not(#tasklist-button) label,
-panel-toplevel.background button:checked:not(#tasklist-button) label, .mate-panel-menu-bar button:checked:not(#tasklist-button) image,
-panel-toplevel.background button:checked:not(#tasklist-button) image, .mate-panel-menu-bar button:checked:not(#tasklist-button),
-panel-toplevel.background button:checked:not(#tasklist-button) {
+.mate-panel-menu-bar #PanelApplet button:active:not(#tasklist-button) label,
+panel-toplevel.background #PanelApplet button:active:not(#tasklist-button) label, .mate-panel-menu-bar #PanelApplet button:active:not(#tasklist-button) image,
+panel-toplevel.background #PanelApplet button:active:not(#tasklist-button) image, .mate-panel-menu-bar #PanelApplet button:active:not(#tasklist-button),
+panel-toplevel.background #PanelApplet button:active:not(#tasklist-button), .mate-panel-menu-bar #PanelApplet button:checked:not(#tasklist-button) label,
+panel-toplevel.background #PanelApplet button:checked:not(#tasklist-button) label, .mate-panel-menu-bar #PanelApplet button:checked:not(#tasklist-button) image,
+panel-toplevel.background #PanelApplet button:checked:not(#tasklist-button) image, .mate-panel-menu-bar #PanelApplet button:checked:not(#tasklist-button),
+panel-toplevel.background #PanelApplet button:checked:not(#tasklist-button) {
   color: #040E04;
 }
 
@@ -5009,48 +5029,61 @@ panel-toplevel.background menubar {
   color: #00C848;
 }
 .mate-panel-menu-bar #PanelApplet label, .mate-panel-menu-bar #PanelApplet image, .mate-panel-menu-bar #PanelApplet,
-.mate-panel-menu-bar #PanelApplet label,
-.mate-panel-menu-bar #PanelApplet image,
-.mate-panel-menu-bar #PanelApplet,
-panel-toplevel.background #PanelApplet label,
-panel-toplevel.background #PanelApplet image,
-panel-toplevel.background #PanelApplet,
 panel-toplevel.background #PanelApplet label,
 panel-toplevel.background #PanelApplet image,
 panel-toplevel.background #PanelApplet {
   color: #00C848;
 }
 .mate-panel-menu-bar #PanelApplet button.brisk-button.flat.toggle:checked label, .mate-panel-menu-bar #PanelApplet button.brisk-button.flat.toggle:checked image,
-.mate-panel-menu-bar #PanelApplet button.brisk-button.flat.toggle:checked label,
-.mate-panel-menu-bar #PanelApplet button.brisk-button.flat.toggle:checked image,
-panel-toplevel.background #PanelApplet button.brisk-button.flat.toggle:checked label,
-panel-toplevel.background #PanelApplet button.brisk-button.flat.toggle:checked image,
 panel-toplevel.background #PanelApplet button.brisk-button.flat.toggle:checked label,
 panel-toplevel.background #PanelApplet button.brisk-button.flat.toggle:checked image {
   color: #040E04;
 }
-.mate-panel-menu-bar button label, .mate-panel-menu-bar button image,
-.mate-panel-menu-bar #tasklist-button label,
-.mate-panel-menu-bar #tasklist-button image,
-panel-toplevel.background button label,
-panel-toplevel.background button image,
-panel-toplevel.background #tasklist-button label,
-panel-toplevel.background #tasklist-button image {
+.mate-panel-menu-bar #PanelApplet > wnck-tasklist > #tasklist-button,
+panel-toplevel.background #PanelApplet > wnck-tasklist > #tasklist-button {
+  background-color: transparent;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+}
+.mate-panel-menu-bar #PanelApplet > wnck-tasklist > #tasklist-button label, .mate-panel-menu-bar #PanelApplet > wnck-tasklist > #tasklist-button,
+panel-toplevel.background #PanelApplet > wnck-tasklist > #tasklist-button label,
+panel-toplevel.background #PanelApplet > wnck-tasklist > #tasklist-button {
+  color: #00C848;
+}
+.mate-panel-menu-bar #PanelApplet > wnck-tasklist > #tasklist-button:hover label, .mate-panel-menu-bar #PanelApplet > wnck-tasklist > #tasklist-button:hover,
+panel-toplevel.background #PanelApplet > wnck-tasklist > #tasklist-button:hover label,
+panel-toplevel.background #PanelApplet > wnck-tasklist > #tasklist-button:hover {
+  color: #ffffff;
+}
+.mate-panel-menu-bar #PanelApplet > wnck-tasklist > #tasklist-button:active, .mate-panel-menu-bar #PanelApplet > wnck-tasklist > #tasklist-button:checked,
+panel-toplevel.background #PanelApplet > wnck-tasklist > #tasklist-button:active,
+panel-toplevel.background #PanelApplet > wnck-tasklist > #tasklist-button:checked {
+  background-color: rgba(0, 200, 72, 0.1);
+  border-bottom: 2px solid #00C848;
+}
+.mate-panel-menu-bar #PanelApplet > wnck-tasklist > #tasklist-button:active label, .mate-panel-menu-bar #PanelApplet > wnck-tasklist > #tasklist-button:active, .mate-panel-menu-bar #PanelApplet > wnck-tasklist > #tasklist-button:checked label, .mate-panel-menu-bar #PanelApplet > wnck-tasklist > #tasklist-button:checked,
+panel-toplevel.background #PanelApplet > wnck-tasklist > #tasklist-button:active label,
+panel-toplevel.background #PanelApplet > wnck-tasklist > #tasklist-button:active,
+panel-toplevel.background #PanelApplet > wnck-tasklist > #tasklist-button:checked label,
+panel-toplevel.background #PanelApplet > wnck-tasklist > #tasklist-button:checked {
+  color: #ffffff;
+}
+.mate-panel-menu-bar #PanelApplet button label, .mate-panel-menu-bar #PanelApplet button image,
+panel-toplevel.background #PanelApplet button label,
+panel-toplevel.background #PanelApplet button image {
   color: inherit;
 }
-.mate-panel-menu-bar .wnck-pager,
-panel-toplevel.background .wnck-pager {
-  color: #006424;
-  background-color: black;
+.mate-panel-menu-bar #PanelApplet > .wnck-pager,
+panel-toplevel.background #PanelApplet > .wnck-pager {
+  background-color: rgba(0, 200, 72, 0.1);
+  color: #00C848;
+  border-right: 2px solid #08111C;
 }
-.mate-panel-menu-bar .wnck-pager:hover,
-panel-toplevel.background .wnck-pager:hover {
-  background-color: #0e1d30;
-}
-.mate-panel-menu-bar .wnck-pager:selected,
-panel-toplevel.background .wnck-pager:selected {
-  color: #2fff7a;
-  background-color: #00C848;
+.mate-panel-menu-bar #PanelApplet > .wnck-pager:hover, .mate-panel-menu-bar #PanelApplet > .wnck-pager:selected,
+panel-toplevel.background #PanelApplet > .wnck-pager:hover,
+panel-toplevel.background #PanelApplet > .wnck-pager:selected {
+  background-color: rgba(0, 200, 72, 0.4);
+  border: 2px solid #00C848;
 }
 .mate-panel-menu-bar na-tray-applet,
 panel-toplevel.background na-tray-applet {
