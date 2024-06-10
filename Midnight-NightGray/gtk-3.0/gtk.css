@@ -4575,6 +4575,36 @@ headerbar.windowhandle box.linked > button.popup.toggle:not(.disclosure-button) 
   border-width: 0 0 1px;
 }
 
+.caja-pathbar button.toggle, .caja-pathbar button.slider-button, .caja-pathbar button.text-button {
+  color: #aeae99;
+  outline-offset: -3px;
+  background-color: transparent;
+  border-color: transparent;
+  border-top: 2px solid transparent;
+}
+.caja-pathbar button.toggle label, .caja-pathbar button.toggle image, .caja-pathbar button.slider-button label, .caja-pathbar button.slider-button image, .caja-pathbar button.text-button label, .caja-pathbar button.text-button image {
+  color: inherit;
+}
+.caja-pathbar button.toggle:hover, .caja-pathbar button.slider-button:hover, .caja-pathbar button.text-button:hover {
+  background-color: transparent;
+  border-color: transparent;
+  outline-offset: -3px;
+  border-top: 2px solid rgba(163, 163, 163, 0.23);
+}
+.caja-pathbar button.toggle:hover label, .caja-pathbar button.toggle:hover image, .caja-pathbar button.slider-button:hover label, .caja-pathbar button.slider-button:hover image, .caja-pathbar button.text-button:hover label, .caja-pathbar button.text-button:hover image {
+  color: #ffffff;
+}
+.caja-pathbar button.toggle:active, .caja-pathbar button.toggle:checked, .caja-pathbar button.toggle:checked:hover, .caja-pathbar button.slider-button:active, .caja-pathbar button.slider-button:checked, .caja-pathbar button.slider-button:checked:hover, .caja-pathbar button.text-button:active, .caja-pathbar button.text-button:checked, .caja-pathbar button.text-button:checked:hover {
+  color: #141414;
+  outline-offset: -3px;
+  background-color: #a3a3a3;
+  border-color: #08111C;
+  border-top: 2px solid transparent;
+}
+.caja-pathbar button.toggle:active label, .caja-pathbar button.toggle:active image, .caja-pathbar button.toggle:checked label, .caja-pathbar button.toggle:checked image, .caja-pathbar button.toggle:checked:hover label, .caja-pathbar button.toggle:checked:hover image, .caja-pathbar button.slider-button:active label, .caja-pathbar button.slider-button:active image, .caja-pathbar button.slider-button:checked label, .caja-pathbar button.slider-button:checked image, .caja-pathbar button.slider-button:checked:hover label, .caja-pathbar button.slider-button:checked:hover image, .caja-pathbar button.text-button:active label, .caja-pathbar button.text-button:active image, .caja-pathbar button.text-button:checked label, .caja-pathbar button.text-button:checked image, .caja-pathbar button.text-button:checked:hover label, .caja-pathbar button.text-button:checked:hover image {
+  color: inherit;
+}
+
 .open-document-selector-treeview.view, iconview.open-document-selector-treeview {
   padding: 3px 6px 3px 6px;
   border-color: #08111C;
@@ -5010,6 +5040,7 @@ panel-toplevel.background #PanelApplet button:not(#tasklist-button) {
   border-radius: 4px;
   border: 3px solid transparent;
   background-color: rgba(8, 17, 28, 0);
+  font-weight: bold;
 }
 .mate-panel-menu-bar #PanelApplet button:not(#tasklist-button) label,
 panel-toplevel.background #PanelApplet button:not(#tasklist-button) label, .mate-panel-menu-bar #PanelApplet button:not(#tasklist-button) image,
@@ -5020,14 +5051,14 @@ panel-toplevel.background #PanelApplet button:not(#tasklist-button) {
 .mate-panel-menu-bar #PanelApplet button:hover:not(#tasklist-button),
 panel-toplevel.background #PanelApplet button:hover:not(#tasklist-button) {
   border: 3px solid transparent;
-  background-color: rgba(163, 163, 163, 0.23);
+  background-color: #192129;
   border-radius: 6px;
 }
 .mate-panel-menu-bar #PanelApplet button:hover:not(#tasklist-button) label,
 panel-toplevel.background #PanelApplet button:hover:not(#tasklist-button) label, .mate-panel-menu-bar #PanelApplet button:hover:not(#tasklist-button) image,
 panel-toplevel.background #PanelApplet button:hover:not(#tasklist-button) image, .mate-panel-menu-bar #PanelApplet button:hover:not(#tasklist-button),
 panel-toplevel.background #PanelApplet button:hover:not(#tasklist-button) {
-  color: #aeae99;
+  color: #ffffff;
 }
 .mate-panel-menu-bar #PanelApplet button:active:not(#tasklist-button),
 panel-toplevel.background #PanelApplet button:active:not(#tasklist-button), .mate-panel-menu-bar #PanelApplet button:checked:not(#tasklist-button),
@@ -5076,6 +5107,10 @@ panel-toplevel.background #PanelApplet > wnck-tasklist > #tasklist-button {
 panel-toplevel.background #PanelApplet > wnck-tasklist > #tasklist-button label,
 panel-toplevel.background #PanelApplet > wnck-tasklist > #tasklist-button {
   color: #aeae99;
+}
+.mate-panel-menu-bar #PanelApplet > wnck-tasklist > #tasklist-button:hover,
+panel-toplevel.background #PanelApplet > wnck-tasklist > #tasklist-button:hover {
+  background-color: rgba(163, 163, 163, 0.1);
 }
 .mate-panel-menu-bar #PanelApplet > wnck-tasklist > #tasklist-button:hover label, .mate-panel-menu-bar #PanelApplet > wnck-tasklist > #tasklist-button:hover,
 panel-toplevel.background #PanelApplet > wnck-tasklist > #tasklist-button:hover label,
@@ -5129,11 +5164,13 @@ panel-toplevel.background na-tray-applet {
   color: #aeae99;
   background-color: transparent;
   border: none;
+  margin: 0 2px;
   border-color: transparent;
   border-radius: 0;
 }
 .xfce4-panel.panel .tasklist .toggle:hover {
   color: #ffffff;
+  background-color: rgba(163, 163, 163, 0.1);
 }
 .xfce4-panel.panel .tasklist .toggle:active, .xfce4-panel.panel .tasklist .toggle:checked {
   color: #ffffff;
