@@ -4515,12 +4515,7 @@ headerbar.windowhandle box.linked > button.popup.toggle:not(.disclosure-button) 
   text-shadow: none;
 }
 
-.caja-notebook {
-  border-top: 1px solid #010304;
-}
-
 .caja-side-pane .frame treeview.view {
-  border-width: 1px 0 0;
   background-color: rgba(8, 17, 28, 0.95);
 }
 .caja-side-pane .frame treeview.view label, .caja-side-pane .frame treeview.view {
@@ -4544,7 +4539,20 @@ headerbar.windowhandle box.linked > button.popup.toggle:not(.disclosure-button) 
 }
 
 .caja-notebook .frame {
-  border-width: 0 0 1px;
+  border-width: 0 0 1px 0;
+  border-color: #010304;
+}
+
+.caja-side-pane .frame {
+  border-width: 1px 0 0;
+}
+
+.caja-notebook {
+  border-top: 1px solid #010304;
+}
+
+.caja-navigation-window toolbar.horizontal.primary-toolbar, .caja-navigation-window .horizontal.primary-toolbar.inline-toolbar {
+  border-bottom: 1px solid #010304;
 }
 
 .caja-pathbar button.toggle, .caja-pathbar button.slider-button, .caja-pathbar button.text-button {
@@ -4573,6 +4581,35 @@ headerbar.windowhandle box.linked > button.popup.toggle:not(.disclosure-button) 
 }
 .caja-pathbar button.toggle:active label, .caja-pathbar button.toggle:active image, .caja-pathbar button.toggle:checked label, .caja-pathbar button.toggle:checked image, .caja-pathbar button.toggle:checked:hover label, .caja-pathbar button.toggle:checked:hover image, .caja-pathbar button.slider-button:active label, .caja-pathbar button.slider-button:active image, .caja-pathbar button.slider-button:checked label, .caja-pathbar button.slider-button:checked image, .caja-pathbar button.slider-button:checked:hover label, .caja-pathbar button.slider-button:checked:hover image, .caja-pathbar button.text-button:active label, .caja-pathbar button.text-button:active image, .caja-pathbar button.text-button:checked label, .caja-pathbar button.text-button:checked image, .caja-pathbar button.text-button:checked:hover label, .caja-pathbar button.text-button:checked:hover image {
   color: inherit;
+}
+
+entry.caja-location-entry {
+  background: image(rgba(0, 200, 72, 0.1));
+  border-color: #010304;
+  box-shadow: none;
+}
+entry.caja-location-entry label, entry.caja-location-entry image, entry.caja-location-entry {
+  color: rgba(0, 200, 72, 0.4);
+}
+entry.caja-location-entry:focus {
+  background: image(#00C848);
+  border-color: #010304;
+  box-shadow: none;
+}
+entry.caja-location-entry:focus label, entry.caja-location-entry:focus image, entry.caja-location-entry:focus {
+  color: #040E04;
+}
+entry.caja-location-entry selection:focus {
+  background-color: #040E04;
+  color: #00C848;
+}
+entry.caja-location-entry:backdrop {
+  opacity: 0.85;
+}
+entry.caja-location-entry:disabled {
+  color: rgba(0, 200, 72, 0.55);
+  border-color: #010304;
+  background-color: rgba(0, 200, 72, 0);
 }
 
 .open-document-selector-treeview.view, iconview.open-document-selector-treeview {
