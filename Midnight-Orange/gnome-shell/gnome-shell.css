@@ -159,7 +159,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   -slider-active-background-color: #C87200;
   -slider-active-border-color: rgba(0, 0, 0, 0);
   -slider-border-width: 0;
-  -slider-handle-radius: 0px;
+  -slider-handle-radius: 7px;
   -slider-handle-border-color: #ffffff;
   height: 18px;
   border: 0 solid transparent;
@@ -178,7 +178,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .popup-menu-item.selected .slider {
   -slider-background-color: #08111C;
   -slider-active-background-color: #C87200;
-  -slider-handle-radius: 2px;
+  -slider-handle-radius: 7px;
 }
 
 .check-box StBoxLayout {
