@@ -342,6 +342,77 @@ treeview entry.flat:focus, treeview entry:focus {
   border-color: #268bd2;
 }
 
+.entry-tag {
+  padding: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  background-color: #268bd2;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+:dir(ltr) .entry-tag {
+  margin-left: 8px;
+  margin-right: -5px;
+}
+:dir(rtl) .entry-tag {
+  margin-left: -5px;
+  margin-right: 8px;
+}
+.entry-tag label, .entry-tag image, .entry-tag {
+  color: #fdf6e3;
+}
+.entry-tag:hover {
+  background-color: #449edd;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+.entry-tag:hover label, .entry-tag:hover image, .entry-tag:hover {
+  color: #fdf6e3;
+}
+:backdrop .entry-tag {
+  background-color: rgba(0, 43, 54, 0);
+  border-color: rgba(0, 43, 54, 0);
+}
+:backdrop .entry-tag label, :backdrop .entry-tag {
+  color: rgba(38, 139, 210, 0.55);
+}
+:backdrop .entry-tag.button {
+  background-color: rgba(0, 43, 54, 0);
+  border-color: rgba(0, 43, 54, 0);
+}
+:backdrop .entry-tag.button label, :backdrop .entry-tag.button {
+  color: rgba(38, 139, 210, 0.55);
+}
+.entry-tag.button {
+  background-color: #268bd2;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+.entry-tag.button label, .entry-tag.button image, .entry-tag.button {
+  color: #fdf6e3;
+}
+:not(:backdrop) .entry-tag.button:hover {
+  background-color: #449edd;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+:not(:backdrop) .entry-tag.button:hover label, :not(:backdrop) .entry-tag.button:hover image, :not(:backdrop) .entry-tag.button:hover {
+  color: #fdf6e3;
+}
+:not(:backdrop) .entry-tag.button:active {
+  background-color: #2380c1;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+:not(:backdrop) .entry-tag.button:active label, :not(:backdrop) .entry-tag.button:active image, :not(:backdrop) .entry-tag.button:active {
+  color: #fdf6e3;
+}
+
 @keyframes needs_attention {
   from {
     background-image: -gtk-gradient(radial, center center, 0, center center, 0.01, to(#268bd2), to(transparent));
