@@ -5425,7 +5425,13 @@ panel-toplevel.background na-tray-applet {
   background: #268bd2;
   color: #fdf6e3;
 }
-.thunar .sidebar .view.cell:hover, .thunar .sidebar iconview.cell:hover, .thunar .sidebar .view.cell:active, .thunar .sidebar iconview.cell:active {
+.thunar .sidebar .view.cell:hover, .thunar .sidebar iconview.cell:hover {
+  background-color: transparent;
+  border-left: 2px solid #268bd2;
+  padding-left: 0px;
+  color: #839496;
+}
+.thunar .sidebar .view.cell:active, .thunar .sidebar iconview.cell:active {
   background-color: #073642;
   color: #93a1a1;
 }

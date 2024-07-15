@@ -5656,7 +5656,15 @@ widget .clocks-button:active {
 .thunar .sidebar .view.cell:selected:backdrop, .thunar .sidebar iconview.cell:selected:backdrop {
   color: rgba(20, 20, 20, 0.56);
 }
-.thunar .sidebar .view.cell:hover, .thunar .sidebar iconview.cell:hover, .thunar .sidebar .view.cell:active, .thunar .sidebar iconview.cell:active {
+.thunar .sidebar .view.cell:hover, .thunar .sidebar iconview.cell:hover {
+  background-color: transparent;
+  border-left: 2px solid #a3a3a3;
+  padding-left: 0px;
+}
+.thunar .sidebar .view.cell:hover label, .thunar .sidebar iconview.cell:hover label, .thunar .sidebar .view.cell:hover, .thunar .sidebar iconview.cell:hover {
+  color: #ffffff;
+}
+.thunar .sidebar .view.cell:active, .thunar .sidebar iconview.cell:active {
   background-color: rgba(16, 34, 56, 0.95);
   color: #ffffff;
 }
