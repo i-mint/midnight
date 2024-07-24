@@ -4649,6 +4649,16 @@ headerbar.windowhandle box.linked > button.popup.toggle:not(.disclosure-button) 
 .caja-notebook {
   border-top: 1px solid #010304;
 }
+.caja-notebook tabs > tab.reorderable-page > box > button.flat image {
+  padding: 3px;
+  border-radius: 999px;
+}
+.caja-notebook tabs > tab.reorderable-page > box > button.flat:hover image {
+  background-color: #cc575d;
+}
+.caja-notebook tabs > tab.reorderable-page > box > button.flat:active image {
+  background-color: #892a2f;
+}
 
 .caja-navigation-window toolbar.horizontal.primary-toolbar, .caja-navigation-window .horizontal.primary-toolbar.inline-toolbar {
   border-bottom: 1px solid #010304;
