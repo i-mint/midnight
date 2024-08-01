@@ -1923,12 +1923,13 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .dash-label {
-  border-radius: 3px;
+  border-radius: 4px;
   padding: 4px 12px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.7);
+  color: #babaab;
+  background-color: #461d3c;
   text-align: center;
   -x-offset: 3px;
+  box-shadow: none;
 }
 .bottom .dash-label, .top .dash-label {
   -y-offset: 3px;
