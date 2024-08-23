@@ -1328,6 +1328,16 @@ toolbar:not(.inline-toolbar) .linked > entry,
   border-style: solid;
   border-image: linear-gradient(to bottom, #002b36, #000f12) 1 0 1 0;
 }
+.primary-toolbar toolitem > grid > button.flat.scale,
+.primary-toolbar toolitem > grid > button.flat {
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+.primary-toolbar toolitem > button.raised.toggle.popup {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
 .inline-toolbar {
   background-color: #001f27;
   border-style: solid;
