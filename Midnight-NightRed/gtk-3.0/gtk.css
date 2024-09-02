@@ -6411,10 +6411,9 @@ filechooser placessidebar.sidebar row.sidebar-row:disabled, filechooser placessi
 .nautilus-window placessidebar.sidebar row.sidebar-row:disabled image {
   color: inherit;
 }
-filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup, filechooser placessidebar.sidebar row.sidebar-row:selected, filechooser placessidebar.sidebar row.sidebar-row:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:active:hover,
+filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup, filechooser placessidebar.sidebar row.sidebar-row:selected, filechooser placessidebar.sidebar row.sidebar-row:active:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
-.nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
 .nautilus-window placessidebar.sidebar row.sidebar-row:active:hover {
   background-color: transparent;
   border-left: 2px solid #B40021;
@@ -6423,9 +6422,7 @@ filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup label,
 filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup .sidebar-label,
 filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup .sidebar-icon, filechooser placessidebar.sidebar row.sidebar-row:selected label,
 filechooser placessidebar.sidebar row.sidebar-row:selected .sidebar-label,
-filechooser placessidebar.sidebar row.sidebar-row:selected .sidebar-icon, filechooser placessidebar.sidebar row.sidebar-row:selected:hover label,
-filechooser placessidebar.sidebar row.sidebar-row:selected:hover .sidebar-label,
-filechooser placessidebar.sidebar row.sidebar-row:selected:hover .sidebar-icon, filechooser placessidebar.sidebar row.sidebar-row:active:hover label,
+filechooser placessidebar.sidebar row.sidebar-row:selected .sidebar-icon, filechooser placessidebar.sidebar row.sidebar-row:active:hover label,
 filechooser placessidebar.sidebar row.sidebar-row:active:hover .sidebar-label,
 filechooser placessidebar.sidebar row.sidebar-row:active:hover .sidebar-icon,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup label,
@@ -6434,9 +6431,6 @@ filechooser placessidebar.sidebar row.sidebar-row:active:hover .sidebar-icon,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected label,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected .sidebar-label,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected .sidebar-icon,
-.nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover label,
-.nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover .sidebar-label,
-.nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover .sidebar-icon,
 .nautilus-window placessidebar.sidebar row.sidebar-row:active:hover label,
 .nautilus-window placessidebar.sidebar row.sidebar-row:active:hover .sidebar-label,
 .nautilus-window placessidebar.sidebar row.sidebar-row:active:hover .sidebar-icon {
@@ -6446,9 +6440,7 @@ filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup:backdr
 filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup:backdrop .sidebar-label,
 filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup:backdrop .sidebar-icon, filechooser placessidebar.sidebar row.sidebar-row:selected:backdrop label,
 filechooser placessidebar.sidebar row.sidebar-row:selected:backdrop .sidebar-label,
-filechooser placessidebar.sidebar row.sidebar-row:selected:backdrop .sidebar-icon, filechooser placessidebar.sidebar row.sidebar-row:selected:hover:backdrop label,
-filechooser placessidebar.sidebar row.sidebar-row:selected:hover:backdrop .sidebar-label,
-filechooser placessidebar.sidebar row.sidebar-row:selected:hover:backdrop .sidebar-icon, filechooser placessidebar.sidebar row.sidebar-row:active:hover:backdrop label,
+filechooser placessidebar.sidebar row.sidebar-row:selected:backdrop .sidebar-icon, filechooser placessidebar.sidebar row.sidebar-row:active:hover:backdrop label,
 filechooser placessidebar.sidebar row.sidebar-row:active:hover:backdrop .sidebar-label,
 filechooser placessidebar.sidebar row.sidebar-row:active:hover:backdrop .sidebar-icon,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup:backdrop label,
@@ -6457,14 +6449,17 @@ filechooser placessidebar.sidebar row.sidebar-row:active:hover:backdrop .sidebar
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected:backdrop label,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected:backdrop .sidebar-label,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected:backdrop .sidebar-icon,
-.nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover:backdrop label,
-.nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover:backdrop .sidebar-label,
-.nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover:backdrop .sidebar-icon,
 .nautilus-window placessidebar.sidebar row.sidebar-row:active:hover:backdrop label,
 .nautilus-window placessidebar.sidebar row.sidebar-row:active:hover:backdrop .sidebar-label,
 .nautilus-window placessidebar.sidebar row.sidebar-row:active:hover:backdrop .sidebar-icon {
   color: rgba(180, 0, 33, 0.6);
   border-left-color: rgba(180, 0, 33, 0.45);
+}
+filechooser placessidebar.sidebar row.sidebar-row:selected:hover .sidebar-label,
+filechooser placessidebar.sidebar row.sidebar-row:selected:hover .sidebar-icon,
+.nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover .sidebar-label,
+.nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover .sidebar-icon {
+  color: rgba(180, 0, 33, 0.8);
 }
 filechooser placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button,
 .nautilus-window placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button {

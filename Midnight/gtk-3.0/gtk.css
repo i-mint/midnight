@@ -6347,6 +6347,10 @@ filechooser placessidebar.sidebar row.sidebar-row:active:hover image.sidebar-ico
 .nautilus-window placessidebar.sidebar row.sidebar-row:active:hover image.sidebar-icon {
   color: inherit;
 }
+filechooser placessidebar.sidebar row.sidebar-row:selected:hover,
+.nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover {
+  background-color: #2982e6;
+}
 filechooser placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button,
 .nautilus-window placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button {
   color: #2d90ff;
