@@ -2667,6 +2667,9 @@ switch, switch slider {
 popover switch image, popover switch {
   color: transparent;
 }
+switch image {
+  color: transparent;
+}
 
 switch.restricts {
   background-image: -gtk-scaled(url("assets/switch-restricts.png"), url("switch-restricts@2.png"));
@@ -4341,8 +4344,6 @@ modelbutton.flat:selected arrow:backdrop, row:backdrop:selected, calendar:backdr
 
 *:selected {
   background-color: #7E7E23;
-}
-*:selected label, *:selected image, *:selected {
   color: #ffffff;
 }
 

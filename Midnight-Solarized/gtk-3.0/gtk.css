@@ -2618,6 +2618,9 @@ switch, switch slider {
 popover switch image, popover switch {
   color: transparent;
 }
+switch image {
+  color: transparent;
+}
 
 switch {
   background-image: -gtk-scaled(url("assets/switch-dark.png"), url("assets/switch-dark@2.png"));
@@ -4315,8 +4318,6 @@ iconview text:backdrop:selected:focus {
 
 *:selected {
   background-color: #268bd2;
-}
-*:selected label, *:selected image, *:selected {
   color: #fdf6e3;
 }
 
