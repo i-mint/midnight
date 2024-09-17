@@ -4193,7 +4193,7 @@ headerbar button.titlebutton.minimize:active,
   background-image: -gtk-scaled(url("assets/titlebutton-minimize-active-dark.png"), url("assets/titlebutton-minimize-active-dark@2.png"));
 }
 
-.geary-main-layout treeview.view.sidebar:selected, .thunar notebook .view:selected, .thunar notebook iconview:selected, .caja-side-pane .frame treeview.view:active, .caja-side-pane .frame treeview.view:selected, .caja-side-pane .frame treeview.view:selected:hover, .view:selected, .view:selected:focus,
+.geary-main-layout treeview.view.sidebar:selected, .thunar notebook .view:selected, .thunar notebook iconview:selected, .caja-side-pane .frame treeview.view:active, .caja-side-pane .frame treeview.view:selected, .view:selected, .view:selected:focus,
 .view text:selected,
 textview text:selected,
 .view text:selected:focus,
@@ -4206,7 +4206,7 @@ modelbutton.flat:selected,
 modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:focus, row:selected, calendar:selected, .sidebar:not(separator) .view:selected, .sidebar:not(separator) iconview:selected, .sidebar:not(separator) row.sidebar-row:selected, .sidebar:not(separator) .view.cell:selected {
   background-color: #B40021;
 }
-row:selected label, label:selected, .geary-main-layout treeview.view.sidebar:selected, .thunar notebook .view:selected, .thunar notebook iconview:selected, .caja-side-pane .frame treeview.view:active, .caja-side-pane .frame treeview.view:selected, .caja-side-pane .frame treeview.view:selected:hover, .view:selected, .view:selected:focus,
+row:selected label, label:selected, .geary-main-layout treeview.view.sidebar:selected, .thunar notebook .view:selected, .thunar notebook iconview:selected, .caja-side-pane .frame treeview.view:active, .caja-side-pane .frame treeview.view:selected, .view:selected, .view:selected:focus,
 .view text:selected,
 textview text:selected,
 .view text:selected:focus,
@@ -4623,8 +4623,14 @@ button.nautilus-circular-button.image-button label {
 .caja-side-pane .frame treeview.view:hover:backdrop label {
   color: inherit;
 }
-.caja-side-pane .frame treeview.view:active label, .caja-side-pane .frame treeview.view:selected label, .caja-side-pane .frame treeview.view:selected:hover label {
+.caja-side-pane .frame treeview.view:active label, .caja-side-pane .frame treeview.view:selected label {
   color: inherit;
+}
+.caja-side-pane .frame treeview.view:selected:hover {
+  background-color: #a2001e;
+}
+.caja-side-pane .frame treeview.view:selected:hover label, .caja-side-pane .frame treeview.view:selected:hover {
+  color: #ffffff;
 }
 .caja-side-pane .frame treeview.view:selected:backdrop label,
 .caja-side-pane .frame treeview.view:selected:backdrop .sidebar-label,
@@ -4835,14 +4841,18 @@ paned.gedit-side-panel-paned treeview.view:hover:backdrop {
   border-left: 2px solid rgba(180, 0, 33, 0.45);
   padding-left: 0px;
 }
-paned.gedit-side-panel-paned treeview.view:selected, paned.gedit-side-panel-paned treeview.view:selected:focus, paned.gedit-side-panel-paned treeview.view:selected:hover, paned.gedit-side-panel-paned treeview.view:checked, paned.gedit-side-panel-paned treeview.view:checked:focus, paned.gedit-side-panel-paned treeview.view:checked:hover {
+paned.gedit-side-panel-paned treeview.view:selected {
   background-color: #B40021;
   color: #ffffff;
   box-shadow: none;
   -gtk-icon-effect: none;
 }
-paned.gedit-side-panel-paned treeview.view:selected:backdrop, paned.gedit-side-panel-paned treeview.view:selected:focus:backdrop, paned.gedit-side-panel-paned treeview.view:selected:hover:backdrop, paned.gedit-side-panel-paned treeview.view:checked:backdrop, paned.gedit-side-panel-paned treeview.view:checked:focus:backdrop, paned.gedit-side-panel-paned treeview.view:checked:hover:backdrop {
+paned.gedit-side-panel-paned treeview.view:selected:backdrop {
   color: rgba(255, 255, 255, 0.5);
+}
+paned.gedit-side-panel-paned treeview.view:selected:hover {
+  color: #ffffff;
+  background-color: #a2001e;
 }
 paned.gedit-side-panel-paned treeview.view:backdrop {
   color: rgba(174, 174, 153, 0.5);
@@ -5663,9 +5673,13 @@ widget .clocks-button:active {
   background-color: rgba(8, 17, 28, 0.95);
   color: #aeae99;
 }
-.thunar .sidebar .view.cell:selected, .thunar .sidebar iconview.cell:selected, .thunar .sidebar .view.cell:selected:hover {
+.thunar .sidebar .view.cell:selected, .thunar .sidebar iconview.cell:selected {
   background: #B40021;
   color: #ffffff;
+}
+.thunar .sidebar .view.cell:selected:hover, .thunar .sidebar iconview.cell:selected:hover {
+  color: #ffffff;
+  background-color: #a2001e;
 }
 .thunar .sidebar .view.cell:selected:backdrop, .thunar .sidebar iconview.cell:selected:backdrop {
   color: rgba(255, 255, 255, 0.56);
@@ -6713,9 +6727,13 @@ popover .nautilus-window headerbar widget stack box.path-bar-box label.separator
   background-color: transparent;
   color: #aeae99;
 }
-.nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar .view.cell:selected:hover, .nemo-window .sidebar row.cell:selected, .nemo-window .sidebar row.cell:selected:hover {
+.nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
   background-color: #B40021;
   color: #ffffff;
+}
+.nemo-window .sidebar .view.cell:selected:hover, .nemo-window .sidebar iconview.cell:selected:hover, .nemo-window .sidebar row.cell:selected:hover {
+  color: #ffffff;
+  background-color: #a2001e;
 }
 .nemo-window .sidebar .view.cell:hover, .nemo-window .sidebar iconview.cell:hover, .nemo-window .sidebar row.cell:hover {
   background-color: rgba(180, 0, 33, 0.1);

@@ -4139,7 +4139,7 @@ filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup, filec
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
-.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, .geary-main-layout treeview.view.sidebar:selected, .thunar notebook .view:selected, .thunar notebook iconview:selected, .caja-side-pane .frame treeview.view:active, .caja-side-pane .frame treeview.view:selected, .caja-side-pane .frame treeview.view:selected:hover, flowbox flowboxchild:selected, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
+.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, .geary-main-layout treeview.view.sidebar:selected, .thunar notebook .view:selected, .thunar notebook iconview:selected, .caja-side-pane .frame treeview.view:active, .caja-side-pane .frame treeview.view:selected, flowbox flowboxchild:selected, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
 modelbutton.flat:active,
 modelbutton.flat:active arrow,
 modelbutton.flat:selected,
@@ -4150,7 +4150,7 @@ row:selected label, label:selected, filechooser placessidebar.sidebar row.sideba
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
-.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, .geary-main-layout treeview.view.sidebar:selected, .thunar notebook .view:selected, .thunar notebook iconview:selected, .caja-side-pane .frame treeview.view:active, .caja-side-pane .frame treeview.view:selected, .caja-side-pane .frame treeview.view:selected:hover, flowbox flowboxchild:selected, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
+.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover, .geary-main-layout treeview.view.sidebar:selected, .thunar notebook .view:selected, .thunar notebook iconview:selected, .caja-side-pane .frame treeview.view:active, .caja-side-pane .frame treeview.view:selected, flowbox flowboxchild:selected, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
 modelbutton.flat:active,
 modelbutton.flat:active arrow,
 modelbutton.flat:selected,
@@ -4575,8 +4575,14 @@ button.nautilus-circular-button.image-button label {
 .caja-side-pane .frame treeview.view:hover label, .caja-side-pane .frame treeview.view:hover {
   color: #839496;
 }
-.caja-side-pane .frame treeview.view:active label, .caja-side-pane .frame treeview.view:selected label, .caja-side-pane .frame treeview.view:selected:hover label {
+.caja-side-pane .frame treeview.view:active label, .caja-side-pane .frame treeview.view:selected label {
   color: inherit;
+}
+.caja-side-pane .frame treeview.view:selected:hover {
+  background-color: #227dbd;
+}
+.caja-side-pane .frame treeview.view:selected:hover label, .caja-side-pane .frame treeview.view:selected:hover {
+  color: #fdf6e3;
 }
 .caja-side-pane .frame treeview.view:backdrop label, .caja-side-pane .frame treeview.view:backdrop {
   color: rgba(38, 139, 210, 0.45);
@@ -4778,14 +4784,18 @@ paned.gedit-side-panel-paned treeview.view:hover:backdrop {
   padding-left: 0px;
   color: rgba(253, 246, 227, 0.45);
 }
-paned.gedit-side-panel-paned treeview.view:selected, paned.gedit-side-panel-paned treeview.view:selected:focus, paned.gedit-side-panel-paned treeview.view:selected:hover, paned.gedit-side-panel-paned treeview.view:checked, paned.gedit-side-panel-paned treeview.view:checked:focus, paned.gedit-side-panel-paned treeview.view:checked:hover {
+paned.gedit-side-panel-paned treeview.view:selected {
   background-color: #268bd2;
   color: #fdf6e3;
   box-shadow: none;
   -gtk-icon-effect: none;
 }
-paned.gedit-side-panel-paned treeview.view:selected:backdrop, paned.gedit-side-panel-paned treeview.view:selected:focus:backdrop, paned.gedit-side-panel-paned treeview.view:selected:hover:backdrop, paned.gedit-side-panel-paned treeview.view:checked:backdrop, paned.gedit-side-panel-paned treeview.view:checked:focus:backdrop, paned.gedit-side-panel-paned treeview.view:checked:hover:backdrop {
+paned.gedit-side-panel-paned treeview.view:selected:backdrop {
   color: rgba(253, 246, 227, 0.5);
+}
+paned.gedit-side-panel-paned treeview.view:selected:hover {
+  color: #fdf6e3;
+  background-color: #227dbd;
 }
 paned.gedit-side-panel-paned treeview.view:backdrop {
   color: rgba(38, 139, 210, 0.45);
@@ -5430,9 +5440,13 @@ panel-toplevel.background na-tray-applet {
   background-color: rgba(0, 43, 54, 0.95);
   color: #268bd2;
 }
-.thunar .sidebar .view.cell:selected, .thunar .sidebar iconview.cell:selected, .thunar .sidebar .view.cell:selected:hover {
+.thunar .sidebar .view.cell:selected, .thunar .sidebar iconview.cell:selected {
   background: #268bd2;
   color: #fdf6e3;
+}
+.thunar .sidebar .view.cell:selected:hover, .thunar .sidebar iconview.cell:selected:hover {
+  color: #fdf6e3;
+  background-color: #227dbd;
 }
 .thunar .sidebar .view.cell:hover, .thunar .sidebar iconview.cell:hover {
   background-color: transparent;
@@ -5918,9 +5932,13 @@ popover.background .nautilus-window headerbar widget stack box.path-bar-box labe
   background-color: transparent;
   color: #268bd2;
 }
-.nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar .view.cell:selected:hover, .nemo-window .sidebar row.cell:selected, .nemo-window .sidebar row.cell:selected:hover {
+.nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
   background-color: #268bd2;
   color: #fdf6e3;
+}
+.nemo-window .sidebar .view.cell:selected:hover, .nemo-window .sidebar iconview.cell:selected:hover, .nemo-window .sidebar row.cell:selected:hover {
+  color: #fdf6e3;
+  background-color: #227dbd;
 }
 .nemo-window .sidebar .view.cell:hover, .nemo-window .sidebar iconview.cell:hover, .nemo-window .sidebar row.cell:hover {
   background-color: rgba(38, 139, 210, 0.1);
