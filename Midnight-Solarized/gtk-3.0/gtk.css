@@ -1918,26 +1918,27 @@ headerbar spinbutton:not(.vertical) > entry + button:not(:active):hover {
   color: rgba(38, 139, 210, 0.4);
 }
 .primary-toolbar combobox > .linked > button.combo, headerbar combobox > .linked > button.combo {
-  color: rgba(253, 246, 227, 0.2);
-  border-color: rgba(50, 149, 218, 0.1);
-  background-color: rgba(38, 139, 210, 0.1);
+  color: #268bd2;
+  outline-offset: -3px;
+  background-color: #002b36;
+  border-color: #002b36;
 }
-.primary-toolbar combobox > .linked > button.combo image, headerbar combobox > .linked > button.combo image {
+.primary-toolbar combobox > .linked > button.combo label, headerbar combobox > .linked > button.combo label, .primary-toolbar combobox > .linked > button.combo image, headerbar combobox > .linked > button.combo image {
   color: inherit;
 }
 .primary-toolbar combobox > .linked > button.combo:hover, headerbar combobox > .linked > button.combo:hover {
-  color: #fdf6e3;
-  border-color: rgba(50, 149, 218, 0.1);
-  background-color: #268bd2;
+  color: #839496;
+  border-color: #002b36;
+  background-color: #073642;
   box-shadow: none;
 }
-.primary-toolbar combobox > .linked > button.combo:hover image, headerbar combobox > .linked > button.combo:hover image {
-  color: inherit;
+.primary-toolbar combobox > .linked > button.combo cellview:backdrop, headerbar combobox > .linked > button.combo cellview:backdrop, .primary-toolbar combobox > .linked > button.combo:backdrop, headerbar combobox > .linked > button.combo:backdrop {
+  color: rgba(38, 139, 210, 0.56);
 }
 .primary-toolbar combobox > .linked > button.combo:disabled, headerbar combobox > .linked > button.combo:disabled {
-  color: rgba(38, 139, 210, 0.55);
-  border-color: rgba(50, 149, 218, 0.1);
-  background-color: rgba(38, 139, 210, 0);
+  color: rgba(38, 139, 210, 0.67);
+  border-color: transparent;
+  background-color: transparent;
 }
 .primary-toolbar combobox > .linked > entry.combo:dir(ltr), headerbar combobox > .linked > entry.combo:dir(ltr) {
   border-right-style: none;
