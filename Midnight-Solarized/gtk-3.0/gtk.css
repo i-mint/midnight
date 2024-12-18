@@ -1501,6 +1501,10 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
   background-image: linear-gradient(to bottom, #001b22, #001b22);
 }
 
+.csd headerbar headerbar, .csd headerbar headerbar:backdrop {
+  background-color: transparent;
+}
+
 .primary-toolbar:not(.libreoffice-toolbar) separator, headerbar separator.titlebutton,
 .titlebar:not(headerbar) separator.titlebutton {
   min-width: 1px;
