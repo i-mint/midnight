@@ -2975,7 +2975,7 @@ checkbutton check:hover, popover check:hover {
 }
 
 checkbutton check:checked:hover, popover check:checked:hover {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-dark.png"), url("assets/checkbox-checked-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-selected.png"), url("assets/checkbox-checked-selected@2.png"));
 }
 
 radiobutton radio:hover, popover radio:hover {
@@ -2983,7 +2983,7 @@ radiobutton radio:hover, popover radio:hover {
 }
 
 radiobutton radio:checked:hover, popover radio:checked:hover {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-dark.png"), url("assets/radio-checked-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-selected.png"), url("assets/radio-checked-selected@2.png"));
 }
 
 popover check:active {
