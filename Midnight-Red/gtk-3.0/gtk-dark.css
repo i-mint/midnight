@@ -785,15 +785,6 @@ button.circular.radio.text-button {
   padding: 4px 5px;
 }
 
-headerbar.windowhandle viewswitcher > box > button.radio {
-  margin: 0;
-  padding: 0;
-  border-radius: 0;
-  border-right: none;
-  border-left: none;
-  border-bottom: none;
-}
-
 .inline-toolbar toolbutton > button {
   color: #B40021;
   border-color: #08111C;
@@ -1472,6 +1463,32 @@ headerbar:last-child, headerbar:last-child:backdrop {
 .maximized headerbar:last-child, .tiled headerbar:last-child, .maximized headerbar:last-child:backdrop, .tiled headerbar:last-child:backdrop {
   border-radius: 0;
 }
+headerbar.windowhandle viewswitcher > box > button {
+  margin: 0;
+  padding: 0;
+  min-width: 140px;
+  min-height: 22px;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+}
+headerbar.windowhandle viewswitcher > box > button:not(:hover):not(:active):not(:checked):not(:disabled) {
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+}
+headerbar.windowhandle viewswitcher > box > button > stack > box {
+  padding: 0 20px;
+}
+headerbar.windowhandle viewswitcher > box > button > stack > box.wide {
+  font-size: 1em;
+}
+headerbar.windowhandle viewswitcher > box > button > stack > box.narrow {
+  font-size: 0.8em;
+}
+headerbar.windowhandle viewswitcher > box > button:checked {
+  font-weight: bold;
+}
 
 window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, window.csd > .titlebar:not(headerbar), window.csd > .titlebar:not(headerbar):backdrop {
   padding: 0;
@@ -1481,6 +1498,10 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
 }
 .titlebar:not(headerbar) > separator {
   background-image: linear-gradient(to bottom, #03070c, #03070c);
+}
+
+.csd headerbar headerbar, .csd headerbar headerbar:backdrop {
+  background-color: transparent;
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) separator, headerbar separator.titlebutton,
@@ -1579,6 +1600,9 @@ headerbar button image {
 }
 .primary-toolbar button:backdrop, headerbar button:backdrop {
   opacity: 0.7;
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
 }
 .primary-toolbar button:hover, headerbar button:hover {
   color: #aeae99;
@@ -1887,26 +1911,24 @@ headerbar spinbutton:not(.vertical) > entry + button:not(:active):hover {
   color: rgba(180, 0, 33, 0.4);
 }
 .primary-toolbar combobox > .linked > button.combo, headerbar combobox > .linked > button.combo {
-  color: rgba(180, 0, 33, 0.4);
-  border-color: #010304;
-  background-color: rgba(180, 0, 33, 0.1);
-}
-.primary-toolbar combobox > .linked > button.combo image, headerbar combobox > .linked > button.combo image {
-  color: inherit;
+  color: #B40021;
+  outline-offset: -3px;
+  background-color: #08111C;
+  border-color: #08111C;
 }
 .primary-toolbar combobox > .linked > button.combo:hover, headerbar combobox > .linked > button.combo:hover {
-  color: #ffffff;
-  border-color: #010304;
-  background-color: #B40021;
+  color: #aeae99;
+  border-color: #08111C;
+  background-color: rgba(180, 0, 33, 0.1);
   box-shadow: none;
 }
-.primary-toolbar combobox > .linked > button.combo:hover image, headerbar combobox > .linked > button.combo:hover image {
-  color: inherit;
+.primary-toolbar combobox > .linked > button.combo cellview:backdrop, headerbar combobox > .linked > button.combo cellview:backdrop, .primary-toolbar combobox > .linked > button.combo:backdrop, headerbar combobox > .linked > button.combo:backdrop {
+  color: rgba(180, 0, 33, 0.56);
 }
 .primary-toolbar combobox > .linked > button.combo:disabled, headerbar combobox > .linked > button.combo:disabled {
-  color: rgba(180, 0, 33, 0.55);
-  border-color: #010304;
-  background-color: rgba(180, 0, 33, 0);
+  color: rgba(180, 0, 33, 0.67);
+  border-color: transparent;
+  background-color: transparent;
 }
 .primary-toolbar combobox > .linked > entry.combo:dir(ltr), headerbar combobox > .linked > entry.combo:dir(ltr) {
   border-right-style: none;
@@ -2953,7 +2975,7 @@ checkbutton check:hover, popover check:hover {
 }
 
 checkbutton check:checked:hover, popover check:checked:hover {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-dark.png"), url("assets/checkbox-checked-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-selected.png"), url("assets/checkbox-checked-selected@2.png"));
 }
 
 radiobutton radio:hover, popover radio:hover {
@@ -2961,7 +2983,7 @@ radiobutton radio:hover, popover radio:hover {
 }
 
 radiobutton radio:checked:hover, popover radio:checked:hover {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-dark.png"), url("assets/radio-checked-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-selected.png"), url("assets/radio-checked-selected@2.png"));
 }
 
 popover check:active {
