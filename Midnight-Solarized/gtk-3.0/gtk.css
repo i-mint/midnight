@@ -1043,24 +1043,27 @@ spinbutton:not(.vertical) entry:only-child, .linked:not(.vertical) > entry:only-
   border-style: solid;
 }
 
-.linked.vertical > combobox > box > button.combo, .night-light-indicator spinbutton.vertical button, .night-light-indicator spinbutton.vertical entry,
+.linked.vertical > combobox > box > button.combo, popover.combo list > row, .night-light-indicator spinbutton.vertical button, .night-light-indicator spinbutton.vertical entry,
 spinbutton.vertical button,
 spinbutton.vertical entry, .linked.vertical > entry, .linked.vertical > entry:focus, .linked.vertical > button, .linked.vertical > button:hover, .linked.vertical > button:active, .linked.vertical > button:checked {
   border-radius: 0;
   border-bottom-style: none;
 }
 
+popover.combo list > row:first-child,
 spinbutton.vertical button:first-child,
 spinbutton.vertical entry:first-child, .linked.vertical > entry:first-child, .linked.vertical > button:first-child {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
+popover.combo list > row:last-child,
 spinbutton.vertical button:last-child,
 spinbutton.vertical entry:last-child, .linked.vertical > entry:last-child, .linked.vertical > button:last-child {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   border-bottom-style: solid;
 }
+popover.combo list > row:only-child,
 spinbutton.vertical button:only-child,
 spinbutton.vertical entry:only-child, .linked.vertical > entry:only-child, .linked.vertical > button:only-child {
   border-radius: 4px;
@@ -6769,6 +6772,26 @@ filechooser placessidebar.sidebar scrollbar trough,
 }
 .budgie-notification-window button {
   border-radius: 4px;
+}
+
+popover.combo {
+  padding: 0px;
+}
+popover.combo list {
+  border-style: none;
+  background-color: transparent;
+}
+popover.combo list > row {
+  padding: 0px 12px 0px 12px;
+  min-height: 40px;
+}
+popover.combo scrollbar.vertical:dir(ltr) {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+popover.combo scrollbar.vertical:dir(rtl) {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 @define-color theme_fg_color #839496;
