@@ -134,13 +134,13 @@ StScrollBar StBin#trough {
   border-radius: 8px;
 }
 StScrollBar StButton#vhandle, StScrollBar StButton#hhandle {
-  border-radius: 4px;
-  background-color: #34555c;
+  border-radius: 8px;
+  background-color: rgba(38, 139, 210, 0.45);
   border: 0px solid;
   margin: 0px;
 }
 StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
-  background-color: #274b53;
+  background-color: rgba(38, 139, 210, 0.7);
 }
 StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   background-color: #268bd2;
