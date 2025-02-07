@@ -1837,11 +1837,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 #searchResultsContent {
   max-width: 1000px;
-  spacing: 8px;
+  spacing: 12px;
 }
 
 .search-section {
-  spacing: 8px;
+  spacing: 12px;
 }
 .search-section .search-section-separator {
   height: 0;
@@ -1855,6 +1855,10 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border: 1px solid #001317;
   padding: 18px;
   spacing: 8px;
+}
+
+.grid-search-results {
+  spacing: 18px;
 }
 
 .list-search-results {
@@ -1883,6 +1887,14 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .search-provider-icon {
   padding: 15px;
+}
+.search-provider-icon .list-search-provider-content {
+  spacing: 12px;
+}
+.search-provider-icon .list-search-provider-content .list-search-provider-details {
+  width: 120px;
+  margin-top: 0;
+  color: #ededed;
 }
 
 .search-provider-icon-more {
