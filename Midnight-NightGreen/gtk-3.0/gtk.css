@@ -1513,13 +1513,6 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
   opacity: 0.6;
 }
 
-separator.sidebar, hdyleaflet > separator {
-  background-color: #010304;
-}
-separator.sidebar:backdrop, hdyleaflet > separator:backdrop {
-  background-color: #010304;
-}
-
 .primary-toolbar entry, headerbar entry {
   color: rgba(0, 200, 72, 0.4);
   border-color: #010304;
@@ -3416,6 +3409,25 @@ separator {
   background-color: rgba(1, 3, 4, 0.23);
   min-width: 1px;
   min-height: 1px;
+}
+
+separator.sidebar:dir(ltr), separator.sidebar:dir(rtl), separator.sidebar.left:dir(rtl), separator.sidebar.left, separator.sidebar.right {
+  background-image: linear-gradient(to bottom, #010304, #010304);
+  border: 0;
+}
+.titlebar separator.sidebar:dir(ltr), .titlebar separator.sidebar:dir(rtl), .titlebar separator.sidebar.left:dir(rtl), .titlebar separator.sidebar.left, .titlebar separator.sidebar.right {
+  background-image: linear-gradient(to bottom, #03070c, #03070c);
+}
+separator.sidebar.selection-mode, .selection-mode separator.sidebar {
+  background-image: linear-gradient(to bottom, #006223, #006223);
+}
+
+hdyleaflet:not(.titlebar) > separator {
+  background-image: linear-gradient(to bottom, #010304, #010304);
+}
+
+hdyleaflet.titlebar > separator {
+  background-image: linear-gradient(to bottom, #03070c, #03070c);
 }
 
 list {
@@ -6397,11 +6409,11 @@ GtkListBox .h4 {
 }
 
 .nautilus-window paned > separator {
-  background-image: linear-gradient(to bottom, rgba(6, 12, 20, 0.95), rgba(6, 12, 20, 0.95));
+  background-image: linear-gradient(to bottom, #010304, #010304);
 }
 
 filechooser paned > separator {
-  background-image: linear-gradient(to bottom, rgba(6, 12, 20, 0.95), rgba(6, 12, 20, 0.95));
+  background-image: linear-gradient(to bottom, #010304, #010304);
 }
 
 filechooser.csd.background, filechooser placessidebar list,
@@ -6837,7 +6849,7 @@ filechooser actionbar label, filechooser actionbar combobox {
 }
 
 .gedit-side-panel-paned > separator {
-  background-image: linear-gradient(to bottom, rgba(6, 12, 20, 0.95), rgba(6, 12, 20, 0.95));
+  background-image: linear-gradient(to bottom, #010304, #010304);
 }
 
 .gedit-bottom-panel-paned > separator {
