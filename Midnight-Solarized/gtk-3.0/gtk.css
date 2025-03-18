@@ -6656,7 +6656,6 @@ filechooser placessidebar.sidebar scrollbar trough,
 
 .raven-background,
 .raven-header,
-.raven-frame,
 .raven,
 .raven-notifications-view > .raven-background > .frame > list {
   background-color: #002b36;
@@ -6666,9 +6665,6 @@ filechooser placessidebar.sidebar scrollbar trough,
 .raven-header label,
 .raven-header image,
 .raven-header,
-.raven-frame label,
-.raven-frame image,
-.raven-frame,
 .raven label,
 .raven image,
 .raven,
@@ -6678,9 +6674,40 @@ filechooser placessidebar.sidebar scrollbar trough,
   color: #839496;
 }
 
-.raven-frame > border {
-  border: none 0 transparent;
-  border-left: 0.2px solid #268bd2;
+.right frame.raven-frame {
+  margin-left: 32px;
+}
+.right frame.raven-frame > border {
+  border: none;
+  border-left: 1px solid #0f4362;
+}
+
+.left frame.raven-frame {
+  margin-right: 32px;
+}
+.left frame.raven-frame > border {
+  border: none;
+  border-right: 1px solid #0f4362;
+}
+
+.top frame.raven-frame {
+  margin-bottom: 32px;
+}
+.top frame.raven-frame > border {
+  border: none;
+  border-bottom: 1px solid #0f4362;
+}
+
+.bottom frame.raven-frame {
+  margin-top: 32px;
+}
+.bottom frame.raven-frame > border {
+  border: none;
+  border-top: 1px solid #0f4362;
+}
+
+frame.raven-frame > border {
+  box-shadow: 0 8px 8px -5px rgba(0, 0, 0, 0.28), 0 6px 6px 2px rgba(0, 0, 0, 0.14), 0 4px 4px 0 rgba(0, 0, 0, 0.06);
 }
 
 .raven {
