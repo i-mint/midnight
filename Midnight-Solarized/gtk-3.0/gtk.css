@@ -6226,9 +6226,9 @@ filechooser placessidebar.sidebar scrollbar trough,
   box-shadow: none;
 }
 .budgie-menu entry {
-  border-color: transparent;
+  border: none;
   border-bottom: 2px solid #268bd2;
-  border-radius: 0;
+  border-radius: 4px 4px 0 0;
   background: transparent;
   padding: 9px 4px;
   box-shadow: none;
@@ -6305,9 +6305,6 @@ filechooser placessidebar.sidebar scrollbar trough,
 }
 .budgie-popover:not(.csd).budgie-menu row button:hover label, .budgie-popover:not(.csd).budgie-menu row button:hover, .budgie-popover:not(.csd).budgie-menu list button:hover label, .budgie-popover:not(.csd).budgie-menu list button:hover {
   color: #839496;
-}
-.budgie-popover:not(.csd).workspace-popover button {
-  padding: 4px 6px;
 }
 .budgie-popover:not(.csd) stack.icon-popover-stack {
   padding: 2px;
@@ -6581,54 +6578,6 @@ filechooser placessidebar.sidebar scrollbar trough,
 .budgie-panel separator {
   background-color: rgba(38, 139, 210, 0.4);
 }
-.budgie-panel .workspace-switcher .workspace-layout .workspace-item {
-  background-color: #003b4a;
-  border-radius: 0;
-}
-.budgie-panel .workspace-switcher .workspace-layout .workspace-item label, .budgie-panel .workspace-switcher .workspace-layout .workspace-item image {
-  color: #268bd2;
-}
-.top .budgie-panel .workspace-switcher .workspace-layout .workspace-item, .bottom .budgie-panel .workspace-switcher .workspace-layout .workspace-item {
-  border-right: 2px solid rgba(131, 148, 150, 0.2);
-}
-.left .budgie-panel .workspace-switcher .workspace-layout .workspace-item, .right .budgie-panel .workspace-switcher .workspace-layout .workspace-item {
-  border-bottom: 2px solid rgba(131, 148, 150, 0.2);
-}
-.budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace {
-  background: image(#005c73);
-}
-.top .budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace, .bottom .budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace {
-  border-right: 2px solid #268bd2;
-}
-.left .budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace, .right .budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace {
-  border-bottom: 2px solid #268bd2;
-}
-.budgie-panel .workspace-switcher .workspace-layout .workspace-item button.workspace-icon-button {
-  padding: 4px;
-}
-.budgie-panel .workspace-switcher .workspace-layout .workspace-item label.workspace-more-label {
-  font-weight: normal;
-  color: cyan;
-  opacity: 1;
-}
-.budgie-panel .workspace-switcher button.image-button.workspace-add-button {
-  background-color: #002b36;
-  border-radius: 4px;
-}
-.budgie-panel .workspace-switcher button.image-button.workspace-add-button label, .budgie-panel .workspace-switcher button.image-button.workspace-add-button image {
-  color: #268bd2;
-}
-.budgie-panel .workspace-switcher button.image-button.workspace-add-button:active {
-  background-color: #268bd2;
-  border: none;
-}
-.budgie-panel .workspace-switcher button.image-button.workspace-add-button:active label, .budgie-panel .workspace-switcher button.image-button.workspace-add-button:active image {
-  color: #fdf6e3;
-}
-.budgie-panel.transparent .workspace-layout .workspace-item,
-.budgie-panel.transparent .workspace-layout .workspace-item.current-workspace {
-  background: transparent;
-}
 .budgie-panel.transparent button.flat.running {
   background: image(transparent);
 }
@@ -6654,6 +6603,71 @@ filechooser placessidebar.sidebar scrollbar trough,
   padding: 2px 0;
 }
 
+.workspace-popover frame.container {
+  padding: 0;
+}
+.workspace-popover .workspace-popover-button-box > button {
+  box-shadow: none;
+  padding: 4px 6px;
+}
+.workspace-popover .workspace-popover-button-box > button:active label, .workspace-popover .workspace-popover-button-box > button:active {
+  color: #fdf6e3;
+}
+
+.workspace-switcher .workspace-item {
+  background-color: #003b4a;
+  color: #268bd2;
+}
+.workspace-switcher .workspace-layout {
+  background-color: transparent;
+}
+.bottom revealer > .workspace-item, .top revealer > .workspace-item {
+  border-right: 2px solid rgba(131, 148, 150, 0.4);
+}
+.bottom revealer:first-child > .workspace-item, .top revealer:first-child > .workspace-item {
+  border-left: 2px solid rgba(131, 148, 150, 0.4);
+}
+.bottom .workspace-item.current-workspace, .top .workspace-item.current-workspace {
+  background-color: #005469;
+  border-right: 2px solid #268bd2;
+}
+
+.left revealer > .workspace-item, .right revealer > .workspace-item {
+  border-bottom: 2px solid rgba(131, 148, 150, 0.4);
+}
+.left revealer:first-child > .workspace-item, .right revealer:first-child > .workspace-item {
+  border-top: 2px solid rgba(131, 148, 150, 0.4);
+}
+.left .workspace-item.current-workspace, .right .workspace-item.current-workspace {
+  background-color: #005469;
+  border-bottom: 2px solid #268bd2;
+}
+.left .workspace-layout, .right .workspace-layout {
+  padding: 0 3px;
+}
+
+.workspace-switcher .workspace-item.current-workspace {
+  background-color: #005469;
+}
+.workspace-switcher label.workspace-more-label {
+  padding: 0;
+  margin: 0;
+}
+.workspace-switcher button.workspace-icon-button {
+  padding: 0;
+  border-color: transparent;
+  background: transparent;
+}
+
+.transparent .workspace-switcher .workspace-layout,
+.transparent .workspace-switcher .workspace-item {
+  background-color: transparent;
+  padding: 0;
+}
+.transparent .workspace-switcher .workspace-item.current-workspace {
+  background-color: rgba(0, 43, 54, 0.04);
+}
+
 .raven-background,
 .raven-header,
 .raven,
@@ -6661,17 +6675,9 @@ filechooser placessidebar.sidebar scrollbar trough,
   background-color: #002b36;
   border-radius: 0;
 }
-.raven-background label, .raven-background image, .raven-background,
-.raven-header label,
-.raven-header image,
-.raven-header,
-.raven label,
-.raven image,
-.raven,
-.raven-notifications-view > .raven-background > .frame > list label,
-.raven-notifications-view > .raven-background > .frame > list image,
-.raven-notifications-view > .raven-background > .frame > list {
-  color: #839496;
+
+.raven {
+  padding: 2px 6px;
 }
 
 .right frame.raven-frame {
@@ -6710,63 +6716,25 @@ frame.raven-frame > border {
   box-shadow: 0 8px 8px -5px rgba(0, 0, 0, 0.28), 0 6px 6px 2px rgba(0, 0, 0, 0.14), 0 4px 4px 0 rgba(0, 0, 0, 0.06);
 }
 
-.raven {
-  border-color: red;
+.raven-calendar:indeterminate {
+  color: alpha(currentColor,0.3);
 }
-.raven calendar.raven-calendar {
-  background-color: transparent;
+.raven-calendar:selected {
+  color: #fdf6e3;
+  background-color: #268bd2;
+}
+.raven-calendar.header {
   color: #839496;
-  padding: 4px;
-  border-color: transparent;
+  border: none;
+  border-radius: 0;
 }
-.raven calendar.raven-calendar.button, .raven calendar.raven-calendar.button-focus {
+.raven-calendar.button, .raven-calendar.button:focus {
+  color: alpha(currentColor,0.5);
   background-color: transparent;
 }
-.raven calendar.raven-calendar:selected {
-  background-color: #268bd2;
-  color: #fdf6e3;
-  border-bottom: 9px solid transparent;
-}
-.raven button {
-  color: #268bd2;
-  border-color: #002b36;
-  background-color: #002b36;
-}
-.raven button:backdrop {
-  color: rgba(38, 139, 210, 0.56);
-}
-.raven button label {
-  color: inherit;
-}
-.raven button:hover {
-  color: #93a1a1;
-  border-color: #002b36;
-  background-color: #073642;
-}
-.raven button:hover label {
-  color: inherit;
-}
-.raven button:active, .raven button:checked, .raven button:selected {
-  color: #fdf6e3;
-  border-color: #002b36;
-  background-color: #268bd2;
-}
-.raven button:active:backdrop, .raven button:checked:backdrop, .raven button:selected:backdrop {
-  color: rgba(253, 246, 227, 0.56);
-}
-.raven button:active label, .raven button:checked label, .raven button:selected label {
-  color: inherit;
-}
-.raven button:checked:hover, .raven button:selected:hover {
-  color: #fdf6e3;
-  border-color: #002b36;
-  background-color: #268bd2;
-}
-.raven button:checked:hover:backdrop, .raven button:selected:hover:backdrop {
-  color: rgba(253, 246, 227, 0.56);
-}
-.raven button:checked:hover label, .raven button:selected:hover label {
-  color: inherit;
+.raven-calendar.button:hover, .raven-calendar.button:focus:hover {
+  color: #839496;
+  background-color: transparent;
 }
 
 .budgie-run-dialog {
