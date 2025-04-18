@@ -4698,6 +4698,15 @@ button.nautilus-circular-button.image-button label {
 .caja-notebook tabs > tab.reorderable-page > box > button.flat:active image {
   background-color: #892a2f;
 }
+.caja-notebook entry.cell.flat:focus {
+  color: #aeae99;
+}
+.caja-notebook entry.cell.flat selection:focus, .caja-notebook entry.cell.flat selection {
+  color: red;
+  color: #040E04;
+  background-color: red;
+  background-color: #00C848;
+}
 
 .caja-navigation-window toolbar.horizontal.primary-toolbar, .caja-navigation-window .horizontal.primary-toolbar.inline-toolbar {
   border-bottom: 1px solid #010304;
