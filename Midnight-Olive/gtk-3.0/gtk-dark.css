@@ -7013,14 +7013,9 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
 .budgie-menu .category-button:first-child {
   margin-top: -2px;
 }
-.budgie-notification-window, .budgie-popover:not(.csd).background {
-  background-color: #08111C;
-}
-.budgie-notification-window label, .budgie-popover:not(.csd).background label {
-  color: #7E7E23;
-}
-
 .budgie-popover:not(.csd).background {
+  color: #7E7E23;
+  background-color: #08111C;
   border-radius: 4px;
   background-clip: border-box;
   border: 1px solid #020306;
@@ -7085,28 +7080,11 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
 }
 .budgie-popover:not(.csd) stack.clock-applet-stack button {
   padding: 4px 6px;
-  color: #7E7E23;
-  border-color: #08111C;
-  background-color: #08111C;
 }
-.budgie-popover:not(.csd) stack.clock-applet-stack button:backdrop {
-  color: rgba(126, 126, 35, 0.56);
-}
-.budgie-popover:not(.csd) stack.clock-applet-stack button:hover {
-  color: #aeae99;
-  border-color: #08111C;
-  background-color: rgba(126, 126, 35, 0.1);
-}
-.budgie-popover:not(.csd) stack.clock-applet-stack button:active {
-  color: #ffffff;
-  border-color: #08111C;
-  background-color: #7E7E23;
-}
-.budgie-popover:not(.csd) stack.clock-applet-stack button:active:backdrop {
-  color: rgba(255, 255, 255, 0.56);
-}
-.budgie-popover:not(.csd) stack.clock-applet-stack button:active label {
-  color: inherit;
+.budgie-popover:not(.csd) button.flat:not(:hover), .budgie-popover:not(.csd) button.flat:not(:active), .budgie-popover:not(.csd) button.flat:not(:checked), .budgie-popover:not(.csd) button.flat:not(:focus), .budgie-popover:not(.csd) button.flat:not(:checked:active), .budgie-popover:not(.csd) button.flat:not(:checked:hover) {
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
 }
 
 .night-light-indicator .container {
@@ -7114,30 +7092,6 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
 }
 .night-light-indicator .view-header {
   background: transparent;
-}
-.night-light-indicator button, .night-light-indicator button.display-settings-button {
-  color: #7E7E23;
-  border-color: #08111C;
-  background-color: #08111C;
-}
-.night-light-indicator button:backdrop, .night-light-indicator button.display-settings-button:backdrop {
-  color: rgba(126, 126, 35, 0.56);
-}
-.night-light-indicator button:hover, .night-light-indicator button.display-settings-button:hover {
-  color: #aeae99;
-  border-color: #08111C;
-  background-color: rgba(126, 126, 35, 0.1);
-}
-.night-light-indicator button:active, .night-light-indicator button.display-settings-button:active {
-  color: #ffffff;
-  border-color: #08111C;
-  background-color: #7E7E23;
-}
-.night-light-indicator button:active:backdrop, .night-light-indicator button.display-settings-button:active:backdrop {
-  color: rgba(255, 255, 255, 0.56);
-}
-.night-light-indicator button:active label, .night-light-indicator button.display-settings-button:active label {
-  color: inherit;
 }
 .night-light-indicator spinbutton label, .night-light-indicator spinbutton {
   color: #aeae99;
@@ -7542,9 +7496,16 @@ frame.raven-frame > border {
 }
 
 .budgie-notification-window {
+  color: #7E7E23;
+  background-color: #08111C;
   border-radius: 4px;
   background-clip: border-box;
 }
+.budgie-notification-window label {
+  color: inherit;
+}
 .budgie-notification-window button {
   border-radius: 4px;
+  margin-top: 10px;
+  margin-right: 7px;
 }
