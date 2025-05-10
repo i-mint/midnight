@@ -6829,14 +6829,6 @@ popover .nautilus-window headerbar widget stack box.path-bar-box label.separator
 .caja-side-pane treeview:hover label {
   color: inherit;
 }
-.caja-side-pane > box button:not(:active):not(:checked) {
-  color: #aeae99;
-}
-.caja-side-pane > box button:hover:not(:active) {
-  color: #aeae99;
-  border-color: rgba(0, 0, 0, 0.4);
-  background-color: rgba(139, 57, 118, 0.5);
-}
 .caja-side-pane .frame {
   border-color: #020508;
 }

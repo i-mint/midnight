@@ -6702,14 +6702,6 @@ popover.background .nautilus-window headerbar widget stack box.path-bar-box labe
   background-color: rgba(163, 163, 163, 0.1);
   color: #ffffff;
 }
-.caja-side-pane > box button:not(:active):not(:checked) {
-  color: #a3a3a3;
-}
-.caja-side-pane > box button:hover:not(:active) {
-  color: #aeae99;
-  border-color: rgba(7, 9, 11, 0.4);
-  background-color: rgba(89, 112, 138, 0.5);
-}
 .caja-side-pane .frame {
   border-color: #020508;
 }
