@@ -15,6 +15,9 @@
   -gtk-outline-radius: 2px;
 }
 
+/***************
+* Base States *
+***************/
 .background {
   color: #aeae99;
   background-color: rgba(8, 17, 28, 0.999);
@@ -176,6 +179,9 @@ popover.background.magnifier,
   box-shadow: none;
 }
 
+/*********************
+* Spinner Animations *
+**********************/
 @keyframes spin {
   to {
     -gtk-icon-transform: rotate(1turn);
@@ -194,6 +200,9 @@ spinner:checked:disabled {
   opacity: 0.5;
 }
 
+/***************
+* Text Entries *
+****************/
 entry {
   min-height: 22px;
   border: 1px solid;
@@ -409,6 +418,9 @@ treeview entry.flat:focus, treeview entry:focus {
   color: #141414;
 }
 
+/**********
+* Buttons *
+***********/
 @keyframes needs_attention {
   from {
     background-image: -gtk-gradient(radial, center center, 0, center center, 0.01, to(#a3a3a3), to(transparent));
@@ -1127,6 +1139,9 @@ modelbutton.flat arrow.right {
   -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
 }
 
+/**************
+* Spinbuttons *
+**************/
 spinbutton:drop(active) {
   box-shadow: none;
 }
@@ -1201,6 +1216,9 @@ spinbutton > entry:focus {
   caret-color: currentColor;
 }
 
+/*************
+* Comboboxes *
+**************/
 combobox button.combo {
   min-width: 0;
   padding-left: 8px;
@@ -1253,6 +1271,9 @@ combobox cellview:backdrop {
   color: rgba(163, 163, 163, 0.56);
 }
 
+/***********
+* Toolbars *
+************/
 toolbar, .inline-toolbar {
   -GtkWidget-window-dragging: true;
   padding: 4px;
@@ -1350,6 +1371,9 @@ actionbar {
   background-color: #050a10;
 }
 
+/*************
+* Headerbars *
+**************/
 headerbar,
 .titlebar:not(headerbar) {
   min-height: 42px;
@@ -1622,6 +1646,16 @@ headerbar button:active image, .primary-toolbar button:checked label, headerbar 
 .primary-toolbar button:checked image,
 headerbar button:checked image {
   color: inherit;
+}
+.primary-toolbar button:disabled, headerbar button:disabled {
+  color: rgba(163, 163, 163, 0.67);
+  border-color: transparent;
+  background-color: transparent;
+}
+.primary-toolbar button:disabled:active, headerbar button:disabled:active, .primary-toolbar button:disabled:checked, headerbar button:disabled:checked {
+  color: rgba(20, 20, 20, 0.5);
+  border-color: rgba(8, 17, 28, 0.5);
+  background-color: rgba(163, 163, 163, 0.5);
 }
 .selection-mode.primary-toolbar button, headerbar.selection-mode button {
   border-color: transparent;
@@ -1981,6 +2015,9 @@ headerbar spinbutton:not(.vertical) > entry + button:not(:active):hover {
   background-color: rgba(8, 17, 28, 0.9);
 }
 
+/***********
+* Pathbars *
+************/
 .path-bar button.text-button, .path-bar button.image-button, .path-bar button {
   padding-left: 6px;
   padding-right: 6px;
@@ -2004,6 +2041,9 @@ headerbar spinbutton:not(.vertical) > entry + button:not(:active):hover {
   padding-right: 4px;
 }
 
+/*************
+* Tree Views *
+**************/
 treeview.view {
   border-left-color: rgba(174, 174, 153, 0.15);
   border-top-color: rgba(0, 0, 0, 0.1);
@@ -2132,6 +2172,9 @@ treeview.view header.button.dnd:active {
   border-style: none;
 }
 
+/********
+* Menus *
+*********/
 menubar,
 .menubar {
   -GtkWidget-window-dragging: true;
@@ -2160,6 +2203,9 @@ menubar > menuitem:disabled,
   border-color: transparent;
 }
 
+/*******
+* Menu *
+********/
 menu,
 .menu {
   color: #a3a3a3;
@@ -2269,6 +2315,9 @@ menu > arrow:disabled,
   border-color: transparent;
 }
 
+/**********
+* popover *
+***********/
 popover,
 popover.background {
   padding: 2px;
@@ -2362,6 +2411,9 @@ cursor-handle.bottom {
   -gtk-icon-source: -gtk-icontheme("selection-end-symbolic");
 }
 
+/*********************
+* Notebooks and Tabs *
+**********************/
 notebook {
   padding: 0;
 }
@@ -2540,6 +2592,9 @@ notebook > header > tabs > tab button.flat:active, notebook > header > tabs > ta
   color: #be3841;
 }
 
+/*************
+* Scrollbars *
+**************/
 scrollbar {
   background-color: #070f18;
   transition: 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -2634,6 +2689,9 @@ scrollbar.vertical slider {
   min-height: 40px;
 }
 
+/*********** 
+* Switches *
+************/
 switch {
   font-size: 1px;
   min-width: 54px;
@@ -2726,6 +2784,9 @@ headerbar switch:checked:disabled,
   background-image: -gtk-scaled(url("assets/switch-active-insensitive-header-dark.png"), url("assets/switch-active-insensitive-header-dark@2.png"));
 }
 
+/************************
+* Check and Radio items *
+*************************/
 .check,
 check,
 treeview.check {
@@ -3023,6 +3084,9 @@ menu menuitem radio {
   margin: 0;
 }
 
+/***********
+* GtkScale *
+************/
 scale {
   min-height: 15px;
   min-width: 15px;
@@ -3197,6 +3261,9 @@ scale.vertical.fine-tune indicator {
   min-width: 2px;
 }
 
+/****************
+* Progress bars *
+*****************/
 progressbar {
   padding: 0;
   font-size: smaller;
@@ -3230,6 +3297,9 @@ row:selected progressbar trough, infobar progressbar trough {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+/************
+* Level Bar *
+*************/
 levelbar block {
   min-width: 32px;
   min-height: 1px;
@@ -3272,6 +3342,9 @@ levelbar block.empty {
   border-color: #08111C;
 }
 
+/***************
+* Print dialog *
+****************/
 printdialog paper {
   border: 1px solid #010304;
   background: #08111C;
@@ -3281,6 +3354,9 @@ printdialog .dialog-action-box {
   margin: 12px;
 }
 
+/*********
+* Frames *
+**********/
 frame > border,
 .frame {
   margin: 0;
@@ -3383,6 +3459,9 @@ scrolledwindow junction:dir(rtl) {
   border-image-slice: 0 1 0 0;
 }
 
+/***************************
+* Vbox and Hbox Separators *
+****************************/
 separator {
   background-color: rgba(1, 3, 4, 0.23);
   min-width: 1px;
@@ -3408,6 +3487,9 @@ hdyleaflet.titlebar > separator {
   background-image: linear-gradient(to bottom, #03070c, #03070c);
 }
 
+/********
+* Lists *
+*********/
 list {
   background-color: #08111C;
   border-color: #010304;
@@ -3450,6 +3532,9 @@ row.activatable:backdrop label, row.activatable:backdrop {
   color: rgba(163, 163, 163, 0.6);
 }
 
+/********************
+* App Notifications *
+*********************/
 .app-notification {
   padding: 10px;
   color: #a3a3a3;
@@ -3488,6 +3573,9 @@ row.activatable:backdrop label, row.activatable:backdrop {
   background-color: rgba(75, 94, 116, 0.25);
 }
 
+/************
+* Expanders *
+*************/
 expander arrow {
   min-width: 16px;
   min-height: 16px;
@@ -3503,6 +3591,9 @@ expander arrow:checked {
   -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
 }
 
+/***********
+* Calendar *
+************/
 calendar {
   color: #aeae99;
   border: 1px solid #010304;
@@ -3531,6 +3622,9 @@ calendar.highlight {
   color: #aeae99;
 }
 
+/**********
+* Dialogs *
+***********/
 messagedialog .titlebar {
   min-height: 20px;
   background-color: #08111C;
@@ -3566,6 +3660,9 @@ messagedialog.csd .dialog-action-area button:only-child {
   border-right-style: none;
 }
 
+/***************
+*  Filechooser *
+****************/
 filechooser #pathbarbox {
   border-bottom: 1px solid rgba(1, 3, 4, 0.5);
 }
@@ -3575,6 +3672,9 @@ filechooserbutton:drop(active) {
   border-color: transparent;
 }
 
+/**********
+* Sidebar *
+***********/
 .sidebar:not(separator) {
   border-style: none;
   background-color: rgba(8, 17, 28, 0.95);
@@ -3765,6 +3865,9 @@ placessidebar row:drop(active):not(:disabled):selected, placessidebar row:drop(a
   color: #141414;
 }
 
+/*************
+* Placesview *
+**************/
 placesview .server-list-button > image {
   -gtk-icon-transform: rotate(0turn);
 }
@@ -3777,6 +3880,9 @@ placesview > actionbar > revealer > box > label {
   padding-right: 8px;
 }
 
+/********
+* Paned *
+*********/
 paned > separator {
   min-width: 1px;
   min-height: 1px;
@@ -3828,6 +3934,9 @@ paned.vertical > separator.wide {
   background-position: bottom, top;
 }
 
+/*************
+* GtkInfoBar *
+**************/
 infobar {
   border-style: none;
 }
@@ -3844,6 +3953,9 @@ infobar.info *:link, infobar.question *:link, infobar.warning *:link, infobar.er
   color: #313131;
 }
 
+/**********************************
+* Buttons on selected backgrounds *
+***********************************/
 .selection-mode.primary-toolbar button:hover, headerbar.selection-mode button:hover, .nautilus-window .floating-bar button, row:selected button, infobar.info button, infobar.question button, infobar.warning button, infobar.error button {
   color: #141414;
   background-color: rgba(20, 20, 20, 0);
@@ -3883,6 +3995,9 @@ infobar.info *:link, infobar.question *:link, infobar.warning *:link, infobar.er
   border-color: rgba(20, 20, 20, 0.4);
 }
 
+/***********
+* Tooltips *
+************/
 tooltip {
   border-radius: 4px;
   box-shadow: none;
@@ -3902,6 +4017,9 @@ tooltip * {
   color: #aeae99;
 }
 
+/****************
+* Color Chooser *
+*****************/
 colorswatch, colorswatch:drop(active) {
   border-style: none;
 }
@@ -3995,6 +4113,9 @@ colorchooser .popover.osd {
   border-radius: 4px;
 }
 
+/*******
+* Misc *
+********/
 .content-view {
   background-color: #08111C;
 }
@@ -4017,6 +4138,9 @@ popover.background.touch-selection,
   font-family: Monospace;
 }
 
+/*****************
+* Shortcuts Help *
+******************/
 button.circular,
 button.circular-button {
   padding: 0;
@@ -4056,11 +4180,17 @@ stackswitcher button.circular {
   min-width: 0;
 }
 
+/******
+* Dnd *
+*******/
 *:drop(active):focus,
 *:drop(active) {
   box-shadow: inset 0 0 0 1px #F08437;
 }
 
+/*********************
+* Window Decorations *
+**********************/
 decoration {
   border-radius: 4px 4px 0 0;
   border-width: 0px;
@@ -4106,6 +4236,9 @@ messagedialog.csd decoration {
   box-shadow: none;
 }
 
+/***************
+* Titlebuttons *
+****************/
 headerbar.default-decoration button.titlebutton,
 .titlebar.default-decoration button.titlebutton {
   padding: 0 4px;
@@ -4279,6 +4412,9 @@ modelbutton.flat:selected arrow:backdrop, row:backdrop:selected, calendar:backdr
   color: rgba(20, 20, 20, 0.56);
 }
 
+/*************
+* Calculator *
+**************/
 .math-buttons button image, .math-buttons button label {
   color: rgba(163, 163, 163, 0.7);
 }
@@ -6359,6 +6495,9 @@ GtkListBox .h4 {
   font-weight: bold;
 }
 
+/*********************
+* Transparent widget *
+**********************/
 .nautilus-window paned > separator {
   background-image: linear-gradient(to bottom, #010304, #010304);
 }
@@ -6827,6 +6966,9 @@ filechooser placessidebar.sidebar scrollbar trough,
   background-color: rgba(7, 15, 24, 0.95);
 }
 
+/****************
+* Popover combo *
+*****************/
 popover.combo {
   padding: 0px;
 }
@@ -6847,6 +6989,9 @@ popover.combo scrollbar.vertical:dir(rtl) {
   border-bottom-left-radius: 4px;
 }
 
+/*****************
+* Unified window *
+******************/
 window.csd.unified:not(.solid-csd):not(.fullscreen) headerbar {
   box-shadow: inset 0 1px #171712;
 }
@@ -6983,6 +7128,9 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
   color: rgba(20, 20, 20, 0.5);
 }
 
+/**************
+* Budgie Menu *
+***************/
 .budgie-menu scrolledwindow,
 .budgie-menu list,
 .budgie-menu row,
@@ -7011,6 +7159,9 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
 .budgie-menu .category-button:first-child {
   margin-top: -2px;
 }
+/************************
+* Budgie Popover window *
+*************************/
 .budgie-popover:not(.csd).background {
   color: #a3a3a3;
   background-color: #08111C;
@@ -7106,6 +7257,9 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
   background-image: none;
 }
 
+/*******************************
+* Budgie Night light indicator *
+********************************/
 .night-light-indicator .container {
   padding: 4px 6px;
 }
@@ -7158,6 +7312,9 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
   color: rgba(20, 20, 20, 0.56);
 }
 
+/***************
+* Budgie Panel *
+***************/
 .budgie-panel {
   background-color: #08111C;
   background-image: none;
@@ -7344,6 +7501,9 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
   padding: 2px 0;
 }
 
+/****************************
+* Budgie Workspace switcher * 
+*****************************/
 .workspace-popover frame.container {
   padding: 0;
 }
@@ -7409,6 +7569,9 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
   background-color: rgba(8, 17, 28, 0.04);
 }
 
+/***************
+* Budgie Raven * 
+****************/
 .raven-background,
 .raven-header,
 .raven,
@@ -7478,6 +7641,9 @@ frame.raven-frame > border {
   background-color: transparent;
 }
 
+/********************
+* Budgie Run dialog *
+*********************/
 .budgie-run-dialog {
   background-color: #0b1726;
   border: none;
@@ -7514,6 +7680,9 @@ frame.raven-frame > border {
   color: #141414;
 }
 
+/**********************
+* Budgie Notification *
+***********************/
 .budgie-notification-window {
   color: #a3a3a3;
   background-color: #08111C;

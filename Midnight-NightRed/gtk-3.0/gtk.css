@@ -1616,6 +1616,16 @@ headerbar button:active image, .primary-toolbar button:checked label, headerbar 
 headerbar button:checked image {
   color: inherit;
 }
+.primary-toolbar button:disabled, headerbar button:disabled {
+  color: rgba(174, 174, 153, 0.7);
+  border-color: transparent;
+  background-color: transparent;
+}
+.primary-toolbar button:disabled:active, headerbar button:disabled:active, .primary-toolbar button:disabled:checked, headerbar button:disabled:checked {
+  color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(8, 17, 28, 0.5);
+  background-color: rgba(180, 0, 33, 0.5);
+}
 .selection-mode.primary-toolbar button, headerbar.selection-mode button {
   border-color: transparent;
   background-color: transparent;
