@@ -1111,7 +1111,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .magnifier-zoom-region {
-  border: 2px solid maroon;
+  border: 2px solid rgb(128, 0, 0);
 }
 .magnifier-zoom-region .full-screen {
   border-width: 0px;
@@ -1815,17 +1815,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border-top-width: 2px;
   border-radius: 0 0 4px 4px;
 }
-.grouped-window-list-item-box.top:hover {
-  color: #ffffff;
-  border-top-width: 2px;
-  border-color: transparent;
-}
-.grouped-window-list-item-box.top:focus {
-  color: #ffffff;
-  background-color: rgba(45, 144, 255, 0.1);
-  border-top-width: 2px;
-  border-color: #2D90FF;
-}
 .grouped-window-list-item-box.bottom {
   padding-left: 4px;
   padding-right: 4px;
@@ -1833,17 +1822,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding-bottom: 2px;
   border-bottom-width: 2px;
   border-radius: 4px 4px 0 0;
-}
-.grouped-window-list-item-box.bottom:hover {
-  color: #ffffff;
-  border-bottom-width: 2px;
-  border-color: transparent;
-}
-.grouped-window-list-item-box.bottom:focus {
-  color: #ffffff;
-  background-color: rgba(45, 144, 255, 0.1);
-  border-bottom-width: 2px;
-  border-color: #2D90FF;
 }
 .grouped-window-list-item-box.left {
   padding-left: 2px;
@@ -1853,17 +1831,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border-left-width: 2px;
   border-radius: 0 4px 4px 0;
 }
-.grouped-window-list-item-box.left:hover {
-  color: #ffffff;
-  border-left-width: 2px;
-  border-color: transparent;
-}
-.grouped-window-list-item-box.left:focus {
-  color: #ffffff;
-  background-color: rgba(45, 144, 255, 0.1);
-  border-left-width: 2px;
-  border-color: #2D90FF;
-}
 .grouped-window-list-item-box.right {
   padding-left: 2px;
   padding-right: 2px;
@@ -1872,19 +1839,21 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border-right-width: 2px;
   border-radius: 4px 0 0 4px;
 }
-.grouped-window-list-item-box.right:hover {
+.grouped-window-list-item-box:hover, .grouped-window-list-item-box:active:hover {
   color: #ffffff;
-  border-right-width: 2px;
-  border-color: transparent;
-}
-.grouped-window-list-item-box.right:focus {
-  color: #ffffff;
-  background-color: rgba(45, 144, 255, 0.1);
-  border-right-width: 2px;
+  background-color: rgba(45, 144, 255, 0.2);
   border-color: #2D90FF;
 }
-.grouped-window-list-item-box:hover {
-  background-color: rgba(45, 144, 255, 0.1);
+.grouped-window-list-item-box:focus, .grouped-window-list-item-box:active:focus {
+  color: #ffffff;
+  background-color: rgba(45, 144, 255, 0.3);
+  border-color: #2D90FF;
+}
+.grouped-window-list-item-box:focus:hover {
+  background-color: rgba(45, 144, 255, 0.4);
+}
+.grouped-window-list-item-box:active {
+  border-color: rgba(45, 144, 255, 0.7);
 }
 .grouped-window-list-thumbnail-menu {
   background-color: #2D90FF;
