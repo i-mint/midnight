@@ -5719,6 +5719,13 @@ calendar-view event label {
   padding: 7px 4px;
 }
 
+/************
+* Rhythmbox *
+************/
+toolbar > toolitem > box > button, .inline-toolbar > toolitem > box > button {
+  padding: 3px 6px;
+}
+
 .nautilus-window paned > separator {
   background-image: linear-gradient(to bottom, #001317, #001317);
 }

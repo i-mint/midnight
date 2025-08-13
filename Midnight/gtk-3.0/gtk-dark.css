@@ -6034,6 +6034,13 @@ calendar-view event label {
   padding: 7px 4px;
 }
 
+/************
+* Rhythmbox *
+************/
+toolbar > toolitem > box > button, .inline-toolbar > toolitem > box > button {
+  padding: 3px 6px;
+}
+
 UnityDecoration {
   -UnityDecoration-extents: 28px 1 1 1;
   -UnityDecoration-input-extents: 10px;
