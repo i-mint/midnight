@@ -6557,6 +6557,13 @@ filechooser placessidebar.sidebar row.sidebar-row:active:hover .sidebar-icon,
 .nautilus-window placessidebar.sidebar row.sidebar-row:active:hover .sidebar-icon {
   color: #C87200;
 }
+filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup:backdrop, filechooser placessidebar.sidebar row.sidebar-row:selected:backdrop, filechooser placessidebar.sidebar row.sidebar-row:active:hover:backdrop,
+.nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup:backdrop,
+.nautilus-window placessidebar.sidebar row.sidebar-row:selected:backdrop,
+.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover:backdrop {
+  background-color: transparent;
+  border-left-color: rgba(200, 114, 0, 0.45);
+}
 filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup:backdrop label,
 filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup:backdrop .sidebar-label,
 filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup:backdrop .sidebar-icon, filechooser placessidebar.sidebar row.sidebar-row:selected:backdrop label,
@@ -6574,7 +6581,6 @@ filechooser placessidebar.sidebar row.sidebar-row:active:hover:backdrop .sidebar
 .nautilus-window placessidebar.sidebar row.sidebar-row:active:hover:backdrop .sidebar-label,
 .nautilus-window placessidebar.sidebar row.sidebar-row:active:hover:backdrop .sidebar-icon {
   color: rgba(200, 114, 0, 0.6);
-  border-left-color: rgba(200, 114, 0, 0.45);
 }
 filechooser placessidebar.sidebar row.sidebar-row:selected:hover .sidebar-label,
 filechooser placessidebar.sidebar row.sidebar-row:selected:hover .sidebar-icon,
