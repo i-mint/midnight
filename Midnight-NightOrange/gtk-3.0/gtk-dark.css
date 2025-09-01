@@ -1670,10 +1670,22 @@ headerbar button:checked image {
   border-color: transparent;
   background-color: transparent;
 }
+.primary-toolbar button:disabled label, headerbar button:disabled label, .primary-toolbar button:disabled image, headerbar button:disabled image {
+  color: inherit;
+}
+.primary-toolbar button:disabled:backdrop, headerbar button:disabled:backdrop {
+  opacity: 0.4;
+}
 .primary-toolbar button:disabled:active, headerbar button:disabled:active, .primary-toolbar button:disabled:checked, headerbar button:disabled:checked {
   color: rgba(255, 255, 255, 0.5);
   border-color: rgba(8, 17, 28, 0.5);
   background-color: rgba(200, 114, 0, 0.5);
+}
+.primary-toolbar button:disabled:active label, headerbar button:disabled:active label, .primary-toolbar button:disabled:active image, headerbar button:disabled:active image, .primary-toolbar button:disabled:checked label, headerbar button:disabled:checked label, .primary-toolbar button:disabled:checked image, headerbar button:disabled:checked image {
+  color: inherit;
+}
+.primary-toolbar button:disabled:active:backdrop, headerbar button:disabled:active:backdrop, .primary-toolbar button:disabled:checked:backdrop, headerbar button:disabled:checked:backdrop {
+  opacity: 0.4;
 }
 .selection-mode.primary-toolbar button, headerbar.selection-mode button {
   border-color: transparent;
