@@ -1045,7 +1045,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
  * Run dialog *
  **************/
 .run-dialog {
-  padding: 0px 15px 10px 15px;
+  padding: 15px 15px 15px 15px;
   background-color: #002b36;
   border-radius: 4px;
 }
@@ -1056,7 +1056,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   font-size: 1.4em;
   font-weight: bold;
   color: #268bd2;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
 }
 .run-dialog-error-label {
   color: #dc322f;
@@ -1097,7 +1097,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .run-dialog-description {
   color: #839496;
-  padding-top: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
 }
 .run-dialog-description.error {
