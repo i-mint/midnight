@@ -38,7 +38,7 @@
   background-color: #005469;
   color: #839496;
 }
-.gtkstyle-fallback:active {
+.gtkstyle-fallback:active, .gtkstyle-fallback:active:hover {
   background-color: #000203;
   color: #839496;
 }
