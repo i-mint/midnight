@@ -38,7 +38,7 @@
   background-color: #132944;
   color: #aeae99;
 }
-.gtkstyle-fallback:active {
+.gtkstyle-fallback:active, .gtkstyle-fallback:active:hover {
   background-color: black;
   color: #aeae99;
 }
@@ -3537,14 +3537,8 @@ list row {
 row:not(:hover) {
   transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-row.activatable label, row.activatable {
-  color: #aeae99;
-}
 row.activatable.has-open-popup, row.activatable:hover {
   background-color: rgba(255, 255, 255, 0.06);
-}
-row.activatable.has-open-popup label, row.activatable.has-open-popup, row.activatable:hover label, row.activatable:hover {
-  color: #ffffff;
 }
 row.activatable:active {
   color: #aeae99;
