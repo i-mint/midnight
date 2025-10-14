@@ -298,8 +298,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .run-dialog .modal-dialog-content-box {
-  margin-top: 24px;
-  margin-bottom: 14px;
+  margin: 2px;
+  border-radius: 4px;
 }
 .run-dialog .run-dialog-entry {
   color: rgba(253, 246, 227, 0.6);
