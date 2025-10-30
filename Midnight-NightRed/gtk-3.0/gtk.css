@@ -434,19 +434,20 @@ button:backdrop {
 button separator {
   margin: 4px 1px;
 }
-button.flat {
+toolbar.primary-toolbar button.flat, .primary-toolbar.inline-toolbar button.flat, toolbar button.flat, .inline-toolbar button.flat, button.flat {
   border-color: transparent;
   background-color: transparent;
   background-image: none;
   transition: none;
 }
-button.flat:hover {
+toolbar button.flat:hover, .inline-toolbar button.flat:hover, button.flat:hover {
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition-duration: 350ms;
 }
 button.flat:hover:active {
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
+
 button:hover {
   color: #ffffff;
   border-color: #08111C;
@@ -1300,6 +1301,51 @@ toolbar:not(.inline-toolbar) .linked > button, .inline-toolbar:not(.inline-toolb
 toolbar:not(.inline-toolbar) .linked > entry,
 .inline-toolbar:not(.inline-toolbar) .linked > entry {
   margin-right: 0;
+}
+toolbar.primary-toolbar button.flat label, toolbar.primary-toolbar button.flat image, toolbar.primary-toolbar button.flat, .primary-toolbar.inline-toolbar button.flat, toolbar button.flat label, .inline-toolbar button.flat label, toolbar button.flat image, .inline-toolbar button.flat image, toolbar button.flat, .inline-toolbar button.flat {
+  color: #aeae99;
+}
+toolbar.primary-toolbar button.flat:hover, toolbar button.flat:hover, .inline-toolbar button.flat:hover {
+  color: #ffffff;
+  border-color: #08111C;
+  background-color: rgba(180, 0, 33, 0.1);
+}
+toolbar.primary-toolbar button.flat:hover label, toolbar.primary-toolbar button.flat:hover image, toolbar button.flat:hover label, .inline-toolbar button.flat:hover label, toolbar button.flat:hover image, .inline-toolbar button.flat:hover image {
+  color: inherit;
+}
+toolbar.primary-toolbar button.flat:active, toolbar.primary-toolbar button.flat:checked, toolbar button.flat:active, .inline-toolbar button.flat:active, toolbar button.flat:checked, .inline-toolbar button.flat:checked {
+  color: #ffffff;
+  border-color: #08111C;
+  background-color: #B40021;
+  background-clip: padding-box;
+}
+toolbar.primary-toolbar button.flat:active label, toolbar.primary-toolbar button.flat:active image, toolbar.primary-toolbar button.flat:checked label, toolbar.primary-toolbar button.flat:checked image, toolbar button.flat:active label, .inline-toolbar button.flat:active label, toolbar button.flat:active image, .inline-toolbar button.flat:active image, toolbar button.flat:checked label, .inline-toolbar button.flat:checked label, toolbar button.flat:checked image, .inline-toolbar button.flat:checked image {
+  color: inherit;
+}
+toolbar.primary-toolbar button.flat:disabled, toolbar button.flat:disabled, .inline-toolbar button.flat:disabled {
+  color: rgba(174, 174, 153, 0.7);
+  border-color: transparent;
+  background-color: transparent;
+}
+toolbar.primary-toolbar button.flat:disabled label, toolbar.primary-toolbar button.flat:disabled image, toolbar button.flat:disabled label, .inline-toolbar button.flat:disabled label, toolbar button.flat:disabled image, .inline-toolbar button.flat:disabled image {
+  color: inherit;
+}
+toolbar.primary-toolbar button.flat:disabled:active, toolbar.primary-toolbar button.flat:disabled:checked, toolbar button.flat:disabled:active, .inline-toolbar button.flat:disabled:active, toolbar button.flat:disabled:checked, .inline-toolbar button.flat:disabled:checked {
+  color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(8, 17, 28, 0.5);
+  background-color: rgba(180, 0, 33, 0.5);
+}
+toolbar.primary-toolbar button.flat:disabled:active label, toolbar.primary-toolbar button.flat:disabled:active image, toolbar.primary-toolbar button.flat:disabled:checked label, toolbar.primary-toolbar button.flat:disabled:checked image, toolbar button.flat:disabled:active label, .inline-toolbar button.flat:disabled:active label, toolbar button.flat:disabled:active image, .inline-toolbar button.flat:disabled:active image, toolbar button.flat:disabled:checked label, .inline-toolbar button.flat:disabled:checked label, toolbar button.flat:disabled:checked image, .inline-toolbar button.flat:disabled:checked image {
+  color: inherit;
+}
+toolbar.primary-toolbar button.flat:backdrop, toolbar button.flat:backdrop, .inline-toolbar button.flat:backdrop {
+  opacity: 0.7;
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+}
+toolbar.primary-toolbar:backdrop, .primary-toolbar.inline-toolbar:backdrop, toolbar:backdrop, .inline-toolbar:backdrop {
+  background-color: #0a1522;
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) {
@@ -2231,6 +2277,7 @@ menubar,
 menubar:backdrop,
 .menubar:backdrop {
   color: rgba(180, 0, 33, 0.7);
+  background-color: #0a1522;
 }
 menubar > menuitem,
 .menubar > menuitem {
@@ -5844,38 +5891,12 @@ widget .clocks-button:active {
 .thunar toolbar > toolitem box.horizontal > entry:backdrop label, .thunar .inline-toolbar > toolitem box.horizontal > entry:backdrop label, .thunar toolbar > toolitem box.horizontal > entry:backdrop image, .thunar .inline-toolbar > toolitem box.horizontal > entry:backdrop image, .thunar toolbar > toolitem box.horizontal > entry:backdrop, .thunar .inline-toolbar > toolitem box.horizontal > entry:backdrop {
   color: rgba(174, 174, 153, 0.67);
 }
-.thunar toolbar > toolbutton > button.flat:hover, .thunar .inline-toolbar > toolbutton > button.flat:hover {
-  color: #ffffff;
-  border-color: #08111C;
-  background-color: rgba(180, 0, 33, 0.1);
-}
-.thunar toolbar > toolbutton > button.flat:active, .thunar .inline-toolbar > toolbutton > button.flat:active {
-  color: #ffffff;
-  border-color: #08111C;
-  background-color: #B40021;
-}
-.thunar toolbar > toolbutton > button.flat:hover, .thunar toolbar > toolbutton > button.flat:active, .thunar toolbar > toolbutton > button.flat, .thunar .inline-toolbar > toolbutton > button.flat {
-  margin: 0 2px;
-}
-.thunar menubar:backdrop {
-  color: rgba(180, 0, 33, 0.67);
-  background-color: #0a1522;
-}
-.thunar toolbar:backdrop, .thunar .inline-toolbar:backdrop {
-  background-color: #0a1522;
-}
-.thunar toolbar button:not(:disabled):backdrop, .thunar .inline-toolbar button:not(:disabled):backdrop {
-  color: rgba(174, 174, 153, 0.7);
-  border-color: transparent;
-  background-color: transparent;
-}
-.thunar toolbar button:disabled:backdrop, .thunar .inline-toolbar button:disabled:backdrop {
-  color: rgba(174, 174, 153, 0.25);
-  background-color: transparent;
-  border-color: transparent;
-}
 .thunar toolbar .linked.path-bar > button.path-bar-button.toggle, .thunar .inline-toolbar .linked.path-bar > button.path-bar-button.toggle {
   border: none;
+}
+.thunar toolbar .linked.path-bar > button.location-button.path-bar-button:backdrop, .thunar .inline-toolbar .linked.path-bar > button.location-button.path-bar-button:backdrop {
+  background-color: #0a1522;
+  border-color: transparent;
 }
 .thunar notebook tabs > tab.reorderable-page button.flat > image {
   border-radius: 50%;
