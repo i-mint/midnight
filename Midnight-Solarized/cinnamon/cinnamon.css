@@ -1052,6 +1052,328 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding-bottom: 15px;
 }
 
+/********* 2.7.2.1
+* Dialog * for user and end session dialog window
+*********/
+.dialog {
+  background-color: #002b36;
+  color: #839496;
+  border-radius: 4px;
+  border: 1px solid #001317;
+  padding: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.dialog .dialog-content-box {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  spacing: 32px;
+  max-width: 28em;
+}
+.dialog .dialog-button,
+.dialog .dialog-button:default {
+  text-shadow: 0 1px rgba(0, 43, 54, 0);
+  color: #268bd2;
+  background-color: #002b36;
+  border: 1px solid #002b36;
+  box-shadow: inset 0 2px 4px rgba(0, 43, 54, 0.05);
+  border-radius: 4px;
+  padding: 4px;
+}
+.dialog .dialog-button StLabel,
+.dialog .dialog-button:default StLabel {
+  color: inherit;
+}
+.dialog .dialog-button:hover,
+.dialog .dialog-button:default:hover {
+  text-shadow: 0 1px rgba(0, 43, 54, 0);
+  color: #839496;
+  background-color: #003f50;
+  border: 1px solid #002b36;
+  box-shadow: inset 0 2px 4px rgba(0, 63, 80, 0.05);
+}
+.dialog .dialog-button:hover StLabel,
+.dialog .dialog-button:default:hover StLabel {
+  color: inherit;
+}
+.dialog .dialog-button:active,
+.dialog .dialog-button:default:active {
+  text-shadow: 0 1px rgba(0, 43, 54, 0);
+  color: #fdf6e3;
+  border-color: #002b36;
+  background-color: #268bd2;
+  box-shadow: inset 0 2px 4px #268bd2;
+}
+.dialog .dialog-button:active:backdrop,
+.dialog .dialog-button:default:active:backdrop {
+  color: rgba(253, 246, 227, 0.56);
+}
+.dialog .dialog-button:active StLabel,
+.dialog .dialog-button:default:active StLabel {
+  color: inherit;
+}
+.dialog .dialog-button:insensitive,
+.dialog .dialog-button:default:insensitive {
+  text-shadow: 0 1px rgba(0, 43, 54, 0);
+  color: rgba(131, 148, 150, 0.45);
+  border: 1px solid rgba(0, 43, 54, 0.55);
+  background-color: rgba(0, 43, 54, 0.55);
+  box-shadow: inset 0 2px 4px rgba(0, 43, 54, 0.05);
+}
+.dialog .dialog-button:insensitive StLabel,
+.dialog .dialog-button:default:insensitive StLabel {
+  color: inherit;
+}
+.dialog .dialog-button:destructive-action {
+  text-shadow: 0 1px rgba(0, 43, 54, 0);
+  background-clip: border-box;
+  color: #fdf6e3;
+  background-color: #dc322f;
+  border-color: #dc322f;
+}
+.dialog .dialog-button:destructive-action:hover {
+  text-shadow: 0 1px rgba(0, 43, 54, 0);
+  background-clip: border-box;
+  color: #fdf6e3;
+  background-color: #e35d5b;
+  border-color: #e35d5b;
+}
+.dialog .dialog-button:destructive-action:active, .dialog .dialog-button:destructive-action:checked {
+  text-shadow: 0 1px rgba(0, 43, 54, 0);
+  background-clip: border-box;
+  color: #fdf6e3;
+  background-color: #b9221f;
+  border-color: #b9221f;
+  box-shadow: none;
+}
+.dialog .dialog-button:destructive-action:insensitive {
+  text-shadow: 0 1px rgba(0, 43, 54, 0);
+  background-clip: border-box;
+  color: green;
+  background-color: #f0a89b;
+  border-color: #f0a89b;
+}
+.dialog .confirm-dialog-title {
+  font-weight: bold;
+  text-align: center;
+}
+
+.dialog-list {
+  background: blue;
+  spacing: 12px;
+}
+.dialog-list .dialog-list-title {
+  font-weight: bold;
+  text-align: center;
+}
+.dialog-list .dialog-list-scrollview {
+  max-height: 200px;
+}
+.dialog-list .dialog-list-box {
+  spacing: 1em;
+}
+.dialog-list .dialog-list-box .dialog-list-item {
+  spacing: 1em;
+}
+.dialog-list .dialog-list-box .dialog-list-item .dialog-list-item-title {
+  font-weight: bold;
+}
+.dialog-list .dialog-list-box .dialog-list-item .dialog-list-item-description {
+  color: #75888a;
+}
+
+.end-session-dialog {
+  min-width: 40em;
+}
+.end-session-dialog .dialog-content-box {
+  spacing: 0;
+}
+.end-session-dialog .dialog-list {
+  spacing: 0;
+}
+.end-session-dialog .dialog-list .dialog-list-title {
+  color: #cb4b16;
+  background-color: tranparentize(#cb4b16, 0.9);
+  padding: 6px;
+  border-radius: 4px;
+  margin: 4px 0;
+}
+
+.message-dialog-content {
+  spacing: 12px;
+}
+.message-dialog-content .message-dialog-title {
+  text-align: center;
+}
+.message-dialog-content .message-dialog-description {
+  text-align: center;
+}
+.message-dialog-content .message-dialog-caption {
+  text-align: center;
+}
+
+.prompt-dialog {
+  width: 26em;
+}
+.prompt-dialog .dialog-content-box {
+  spacing: 16px;
+  margin-bottom: 12px;
+}
+.prompt-dialog-password-entry {
+  min-height: 22px;
+  border-radius: 20px;
+  padding: 4px 6px;
+  border: 1px solid #001317;
+  caret-color: #839496;
+  selected-color: #000000;
+  selection-background-color: #268bd2;
+  caret-size: 1px;
+  width: 20em;
+  color: #268bd2;
+  background-color: rgba(0, 132, 166, 0.4);
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.prompt-dialog-password-entry:focus {
+  color: #839496;
+  background-color: rgba(38, 139, 210, 0.1);
+  border: 1px solid #268bd2;
+  box-shadow: inset 0 2px 4px rgba(38, 139, 210, 0);
+}
+.prompt-dialog-password-entry:insensitive {
+  color: rgba(131, 148, 150, 0.45);
+  background-color: rgba(2, 49, 63, 0.505);
+  border-color: 1px solid rgba(3, 49, 64, 0.505);
+  box-shadow: inset 0 2px 4px rgba(2, 49, 63, 0);
+}
+.prompt-dialog-password-entry StLabel.hint-text {
+  color: rgba(131, 148, 150, 0.3);
+}
+.prompt-dialog-password-entry .capslock-warning {
+  icon-size: 16px;
+}
+.prompt-dialog-password-entry StIcon.peek-password {
+  icon-size: 16px;
+  color: #839496;
+}
+.prompt-dialog-password-layout {
+  spacing: 8px;
+}
+.prompt-dialog-error-label, .prompt-dialog-info-label, .prompt-dialog-null-label {
+  text-align: center;
+}
+.prompt-dialog-error-label {
+  color: #dc322f;
+}
+
+.polkit-dialog-user-layout {
+  text-align: center;
+  spacing: 2px;
+}
+.polkit-dialog-user-combo {
+  font-weight: bold;
+  text-shadow: 0 1px rgba(0, 43, 54, 0);
+  color: #268bd2;
+  background-color: #002b36;
+  border: 1px solid #002b36;
+  box-shadow: inset 0 2px 4px rgba(0, 43, 54, 0.05);
+  border-radius: 4px;
+  padding: 4px 24px;
+}
+.polkit-dialog-user-combo:focus {
+  text-shadow: 0 1px rgba(0, 43, 54, 0);
+  color: #839496;
+  background-color: #002b36;
+  border: 1px solid #268bd2;
+  box-shadow: inset 0 2px 4px rgba(0, 43, 54, 0.05);
+}
+.polkit-dialog-user-combo:hover {
+  text-shadow: 0 1px rgba(0, 43, 54, 0);
+  color: #839496;
+  background-color: #003f50;
+  border: 1px solid #002b36;
+  box-shadow: inset 0 2px 4px rgba(0, 63, 80, 0.05);
+}
+.polkit-dialog-user-combo:insensitive {
+  text-shadow: 0 1px rgba(0, 43, 54, 0);
+  color: rgba(131, 148, 150, 0.45);
+  border: 1px solid rgba(0, 43, 54, 0.55);
+  background-color: rgba(0, 43, 54, 0.55);
+  box-shadow: inset 0 2px 4px rgba(0, 43, 54, 0.05);
+}
+.polkit-dialog-user-combo:selected, .polkit-dialog-user-combo:active {
+  text-shadow: 0 1px rgba(0, 43, 54, 0);
+  color: #fdf6e3;
+  border-color: #002b36;
+  background-color: #268bd2;
+  box-shadow: inset 0 2px 4px #268bd2;
+}
+.polkit-dialog-user-combo:selected:backdrop, .polkit-dialog-user-combo:active:backdrop {
+  color: rgba(253, 246, 227, 0.56);
+}
+.polkit-dialog-user-combo:checked {
+  text-shadow: 0 1px rgba(0, 43, 54, 0);
+}
+.polkit-dialog-user-combo:insensitive {
+  color: #839496;
+}
+
+.audio-device-selection-dialog {
+  min-width: 24em;
+}
+.audio-device-selection-dialog .audio-selection-box {
+  spacing: 8px;
+}
+.audio-device-selection-dialog .audio-selection-box .audio-selection-device {
+  border-radius: 4px;
+  text-shadow: 0 1px rgba(0, 43, 54, 0);
+  color: #268bd2;
+  background-color: #002b36;
+  border: 1px solid #002b36;
+  box-shadow: inset 0 2px 4px rgba(0, 43, 54, 0.05);
+}
+.audio-device-selection-dialog .audio-selection-box .audio-selection-device:focus {
+  text-shadow: 0 1px rgba(0, 43, 54, 0);
+  color: #839496;
+  background-color: #002b36;
+  border: 1px solid #268bd2;
+  box-shadow: inset 0 2px 4px rgba(0, 43, 54, 0.05);
+}
+.audio-device-selection-dialog .audio-selection-box .audio-selection-device:hover {
+  text-shadow: 0 1px rgba(0, 43, 54, 0);
+  color: #839496;
+  background-color: #003f50;
+  border: 1px solid #002b36;
+  box-shadow: inset 0 2px 4px rgba(0, 63, 80, 0.05);
+}
+.audio-device-selection-dialog .audio-selection-box .audio-selection-device:insensitive {
+  text-shadow: 0 1px rgba(0, 43, 54, 0);
+  color: rgba(131, 148, 150, 0.45);
+  border: 1px solid rgba(0, 43, 54, 0.55);
+  background-color: rgba(0, 43, 54, 0.55);
+  box-shadow: inset 0 2px 4px rgba(0, 43, 54, 0.05);
+}
+.audio-device-selection-dialog .audio-selection-box .audio-selection-device:selected, .audio-device-selection-dialog .audio-selection-box .audio-selection-device:active {
+  text-shadow: 0 1px rgba(0, 43, 54, 0);
+  color: #fdf6e3;
+  border-color: #002b36;
+  background-color: #268bd2;
+  box-shadow: inset 0 2px 4px #268bd2;
+}
+.audio-device-selection-dialog .audio-selection-box .audio-selection-device:selected:backdrop, .audio-device-selection-dialog .audio-selection-box .audio-selection-device:active:backdrop {
+  color: rgba(253, 246, 227, 0.56);
+}
+.audio-device-selection-dialog .audio-selection-box .audio-selection-device:checked {
+  text-shadow: 0 1px rgba(0, 43, 54, 0);
+}
+.audio-device-selection-dialog .audio-selection-box .audio-selection-device .audio-selection-device-box {
+  padding: 8px;
+  spacing: 8px;
+}
+.audio-device-selection-dialog .audio-selection-box .audio-selection-device .audio-selection-device-icon {
+  icon-size: 64px;
+}
+
 /**************
  * Run dialog *
  **************/
