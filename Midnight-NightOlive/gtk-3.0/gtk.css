@@ -1505,32 +1505,6 @@ headerbar:last-child, headerbar:last-child:backdrop {
 .maximized headerbar:last-child, .tiled headerbar:last-child, .maximized headerbar:last-child:backdrop, .tiled headerbar:last-child:backdrop {
   border-radius: 0;
 }
-headerbar.windowhandle viewswitcher > box > button {
-  margin: 0;
-  padding: 0;
-  min-width: 140px;
-  min-height: 22px;
-  box-shadow: none;
-  border-radius: 0;
-  border: none;
-}
-headerbar.windowhandle viewswitcher > box > button:not(:hover):not(:active):not(:checked):not(:disabled) {
-  border-color: transparent;
-  background-color: transparent;
-  background-image: none;
-}
-headerbar.windowhandle viewswitcher > box > button > stack > box {
-  padding: 0 20px;
-}
-headerbar.windowhandle viewswitcher > box > button > stack > box.wide {
-  font-size: 1em;
-}
-headerbar.windowhandle viewswitcher > box > button > stack > box.narrow {
-  font-size: 0.8em;
-}
-headerbar.windowhandle viewswitcher > box > button:checked {
-  font-weight: bold;
-}
 
 window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, window.csd > .titlebar:not(headerbar), window.csd > .titlebar:not(headerbar):backdrop {
   padding: 0;
@@ -7081,6 +7055,46 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
 window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):not(.tiled-bottom):not(.tiled-left):not(.tiled-right):not(.maximized) > decoration,
 window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):not(.tiled-bottom):not(.tiled-left):not(.tiled-right):not(.maximized) > decoration-overlay {
   border-radius: 4px;
+}
+
+viewswitcher, viewswitcher button {
+  margin: 0;
+  padding: 0;
+}
+viewswitcher button {
+  border-radius: 0;
+  border-top: 0;
+  border-bottom: 0;
+  box-shadow: none;
+  font-size: 1rem;
+}
+viewswitcher button:not(:checked):not(:hover) {
+  background: transparent;
+}
+viewswitcher button > stack > box.narrow {
+  font-size: 0.75rem;
+  padding-top: 7px;
+  padding-bottom: 2px;
+}
+viewswitcher button > stack > box.narrow image,
+viewswitcher button > stack > box.narrow label {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+viewswitcher button > stack > box.wide {
+  padding: 8px 12px;
+}
+viewswitcher button > stack > box.wide image:dir(ltr) {
+  padding-left: 7px;
+}
+viewswitcher button > stack > box.wide image:dir(rtl) {
+  padding-right: 7px;
+}
+viewswitcher button > stack > box.wide label:dir(ltr) {
+  padding-right: 7px;
+}
+viewswitcher button > stack > box.wide label:dir(rtl) {
+  padding-left: 7px;
 }
 
 @define-color theme_fg_color #aeae99;
