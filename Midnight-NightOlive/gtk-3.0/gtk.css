@@ -5874,18 +5874,21 @@ widget .clocks-button:active {
   border-radius: 50%;
   padding: 2px;
   border: 2px solid transparent;
+  color: #aeae99;
 }
 .thunar notebook tabs > tab.reorderable-page button.flat:hover > image {
   background-color: #cc575d;
   border-radius: 50%;
   padding: 2px;
   border: 2px solid transparent;
+  color: #ffffff;
 }
 .thunar notebook tabs > tab.reorderable-page button.flat:active > image {
   background-color: #892a2f;
   border-radius: 50%;
   padding: 2px;
   border: 2px solid transparent;
+  color: #ffffff;
 }
 
 .geary-main-layout .geary_email .geary-message-summary, .geary-main-layout .geary_email .geary-message, .geary-main-layout .geary_email grid {

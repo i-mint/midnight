@@ -5641,18 +5641,21 @@ panel-toplevel.background na-tray-applet {
   border-radius: 50%;
   padding: 2px;
   border: 2px solid transparent;
+  color: #839496;
 }
 .thunar notebook tabs > tab.reorderable-page button.flat:hover > image {
   background-color: #dc322f;
   border-radius: 50%;
   padding: 2px;
   border: 2px solid transparent;
+  color: #FFFFFF;
 }
 .thunar notebook tabs > tab.reorderable-page button.flat:active > image {
   background-color: #851816;
   border-radius: 50%;
   padding: 2px;
   border: 2px solid transparent;
+  color: #FFFFFF;
 }
 
 .geary-main-layout .geary_email .geary-message-summary, .geary-main-layout .geary_email .geary-message, .geary-main-layout .geary_email grid {
