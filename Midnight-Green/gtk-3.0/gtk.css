@@ -1350,6 +1350,11 @@ toolbar.primary-toolbar button.flat:active, toolbar.primary-toolbar button.flat:
 toolbar.primary-toolbar button.flat:active label, toolbar.primary-toolbar button.flat:active image, toolbar.primary-toolbar button.flat:checked label, toolbar.primary-toolbar button.flat:checked image, toolbar button.flat:active label, .inline-toolbar button.flat:active label, toolbar button.flat:active image, .inline-toolbar button.flat:active image, toolbar button.flat:checked label, .inline-toolbar button.flat:checked label, toolbar button.flat:checked image, .inline-toolbar button.flat:checked image {
   color: inherit;
 }
+toolbar.primary-toolbar button.flat:checked:backdrop, toolbar button.flat:checked:backdrop, .inline-toolbar button.flat:checked:backdrop {
+  color: rgba(4, 14, 4, 0.56);
+  background-color: rgba(0, 200, 72, 0.45);
+  opacity: 0.7;
+}
 toolbar.primary-toolbar button.flat:disabled, toolbar button.flat:disabled, .inline-toolbar button.flat:disabled {
   color: rgba(0, 200, 72, 0.5);
   border-color: rgba(8, 17, 28, 0);
@@ -4603,11 +4608,17 @@ modelbutton.flat:selected arrow:backdrop, row:backdrop:selected, calendar:backdr
   color: #040E04;
 }
 
+/*****************/
+/* Tab overrides */
+/*****************/
 .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked,
 terminal-window notebook > header.top > tabs > tab:checked {
   box-shadow: inset 0 -1px #010304;
 }
 
+/*********************************/
+/* GNOME Terminal, MATE Terminal */
+/*********************************/
 terminal-window notebook > header.top,
 .mate-terminal notebook > header.top {
   padding-top: 3px;
@@ -4620,6 +4631,9 @@ terminal-window notebook > header.top button,
   min-height: 24px;
 }
 
+/************/
+/* Nautilus */
+/************/
 .nautilus-canvas-item {
   border-radius: 2px;
 }
@@ -4750,6 +4764,9 @@ button.nautilus-circular-button.image-button label {
   color: #aeae99;
 }
 
+/********/
+/* Nemo */
+/********/
 .nemo-desktop.nemo-canvas-item {
   color: white;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
@@ -4837,6 +4854,9 @@ button.nautilus-circular-button.image-button label {
   color: #040E04;
 }
 
+/********/
+/* Caja */
+/********/
 .caja-desktop {
   color: white;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
@@ -4947,6 +4967,9 @@ entry.caja-location-entry:disabled {
   background-color: rgba(0, 200, 72, 0);
 }
 
+/*********/
+/* Gedit */
+/*********/
 .open-document-selector-treeview.view, iconview.open-document-selector-treeview {
   padding: 3px 6px 3px 6px;
   border-color: #08111C;
@@ -5077,6 +5100,9 @@ paned.gedit-side-panel-paned treeview.separator, paned.gedit-side-panel-paned tr
   color: rgba(1, 3, 4, 0.12);
 }
 
+/*********/
+/* Pluma */
+/*********/
 .pluma-window statusbar frame > border {
   border: none;
 }
@@ -5093,6 +5119,9 @@ paned.gedit-side-panel-paned treeview.separator, paned.gedit-side-panel-paned tr
   border-radius: 0;
 }
 
+/*****************/
+/* Gnome Builder */
+/*****************/
 .gb-search-entry-occurrences-tag {
   background: none;
 }
@@ -5242,6 +5271,9 @@ configurationview list {
   border-width: 0;
 }
 
+/*******************/
+/* Gnome Documents */
+/*******************/
 .documents-scrolledwin.frame {
   border-width: 0;
 }
@@ -5290,6 +5322,9 @@ button.documents-favorite:active:hover {
   border-image: url("assets/thumbnail-frame.png") 3 3 6 4;
 }
 
+/***************/
+/* Gnome Photo */
+/***************/
 .photos-fade-in {
   opacity: 1;
   transition: opacity 0.2s ease-out;
@@ -5300,15 +5335,24 @@ button.documents-favorite:active:hover {
   transition: opacity 0.2s ease-out;
 }
 
+/****************/
+/* Transmission */
+/****************/
 .tr-workarea undershoot,
 .tr-workarea overshoot {
   border-color: transparent;
 }
 
+/***************************/
+/* Atril (MATE pdf viewer) */
+/***************************/
 .atril-window .primary-toolbar toolbar, .atril-window .primary-toolbar .inline-toolbar {
   background: none;
 }
 
+/*******************/
+/* Gnome Flashback */
+/*******************/
 #gf-bubble, #gf-bubble.solid,
 #gf-osd-window,
 #gf-osd-window.solid,
@@ -5366,6 +5410,9 @@ gf-candidate-box:hover, gf-candidate-box:selected {
   border-radius: 2px;
 }
 
+/*******************/
+/* Mate OSD Window */
+/*******************/
 MsdOsdWindow.background.osd {
   border-radius: 2px;
   border: 1px solid #010907;
@@ -5382,6 +5429,9 @@ MsdOsdWindow.background.osd .trough {
   border-radius: 5px;
 }
 
+/******************************/
+/* Mate/Gnome Flashback Panel */
+/******************************/
 .mate-panel-menu-bar #PanelApplet button:not(#tasklist-button),
 panel-toplevel.background #PanelApplet button:not(#tasklist-button) {
   border-radius: 4px;
@@ -5500,9 +5550,9 @@ panel-toplevel.background na-tray-applet {
   -NaTrayApplet-icon-size: 16px;
 }
 
-/*************
-* Xfce Panel *
-*************/
+/**************/
+/* Xfce Panel */
+/**************/
 .xfce4-panel.panel button.flat,
 .xfce4-panel.panel #whiskermenu-button #xfce4-notification-plugin #xfce4-power-manager-plugin #pulseaudio-button #clock-button #indicator-button #sn-button #showdesktop-button {
   color: #00C848;
@@ -5613,6 +5663,9 @@ panel-toplevel.background na-tray-applet {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-selected.png"), url("assets/radio-checked-selected@2.png"));
 }
 
+/****************/
+/* Floating Bar */
+/****************/
 .nautilus-window .floating-bar {
   padding: 1px;
   background-color: #00C848;
@@ -5822,6 +5875,9 @@ popover radiobutton:hover label, popover radiobutton:hover image, popover radiob
   color: #00C848;
 }
 
+/********/
+/* Gala */
+/********/
 .gala-notification {
   border: 1px solid rgba(0, 0, 0, 0.35);
   border-radius: 3px;
@@ -5833,6 +5889,9 @@ popover radiobutton:hover label, popover radiobutton:hover image, popover radiob
   color: #5c616c;
 }
 
+/*************/
+/* Wingpanel */
+/*************/
 .panel {
   background-color: transparent;
   color: white;
@@ -5895,6 +5954,9 @@ popover radiobutton:hover label, popover radiobutton:hover image, popover radiob
   opacity: 1;
 }
 
+/**********/
+/* Thunar */
+/**********/
 .thunar .sidebar .view, .thunar .sidebar iconview {
   background-color: rgba(8, 17, 28, 0.95);
   color: #00c848;
@@ -5945,6 +6007,45 @@ popover radiobutton:hover label, popover radiobutton:hover image, popover radiob
   background-color: #0a1522;
   border-color: transparent;
 }
+.thunar toolbar > toolitem > button.popup.toggle, .thunar .inline-toolbar > toolitem > button.popup.toggle {
+  color: #00C848;
+  outline-offset: -3px;
+  background-color: #08111C;
+  border-color: #08111C;
+}
+.thunar toolbar > toolitem > button.popup.toggle:backdrop, .thunar .inline-toolbar > toolitem > button.popup.toggle:backdrop {
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+  opacity: 0.7;
+}
+.thunar toolbar > toolitem > button.popup.toggle:hover, .thunar .inline-toolbar > toolitem > button.popup.toggle:hover {
+  color: #aeae99;
+  border-color: #08111C;
+  background-color: rgba(0, 200, 72, 0.1);
+}
+.thunar toolbar > toolitem > button.popup.toggle:active, .thunar .inline-toolbar > toolitem > button.popup.toggle:active, .thunar toolbar > toolitem > button.popup.toggle:checked, .thunar .inline-toolbar > toolitem > button.popup.toggle:checked {
+  color: #040E04;
+  border-color: #08111C;
+  background-color: #00C848;
+  background-clip: padding-box;
+}
+.thunar toolbar > toolitem > button.popup.toggle:disabled, .thunar .inline-toolbar > toolitem > button.popup.toggle:disabled {
+  color: rgba(0, 200, 72, 0.5);
+  border-color: rgba(8, 17, 28, 0);
+  background-color: rgba(0, 200, 72, 0);
+}
+.thunar toolbar > toolitem > button.popup.toggle:disabled:backdrop, .thunar .inline-toolbar > toolitem > button.popup.toggle:disabled:backdrop {
+  opacity: 0.4;
+}
+.thunar toolbar > toolitem > button.popup.toggle:disabled:active, .thunar .inline-toolbar > toolitem > button.popup.toggle:disabled:active, .thunar toolbar > toolitem > button.popup.toggle:disabled:checked, .thunar .inline-toolbar > toolitem > button.popup.toggle:disabled:checked {
+  color: rgba(4, 14, 4, 0.5);
+  border-color: rgba(8, 17, 28, 0.5);
+  background-color: rgba(0, 200, 72, 0.5);
+}
+.thunar toolbar > toolitem > button.popup.toggle:disabled:active:backdrop, .thunar .inline-toolbar > toolitem > button.popup.toggle:disabled:active:backdrop, .thunar toolbar > toolitem > button.popup.toggle:disabled:checked:backdrop, .thunar .inline-toolbar > toolitem > button.popup.toggle:disabled:checked:backdrop {
+  opacity: 0.4;
+}
 .thunar notebook tabs > tab.reorderable-page button.flat > image {
   border-radius: 50%;
   padding: 2px;
@@ -5966,6 +6067,9 @@ popover radiobutton:hover label, popover radiobutton:hover image, popover radiob
   color: #ffffff;
 }
 
+/**************/
+/* Geary Mail */
+/**************/
 .geary-main-layout .geary_email .geary-message-summary, .geary-main-layout .geary_email .geary-message, .geary-main-layout .geary_email grid {
   color: #aeae99;
   background-color: #08111C;
@@ -6019,11 +6123,17 @@ popover radiobutton:hover label, popover radiobutton:hover image, popover radiob
   color: rgba(4, 14, 4, 0.56);
 }
 
+/****************/
+/* Inkscape 1.0 */
+/****************/
 #InkscapePanel grid,
 #NotebookPage grid {
   border-left-color: #08111C;
 }
 
+/******************/
+/* Gnome Calendar */
+/******************/
 event.slanted-end, event.color-light, event {
   box-shadow: inset 0 100px 0 0 #00C848;
 }
@@ -6052,9 +6162,9 @@ monthcell:not(.today):hover > overlay > widget {
   background-color: rgba(255, 255, 255, 0.06);
 }
 
-/************
-* Rhythmbox *
-************/
+/*************/
+/* Rhythmbox */
+/*************/
 toolbar > toolitem > box > button, .inline-toolbar > toolitem > box > button {
   padding: 3px 6px;
 }
